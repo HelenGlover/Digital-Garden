@@ -4,20 +4,22 @@ id: home
 permalink: /
 title: Home
 ---
-[Back to main site] (https://helenglover.netlify.app/).
+[Back to main site](https://helenglover.netlify.app/)
 
 # Welcome! 🌱
 
 <p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.5;">
   Inspired by the concept of a <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">digital garden</a>, this space is a exploratory outlet for my thoughts.
 <br>
-  <b>The goal?</b> To create an evolving, interconnected landscape of information — sort of like a real garden. It is not intended to be as well polished as the rest of the website.
+  <b>The goal?</b> To create an evolving, interconnected landscape of information — sort of like a real garden. 
+  <br> It is not intended to be as well polished as the rest of the website.
   <!-- I believe in <a href="https://www.swyx.io/learn-in-public">Learning in Public</a>; the practice of sharing what you learn as you're learning it. -->
 </p>
 
 
 
-<h2>Innovating at the intersection</h2>
+<h2>Innovating</h2>
+<p> Innovating at the intersection of sustainability and tech for design
 <ul>
   {% assign intersection_notes = site.notes | where: "labels", "intersection" %}
   {% for note in intersection_notes %}
@@ -28,6 +30,7 @@ title: Home
 </ul>
 
 <h2>Collections</h2>
+<p>Cohesive collection of ideas
 <ul>
   {% assign collections_notes = site.notes | where: "labels", "collections" %}
   {% for note in collections_notes %}
@@ -38,6 +41,7 @@ title: Home
 </ul>
 
 <h2>Wiki</h2>
+Hypertext thinking of half-baked thoughts
 <ul>
   {% assign wiki_notes = site.notes | where: "labels", "wiki" %}
   {% for note in wiki_notes %}
