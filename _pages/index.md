@@ -14,6 +14,8 @@ title: Home [Back to main site](https://helenglover.netlify.app/)
   I believe in <a href="https://www.swyx.io/learn-in-public" style="color: #000;">Learning in Public</a>; the practice of sharing what you learn as you're learning it.
 </p>
 
+<strong>The Intersection</strong>
+
 
 
 <strong>Collections</strong>
@@ -26,6 +28,9 @@ title: Home [Back to main site](https://helenglover.netlify.app/)
     </li>
   {% endfor %}
 </ul>
+
+<strong>Wikis</strong>
+
 
 <strong>TBD</strong>
 
