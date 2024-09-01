@@ -4,11 +4,11 @@ $color-subtext: hsl(0, 0%, 30%);
 $color-border: hsl(0, 0%, 85%);
 $color-box-background: mix($color-primary, white, 4%);
 $border-radius: 4px;
-$font-family: 'Times New Roman', Times, serif;
+$font-family:'Merriweather'; 
 
 body {
   box-sizing: content-box;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Merriweather'; 
   margin: 0 auto;
   line-height: 1.7;
   padding: 4vh 6vw;
