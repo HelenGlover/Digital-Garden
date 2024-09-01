@@ -50,6 +50,6 @@ title: Home [Back to main site](https://helenglover.netlify.app/)
 
 <p>Here are all the notes in this garden, along with their links, visualized as a graph.</p>
 
-<div class="graph-background">
+<div>
   {% include notes_graph.html %}
 </div>
