@@ -18,23 +18,34 @@ layout: default
     </content>
 
     <side style="font-size: 0.9em">
-      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
-      {% if page.backlinks.size > 0 %}
-      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
-      {% for backlink in page.backlinks %}
-        <div class="backlink-box">
-        <a class="internal-link" href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a><br>
-        <div style="font-size: 0.9em">{{ backlink.excerpt | strip_html | truncatewords: 20 }}</div>
-        </div>
-      {% endfor %}
-      </div>
+      {% assign current_labels = page.labels %}
+      {% assign label_count = current_labels.size %}
+      {% if label_count > 0 %}
+        <h3 style="margin-bottom: 1em">Other {{ current_labels[0] }} notes</h3>
+        {% assign related_notes = site.notes | where: "labels", current_labels[0] %}
+        
+        {% if related_notes.size > 0 %}
+          <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+            {% for note in related_notes %}
+              {% unless note.url == page.url %} <!-- Exclude the current note -->
+                <div class="backlink-box">
+                  <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ note.title }}</a><br>
+                  <div style="font-size: 0.9em">{{ note.excerpt | strip_html | truncatewords: 20 }}</div>
+                </div>
+              {% endunless %}
+            {% endfor %}
+          </div>
+        {% else %}
+          <div style="font-size: 0.9em">
+            <p>There are no other {{ current_labels[0] }} notes.</p>
+          </div>
+        {% endif %}
       {% else %}
-      <div style="font-size: 0.9em">
-        <p>
-          There are no notes linking to this note.
-        </p>
-      </div>
+        <h3 style="margin-bottom: 1em">Other notes</h3>
+        <p>No labels available for this note.</p>
       {% endif %}
     </side>
+
+    
   </div>
 </article>
