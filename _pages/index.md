@@ -3,9 +3,8 @@ layout: page
 id: home
 permalink: /
 title: Home
-
-[Back to main site] (https://helenglover.netlify.app/).
 ---
+[Back to main site] (https://helenglover.netlify.app/).
 
 # Welcome! 🌱
 
