@@ -18,7 +18,7 @@ title: Home [Back to main site](https://helenglover.netlify.app/)
 
 <h2>Innovating at the intersection</h2>
 <ul>
-  {% assign intersection_notes = site.notes | where: "labels", "the intersection" %}
+  {% assign intersection_notes = site.notes | where: "labels", "intersection" %}
   {% for note in intersection_notes %}
     <li>
       {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
