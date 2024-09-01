@@ -15,6 +15,17 @@ title: Home [Back to main site](https://helenglover.netlify.app/)
 </p>
 
 
+
+<h2>The Intersection</h2>
+<ul>
+  {% assign intersection_notes = site.notes | where: "labels", "the intersection" %}
+  {% for note in intersection_notes %}
+    <li>
+      {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
 <h2>Collections</h2>
 <ul>
   {% assign collections_notes = site.notes | where: "labels", "collections" %}
@@ -35,16 +46,10 @@ title: Home [Back to main site](https://helenglover.netlify.app/)
   {% endfor %}
 </ul>
 
-<h2>The Intersection</h2>
-<ul>
-  {% assign intersection_notes = site.notes | where: "labels", "the intersection" %}
-  {% for note in intersection_notes %}
-    <li>
-      {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<br><br>
 
 <p>Here are all the notes in this garden, along with their links, visualized as a graph.</p>
 
-{% include notes_graph.html %}
+<div class="graph-background">
+  {% include notes_graph.html %}
+</div>
