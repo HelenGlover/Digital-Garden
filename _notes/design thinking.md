@@ -1,5 +1,5 @@
 ---
-title: Bon appétit!
+title: Design Thinking
 ---
 
 Page titles with accents are supported.

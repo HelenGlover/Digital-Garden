@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Home [Back to main site](https://helenglover.netlify.app/)
 id: home
 permalink: /
+title: Home [Back to main site](https://helenglover.netlify.app/)
 ---
 
 # Welcome! 🌱
 
-<p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 100%; line-height: 2.5;">
+<p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.5;">
   Inspired by the concept of a digital garden, this space offers a more informal and exploratory outlet for my thoughts.
 <br>
-  <b>The goal?</b> To <span style="font-weight: bold;">[[create an evolving, interconnected landscape of information]]</span> — sort of like a real garden. It is not intended to be as well polished as the other pages.
+  <b>The goal?</b> To create an evolving, interconnected landscape of information — sort of like a real garden. It is not intended to be as well polished as the other pages.
   I believe in <a href="https://www.swyx.io/learn-in-public" style="color: #000;">Learning in Public</a>; the practice of sharing what you learn as you're learning it.
 </p>
 
@@ -26,6 +26,11 @@ permalink: /
     </li>
   {% endfor %}
 </ul>
+
+<strong>TBD</strong>
+
+<a href="https://www.figma.com/design/FUtPrKDPHMRDDXn4gcx5eb/Idea-Playground?node-id=0-1&t=1X0tAScanEi5QQfS-1">Idea Playground</a>
+
 
 <!-- <style>
   .wrapper {
