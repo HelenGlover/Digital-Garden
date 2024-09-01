@@ -16,7 +16,7 @@ title: Home [Back to main site](https://helenglover.netlify.app/)
 
 
 
-<h2>The Intersection</h2>
+<h2>Innovating at the intersection</h2>
 <ul>
   {% assign intersection_notes = site.notes | where: "labels", "the intersection" %}
   {% for note in intersection_notes %}
@@ -50,6 +50,6 @@ title: Home [Back to main site](https://helenglover.netlify.app/)
 
 <p>Here are all the notes in this garden, along with their links, visualized as a graph.</p>
 
-<div>
+<div class="graph-background">
   {% include notes_graph.html %}
 </div>
