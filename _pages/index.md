@@ -14,31 +14,81 @@ title: Home [Back to main site](https://helenglover.netlify.app/)
   I believe in <a href="https://www.swyx.io/learn-in-public" style="color: #000;">Learning in Public</a>; the practice of sharing what you learn as you're learning it.
 </p>
 
-<strong>The Intersection</strong>
 
+---
+layout: default
+---
 
+<article>
+  <div>
+    <h1>{{ page.title }}</h1>
+    <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{% if page.type != 'pages' %}
+      Last updated on {{ page.last_modified_at | date: "%B %-d, %Y" }}
+      {% endif %}
+    </time>
+  </div>
 
-<strong>Collections</strong>
+  <div id="notes-entry-container">
+    <content>
+      {{ content }}
+      <p>This line appears after every note.</p>
+    </content>
 
+    <side style="font-size: 0.9em">
+      <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+      {% if page.backlinks.size > 0 %}
+      <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+      {% for backlink in page.backlinks %}
+        <div class="backlink-box">
+        <a class="internal-link" href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ backlink.title }}</a><br>
+        <div style="font-size: 0.9em">{{ backlink.excerpt | strip_html | truncatewords: 20 }}</div>
+        </div>
+      {% endfor %}
+      </div>
+      {% else %}
+      <div style="font-size: 0.9em">
+        <p>
+          There are no notes linking to this note.
+        </p>
+      </div>
+      {% endif %}
+    </side>
+  </div>
+</article>
+
+<hr>
+
+<h2>Collections</h2>
 <ul>
-  {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
-  {% for note in recent_notes limit: 5 %}
+  {% assign collections_notes = site.notes | where: "labels", "collections" %}
+  {% for note in collections_notes %}
     <li>
       {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
     </li>
   {% endfor %}
 </ul>
 
-<strong>Wikis</strong>
+<h2>Wiki</h2>
+<ul>
+  {% assign wiki_notes = site.notes | where: "labels", "wiki" %}
+  {% for note in wiki_notes %}
+    <li>
+      {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
 
+<h2>The Intersection</h2>
+<ul>
+  {% assign intersection_notes = site.notes | where: "labels", "the intersection" %}
+  {% for note in intersection_notes %}
+    <li>
+      {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
 
-<strong>TBD</strong>
+<p>Here are all the notes in this garden, along with their links, visualized as a graph.</p>
 
-<a href="https://www.figma.com/design/FUtPrKDPHMRDDXn4gcx5eb/Idea-Playground?node-id=0-1&t=1X0tAScanEi5QQfS-1">Idea Playground</a>
+{% include notes_graph.html %}
 
-
-<!-- <style>
-  .wrapper {
-    max-width: 46em;
-  }
-</style> -->
