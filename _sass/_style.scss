@@ -80,10 +80,13 @@ a {
   text-decoration: none;
   border-bottom: 1px solid $color-border;
   color: $color-primary;
+  background: #fffaf1; // Set the background to yellow highlight
+
   &:hover {
     color: black !important;
-    background: #fffaf1;
+    background: #fffaf1; // Maintain the yellow highlight on hover
   }
+
   &:after {
     position: relative;
     top: -0.5em;
@@ -91,6 +94,7 @@ a {
     content: "↗";
     color: #aaaaaa;
   }
+
   &.internal-link:after,
   &.footnote:after,
   &.reversefootnote:after {
