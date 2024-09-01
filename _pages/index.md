@@ -7,7 +7,7 @@ title: Home [Back to main site](https://helenglover.netlify.app/)
 
 # Welcome! 🌱
 
-<p style="padding: 2em 2em; background: #76d7c4; border-radius: 4px; color: #000; width: 90%; line-height: 2.5;">
+<p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.5;">
   Inspired by the concept of a digital garden, this space offers a more informal and exploratory outlet for my thoughts.
 <br>
   <b>The goal?</b> To create an evolving, interconnected landscape of information — sort of like a real garden. It is not intended to be as well polished as the other pages.
