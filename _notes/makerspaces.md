@@ -1,7 +1,7 @@
 ---
 title: Makerspaces
 labels: 
-  - wiki
+  - collections
 ---
 
 Under construction!
