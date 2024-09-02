@@ -21,7 +21,7 @@ title: Home
 <h2>Innovating</h2>
 <p> <i>Innovating at the intersection of sustainability and tech for design</i>
 <ul>
-  {% assign intersection_notes = site.notes | where: "labels", "intersection" %}
+  {% assign intersection_notes = site.notes | where: "labels", "innovating" %}
   {% for note in intersection_notes %}
     <li>
       {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
