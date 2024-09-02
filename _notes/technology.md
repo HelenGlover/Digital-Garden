@@ -1,7 +1,7 @@
 ---
 title: Technology
 labels: 
-  - intersection
+  - 
 ---
 
 <h2>Chew on</h2>

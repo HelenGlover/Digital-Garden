@@ -1,7 +1,7 @@
 ---
 title: Environment and Sustainability
 labels: 
-  - intersection
+  - innovation
 ---
 
 <h2>Holistic sustainability</h2>

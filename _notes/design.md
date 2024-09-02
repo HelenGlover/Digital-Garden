@@ -1,7 +1,7 @@
 ---
 title: Design 
 labels: 
-  - intersection
+  - innovation
 ---
 
 <h2>Systemic design</h2>
