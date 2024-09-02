@@ -1,7 +1,7 @@
 ---
 title: Themes
 labels: 
-  - wiki
+  - collections
 ---
 
 Themes and concepts referenced throughout this digital garden

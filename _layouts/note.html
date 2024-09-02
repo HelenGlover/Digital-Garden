@@ -29,8 +29,7 @@ layout: default
             {% for note in related_notes %}
               {% unless note.url == page.url %} <!-- Exclude the current note -->
                 <div class="backlink-box">
-                  <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ note.title }}</a><br>
-                  <div style="font-size: 0.9em">{{ note.excerpt | strip_html | truncatewords: 20 }}</div>
+                  <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ note.title }}</a>
                 </div>
               {% endunless %}
             {% endfor %}
@@ -45,6 +44,7 @@ layout: default
         <p>No labels available for this note.</p>
       {% endif %}
     </side>
+    
 
     
   </div>
