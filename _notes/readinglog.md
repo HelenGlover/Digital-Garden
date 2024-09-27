@@ -12,8 +12,16 @@ I have been reading. I highly recommend all of these books, or else I probably w
 I do not include links to books simply as I do not favor any retail store - but do consider libraries and mom and pop bookshops. </p>
 
 <h3>September</h3>
-<p><b>The 7-Minute Productivity Solution</b> John Brandon</p>
-<p><b>Takeways:</b> Productivity is the pursuit of the external.</p>
+
+<b>The 7-Minute Productivity Solution</b> John Brandon
+
+        Takeways: Productivity is the pursuit of the external.Takeways: Productivity is the pursuit of the external.Takeways: Productivity is the pursuit of the external.
+
+
+<p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.5;">
+  Takeways: Productivity is the pursuit of the external.Takeways: Productivity is the pursuit of the external.Takeways: Productivity is the pursuit of the external.</p>
+
+
 
 <p><b>Quiet: The Power of Introverts in a World That Can't Stop Talking</b> Susan Cain</p>
 
