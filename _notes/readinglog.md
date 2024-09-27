@@ -11,16 +11,12 @@ In college, I stop reading as I was already doing that with reading assignments,
 I have been reading. I highly recommend all of these books, or else I probably won't have finished it. Starred books are extremely interesting.
 I do not include links to books simply as I do not favor any retail store - but do consider libraries and mom and pop bookshops. </p>
 
-<h3>September</h3>
+<h3>September 2024</h3>
 
-<b>The 7-Minute Productivity Solution</b> John Brandon
-
-        Takeways: Productivity is the pursuit of the external.Takeways: Productivity is the pursuit of the external.Takeways: Productivity is the pursuit of the external.
-
+<b>The 7-Minute Productivity Solution</b>by John Brandon
 
 <p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.5;">
-  Takeways: Productivity is the pursuit of the external.Takeways: Productivity is the pursuit of the external.Takeways: Productivity is the pursuit of the external.</p>
-
+  Takeways: Productivity is the pursuit of the external. There is a different between morning routine, which allows you to capture hope moments versus planning your day</p>
 
 
 <p><b>Quiet: The Power of Introverts in a World That Can't Stop Talking</b> Susan Cain</p>
