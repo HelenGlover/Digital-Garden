@@ -1,7 +1,7 @@
 ---
 title: Design 
 labels: 
-  - innovation
+  - innovating
 ---
 
 <h2>Systemic design</h2>

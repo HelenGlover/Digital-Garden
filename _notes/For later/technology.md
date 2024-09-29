@@ -1,7 +1,7 @@
 ---
 title: Technology
 labels: 
-  - 
+  - innovating
 ---
 
 <h2>Chew on</h2>
