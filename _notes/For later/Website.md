@@ -1,7 +1,7 @@
 ---
 title: Building a website
 labels: 
-  - wiki
+  - 
 ---
 
 <h2>Fun thing about a website</h2>

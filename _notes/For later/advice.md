@@ -1,7 +1,7 @@
 ---
 title: Advice
 labels: 
-  - wiki
+  
 ---
 
 

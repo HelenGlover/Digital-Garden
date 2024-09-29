@@ -1,7 +1,7 @@
 ---
 title: Makerspaces
 labels: 
-  - collections
+  
 ---
 
 Under construction!

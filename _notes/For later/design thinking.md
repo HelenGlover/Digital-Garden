@@ -1,7 +1,7 @@
 ---
 title: Design Thinking
 labels: 
-  - collections
+ 
 ---
 
 
