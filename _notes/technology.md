@@ -4,7 +4,7 @@ labels:
   - innovating
 ---
 
-<h2>Chew on</h2>
+<h3>The Dangers of Tech</h3>
 
 
   <a href="https://par.nsf.gov/servlets/purl/10213020">I Can’t Breathe: Reflections from Black Women in CSCW and HCI</a>:
@@ -23,7 +23,7 @@ Deceptive patterns (also known as “dark patterns”) are tricks used in websit
 Deceptive patterns (also known as “dark patterns”) are tricks used in websites and apps that make you do things that you didn't mean to </p> -->
 
 
-<h2>Dark Patterns</h2>
+<h3>Dark Patterns</h3>
 <p>
 Deceptive patterns (also known as “dark patterns”) are tricks used in websites and apps that make you do things that you didn't mean to </p>
 

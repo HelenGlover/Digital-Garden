@@ -1,7 +1,7 @@
 ---
 title: Environment and Sustainability
 labels: 
-  - innovation
+  - innovating
 ---
 
 <h2>Holistic sustainability</h2>
