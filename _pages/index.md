@@ -53,8 +53,8 @@ title: Home
 
 <br><br>
 
-<p>Visualize how all the pages connect (they are hyperlinked) in this graph.</p>
+<!-- <p>Visualize how all the pages connect (they are hyperlinked) in this graph.</p>
 
 <div class="graph-background">
   {% include notes_graph.html %}
-</div>
+</div> -->
