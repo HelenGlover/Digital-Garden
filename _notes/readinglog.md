@@ -12,6 +12,7 @@ While that’s no longer my goal, here are some books I’ve been enjoying.
 There are no links as I do not promote any particular retailer, but I encourage supporting libraries and bookstores.
 
 <h3>September 2024</h3>
+<br>
 
 <b>The 7-Minute Productivity Solution</b>by John Brandon
 
@@ -22,8 +23,8 @@ There are no links as I do not promote any particular retailer, but I encourage 
 
 <p><b>Quiet: The Power of Introverts in a World That Can't Stop Talking</b> Susan Cain</p>
 
-<p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.5;">
-  Takeways: Productivity is the pursuit of the external. There is a different between morning routine, which allows you to capture hope moments versus planning your day</p>
+<!-- <p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.5;">
+  Takeways: Productivity is the pursuit of the external. There is a different between morning routine, which allows you to capture hope moments versus planning your day</p> -->
 
 <p><b>The Art of Visual Notetaking</b> Emily Mills</p>
 
