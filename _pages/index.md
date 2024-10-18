@@ -39,8 +39,19 @@ title: Home
   {% endfor %}
 </ul>
 
-<h2>Wiki</h2>
-<i>Hypertext thinking of half-baked thoughts</i>
+<h2>From the desk</h2>
+<p> <i>Ideas, lessons, and processes</i>
+<ul>
+  {% assign collections_notes = site.notes | where: "labels", "collections" %}
+  {% for note in collections_notes %}
+    <li>
+      {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+<!-- <h2>Wiki</h2>
+<i>Hypertext thinking of half-baked thoughts. Coming soon!</i>
 <ul>
   {% assign wiki_notes = site.notes | where: "labels", "wiki" %}
   {% for note in wiki_notes %}
@@ -48,7 +59,7 @@ title: Home
       {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
     </li>
   {% endfor %}
-</ul>
+</ul> -->
 
 <br><br>
 

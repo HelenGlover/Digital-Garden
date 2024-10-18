@@ -1,7 +1,6 @@
 ---
 title: Entrepreneurship
-labels: 
-  - wiki
+labels: collections
 ---
 
 <h2>Sources I like </h2>
