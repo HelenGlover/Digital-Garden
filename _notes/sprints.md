@@ -21,4 +21,4 @@ At the end of each week, I do a retrospective, another scrum methodology. The go
 And of course, since I have other things, I am working on - supporting a project for a civic tech nonprofit in D.C., doing research on youth digital rights with the goal of getting it published one day (and some other things), they also get added to my sprint.
 
 
-*they are amazing and I encourage everyone who is interested in national security to check then out.
+*they are amazing and I encourage everyone who is interested in national security to check then out..
