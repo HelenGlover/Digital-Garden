@@ -10,7 +10,7 @@ With ambitious, long-term goals, it can get hard to focus on the short-term, som
 
 Sprints are short, periods of time to focus on a few predetermined things. It is considered the heartbeat of scrum, a project management framework for enhancing team collaboration and delivering on goals. I first learned about sprints in one of my research projects and have been loving it ever since.
 
-While scrum is predominantly used in software development, it can be used in other areas – for me, my personal life. Scrum is best done with teamwork (check out my plastic project to see sprints applied to actual teamwork), but to adjust it to my personal goals, t looks something like this:
+While scrum is predominantly used in software development, it can be used in other areas – for me, my personal life. Scrum is best done with teamwork (check out my plastic project to see sprints applied to actual teamwork), but to adjust it to my personal goals, it looks something like this:
 
 The nonprofit Girl Security* generously gave me funding to take the Google Cybersecurity Professional Certificate. I am deeply interested in cybersecurity in relation to user privacy and social engineering, and this certificate will allow me to gain the foundations needed to eventually consider taking Security+.
 
