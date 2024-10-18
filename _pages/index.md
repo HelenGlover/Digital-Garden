@@ -42,8 +42,8 @@ title: Home
 <h2>From the desk</h2>
 <p> <i>Ideas, lessons, and processes</i>
 <ul>
-  {% assign collections_notes = site.notes | where: "labels", "from-the-desk" %}
-  {% for note in collections_notes %}
+  {% assign from-the-desk_notes = site.notes | where: "labels", "from-the-desk" %}
+  {% for note in from-the-desk_notes %}
     <li>
       {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
     </li>
