@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Technology
 labels: 
   - What is
@@ -7,4 +7,4 @@ labels:
 
 Technology is: 
 
-A psychological pacifier
+A psychological pacifier -->
