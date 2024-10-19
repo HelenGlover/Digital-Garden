@@ -1,6 +1,7 @@
 ---
 title: Entrepreneurship
-labels: collections
+labels: 
+    - collections
 ---
 
 <h2>Sources I like </h2>

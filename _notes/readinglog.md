@@ -10,20 +10,20 @@ While my goals have changed, here are some books I’ve been enjoying. Will upda
 
 <h3>October 2024</h3> 
 
- <b>
+  <b>
     <a href="https://cleoqian.com/Let-s-Go-Let-s-Go-Let-s-Go" style="text-decoration: none; color: #000;">
         Let's Go Let's Go Let's Go
     </a>
-</b> by Cleo Qian <br><br>
+  </b> by Cleo Qian <br><br>
 
- <b>
+  <b>
     <a href="https://www.nicholascarr.com/?page_id=16" style="text-decoration: none; color: #000;">
         The Shallows: What the Internet Is Doing to Our Brains
     </a>
-</b> by Nicholas Carr <br><br>
+  </b> by Nicholas Carr <br><br>
 
-<h3 onclick="toggleDropdown('septemberDropdown')" style="cursor: pointer;">
-    September 2024 <span style="font-size: 0.8em;">&#9660;</span>
+<h3 onclick="toggleDropdown('septemberDropdown', this)" style="cursor: pointer;">
+    September 2024 <span style="font-size: 0.8em;" class="arrow">&#9654;</span>
 </h3>
 <div id="septemberDropdown" style="display: none;">
 
@@ -50,8 +50,12 @@ While my goals have changed, here are some books I’ve been enjoying. Will upda
 </div>
 
 <script>
-    function toggleDropdown(id) {
+    function toggleDropdown(id, element) {
         var dropdown = document.getElementById(id);
         dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+        
+        // Toggle arrow direction
+        var arrow = element.querySelector('.arrow');
+        arrow.innerHTML = dropdown.style.display === 'block' ? '&#9660;' : '&#9654;';
     }
 </script>
