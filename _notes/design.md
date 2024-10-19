@@ -11,7 +11,6 @@ labels:
 <br><br>
   The <a href="https://www.designcouncil.org.uk/our-resources/systemic-design-framework/">Design Council</a> describes it as:
 
-
   >"the acknowledgement of complexity and interconnectedness throughout the design thinking and doing process. It is both a mindset and a methodology - considering the structures and beliefs that underpin a challenge." 
 
 
