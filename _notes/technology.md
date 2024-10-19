@@ -25,9 +25,7 @@ Deceptive patterns (also known as “dark patterns”) are tricks used in websit
 
 <h3>Dark Patterns</h3>
 <p>
-Deceptive patterns (also known as “dark patterns”) are tricks used in websites and apps that make you do things that you didn't mean to </p>
-
-  <a href="https://demox.tw/media/component/pdf/The_Dark_Patterns_Side_of_UX_Design_Zi6OmZR.pdf"> The Dark (Patterns) Side of UX Design</a>:
+Deceptive patterns (also known as “dark patterns”) are tricks used in websites and apps that make you do things that you didn't mean to. As the <a href="https://demox.tw/media/component/pdf/The_Dark_Patterns_Side_of_UX_Design_Zi6OmZR.pdf">Dark (Patterns) Side of UX Design</a> describes it: 
 
   >"Design is inherently a persuasive act, where the
     designer creates intentional change in the world that either directly or indirectly induces behavioral or social change." 
