@@ -6,7 +6,7 @@ labels:
 
 <p>
 In my free time, I am working on several projects. They are organized into four categories based on my interests: 
-
+<br>
 <h3>Research:</h3>
 
 <p>
@@ -15,15 +15,17 @@ My research explores how people build communities of belonging and representatio
 <b>Main Goal:</b> Have a research paper completed by the end of the year. 
 <br>
 <b>Mini Goals:</b> Interview with streamers and cohensively talk about my research interests.
-
 </p>
-
+<br>
 <h3>Cybersecurity</h3>
-<p>As part of my affiliation with <a href="https://girlsecurity.org/">Girl Security,</a> they generously funded my Google Cybersecurity Professional Certificate. I am deeply interested in cybersecurity, user privacy, and social engineering, and this certificate will allow me to gain the foundations needed to consider taking Security+ eventually. </p> <br>
+
+<p>As part of my affiliation with <a href="https://girlsecurity.org/">Girl Security,</a> they generously funded my Google Cybersecurity Professional Certificate. I am deeply interested in cybersecurity, user privacy, and social engineering, and this certificate will allow me to gain the foundations needed to consider taking Security+ eventually. </p>
 
 <b>Main Goal:</b> To finish the certificate by the end of the year. (By Google standards, the certificate is intended to take six months). Consider plan to take CompTIA Security+.
 <br>
 <b>Mini Goals:</b> Finish a set amount of modules per week. 
+</p>
+<br>
 
 <h3>Civic Tech </h3>
 
@@ -33,12 +35,12 @@ My research explores how people build communities of belonging and representatio
 <br>
 <b>Mini Goals:</b> Strengthen my web development and data wrangling skills. 
 </p>
-
+<br>
 
 <h3>Design</h3>
 
+<p>
 Explore my interests in product design, engineering, and fabrication through collaboration. Explore the potential of sketchnotes as a visual communication tool, focusing on how to revitalize physical communication in our digital age.
-<br>
 
 <b>Main Goal:</b> Collaborate with <a href="https://www.hacdc.org/">HacDC</a> on an open-source project centered around sustainability, specifically by recycling newspapers and magazines for community use.
 <br>
