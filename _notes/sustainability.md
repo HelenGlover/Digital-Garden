@@ -35,6 +35,6 @@ labels:
     <li>Pope Francis's encyclical on caring for planet Earth, <a href="https://laudatosimovement.org/">Laudato Si’</a>, has become a movement within Christianity.</li>
     <li>Many Indigenous spiritual traditions emphasize a deep connection to the land, viewing nature as sacred. This relationship is represented through the traditional ecological knowledge of the Anishinaabe people in the Great Lakes region.</li>
 </ul> 
-<br>  <br>
+<br> 
  As we navigate the challenges of our modern world, drawing from these diverse spiritual teachings can inspire collective action towards a sustainable future.
  </p>

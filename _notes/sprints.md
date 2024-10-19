@@ -22,4 +22,9 @@ By Google standards, the certificate is intended to take six months, but I plan 
 
 For the weeks of October 7th - 11th, my sprint goal for this project is to finish three modules.
 
-On Sunday, at the end of each week, I do a <b>retrospective</b>, another scrum methodology. The goal of a retrospective is to evaluate what went well during the sprint, what problems I encountered, and how those problems were solved. Even if I did not accomplish everything I put on my agenda that week, I aim to feel comfortable with my definition of done. Tasks that were not completed get reassessed and reprioritized for their alignment against everything else in the <b>product backlog</b>, a long-term list of tasks I need to do to reach my long-term goal.
+On Sunday, at the end of each week, I do a <b>retrospective</b>, another scrum methodology. The goal of a retrospective is to evaluate what went well during the sprint, what problems I encountered, and how those problems were solved. Even if I did not accomplish everything I put on my agenda that week, I aim to feel comfortable with my definition of done. 
+
+<img src="assets/retrospective.png" alt="Image of Repo" style="max-width: 100%; height: auto;">
+
+
+Tasks that were not completed get reassessed and reprioritized for their alignment against everything else in the <b>product backlog</b>, a long-term list of tasks I need to do to reach my long-term goal.
