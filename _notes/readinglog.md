@@ -8,8 +8,8 @@ labels:
 
 While my goals have changed, here are some books I’ve been enjoying. Will update with each month. <br><br>
 
-<h3>October 2024</h3> 
-
+<h3><span style="background-color: #f5f7ff; padding: 0.2em;">October 2024</span></h3> 
+<br>
   <b>
     <a href="https://cleoqian.com/Let-s-Go-Let-s-Go-Let-s-Go" style="text-decoration: none; color: #000;">
         Let's Go Let's Go Let's Go
@@ -23,7 +23,7 @@ While my goals have changed, here are some books I’ve been enjoying. Will upda
   </b> by Nicholas Carr <br><br>
 
 <h3 onclick="toggleDropdown('septemberDropdown', this)" style="cursor: pointer;">
-    September 2024 <span style="font-size: 0.8em;" class="arrow">&#9654;</span>
+    <span style="background-color: #f5f7ff; padding: 0.2em;">September 2024</span> <span style="font-size: 0.8em;" class="arrow">&#9654;</span>
 </h3>
 <div id="septemberDropdown" style="display: none;">
 
