@@ -5,28 +5,37 @@ labels:
 ---
 
 
-I am extremely cautious about my online presence. With constant news about how 
+<!-- With constant news about how 
 <a href="https://www.nytimes.com/2015/02/15/magazine/how-one-stupid-tweet-ruined-justine-saccos-life.htm">online content can resurface and ruin you years later</a> 
 to the 
-<a href="https://cjil.uchicago.edu/online-archive/family-influencing-best-interests-child">showcasing of child stars on social media</a>, 
-it’s unsettling to think about how our entire selves are laid bare online. Every time we go online, we are bombarded with demands for our personal data—through cookies, subscription forms that ask for every detail imaginable, and websites requesting our location. This has unfortunately become the norm, and we click "accept cookies" or "allow location" without a second thought.
+<a href="https://cjil.uchicago.edu/online-archive/family-influencing-best-interests-child">showcasing of child stars on social media</a>, -->
 
+Every time we go online, we are bombarded with requests for our personal data—through cookies, subscription forms that ask for every detail imaginable, and websites requesting our location. This has unfortunately become the norm, leading us to click "accept cookies" or "allow location" without a second thought. The constant demand for our data raises important questions about how this information is being used and what its impact might be in the years to come.
 
 <br>
 
-This means I love resources that help you protect your identity. Here are some of my favorites:
+To regain control over your online data, here are some of my favorite resources:
 
+<h3>Take Action</h3>
 <ul>
     <li> 
         <a href="https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List?tab=readme-ov-file">The Big-Ass Data Broker Opt-Out List</a>: A comprehensive curated list of data brokers and instructions for opting out of their data collection practices.
     </li>
-    <br>
+    <li> 
+        <a href="Privacy">Proton Mail</a>: An end-to-end encrypted email service that, unlike others, does not track or sell your data.
+    </li>
+    <li> 
+        <a href="https://privacybadger.org/">Privacy Badger</a>: A browser extension from the Electronic Frontier Foundation to block invisible trackers.
+    </li>
+</ul>
+<br>
+
+<h3>Education</h3>
+    <ul>
     <li> 
         <a href="https://www.deceptive.design/">Deceptive Patterns</a>: Awareness about dark patterns or tricks used in websites and apps that make you do things that you didn't mean to.
     </li>
+    </ul>
     <br>
-    <li> 
-        <a href="https://proton.me/mail">Proton Mail</a>: An end-to-end encrypted email service that, unlike others, does not track or sell your data.
-    </li>
 </ul>
 

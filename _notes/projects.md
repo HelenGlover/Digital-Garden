@@ -41,7 +41,7 @@ My research explores how people build communities of belonging and representatio
 <h3>Design</h3>
 
 <p>
-Explore my interests in product design, engineering, and fabrication through collaboration. Explore the potential of sketchnotes as a visual communication tool, focusing on how to revitalize physical communication in our digital age.
+Explore my interests in product design, engineering, and fabrication through collaboration. Explore the potential of sketchnotes as a visual communication tool, focusing on how to revitalize physical communication in our digital age.<br>
 
 <b>Main Goal:</b> Collaborate with <a href="https://www.hacdc.org/">HacDC</a> on an open-source project centered around sustainability, specifically by recycling newspapers and magazines for community use.
 <br>
