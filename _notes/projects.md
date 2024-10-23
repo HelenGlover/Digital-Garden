@@ -20,7 +20,7 @@ My research explores how people build communities of belonging and representatio
 <br>
 <h3>Cybersecurity</h3>
 
-<p>As part of my affiliation with <a href="https://girlsecurity.org/">Girl Security,</a> they generously funded my Google Cybersecurity Professional Certificate. I am deeply interested in cybersecurity, user privacy, and social engineering, and this certificate will allow me to gain the foundations needed to consider taking Security+ eventually. </p>
+<p>As part of my affiliation with <a href="https://girlsecurity.org/">Girl Security,</a> they generously funded my Google Cybersecurity Professional Certificate. I am deeply interested in cybersecurity, user privacy, and social engineering, and this certificate will allow me to gain the foundations needed if I end up wanting to take Security+. </p>
 
 <b>Main Goal:</b> To finish the certificate by the end of the year. (By Google standards, the certificate is intended to take six months). Consider plan to take CompTIA Security+.
 <br>

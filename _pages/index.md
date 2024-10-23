@@ -18,7 +18,7 @@ title: Home
 
 
 <h2>Innovating</h2>
-<p> <i>Innovating at the intersection of sustainability and tech for design</i>
+<p> <i>At the intersection of sustainability and tech for design</i>
 <ul>
   {% assign intersection_notes = site.notes | where: "labels", "innovating" %}
   {% for note in intersection_notes %}
@@ -29,7 +29,7 @@ title: Home
 </ul>
 
 <h2>Collections</h2>
-<p> <i>Cohesive collection of ideas</i>
+<p> <i>Collection of ideas and resources</i>
 <ul>
   {% assign collections_notes = site.notes | where: "labels", "collections" %}
   {% for note in collections_notes %}

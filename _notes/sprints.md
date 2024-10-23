@@ -6,12 +6,13 @@ labels:
 
 With ambitious, long-term goals, it can be hard to focus on the shorter, sometimes monotonous tasks essential to achieving that long-term vision. To stay focused on the vision, I use sprints.
 
-<b>Sprints</b> are fixed lengths of time, typically ranging from one to four weeks, during which a team works to complete a predetermined set of tasks or user stories. This approach allows for incremental progress, making large projects more manageable. They are considered the heartbeat of <b>scrum</b>, a project management framework for enhancing team collaboration and achieving goals.
+<b><span style="background-color: #f5f7ff;">Sprints</span></b> are fixed lengths of time, typically ranging from one to four weeks, during which a team works to complete a predetermined set of tasks or user stories. This approach allows for incremental progress, making large projects more manageable. They are considered the heartbeat of <b><span style="background-color: #f5f7ff;">scrum</span></b>, a project management framework for enhancing team collaboration and achieving goals.
 
 While scrum is predominantly used in software development, its principles of productivity and time management are highly applicable in various contexts. I first implemented scrum during a research project, and I now apply it in my personal life to enhance my productivity.
-<hr>
 
 It looks something that this: 
+
+<hr>
 
 Each sprint is a week.
 
