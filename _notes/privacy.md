@@ -10,7 +10,7 @@ labels:
 to the 
 <a href="https://cjil.uchicago.edu/online-archive/family-influencing-best-interests-child">showcasing of child stars on social media</a>, -->
 
-<p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.5;">
+<p style="padding: 1.5em 1.5em; background: #f5f7ff; border-radius: 10px; color: #000; width: 90%; line-height: 2;">
 Every time we go online, we are bombarded with requests for our personal data—through cookies, subscription forms that ask for every detail imaginable, and websites requesting our location. This has unfortunately become the norm, leading us to click "accept cookies" or "allow location" without a second thought. The constant demand for our data raises important questions about how this information is being used and what its impact might be in the years to come. <br><br>
 To regain control over your online data, here are some of my favorite resources:
 </p>
