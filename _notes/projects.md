@@ -7,6 +7,7 @@ labels:
 <p>
 In my free time, I am working on several projects. They are organized into four categories based on my interests: 
 <br>
+
 <h3>Research:</h3>
 
 <p>

@@ -6,29 +6,34 @@ labels:
 
 With ambitious, long-term goals, it can be hard to focus on the shorter, sometimes monotonous tasks essential to achieving that long-term vision. To stay focused on the vision, I use sprints.
 
-<b>Sprints</b> are fixed lengths of time to complete an allocated, predetermined amount of work. They are considered the heartbeat of <b>scrum</b>, a project management framework for enhancing team collaboration and achieving goals. I first used this framework in one of my research projects, and I now use it to increase my productivity and reflect on my progress, ensuring that the tasks I am doing will help me reach my goal. 
+<b>Sprints</b> are fixed lengths of time, typically ranging from one to four weeks, during which a team works to complete a predetermined set of tasks or user stories. This approach allows for incremental progress, making large projects more manageable. They are considered the heartbeat of <b>scrum</b>, a project management framework for enhancing team collaboration and achieving goals.
 
-While scrum is predominantly used in software development and similar industries with intense teamwork, it can be applied to other areas. For me, this means my personal life. It looks something like this.
+While scrum is predominantly used in software development, its principles of productivity and time management are highly applicable in various contexts. I first implemented scrum during a research project, and I now apply it in my personal life to enhance my productivity.
+<hr>
 
-Sprints can be any length of time. If the project is nine months, each sprint could be two weeks or 18 sprints. In my personal life, each sprint is a week.
+It looks something that this: 
 
-At the beginning of each sprint (last Sunday), I decide one primary goal for each of my four "personal projects." Since I have four "projects," I have four goals. I then compile a list of mini-tasks for each goal to ensure progress.
+Each sprint is a week.
 
-Throughout the week, from Monday to the following Sunday, I refrain from adding or removing any tasks (unless I identify something that won't help me achieve my long term goal).
+At the beginning of each sprint (Sunday), I create one primary goal for each of my four "personal projects." Four projects, four goals. I then compile a list of mini-tasks for each goal to ensure progress.
+
+Throughout the week, from Monday to the following Sunday, I refrain from adding or removing any tasks (unless I identify something that won't actually help me). This strategy prevents distractions and ensures that I stay focused on my original objectives.
 
 *I use Notion for my sprint board. Each day has three categories: "Not Started," "In Progress," and "Completed." All tasks begin in "Not Started," and by the end of the day, they should be in "Completed.*
 
 <img src="assets/sprint1.png" alt="Image of Sprint" style="max-width: 100%; height: auto; border: 5px solid #f5f7ff;">
 
-On Sunday, at the end of each week, I do a <b>retrospective</b>, another scrum methodology. The goal of a retrospective is to evaluate what went well during the sprint, what problems I encountered, and how those problems were solved. Even if I did not accomplish everything I put on my agenda that week, I aim to feel comfortable with my definition of done. 
+At the end of a sprint, scrum teams conduct a <b>sprint review</b> to assess their progress and a <b>retrospective</b> that focuses on improving team dynamics by addressing the challenges encountered and how they were resolved. I have adapted these processes into my own individualized retrospective, where each Sunday, I evaluate both my weekly accomplishments and rogress.
+
+For me, it's important to feel comfortable with my definition of "done," even if I did not accomplish all my tasks.
 
 *This is an example of what the retrospective looks like. Lots of space for reflection.*
 
 <img src="assets/retrospective.png" alt="Image of Repo" style="max-width: 100%; height: auto; border: 5px solid #f5f7ff;">
 
+Tasks that are not completed are reassessed and reprioritized against everything else in the <b>product backlog</b>, a list of all the tasks I need to do to reach my goals.
 
-Tasks that were not completed get reassessed and reprioritized for their alignment against everything else in the <b>product backlog</b>, a long-term list of tasks I need to do to reach my long-term goal.
-
+As I continue to refine my sprints, they provide a structured pathway to success, making ambitious goals attainable.
 
 <!-- Here's is a example: As part of my affiliation with Girl Security,* they generously funded my Google Cybersecurity Professional Certificate. I am deeply interested in cybersecurity, user privacy, and social engineering, and this certificate will allow me to gain the foundations needed to consider taking Security+ eventually.
 
