@@ -4,9 +4,11 @@ labels:
   - collections
 ---
 
-<p> When I was younger, I dreamed of being a librarian so I could read all day. <br><br>
-
-While my goals have changed, here are some books I’ve been enjoying. Will update with each month. <br><br>
+<p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.5;">
+When I was younger, I dreamed of being a librarian so I could read all day.<br><br>
+While my goals have changed, here are some books I’ve been enjoying. Will update with each month.
+</p>
+<br>
 
 <h3><span style="background-color: #f5f7ff; padding: 0.2em;">October 2024</span></h3> 
 <br>

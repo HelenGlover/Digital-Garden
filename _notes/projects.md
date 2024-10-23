@@ -4,7 +4,7 @@ labels:
   - from-the-desk
 ---
 
-<p>
+<p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.5;">
 In my free time, I am working on several projects. They are organized into four categories based on my interests: 
 <br>
 
