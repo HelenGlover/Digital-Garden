@@ -9,7 +9,6 @@ labels:
 Two groups ignited my passion for design: Smith College's <a href="https://www.smith.edu/academics/design-thinking">Design Thinking Initiative</a> and Oxfam's <a href="https://www.oxfamamerica.org/explore/agile/">aGILE</a>. 
 
   The value of a liberal arts education is the encouragement of interdisciplinary exploration. At the Design Thinking Initiative, I learned how to engage with design critically and make in service of broader social issues. Design is about inviting stakeholders into your design process from the beginning.
-  <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
 
   During my time with Oxfam, I learned about systems design, an approach to being more systematic in how we work with others to create change. The <a href="https://www.designcouncil.org.uk/our-resources/systemic-design-framework/">Design Council</a> describes systems change as follows: 
   
@@ -33,3 +32,6 @@ Everyone is a maker. Unburdened by the need for specialized technologies or term
 I love the collaborative nature of maker spaces, where people can come together to innovate, design, and learn. With evolving approaches to education, schools should build more maker spaces to give students hands-on learning opportunities, allowing them to apply theoretical concepts to real-world projects.<br>
 
   > <a href="https://www.tandfonline.com/doi/full/10.1080/00220671.2021.1914937">Makerspaces for rethinking teaching and learning in K–12 education</a> by Professor Louis S. Nadelson is an excellent paper about the impact of maker spaces in influencing students’ learning and development.<br>
+
+  <img src="extruder.jpg" alt="pic of plastic upcycling machine">
+  <caption>Creating a plastic upcycling machine in the Center for Design and Fabrication</a>
