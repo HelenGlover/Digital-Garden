@@ -4,7 +4,7 @@ labels:
   - innovating
 ---
 
-<h3>Systemic design</h3>
+<h3>Systemic Design</h3>
 
 Two groups ignited my passion for design: the Design Thinking Initiative and Oxfam.
 
@@ -21,13 +21,14 @@ Two groups ignited my passion for design: the Design Thinking Initiative and Oxf
 
 When we create new technologies, systems, structures, or anything else, we must prioritize design justice - ensuring that the voices of those most impacted by the work are central to the conversation. We risk exacerbating existing structural inequalities if we do not consider these individuals.
 
-  > The Design Justice Network is a fantastic community for people who use design to support care, liberation, joy, and deep sustainability.
+  > The <a href="https://designjustice.org/">Design Justice Network</a> is a fantastic community for people who use design to support care, liberation, joy, and deep sustainability.
+
   > Dr. Sasha Costanza-Chock is an inspiring individual in this work, with their book <a href="https://designjustice.mitpress.mit.edu/">Design Justice: Community-Led Practices to Build the Worlds We Need</a>.
 
-<h3>Making</h3>
+<h3>Art of Making</h3>
 
 Everyone is a maker. Unburdened by the need for specialized technologies or terminology sometimes required by other forms of design, making offers a hands-on approach to creativity accessible to all. Making emphasizes learning through experimentation, emphasizing how ideas are shaped by audience knowledge and feedback from others.<br>
 
 I love the collaborative nature of maker spaces, where people can come together to innovate, design, and learn. With evolving approaches to education, schools should build more maker spaces to give students hands-on learning opportunities, allowing them to apply theoretical concepts to real-world projects.<br>
 
-  > Makerspaces for rethinking teaching and learning in K–12 education by Professor Louis S. Nadelson is an excellent paper about the impact of maker spaces in influencing students’ learning and development.<br>
+  > <a href="https://www.tandfonline.com/doi/full/10.1080/00220671.2021.1914937">Makerspaces for rethinking teaching and learning in K–12 education</a> by Professor Louis S. Nadelson is an excellent paper about the impact of maker spaces in influencing students’ learning and development.<br>
