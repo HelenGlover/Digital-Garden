@@ -10,7 +10,7 @@ labels:
 
 The value of a liberal arts education is the encouragement of interdisciplinary exploration. At the Design Thinking Initiative or DTI, I learned how to engage with design critically and make in service of broader social issues. Design is about inviting stakeholders into your design process from the beginning.<br><br>
 During my time with Oxfam, I learned about systems design, an approach to being more systematic in how we work with others to create change. The <a href="https://www.designcouncil.org.uk/our-resources/systemic-design-framework/">Design Council</a> describes systems change as follows: <br>
-> "the acknowledgment of complexity and interconnectedness throughout the design thinking and doing process. It is both a mindset and a methodology - considering the structures and beliefs that underpin a challenge."
+  > "the acknowledgment of complexity and interconnectedness throughout the design thinking and doing process. It is both a mindset and a methodology - considering the structures and beliefs that underpin a challenge."
 
 <br>
 Along with systems design, I am also passionate about: </p>
