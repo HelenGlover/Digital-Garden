@@ -4,17 +4,18 @@ labels:
   - innovating
 ---
 
-<h3>Systemic Design</h3>
+<h3>Systems Design</h3>
 
-Two groups ignited my passion for design: the Design Thinking Initiative and Oxfam.
+Two groups ignited my passion for design: Smith College's <a href="https://www.smith.edu/academics/design-thinking">Design Thinking Initiative</a> and Oxfam's <a href="https://www.oxfamamerica.org/explore/agile/">aGILE</a>. 
 
-  The value of a liberal arts education is the encouragement of interdisciplinary exploration. At the Design Thinking Initiative or DTI, I learned how to engage with design critically and make in service of broader social issues. Design is about inviting stakeholders into your design process from the beginning.
+  The value of a liberal arts education is the encouragement of interdisciplinary exploration. At the Design Thinking Initiative, I learned how to engage with design critically and make in service of broader social issues. Design is about inviting stakeholders into your design process from the beginning.
+  <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
 
   During my time with Oxfam, I learned about systems design, an approach to being more systematic in how we work with others to create change. The <a href="https://www.designcouncil.org.uk/our-resources/systemic-design-framework/">Design Council</a> describes systems change as follows: 
   
   > "the acknowledgment of complexity and interconnectedness throughout the design thinking and doing process. It is both a mindset and a methodology - considering the structures and beliefs that underpin a challenge."
 
-  Along with systems design, I am also passionate about:
+  Along with systems design, I am passionate about:
 
 
 <h3>Design Justice</h3>

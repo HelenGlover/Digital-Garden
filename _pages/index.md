@@ -11,14 +11,14 @@ title: Home
 <p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.5;">
   Inspired by the concept of a <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">digital garden</a>, this site is an exploratory outlet for my thoughts. I believe in personal growth through introspection and use this platform for continual reflection.
   <!-- <p>See it as an evolving, interconnected landscape of information — sort of like a real garden.  -->
-  <br> It is not intended to be as well polished as my main site. 
+  <br> 
   <!-- I believe in <a href="https://www.swyx.io/learn-in-public">Learning in Public</a>; the practice of sharing what you learn as you're learning it. -->
 </p>
 
 
 
 <h2>Innovating</h2>
-<p> <i>At the intersection of sustainability and tech for design</i>
+<p> <i>Exploring the interconnectedness of sustainability, tech, and design</i>
 <ul>
   {% assign intersection_notes = site.notes | where: "labels", "innovating" %}
   {% for note in intersection_notes %}
