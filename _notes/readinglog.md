@@ -1,12 +1,12 @@
 ---
 title: Reading Log
 labels: 
-  - collections
+  - the-whole-self
 ---
 
 <p style="padding: 1.5em 1.5em; background: #f5f7ff; border-radius: 10px; color: #000; width: 90%; line-height: 2;">
 When I was younger, I dreamed of being a librarian so I could read all day.<br><br>
-While my goals have changed, here are some books I’ve been enjoying. Will update with each month.
+While my goals have changed, here are some books I’ve been enjoying. 
 </p>
 <br>
 

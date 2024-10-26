@@ -28,11 +28,11 @@ title: Home
   {% endfor %}
 </ul>
 
-<h2>Collections</h2>
+<h2>Curations</h2>
 <p> <i>Collection of ideas and resources</i>
 <ul>
-  {% assign collections_notes = site.notes | where: "labels", "collections" %}
-  {% for note in collections_notes %}
+  {% assign curations_notes = site.notes | where: "labels", "curations" %}
+  {% for note in curations_notes %}
     <li>
       {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
     </li>
@@ -44,6 +44,18 @@ title: Home
 <ul>
   {% assign from-the-desk_notes = site.notes | where: "labels", "from-the-desk" %}
   {% for note in from-the-desk_notes %}
+    <li>
+      {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+
+<h2>The Whole Self</h2>
+<p> <i>Ideas, lessons, and processes</i>
+<ul>
+  {% assign the-whole-self = site.notes | where: "labels", "the-whole-self" %}
+  {% for note in the-whole-self %}
     <li>
       {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
     </li>

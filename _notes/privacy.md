@@ -1,7 +1,7 @@
 ---
-title: Keeping Yourself Safe Online
+title: Control over your data
 labels: 
-    - collections
+    - curations
 ---
 
 

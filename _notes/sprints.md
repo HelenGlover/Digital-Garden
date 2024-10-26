@@ -1,7 +1,7 @@
 ---
 title: The Power of Sprints
 labels: 
-  - from-the-desk
+  - the-whole-self
 ---
 
 With ambitious, long-term goals, it can be hard to focus on the shorter, sometimes monotonous tasks essential to achieving that long-term vision. To stay focused on the vision, I use sprints.
