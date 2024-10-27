@@ -31,8 +31,8 @@ title: Home
 <h2>Short Writing</h2>
 <p> <i>Bite-sized stories about anything and everything</i>
 <ul>
-  {% assign analyzing_notes = site.notes | where: "labels", "analyzing" %}
-  {% for note in analyzing_notes %}
+  {% assign writing_notes = site.notes | where: "labels", "short-writing" %}
+  {% for note in writing_notes %}
     <li>
       {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
     </li>

@@ -1,7 +1,7 @@
 ---
 title: Brave New World - Misinformation and Monopolization in the News
 labels: 
-    - anaylzing
+    - short-writing
 ---
 
 TBD
