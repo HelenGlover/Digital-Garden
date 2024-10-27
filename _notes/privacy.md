@@ -12,7 +12,7 @@ to the
 
 <p style="padding: 1.5em 1.5em; background: #f5f7ff; border-radius: 10px; color: #000; width: 90%; line-height: 2;">
 Online, we are constantly bombarded with requests for our personal data: cookies, websites asking for our location, subscription forms requesting job titles and employment details. <br><br>
-Unfortunately, these requests have become the norm. In our haste to access a website, we often click "accept cookies" or "allow location" without a second thought. This constant demand for our information raises critical questions about how our data is used and the long-term impact. We often see stories of old tweets resurfacing, leading to public backlash (in some cases, justified). In 10 or 15 years, will we see similar stories about how our data was used to influence decisions about us or even predict behavior?
+Unfortunately, these requests have become the norm. In our haste to access a website, we often click "accept cookies" or "allow location" without a second thought. This constant demand for our information raises critical questions about how our data is used and the long-term impact. We often see stories of old tweets resurfacing, leading to public backlash (in some cases, justified.) In 10 or 15 years, will we see similar stories about how our data was used to influence decisions about us or even predict behavior?
 <br><br>
 If you're looking to regain some control over your online information, here are a few of my favorite resources:
 </p>
