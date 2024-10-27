@@ -14,7 +14,7 @@ My research explores how people build communities of belonging and representatio
 <b>Main Goal:</b> A continuation of my research from college, have an almost finished research paper by the end of the year. 
 
 <b>Mini Goals:</b> Conduct more interviews with streamers and articulate my research interests more cohesively.
-
+<br>
 
 <h3>Cybersecurity</h3>
 
@@ -23,7 +23,7 @@ As part of my affiliation with <a href="https://girlsecurity.org/">Girl Security
 <b>Main Goal:</b> To finish the certificate by the end of the year. According to Google standards, the certificate is designed to take six months, and I started in September
 
 <b>Mini Goals:</b> Finish a set amount of modules per week to achieve my main goal.  
-
+<br>
 
 <h3>Civic Tech </h3>
 
@@ -32,7 +32,7 @@ I volunteer with <a href="https://cib-mango-tree.github.io/CIB-Mango-Tree-Websit
 <b>Main Goal:</b> Finish the tool as a <a href="https://www.productplan.com/glossary/minimum-viable-product/"> minimum viable product </a> by the end of the year.
 
 <b>Mini Goals:</b> Strengthen my web development and data wrangling skills. 
-
+<br>
 
 <h3>Design</h3>
 

@@ -1,7 +1,7 @@
 ---
-title: 1 in 80,000
+title: Brave New World - Misinformation and Monopolization in the News
 labels: 
-    - from-the-desk
+    - anaylzing
 ---
 
-A story about adoption - TBD
+TBD

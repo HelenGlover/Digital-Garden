@@ -28,14 +28,17 @@ title: Home
   {% endfor %}
 </ul>
 
-<h2>Analyzing</h2>
-<p> <i>Ideas and thoughts</i>
+<h2>Short Writing</h2>
+<p> <i>Bite-sized stories about anything and everything</i>
 <ul>
   {% assign analyzing_notes = site.notes | where: "labels", "analyzing" %}
   {% for note in analyzing_notes %}
     <li>
       {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
     </li>
+    <li>
+    SDG Academy: <a href="https://sdgacademy.org/7-take-action-ideas-to-celebrate-earth-day/" target="_blank">7 Take Action Ideas to Celebrate Earth Day</a>
+  </li>
   {% endfor %}
 </ul>
 
