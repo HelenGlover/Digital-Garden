@@ -37,8 +37,8 @@ title: Home
       {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
     </li>
     <li>
-    SDG Academy: <a href="https://sdgacademy.org/7-take-action-ideas-to-celebrate-earth-day/" target="_blank">7 Take Action Ideas to Celebrate Earth Day</a>
-  </li>
+      <a href="https://sdgacademy.org/7-take-action-ideas-to-celebrate-earth-day/" target="_blank">7 Take Action Ideas to Celebrate Earth Day</a>
+    </li>
   {% endfor %}
 </ul>
 
