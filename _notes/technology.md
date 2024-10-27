@@ -14,8 +14,6 @@ But technology can also be dangerous. In society, we embrace "techno-solutionism
 
 In the paper by Professors Yolanda Ranki, Jakita Thomas, and Sheena Erete, <a href="https://par.nsf.gov/servlets/purl/10213020">I Can’t Breathe: Reflections from Black Women in CSCW and HCI</a>, they caution:
 
-In Professors Yolanda Ranki, Jakita Thomas, and Sheena Erete's paper, <a href="https://par.nsf.gov/servlets/purl/10213020">I Can’t Breathe: Reflections from Black Women in CSCW and HCI</a>:
-
   >"As a word of caution, it is naïve to think that technology alone can be a panacea for systemic oppression, since technology can only amplify what already exists within society."
 
 
@@ -38,7 +36,7 @@ Deceptive patterns (also known as “dark patterns”) are tricks used in websit
 
 
 <h3>Dark Patterns</h3>
-<p>
+
 Deceptive patterns, also known as “dark patterns,” are subtle tricks used in websites and apps to nudge users into actions they might not have taken otherwise. It ranges from annoying things like fake urgency, where a website insists you must act quickly to buy a product, to more concerning tactics like repeated prompts to allow location tracking.
 
  As the <a href="https://demox.tw/media/component/pdf/The_Dark_Patterns_Side_of_UX_Design_Zi6OmZR.pdf">Dark (Patterns) Side of UX Design</a> describes it: 

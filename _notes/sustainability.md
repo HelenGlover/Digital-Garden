@@ -1,5 +1,5 @@
 ---
-title: Environment and Sustainability
+title: Sustainability
 labels: 
   - innovating
 ---
@@ -41,4 +41,4 @@ labels:
 
  
  As we navigate the evolving challenges of our modern world, drawing knowledge from these diverse spiritual teachings can honor their culture and strengthen collective sustainable action.
- </p>
+ 
