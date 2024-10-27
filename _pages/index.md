@@ -43,7 +43,7 @@ title: Home
 <p> <i>Reflections and processes in self development</i>
 <ul>
   {% assign self_notes = site.notes | where: "labels", "self" %}
-  {% for note in self %}
+  {% for note in self_notes %}
     <li>
       {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
     </li>
