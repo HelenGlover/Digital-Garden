@@ -34,5 +34,5 @@ I love the collaborative nature of maker spaces, where people can come together 
   > <a href="https://www.tandfonline.com/doi/full/10.1080/00220671.2021.1914937">Makerspaces for rethinking teaching and learning in K–12 education</a> by Professor Louis S. Nadelson is an excellent paper about the impact of maker spaces in influencing students’ learning and development.<br>
 
   <img src="extruder.png" alt="pic of plastic upcycling machine">
-
-  <i>Creating a plastic upcycling machine in the Center for Design and Fabrication</i>
+  
+<i style="text-align: center;">Creating a plastic upcycling machine in the Center for Design and Fabrication</i>

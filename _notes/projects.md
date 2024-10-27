@@ -1,7 +1,7 @@
 ---
 title: Personal Projects
 labels: 
-  - from-the-desk
+  - self
 ---
 
 <p style="padding: 1.5em 1.5em; background: #f5f7ff; border-radius: 10px; color: #000; width: 90%; line-height: 2;">
