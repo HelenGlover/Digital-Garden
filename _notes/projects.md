@@ -14,8 +14,7 @@ My research centers around technology design activism, exploring how people fost
 <b>Primary Goal:</b> Have an almost finished research paper by the end of the year.
 
 <b>Mini Goals:</b> Conduct more interviews with streamers and articulate my research interests more cohesively.
-
-<br><br>
+<br>
 
 <h3>Cybersecurity</h3>
 
