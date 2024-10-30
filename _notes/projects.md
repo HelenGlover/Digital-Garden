@@ -9,12 +9,12 @@ In my free time, I work on several projects relating to my interests in tech, su
 
 <h3>Research:</h3>
 
-My research centers around technology design activism, exploring how people foster communities of belonging through online platforms. I use digital and author-ethnography. 
+My <a href="https://helenglover.netlify.app/research">research</a> centers around technology design activism, exploring how people foster communities of belonging through online platforms. I use digital and author-ethnography. 
 
 <b>Primary Goal:</b> Have an almost finished research paper by the end of the year.
 
 <b>Mini Goals:</b> Conduct more interviews with streamers and articulate my research interests more cohesively.
-<br>
+<br><br>
 
 <h3>Cybersecurity</h3>
 
