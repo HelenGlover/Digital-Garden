@@ -15,11 +15,15 @@ While my career aspirations have evolved, here are some fantastic books I’ve b
 <br>
     <a href="https://www.keithferrazzi.com/books" style="text-decoration: none; color: #000;">
         Never Eat Alone
-    </a> by Cleo Qian <br><br>
+    </a> by Keith Ferrazzi <br><br>
     <a href="http://www.erikalee.org/the-making-of-asian-america/" style="text-decoration: none; color: #000;">
         The Making of Asian America: A History
     </a> by Erika Lee <br><br>    
 
+<h3><span style="background-color: #f5f7ff; padding: 0.2em;">November 2024</span></h3> 
+<br>
+    <p>NA</p>
+    <br><br>    
 
 <h3><span style="background-color: #f5f7ff; padding: 0.2em;">October 2024</span></h3> 
 <br>
