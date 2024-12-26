@@ -5,10 +5,21 @@ labels:
 ---
 
 <p style="padding: 1.5em 1.5em; background: #f5f7ff; border-radius: 10px; color: #000; width: 90%; line-height: 2;">
-As a child, I dreamed of becoming a librarian so I could spend my days surrounded by books. (I joke that I now need glasses because, after my parents sent me to bed, I would sneakily read by the light of the hallway.) <br><br>
-While my career aspirations have evolved, here are some fantastic books I’ve been enjoying lately.
+<!-- As a child, I dreamed of becoming a librarian so I could spend my days surrounded by books. (I joke that I now need glasses because, after my parents sent me to bed, I would sneakily read by the light of the hallway.) <br><br>
+While my career aspirations have evolved, here are some fantastic books I’ve been enjoying lately. -->
+“I have always imagined that paradise will be a kind of library.” —Jorge Luis Borges
 </p>
 <br>
+
+<h3><span style="background-color: #f5f7ff; padding: 0.2em;">December 2024</span></h3> 
+<br>
+    <a href="https://www.keithferrazzi.com/books" style="text-decoration: none; color: #000;">
+        Never Eat Alone
+    </a> by Cleo Qian <br><br>
+    <a href="http://www.erikalee.org/the-making-of-asian-america/" style="text-decoration: none; color: #000;">
+        The Making of Asian America: A History
+    </a> by Erika Lee <br><br>    
+
 
 <h3><span style="background-color: #f5f7ff; padding: 0.2em;">October 2024</span></h3> 
 <br>
@@ -40,8 +51,8 @@ While my career aspirations have evolved, here are some fantastic books I’ve b
   <p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.5;">
     <b>Takeways: </b>A new form of recollection, visual notetaking combines words and images to enhance understanding and retention. It encourages active listening and engagement, making it easier to process information. <br>Simple sketching techniques, such as icons, arrows, and shapes, can effectively convey complex ideas. You don’t need to be an artist; basic drawings can communicate concepts clearly.
   </p>
-  <br>
 </div>
+<br><br>
   
 
 <h3><span style="background-color: #f5f7ff; padding: 0.2em;">Books on the shelf</span></h3> 
