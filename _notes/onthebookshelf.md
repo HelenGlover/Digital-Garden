@@ -8,6 +8,8 @@ labels:
 <!-- As a child, I dreamed of becoming a librarian so I could spend my days surrounded by books. (I joke that I now need glasses because, after my parents sent me to bed, I would sneakily read by the light of the hallway.) <br><br>
 While my career aspirations have evolved, here are some fantastic books I’ve been enjoying lately. -->
 “I have always imagined that paradise will be a kind of library.” —Jorge Luis Borges
+<br>
+Click on dropdowns next to the months.
 </p>
 <br>
 
@@ -17,7 +19,12 @@ While my career aspirations have evolved, here are some fantastic books I’ve b
         Quiet: The Power of Introverts in a World That Can't Stop Talking
     </a> by Susan Cain <br><br>
 
-<h3><span style="background-color: #f5f7ff; padding: 0.2em;">December 2024</span></h3> 
+<h3 onclick="toggleDropdown('septemberDropdown', this)" style="cursor: pointer;">
+    <span style="background-color: #f5f7ff; padding: 0.2em;">December 2024</span></h3> 
+    <span style="font-size: 0.8em;" class="arrow">&#9654;</span>
+</h3>
+
+<div id="septemberDropdown" style="display: none;">
 <br>
     <a href="https://www.keithferrazzi.com/books" style="text-decoration: none; color: #000;">
         Never Eat Alone
@@ -25,24 +32,36 @@ While my career aspirations have evolved, here are some fantastic books I’ve b
     <a href="http://www.erikalee.org/the-making-of-asian-america/" style="text-decoration: none; color: #000;">
         The Making of Asian America: A History
     </a> by Erika Lee <br><br>    
+</div>    
+<br><br>
 
 <h3><span style="background-color: #f5f7ff; padding: 0.2em;">November 2024</span></h3> 
 <br>
     No books
     <br><br>    
 
-<h3><span style="background-color: #f5f7ff; padding: 0.2em;">October 2024</span></h3> 
+<h3 onclick="toggleDropdown('septemberDropdown', this)" style="cursor: pointer;">
+    <span style="background-color: #f5f7ff; padding: 0.2em;">October 2024</span></h3> 
+    <span style="font-size: 0.8em;" class="arrow">&#9654;</span>
+</h3>
+
+<div id="septemberDropdown" style="display: none;">
 <br>
     <a href="https://cleoqian.com/Let-s-Go-Let-s-Go-Let-s-Go" style="text-decoration: none; color: #000;">
         Let's Go Let's Go Let's Go
     </a> by Cleo Qian <br><br>
     <a href="https://www.nicholascarr.com/?page_id=16" style="text-decoration: none; color: #000;">
         The Shallows: What the Internet Is Doing to Our Brains
-    </a> by Nicholas Carr <br><br>    
+    </a> by Nicholas Carr <br><br>
+</div>    
+<br><br>
+  
 
 <h3 onclick="toggleDropdown('septemberDropdown', this)" style="cursor: pointer;">
-    <span style="background-color: #f5f7ff; padding: 0.2em;">September 2024</span> <span style="font-size: 0.8em;" class="arrow">&#9654;</span>
+    <span style="background-color: #f5f7ff; padding: 0.2em;">September 2024</span> 
+    <span style="font-size: 0.8em;" class="arrow">&#9654;</span>
 </h3>
+
 <div id="septemberDropdown" style="display: none;">
 <br>
     <a href="https://www.sevenminutesolution.com/" style="text-decoration: none; color: #000;">
