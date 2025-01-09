@@ -19,12 +19,12 @@ Click on dropdowns next to the months.
         Quiet: The Power of Introverts in a World That Can't Stop Talking
     </a> by Susan Cain <br><br>
 
-<h3 onclick="toggleDropdown('septemberDropdown', this)" style="cursor: pointer;">
-    <span style="background-color: #f5f7ff; padding: 0.2em;">December 2024</span></h3> 
+<h3 onclick="toggleDropdown('decemberDropdown', this)" style="cursor: pointer;">
+    <span style="background-color: #f5f7ff; padding: 0.2em;">December 2024</span>
     <span style="font-size: 0.8em;" class="arrow">&#9654;</span>
 </h3>
 
-<div id="septemberDropdown" style="display: none;">
+<div id="decemberDropdown" style="display: none;">
 <br>
     <a href="https://www.keithferrazzi.com/books" style="text-decoration: none; color: #000;">
         Never Eat Alone
@@ -40,12 +40,12 @@ Click on dropdowns next to the months.
     No books
     <br><br>    
 
-<h3 onclick="toggleDropdown('septemberDropdown', this)" style="cursor: pointer;">
-    <span style="background-color: #f5f7ff; padding: 0.2em;">October 2024</span></h3> 
+<h3 onclick="toggleDropdown('octoberDropdown', this)" style="cursor: pointer;">
+    <span style="background-color: #f5f7ff; padding: 0.2em;">October 2024</span>
     <span style="font-size: 0.8em;" class="arrow">&#9654;</span>
 </h3>
 
-<div id="septemberDropdown" style="display: none;">
+<div id="octoberDropdown" style="display: none;">
 <br>
     <a href="https://cleoqian.com/Let-s-Go-Let-s-Go-Let-s-Go" style="text-decoration: none; color: #000;">
         Let's Go Let's Go Let's Go
