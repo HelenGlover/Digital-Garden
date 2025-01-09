@@ -11,6 +11,12 @@ While my career aspirations have evolved, here are some fantastic books I’ve b
 </p>
 <br>
 
+<h3><span style="background-color: #f5f7ff; padding: 0.2em;">January 2025</span></h3> 
+<br>
+    <a href="https://susancain.net/book/quiet/" style="text-decoration: none; color: #000;">
+        Quiet: The Power of Introverts in a World That Can't Stop Talking
+    </a> by Susan Cain <br><br>
+
 <h3><span style="background-color: #f5f7ff; padding: 0.2em;">December 2024</span></h3> 
 <br>
     <a href="https://www.keithferrazzi.com/books" style="text-decoration: none; color: #000;">
@@ -22,7 +28,7 @@ While my career aspirations have evolved, here are some fantastic books I’ve b
 
 <h3><span style="background-color: #f5f7ff; padding: 0.2em;">November 2024</span></h3> 
 <br>
-    <p>NA</p>
+    No books
     <br><br>    
 
 <h3><span style="background-color: #f5f7ff; padding: 0.2em;">October 2024</span></h3> 
