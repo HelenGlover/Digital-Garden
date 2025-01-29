@@ -5,7 +5,7 @@ labels:
 ---
 
 <p style="padding: 1.5em 1.5em; background: #f5f7ff; border-radius: 10px; color: #000; width: 90%; line-height: 2;">
-I do "moonlighting", the act of having a second 'job' by pursuing personal projects that align with my passions in tech, sustainability, and design. </p>
+I "moonlight," or the act of having a second 'job' in which I pursue personal projects that align with my passions in tech, sustainability, and design. </p>
 
 <h3>Research:</h3>
 
@@ -14,7 +14,7 @@ My <a href="https://helenglover.netlify.app/research">research</a> centers aroun
 <!-- <b>Primary Goal:</b> Have an almost finished research paper by the end of the year.
 
 <b>Mini Goals:</b> Conduct more interviews with streamers and articulate my research interests more cohesively. -->
-<br><br>
+<br>
 
 <h3>Cybersecurity</h3>
 
@@ -23,7 +23,7 @@ As part of my affiliation with <a href="https://girlsecurity.org/">Girl Security
 <!-- <b>Main Goal:</b>  I aim to finish the certificate by the end of the year. Google designed the program to take six months, and I started in September.
 
 <b>Mini Goals:</b> Finish a set amount of modules per week to achieve my main goal.   -->
-<br><br>
+<br>
 
 <h3>Civic Tech </h3>
 
@@ -32,7 +32,7 @@ I volunteer with <a href="https://cib-mango-tree.github.io/CIB-Mango-Tree-Websit
 <!-- <b>Main Goal:</b> Finish the tool as a <a href="https://www.productplan.com/glossary/minimum-viable-product/"> minimum viable product </a> by the end of the year.
 
 <b>Mini Goals:</b> Strengthen my web development and data wrangling skills.  -->
-<br><br>
+<br>
 
 <!-- <h3>Design</h3>
 
