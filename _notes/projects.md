@@ -27,15 +27,6 @@ I volunteer with <a href="https://cib-mango-tree.github.io/CIB-Mango-Tree-Websit
 
 <h3>Cybersecurity</h3>
 
-As part of my affiliation with <a href="https://girlsecurity.org/">Girl Security </a>, they generously funded my Google Cybersecurity Professional Certificate. This certification is valuable for deepening my understanding of the field and laying the groundwork for pursuing CompTIA Security+. 
-
-<!-- <b>Main Goal:</b>  I aim to finish the certificate by the end of the year. Google designed the program to take six months, and I started in September.
-
-<b>Mini Goals:</b> Finish a set amount of modules per week to achieve my main goal.   -->
-<br>
-
-<h3>Cybersecurity</h3>
-
 As part of my affiliation with <a href="https://girlsecurity.org/">Girl Security </a>, they generously funded my Google Cybersecurity Professional Certificate. This certification is valuable for deepening my understanding of the field and laying the groundwork for pursuing CompTIA Security+. <br>
 
 I am also a research fellow focusing on the geopolitics of cybersecurity and national security through the <a href="https://www.wcaps.org/">WCAPS program</a>.
