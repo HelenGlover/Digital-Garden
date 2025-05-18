@@ -1,7 +1,7 @@
 ---
 title: The Power of Sprints
 labels: 
-  - self
+  - writing
 ---
 
 When pursuing ambitious, long-term goals, it can be difficult to concentrate on the shorter, sometimes repetitive tasks that are crucial for that vision.

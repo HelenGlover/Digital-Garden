@@ -15,8 +15,6 @@ title: Home
   <!-- I believe in <a href="https://www.swyx.io/learn-in-public">Learning in Public</a>; the practice of sharing what you learn as you're learning it. -->
 </p>
 
-
-
 <h2>Innovating</h2>
 <p> <i>Exploring the interconnectedness of sustainability, tech, and design</i>
 <ul>
@@ -28,20 +26,17 @@ title: Home
   {% endfor %}
 </ul>
 
-<h2>Short Writing</h2>
+<h2>Writings</h2>
 <p> <i>Bite-sized stories about anything and everything</i>
 <ul>
-  {% assign writing_notes = site.notes | where: "labels", "short-writing" %}
-  {% for note in writing_notes %}
+  {% assign writing = site.notes | where: "labels", "writing" %}
+  {% for note in writing %}
     <li>
       {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
     </li>
-    <li>
-      <a href="https://sdgacademy.org/7-take-action-ideas-to-celebrate-earth-day/" target="_blank">7 Take Action Ideas to Celebrate Earth Day</a>
-    </li>
   {% endfor %}
 </ul>
-
+<!-- 
 <h2>Self</h2>
 <p> <i>Reflections and processes in self development</i>
 <ul>
@@ -51,9 +46,9 @@ title: Home
       {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
     </li>
   {% endfor %}
-</ul>
+</ul> -->
 
-<h2>Curations</h2>
+<!-- <h2>Curations</h2>
 <p> <i>Curations of ideas and resources</i>
 <ul>
   {% assign curations_notes = site.notes | where: "labels", "curations" %}
@@ -62,7 +57,7 @@ title: Home
       {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
     </li>
   {% endfor %}
-</ul>
+</ul> --> 
 
 <!-- <h2>Wiki</h2>
 <i>Hypertext thinking of half-baked thoughts. Coming soon!</i>

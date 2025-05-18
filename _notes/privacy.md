@@ -1,7 +1,7 @@
 ---
 title: Control Your Data Health
 labels: 
-    - curations
+    - writing
 ---
 
 
