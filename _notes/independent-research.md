@@ -1,7 +1,7 @@
 ---
-title: Notes from the Field: Becoming an Independent Researcher
+title: Notes from the Field - Becoming an Independent Researcher
 labels: 
-    - writings
+    - writing
 ---
 
 A Little Context
