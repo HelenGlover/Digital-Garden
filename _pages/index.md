@@ -26,6 +26,16 @@ title: Home
   {% endfor %}
 </ul>
 
+<h2>Mindset</h2>
+<ul>
+  {% assign intersection_notes = site.notes | where: "labels", "mindset" %}
+  {% for note in intersection_notes %}
+    <li>                            
+      {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
 <h2>Writings</h2>
 <p> <i>Bite-sized stories about anything and everything</i>
 <ul>
