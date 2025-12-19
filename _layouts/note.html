@@ -17,33 +17,38 @@ layout: default
       <p></p>
     </content>
 
-    <side style="font-size: 0.9em">
-      {% assign current_labels = page.labels %}
-      {% assign label_count = current_labels.size %}
-      {% if label_count > 0 %}
-        <h3 style="margin-bottom: 1em">Other {{ current_labels[0] }} notes</h3>
-        {% assign related_notes = site.notes | where: "labels", current_labels[0] %}
-        
-        {% if related_notes.size > 0 %}
-          <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
-            {% for note in related_notes %}
-              {% unless note.url == page.url %} <!-- Exclude the current note -->
-                <div class="backlink-box">
-                  <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">{{ note.title }}</a>
-                </div>
-              {% endunless %}
-            {% endfor %}
-          </div>
-        {% else %}
-          <div style="font-size: 0.9em">
-            <p>There are no other {{ current_labels[0] }} notes.</p>
-          </div>
-        {% endif %}
-      {% else %}
-        <h3 style="margin-bottom: 1em">Other notes</h3>
-        <p>No labels available for this note.</p>
-      {% endif %}
-    </side>
+    <!-- ############################## -->
+     <side style="font-size: 0.9em">
+  {% if page.labels and page.labels.size > 0 %}
+    {% for label in page.labels %}
+      <h3 style="margin-bottom: 1em">Other {{ label }} notes</h3>
+
+      {% assign related_notes = site.notes | where: "labels", label %}
+      {% assign has_related = false %}
+
+      <div style="display: grid; grid-gap: 1em;">
+        {% for note in related_notes %}
+          {% unless note.url == page.url %}
+            {% assign has_related = true %}
+            <div class="backlink-box">
+              <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}{% if site.use_html_extension %}.html{% endif %}">
+                {{ note.title }}
+              </a>
+            </div>
+          {% endunless %}
+        {% endfor %}
+      </div>
+
+      {% unless has_related %}
+        <p style="font-size: 0.9em">There are no other {{ label }} notes.</p>
+      {% endunless %}
+    {% endfor %}
+  {% else %}
+    <h3 style="margin-bottom: 1em">Other notes</h3>
+    <p>No labels available for this note.</p>
+  {% endif %}
+</side>
+
     
 
     
