@@ -1,3 +1,22 @@
+---
+layout: page
+id: home
+permalink: /
+title: Home
+---
+
+[Back to the main site](helenyglover.com)
+
+# Welcome! 🌱
+
+<p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.5;">
+  Inspired by the concept of a 
+  <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">
+    digital garden
+  </a>, 
+  this site is an exploratory outlet for my thoughts. I believe in personal growth through introspection and use this platform for continual reflection.
+</p>
+
 <h2>Latest notes</h2>
 
 <ul style="list-style: none; padding-left: 0;">
@@ -22,3 +41,13 @@
     </li>
   {% endfor %}
 </ul>
+
+<br><br>
+
+<!--
+<p>Visualize how all the pages connect. They are hyperlinked.</p>
+
+<div class="graph-background">
+  {% include notes_graph.html %}
+</div>
+-->
