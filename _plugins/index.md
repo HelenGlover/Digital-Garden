@@ -22,10 +22,11 @@ I see personal growth as a process of reflection, and my main goal for this plat
 <h2>Latest notes</h2>
 
 <ul style="list-style: none; padding-left: 0;">
-  {% assign notes_by_date = site.notes | sort: "last_modified_at" | reverse %}
+  {% assign notes_by_date = site.notes | sort: "date" | reverse %}
   {% for note in notes_by_date %}
     <li style="margin-bottom: 1em;">
-      {{ note.last_modified_at | date: "%Y.%m.%d" }}
+      {% assign show_date = note.display_date | default: note.date %}
+      {{ show_date | date: "%Y.%m.%d" }}
       <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">
         {{ note.title }}
       </a>

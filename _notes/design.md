@@ -2,6 +2,7 @@
 title: Design 
 labels: 
   - innovating
+display_date: 2025-08-20  # optional override
 ---
 
 <h3>Systems Design</h3>
