@@ -44,7 +44,6 @@ Of course, I haven’t included every goal; some are more personal :)
   - Pair researchers presenting problems or findings with industry professionals to explore practical applications.  
   - Engage local nonprofits, coalitions, and student groups to make discussions actionable, using experimental formats such as fireside chats and group conversations.  
 <img src="assets/acmdc.jpg" alt="Mango Tree" width="600" style="border-radius: 2px; display: block; margin: 1em 0;" />
----
 
 ## **Personal Development**
 
