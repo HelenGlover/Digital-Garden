@@ -14,7 +14,10 @@ title: Home
   <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">
     digital garden
   </a>, 
-  this site is an exploratory outlet for my thoughts. I believe in personal growth through introspection and use this platform for continual reflection.
+  this site is an exploratory outlet for my thoughts. I believe in personal growth through introspection and use this platform for continual reflection. My main goal for writing is to strengthen my thoughts on what I read and learn as part of my personal growth experience. But I realized that having an audience is an important part of helping refine your writing. More polished works can be found on Medium.
+
+Also, I hope readers don’t ascribe my writing as my static opinions but rather a stream of thoughts, as part of the learning in process metholdogy. As such, I wouldnt be tied down by editing which can be paralyzing but will note changes in the blog. 
+https://devonzuegel.com/page/about-me
 </p>
 
 <h2>Latest notes</h2>
