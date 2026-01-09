@@ -25,6 +25,7 @@ Of course, I haven’t included every goal; some are more personal :)
   - Continue supporting growth in the team’s project management, outreach, and community development, including expanding partnerships with universities.  
   - Strengthen CIB Mango Tree’s research portfolio through increased writing.  
   - Develop my personal brand as a young project leader by producing original research and thought leadership, demonstrating how individual contributions can drive impact while elevating the organization’s visibility.  
+<img src="assets/mangotree.jpg" alt="Mango Tree" width="400" style="border-radius: 2px;"/>
 <br>
 - **Internet Law and Foundry:** As a member of the Editorial and Marketing Committee of the Foundry, an organization of early-career professionals in law, technology, and policy:  
   - Build a more substantive community with increased visibility by strengthening connections across the network, creating additional opportunities for members to share their work, and hosting engaging events. While the Foundry primarily serves professionals already in the field, a key goal is to involve more individuals who are interested.  
