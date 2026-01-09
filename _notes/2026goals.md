@@ -22,10 +22,12 @@ Of course, I haven’t included every goal; some are more personal :)
   - Collaborate with local organizations to host special events that make civic tech more accessible to a wider audience. In celebration of the U.S.'s 250th anniversary, these events will emphasize civic engagement and participation.  
 
 
+
 - **CIB Mango Tree:** As Engagement Lead of CIB Mango Tree, an open-source initiative building tools to detect coordinated inauthentic behavior:  
   - Continue supporting growth in the team’s project management, outreach, and community development, including expanding partnerships with universities.  
   - Strengthen CIB Mango Tree’s research portfolio through increased writing.  
   - Develop my personal brand as a young project leader by producing original research and thought leadership, demonstrating how individual contributions can drive impact while elevating the organization’s visibility.  
+
 
 
 - **Internet Law and Foundry:** As a member of the Editorial and Marketing Committee of the Foundry, an organization of early-career professionals in law, technology, and policy:  
@@ -36,10 +38,12 @@ Of course, I haven’t included every goal; some are more personal :)
 - **Supporting the DC Ecosystem:** Host a “super meetup” bringing together various local meetup groups to share lessons and support volunteer-led initiatives.  
 
 
+
 - **Independent Research:**  
   - Fully revive and actively contribute to my independent research blog, with a focus on the structural and social dimensions of technology, open-source communities, and civic tech.  
   - Use writing as a tool for introspection and deeper thinking, helping clarify ideas and identify patterns across projects.  
   - Expand engagement with universities and research labs in DC to build connections, increase understanding, and create collaboration opportunities.  
+
 
 
 - **Academia-Industry Collaboration:** Based on my experience working with both universities and industry, and seeing the gap between them, I plan to support a group in coordination with ACM DC dedicated to fostering connections:  
