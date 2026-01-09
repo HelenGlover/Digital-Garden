@@ -17,18 +17,19 @@ Of course, I haven’t included every goal; some are more personal :)
 #### **Continuing Engagements**  
 
 - **Civic Tech DC:** Last year, I was promoted to Director of Civic Tech DC, a nonprofit of technologists developing open-source projects:  
-  - Continue building momentum with the audiences I want to see more of in the tech community: women, those from non-technical backgrounds, young people, and D.C. natives.  
-  - Develop a Civic Tech playbook based on lessons learned from running the organization and best practices for sustaining civic tech initiatives.  
-  - Collaborate with local organizations to host special events that make civic tech more accessible to a wider audience. In celebration of the U.S.'s 250th anniversary, these events will emphasize civic engagement and participation.  
+- Continue building momentum with the audiences I want to see more of in the tech community: women, those from non-technical backgrounds, young people, and D.C. natives.  
+- Develop a Civic Tech playbook based on lessons learned from running the organization and best practices for sustaining civic tech initiatives.  
+- Collaborate with local organizations to host special events that make civic tech more accessible to a wider audience. In celebration of the U.S.'s 250th anniversary, these events will emphasize civic engagement and participation.  
+<img src="assets/civictechdc.jpg" alt="Mango Tree" width="600" style="border-radius: 2px; display: block; margin: 1em 0;" />
 <br>
 - **CIB Mango Tree:** As Engagement Lead of CIB Mango Tree, an open-source initiative building tools to detect coordinated inauthentic behavior:  
   - Continue supporting growth in the team’s project management, outreach, and community development, including expanding partnerships with universities.  
   - Strengthen CIB Mango Tree’s research portfolio through increased writing.  
   - Develop my personal brand as a young project leader by producing original research and thought leadership, demonstrating how individual contributions can drive impact while elevating the organization’s visibility.  
-<img src="assets/mangotree.jpg" alt="Mango Tree" width="600" style="border-radius: 2px; float: left; margin-right: 1em;"/>
+<img src="assets/mangotree.jpg" alt="Mango Tree" width="600" style="border-radius: 2px; display: block; margin: 1em 0;" />
 <br>
 - **Internet Law and Foundry:** As a member of the Editorial and Marketing Committee of the Foundry, an organization of early-career professionals in law, technology, and policy:  
-  - Build a more substantive community with increased visibility by strengthening connections across the network, creating additional opportunities for members to share their work, and hosting engaging events. While the Foundry primarily serves professionals already in the field, a key goal is to involve more individuals who are interested.  
+  - Build a more substantive community with increased visibility by strengthening connections across the network, creating additional opportunities for members to share their work, and hosting engaging events. While the Foundry primarily serves professionals already in the field, a key goal is to involve more individuals who are interested.   
 
 #### **Engagements in the Making**  
 
