@@ -2,6 +2,7 @@
 title: 2026 New Year’s Resolutions 
 labels: 
     - goals
+sort_date: 2026-01-09
 ---
 
 Like many others, I create resolutions on the first day of the new year. While goals often take a backseat by the end of January, last year I found that writing them down in a notebook and revisiting them, especially by sharing progress, helped me not only accomplish them but also discover new opportunities.  

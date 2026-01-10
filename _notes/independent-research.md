@@ -2,6 +2,7 @@
 title: Notes from the Field - Becoming an Independent Researcher
 labels: 
     - writing
+sort_date: 2026-10-13
 ---
 
 A Little Context
