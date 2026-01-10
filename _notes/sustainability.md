@@ -2,7 +2,6 @@
 title: Sustainability
 labels: 
   - innovating
-sort_date: 2026-08-20
 ---
 
 <h3>Holistic Sustainability</h3>

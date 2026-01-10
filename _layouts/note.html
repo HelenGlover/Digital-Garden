@@ -2,28 +2,11 @@
 layout: default
 ---
 
-{% comment %}
-  Determine unified sort/display date:
-  1. display_date (manual)
-  2. git_created_at (automatic)
-  3. last_modified_at (fallback)
-{% endcomment %}
-
-{% if page.display_date %}
-  {% assign sort_date = page.display_date %}
-{% elsif page.git_created_at %}
-  {% assign sort_date = page.git_created_at %}
-{% else %}
-  {% assign sort_date = page.last_modified_at %}
-{% endif %}
-
 <article>
   <div>
     <h1>{{ page.title }}</h1>
-
-    <time datetime="{{ sort_date | date_to_xmlschema }}">
-      {% if page.type != 'pages' %}
-        Created on {{ sort_date | date: "%B %-d, %Y" }}
+    <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{% if page.type != 'pages' %}
+      Last updated on {{ page.last_modified_at | date: "%B %-d, %Y" }}
       {% endif %}
     </time>
   </div>
@@ -31,40 +14,43 @@ layout: default
   <div id="notes-entry-container">
     <content>
       {{ content }}
+      <p></p>
     </content>
 
     <!-- ############################## -->
-    <side style="font-size: 0.9em">
+     <side style="font-size: 0.9em">
+  {% if page.labels and page.labels.size > 0 %}
+    {% for label in page.labels %}
+      <h3 style="margin-bottom: 1em">Other {{ label }} notes</h3>
 
-      {% if page.labels and page.labels.size > 0 %}
-        {% for label in page.labels %}
-          <h3 style="margin-bottom: 1em">Other {{ label }} notes</h3>
+      {% assign related_notes = site.notes | where: "labels", label %}
+      {% assign has_related = false %}
 
-          {% assign related_notes = site.notes | where: "labels", label %}
-          {% assign has_related = false %}
-
-          <div style="display: grid; grid-gap: 1em;">
-            {% for note in related_notes %}
-              {% unless note.url == page.url %}
-                {% assign has_related = true %}
-                <div class="backlink-box">
-                  <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">
-                    {{ note.title }}
-                  </a>
-                </div>
-              {% endunless %}
-            {% endfor %}
-          </div>
-
-          {% unless has_related %}
-            <p style="font-size: 0.9em">There are no other {{ label }} notes.</p>
+      <div style="display: grid; grid-gap: 1em;">
+        {% for note in related_notes %}
+          {% unless note.url == page.url %}
+            {% assign has_related = true %}
+            <div class="backlink-box">
+              <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}{% if site.use_html_extension %}.html{% endif %}">
+                {{ note.title }}
+              </a>
+            </div>
           {% endunless %}
         {% endfor %}
-      {% else %}
-        <h3 style="margin-bottom: 1em">Other notes</h3>
-        <p>No labels available for this note.</p>
-      {% endif %}
+      </div>
 
-    </side>
+      {% unless has_related %}
+        <p style="font-size: 0.9em">There are no other {{ label }} notes.</p>
+      {% endunless %}
+    {% endfor %}
+  {% else %}
+    <h3 style="margin-bottom: 1em">Other notes</h3>
+    <p>No labels available for this note.</p>
+  {% endif %}
+</side>
+
+    
+
+    
   </div>
 </article>
