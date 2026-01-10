@@ -22,16 +22,18 @@ title: Home
 
 <ul style="list-style: none; padding-left: 0;">
   {% comment %}
-    Sort by git_created_at (automatic creation date) descending
-    This ensures the newest pages appear first, even if display_date is manual
+    Sort pages by automatic Git creation date descending.
+    display_date (manual override) is only for showing on the page, not for sorting.
   {% endcomment %}
+
   {% assign notes_by_date = site.notes | sort: "git_created_at" | reverse %}
+
   {% for note in notes_by_date %}
     <li style="margin-bottom: 1em;">
       {% comment %}
         Display date priority:
         1. display_date (manual override)
-        2. git_created_at (default automatic creation date)
+        2. git_created_at (automatic creation date)
         3. last_modified_at (fallback)
       {% endcomment %}
       {% assign show_date = note.display_date | default: note.git_created_at | default: note.last_modified_at %}
@@ -52,4 +54,5 @@ title: Home
     </li>
   {% endfor %}
 </ul>
+
 <br><br>
