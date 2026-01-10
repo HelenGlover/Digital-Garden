@@ -22,14 +22,14 @@ I see personal growth as a process of reflection, and my main goal for this plat
 <h2>Latest notes</h2>
 
 <ul style="list-style: none; padding-left: 0;">
-  {% assign notes_by_date = site.notes | sort: "last_modified_at" | reverse %}
+  {% assign notes_by_date = site.notes | sort: "git_created_at" | reverse %}
   {% for note in notes_by_date %}
     <li style="margin-bottom: 1em;">
 
       {% comment %}
-        Show date priority:
+        Date display priority:
         1. display_date (manual override)
-        2. git_created_at (from first commit via last-modified-at plugin)
+        2. git_created_at (automatic creation date via last-modified-at plugin)
         3. last_modified_at (fallback)
       {% endcomment %}
 
@@ -53,6 +53,7 @@ I see personal growth as a process of reflection, and my main goal for this plat
     </li>
   {% endfor %}
 </ul>
+
 
 
 <br><br>
