@@ -3,6 +3,7 @@ title: Technology
 labels: 
   - innovating
   - mindset
+display_date: 2025-08-20  # optional override
 ---
 
 <i>“Let us not struggle to match an imperfect legal system to an evolving world . . . . Let us do what is essential to permit the participants in this evolving world to make their own decisions” - Judge Frank Easterbrook</i>
