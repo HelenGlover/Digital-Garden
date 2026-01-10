@@ -15,16 +15,22 @@ title: Home
     digital garden
   </a>, 
   this site is an exploratory outlet for my thoughts. 
-I see personal growth as a process of reflection, and my main goal for this platform is to support that growth by thinking through what I read and learn. Some people may read these posts, and I hope they see them not as fixed opinions but as a stream of thoughts in a learning process. To stay true to that, I write freely without being paralyzed by refined editing, noting any updates along the way.
-<!-- https://devonzuegel.com/page/about-me -->
+  I see personal growth as a process of reflection, and my main goal for this platform is to support that growth by thinking through what I read and learn. Some people may read these posts, and I hope they see them not as fixed opinions but as a stream of thoughts in a learning process. To stay true to that, I write freely without being paralyzed by refined editing, noting any updates along the way.
 </p>
 
 <h2>Latest notes</h2>
+
 <ul style="list-style: none; padding-left: 0;">
   {% assign notes_by_date = site.notes | sort: "last_modified_at" | reverse %}
   {% for note in notes_by_date %}
     <li style="margin-bottom: 1em;">
-      {% assign show_date = note.display_date | default: note.last_modified_at %}
+      {% comment %}
+        Show date priority:
+        1. display_date (manual override in front matter)
+        2. git_created_at (first commit via jekyll-last-modified-at plugin)
+        3. last_modified_at (fallback)
+      {% endcomment %}
+      {% assign show_date = note.display_date | default: note.git_created_at | default: note.last_modified_at %}
       {{ show_date | date: "%Y.%m.%d" }}
       <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">
         {{ note.title }}
@@ -43,11 +49,3 @@ I see personal growth as a process of reflection, and my main goal for this plat
   {% endfor %}
 </ul>
 <br><br>
-
-<!--
-<p>Visualize how all the pages connect. They are hyperlinked.</p>
-
-<div class="graph-background">
-  {% include notes_graph.html %}
-</div>
--->
