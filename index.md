@@ -21,13 +21,17 @@ title: Home
 <h2>Latest notes</h2>
 
 <ul style="list-style: none; padding-left: 0;">
-  {% assign notes_by_date = site.notes | sort: "last_modified_at" | reverse %}
+  {% comment %}
+    Sort by git_created_at (automatic creation date) descending
+    This ensures the newest pages appear first, even if display_date is manual
+  {% endcomment %}
+  {% assign notes_by_date = site.notes | sort: "git_created_at" | reverse %}
   {% for note in notes_by_date %}
     <li style="margin-bottom: 1em;">
       {% comment %}
-        Show date priority:
-        1. display_date (manual override in front matter)
-        2. git_created_at (first commit via jekyll-last-modified-at plugin)
+        Display date priority:
+        1. display_date (manual override)
+        2. git_created_at (default automatic creation date)
         3. last_modified_at (fallback)
       {% endcomment %}
       {% assign show_date = note.display_date | default: note.git_created_at | default: note.last_modified_at %}
