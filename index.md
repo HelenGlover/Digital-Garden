@@ -29,7 +29,6 @@ I see personal growth as a process of reflection, and my main goal for this plat
       <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">
         {{ note.title }}
       </a>
-
       {% if note.labels and note.labels.size > 0 %}
         <span style="color: #666; font-size: 0.85em; margin-left: 0.5em;">
           <strong>{% if note.labels.size > 1 %}Tags{% else %}Tag{% endif %}:</strong>
