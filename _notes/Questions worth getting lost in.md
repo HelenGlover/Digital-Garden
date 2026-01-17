@@ -1,7 +1,8 @@
 ---
 title: Questions Worth Getting Lost In
+description: A reflection on 2026 research goals as part of my independent research
 labels: 
-    - Indepedent Research
+    - Independent Research
 ---
 Let’s be honest. Independent research means no one’s checking if you’ve spent multiple hours reading someone’s tech blog from 2013 (which you could make the argument is helping you learn about the past) but is really just passive exploration. So I’ve given myself some research questions, not to constrain curiosity, but to channel it. They keep me focused while still leaving room to explore and occasionally get sidetracked with this time, with intention.
 
@@ -13,7 +14,11 @@ These questions reflect how I think about technology.
 Each question is tied to actual work I doing whether that be communities I'm part of or projects I'm building. And of course, they will evolve as I discover new, more interesting avenues or limitations.
 
 
-## Structural: How do emerging technologies move from ideation to implementation and adaptation?
+---
+
+
+
+#### Structural: How do emerging technologies move from ideation to implementation and adaptation?
 
 - **How can we bridge the gap between academia and industry?**
   
@@ -35,7 +40,7 @@ Each question is tied to actual work I doing whether that be communities I'm par
     - *Action: Exploring in relation to ecosystem-building through groups I help run.*
 
 
-## Social: How do technology and human relationships shape each other within interconnected networks?
+#### Social: How do technology and human relationships shape each other within interconnected networks?
 
 - **What sustains voluntaristic open technology communities?**
   
@@ -52,7 +57,10 @@ Each question is tied to actual work I doing whether that be communities I'm par
   - *Action: Exploring in relation to ecosystem-building through groups I help run.*
 
 
-## So What? 
+---
+
+
+#### Now What? 
 
 Unlike traditional research projects with neat methodologies and predetermined outputs (aka the classic academic paper), independent research means wandering around a bit before you know exactly what you’re building. Many of these questions will eventually have outcomes whether that be structure-changing outcomes, like developing new community practices at Mango Tree CIB by asking *“What sustains voluntaristic open technology communities?”* or product-focused outcomes, like building a community playbook at Civic Tech DC by asking *“What does it really mean to build community?”*
 

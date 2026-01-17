@@ -21,33 +21,31 @@ title: Home
 <h2>Latest notes</h2>
 
 <ul style="list-style: none; padding-left: 0;">
-  {% comment %}
-    Sort pages by automatic Git creation date descending.
-    display_date (manual override) is only for showing on the page, not for sorting.
-  {% endcomment %}
   {% assign notes_by_date = site.notes | sort: "git_created_at" | reverse %}
   {% for note in notes_by_date %}
-    <li style="margin-bottom: 1em;">     
-      {% comment %}
-        Display date priority:
-        1. display_date (manual override)
-        2. git_created_at (automatic creation date)
-        3. last_modified_at (fallback)
-      {% endcomment %}
+    <li style="margin-bottom: 2em;">  
       {% assign show_date = note.display_date | default: note.git_created_at | default: note.last_modified_at %}
-      {{ show_date | date: "%Y.%m.%d" }}
-      <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">
-        {{ note.title }}
-      </a>
+      <div style="color: #666; font-size: 0.85em; margin-bottom: 0.25em;">
+        {{ show_date | date: "%B %d, %Y" }}
+      </div>
+      <div style="font-size: 1.1em; font-weight: 600; margin-bottom: 0.3em;">
+        <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">
+          {{ note.title }}
+        </a>
+      </div>
+      {% if note.description %}
+        <div style="color: #333; font-size: 0.95em; margin-bottom: 0.4em; max-width: 42em;">
+          {{ note.description }}
+        </div>
+      {% endif %}
       {% if note.labels and note.labels.size > 0 %}
-        <span style="color: #666; font-size: 0.85em; margin-left: 0.5em;">
-          <strong>{% if note.labels.size > 1 %}Tags{% else %}Tag{% endif %}:</strong>
+        <div style="font-size: 0.8em;">
           {% for label in note.labels %}
-            <span style="display: inline-block; background: #e0f0ff; color: #004080; padding: 2px 6px; margin-right: 4px; border-radius: 12px; font-size: 0.8em; font-weight: bold;">
+            <span style="display: inline-block; background: #e0f0ff; color: #004080; padding: 2px 8px; margin-right: 6px; border-radius: 12px; font-weight: 600;">
               {{ label }}
             </span>
           {% endfor %}
-        </span>
+        </div>
       {% endif %}
     </li>
   {% endfor %}
