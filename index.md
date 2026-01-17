@@ -9,7 +9,7 @@ title: Home
 
 # Welcome! 🌱
 
-<p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.5;">
+<p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.0; font-size: 0.95em;">
   Inspired by the concept of a 
   <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">
     digital garden
@@ -25,14 +25,14 @@ title: Home
   {% for note in notes_by_date %}
     <li style="margin-bottom: 1.1em;">  
       <!-- Title -->
-      <div style="font-size: 1.1em; font-weight: 200; margin-bottom: 0.15em;">
+      <div style="font-size: 0.97em; font-weight: 200; margin-bottom: 0.15em;">
         <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">
           {{ note.title }}
         </a>
       </div>
       <!-- Description -->
       {% if note.description %}
-        <div style="color: #777; font-size: 0.9em; font-style: italic; margin-bottom: 0.25em; max-width: 42em;">
+        <div style="color: #777; font-size: 0.9em; margin-bottom: 0.25em; max-width: 42em;">
           {{ note.description }}
         </div>
       {% endif %}
@@ -42,7 +42,7 @@ title: Home
         <span>{{ show_date | date: "%B %d, %Y" }}</span>
         {% if note.labels and note.labels.size > 0 %}
           <span style="margin-left: 0.5em;">
-            · <strong>{% if note.labels.size > 1 %}Tags{% else %}Tag{% endif %}:</strong>
+            <strong>{% if note.labels.size > 1 %}Tags{% else %}Tag{% endif %}:</strong>
             {% for label in note.labels %}
               <span style="margin-left: 0.25em;">{{ label }}</span>
             {% endfor %}
