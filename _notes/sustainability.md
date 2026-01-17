@@ -4,6 +4,7 @@ labels:
   - innovating
 display_date: 2025-08-20  # optional override
 description: A look at sustainability practices I find most valuable 
+image: assets/environment.jpg
 ---
 
 <h3>Holistic Sustainability</h3>

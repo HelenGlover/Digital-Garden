@@ -5,6 +5,7 @@ labels:
   - innovating
 display_date: 2025-08-20  # optional override
 description: A look at design practices I find most valuable 
+image: assets/mangotree.jpg
 ---
 
 <h3>Systems Design</h3>

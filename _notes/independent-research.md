@@ -4,6 +4,7 @@ description: A reflection on reclaiming curiosity through independent, public-fa
 labels: 
     - writing
 display_date: 2025-10-12  # optional override
+image: assets/researchpartb.png
 ---
 
 A Little Context

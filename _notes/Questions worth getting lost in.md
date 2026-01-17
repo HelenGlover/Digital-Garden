@@ -3,6 +3,7 @@ title: Questions Worth Getting Lost In
 description: 2026 research goals as part of my independent research journey
 labels: 
     - Independent Research
+image: assets/aemes.png
 ---
 Let’s be honest. Independent research means no one’s checking if you’ve spent multiple hours reading someone’s tech blog from 2013 (which you could make the argument is helping you learn about the past), but is really just passive exploration. So I’ve given myself some research questions, not to constrain curiosity, but to channel it. They keep me focused while still leaving room to explore and occasionally get sidetracked with this time, with intention.
 
