@@ -18,7 +18,7 @@ Each question is tied to actual work I doing whether that be communities I'm par
 
 
 
-#### Structural: How do emerging technologies move from ideation to implementation and adaptation?
+### Structural: How do emerging technologies move from ideation to implementation and adaptation?
 
 - **How can we bridge the gap between academia and industry?**
   
@@ -40,7 +40,7 @@ Each question is tied to actual work I doing whether that be communities I'm par
     - *Action: Exploring in relation to ecosystem-building through groups I help run.*
 
 
-#### Social: How do technology and human relationships shape each other within interconnected networks?
+### Social: How do technology and human relationships shape each other within interconnected networks?
 
 - **What sustains voluntaristic open technology communities?**
   
@@ -60,15 +60,15 @@ Each question is tied to actual work I doing whether that be communities I'm par
 ---
 
 
-#### Now What? 
+### Now What? 
 
 Unlike traditional research projects with neat methodologies and predetermined outputs (aka the classic academic paper), independent research means wandering around a bit before you know exactly what you’re building. Many of these questions will eventually have outcomes whether that be structure-changing outcomes, like developing new community practices at Mango Tree CIB by asking *“What sustains voluntaristic open technology communities?”* or product-focused outcomes, like building a community playbook at Civic Tech DC by asking *“What does it really mean to build community?”*
 
 But for now, the work is delightfully messy and exploratory:
 
-- Ethnographic observation: When I attend events, I carry a notebook to record observations and map patterns. Later, I synthesize these observations into my actual research notebooks.
+- **Ethnographic Observation:** When I attend events, I carry a notebook to record observations and map patterns. Later, I synthesize these observations into my actual research notebooks.
   
-- Conversational interviews: Or in fancy research terms, "semi-structured informal interviews" with consent forms and question scripts. But really, they're just good conversations where I learn from people's experiences and explore potential collaborations.
+- **Conversational Interviews:** Or in fancy research terms, "semi-structured informal interviews" with consent forms and question scripts. But really, they're just good conversations where I learn from people's experiences and explore potential collaborations.
   
 These questions aren’t meant to be answered definitively. They’re meant to guide curiosity and ultimately produce something useful, whether that’s new practices, better tools, or a clearer understanding of how technology and community intersect.
 
