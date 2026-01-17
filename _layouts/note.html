@@ -3,54 +3,76 @@ layout: default
 ---
 
 <article>
-  <div>
-    <h1>{{ page.title }}</h1>
-    <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{% if page.type != 'pages' %}
-      Last updated on {{ page.last_modified_at | date: "%B %-d, %Y" }}
+
+  <!-- Featured Header Block -->
+  <div style="
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff8e7; /* light cream */
+    padding: 2rem;
+    min-height: 66vh; /* ~6/9 of the viewport */
+    margin-bottom: 2rem;
+    border-radius: 12px;
+  ">
+    <!-- Title on the left -->
+    <div style="flex: 1; padding-right: 2rem;">
+      <h1 style="margin: 0; font-size: 2.5rem;">{{ page.title }}</h1>
+      <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" style="font-size: 0.9rem; color: #555;">
+        {% if page.type != 'pages' %}
+          Last updated on {{ page.last_modified_at | date: "%B %-d, %Y" }}
+        {% endif %}
+      </time>
+    </div>
+
+    <!-- Image on the right -->
+    <div style="flex: 1; text-align: right;">
+      {% if page.image %}
+        <img src="{{ page.image }}" alt="{{ page.title }}" style="max-height: 200px; border-radius: 8px;">
+      {% else %}
+        <!-- Optional placeholder if no image -->
+        <div style="width: 200px; height: 150px; background-color: #f0e7d8; border-radius: 8px;"></div>
       {% endif %}
-    </time>
+    </div>
   </div>
 
+  <!-- Main Content -->
   <div id="notes-entry-container">
     <content>
       {{ content }}
       <p></p>
     </content>
 
-    <!-- ############################## -->
-     <side style="font-size: 0.9em">
-  {% if page.labels and page.labels.size > 0 %}
-    {% for label in page.labels %}
-      <h3 style="margin-bottom: 1em">Other {{ label }} notes</h3>
+    <!-- Side Section with Related Notes -->
+    <side style="font-size: 0.9em">
+      {% if page.labels and page.labels.size > 0 %}
+        {% for label in page.labels %}
+          <h3 style="margin-bottom: 1em">Other {{ label }} notes</h3>
 
-      {% assign related_notes = site.notes | where: "labels", label %}
-      {% assign has_related = false %}
+          {% assign related_notes = site.notes | where: "labels", label %}
+          {% assign has_related = false %}
 
-      <div style="display: grid; grid-gap: 1em;">
-        {% for note in related_notes %}
-          {% unless note.url == page.url %}
-            {% assign has_related = true %}
-            <div class="backlink-box">
-              <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}{% if site.use_html_extension %}.html{% endif %}">
-                {{ note.title }}
-              </a>
-            </div>
+          <div style="display: grid; grid-gap: 1em;">
+            {% for note in related_notes %}
+              {% unless note.url == page.url %}
+                {% assign has_related = true %}
+                <div class="backlink-box">
+                  <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}{% if site.use_html_extension %}.html{% endif %}">
+                    {{ note.title }}
+                  </a>
+                </div>
+              {% endunless %}
+            {% endfor %}
+          </div>
+
+          {% unless has_related %}
+            <p style="font-size: 0.9em">There are no other {{ label }} notes.</p>
           {% endunless %}
         {% endfor %}
-      </div>
-
-      {% unless has_related %}
-        <p style="font-size: 0.9em">There are no other {{ label }} notes.</p>
-      {% endunless %}
-    {% endfor %}
-  {% else %}
-    <h3 style="margin-bottom: 1em">Other notes</h3>
-    <p>No labels available for this note.</p>
-  {% endif %}
-</side>
-
-    
-
-    
+      {% else %}
+        <h3 style="margin-bottom: 1em">Other notes</h3>
+        <p>No labels available for this note.</p>
+      {% endif %}
+    </side>
   </div>
 </article>

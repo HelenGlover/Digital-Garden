@@ -66,7 +66,7 @@ Unlike traditional research projects with neat methodologies and predetermined o
 
 But for now, the work is delightfully messy and exploratory:
 
-- **Ethnographic Observation:** When I attend events, I carry a notebook to record observations and map patterns. Later, I synthesize these observations into my actual research notebooks.
+- **Ethnographic Observation:** When I attend events, I carry a notebook to record observations and map patterns. Later, I synthesize these observations into my actual research notebooks. This includes recognizing the many wonderful colleges and universities in D,C, and attending events open to the public. It is a great way to hear about new cutting edge research.
   
 - **Conversational Interviews:** Or in fancy research terms, "semi-structured informal interviews" with consent forms and question scripts. But really, they're just good conversations where I learn from people's experiences and explore potential collaborations.
   

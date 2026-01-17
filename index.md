@@ -7,7 +7,7 @@ title: Home
 
 [Back to the main site](helenyglover.com)
 
-# Welcome! 🌱
+# Welcome!
 
 <p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.0; font-size: 0.95em;">
   Inspired by the concept of a 
@@ -18,14 +18,14 @@ title: Home
   I see personal growth as a process of reflection, and my main goal for this platform is to support that growth by thinking through what I read and learn. Some people may read these posts, and I hope they see them not as fixed opinions but as a stream of thoughts in a learning process. To stay true to that, I write freely without being paralyzed by refined editing, noting any updates along the way.
 </p>
 
-<h2>Latest notes</h2>
+<h2>Latest Thoughts</h2>
 
 <ul style="list-style: none; padding-left: 0;">
   {% assign notes_by_date = site.notes | sort: "git_created_at" | reverse %}
   {% for note in notes_by_date %}
     <li style="margin-bottom: 1.1em;">  
       <!-- Title -->
-      <div style="font-size: 0.97em; font-weight: 200; margin-bottom: 0.15em;">
+      <div style="font-size: 1em; font-weight: 200; margin-bottom: 0.15em;">
         <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">
           {{ note.title }}
         </a>
@@ -52,5 +52,9 @@ title: Home
     </li>
   {% endfor %}
 </ul>
+
+<h2>In Publication</h2>
+
+
 
 <br><br>
