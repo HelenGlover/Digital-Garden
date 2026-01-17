@@ -1,8 +1,10 @@
 ---
 title: Design 
+
 labels: 
   - innovating
 display_date: 2025-08-20  # optional override
+description: A look at design practices I find most valuable 
 ---
 
 <h3>Systems Design</h3>

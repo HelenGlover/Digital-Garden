@@ -1,6 +1,6 @@
 ---
 title: Questions Worth Getting Lost In
-description: A reflection on 2026 research goals as part of my independent research
+description: 2026 research goals as part of my independent research journey
 labels: 
     - Independent Research
 ---
@@ -8,7 +8,7 @@ Let’s be honest. Independent research means no one’s checking if you’ve sp
 
 These questions reflect how I think about technology.
 
-        *I explore two key dimensions of technology: the structural, focused on the security and stability of emerging technologies, and the social, centered on how digital growth shapes societal structures. I believe in intersectionality, recognizing that no topic exists in isolation and that the most effective solutions come from blending insights across disciplines.*
+> I explore two key dimensions of technology: the structural, focused on the security and stability of emerging technologies, and the social, centered on how digital growth shapes societal structures. I believe in intersectionality, recognizing that no topic exists in isolation and that the most effective solutions come from blending insights across disciplines.*
         
 
 Each question is tied to actual work I doing whether that be communities I'm part of or projects I'm building. And of course, they will evolve as I discover new, more interesting avenues or limitations.
