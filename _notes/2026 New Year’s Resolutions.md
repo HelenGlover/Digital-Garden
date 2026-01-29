@@ -8,7 +8,7 @@ image: assets/woman-doing-research.jpg
 ---
 New Year's Resolutions have a way of slipping through the cracks once February arrives, but last year I discovered something that has helped me change that pattern: the simple act of documentation. By committing my intentions to paper and periodically revisiting them, I didn't just accomplish what I set out to do (which felt incredible); the practice of reflection also gave me a clearer understanding of my interests and opened doors to opportunities I hadn't anticipated.
 
-This year, I’m writing down my goals more publicly (thanks, [Tracey Chou](https://triketora.com) for the inspiration.
+This year, I’m writing down my goals more publicly (thanks, [Tracey Chou](https://triketora.com) for the inspiration).
 
 Naturally, I've held back some goals as not everything belongs on the internet.
 
@@ -25,6 +25,7 @@ Naturally, I've held back some goals as not everything belongs on the internet.
 - <b>Make civic tech less insular</b>. I am working on collaborating with local organizations to host special events that make civic tech exciting. With the U.S.'s 250th anniversary, it's a natural moment to focus on what civic participation really means in showing up and taking responsibility for the communities we live in. 
 
 
+<br>
 
 <img src="assets/civictechdc.jpg" alt="Mango Tree" width="600" style="border-radius: 2px; display: block; margin: 1em 0;" />
 <br>
@@ -33,7 +34,7 @@ Naturally, I've held back some goals as not everything belongs on the internet.
 
 - <b>Continue supporting growth</b> in the team’s project management, outreach, and community development, which includes expanding partnerships with universities.
 - <b>Strengthen our credibility through more rigorous, public-facing writing</b>. We're building tools that matter for information integrity, and that work needs to be shared beyond our immediate network. We are actually doing at over on Medium.
-
+<br>
 <img src="assets/mangotree.jpg" alt="Mango Tree" width="600" style="border-radius: 2px; display: block; margin: 1em 0;" />
 <br>
 
@@ -56,8 +57,10 @@ Naturally, I've held back some goals as not everything belongs on the internet.
 
 - Hosting events that pair researchers presenting problems or findings with industry professionals who can explore practical applications and implementation challenges.
 - Engaging local nonprofits, coalitions, and student groups to make these discussions actionable rather than theoretical. This would include experimenting with formats like fireside chats and smaller-group conversations.
+<br>
 
 <img src="assets/acmdc.jpg" alt="Mango Tree" width="600" style="border-radius: 2px; display: block; margin: 1em 0;" />
+<br>
 
 ## **Personal Development**
 
@@ -71,4 +74,4 @@ Naturally, I've held back some goals as not everything belongs on the internet.
 
 #### **A Note on Goals**
 
-Even if you don’t achieve them exactly as planned, it doesn’t mean you’ve failed. Goals naturally evolve as you learn and encounter new opportunities. For example, a goal to run a 5-minute mile might shift to focusing on endurance and completing six miles, or even spending that time on another hobby. What truly matters is making progress and using resolutions as a tool for personal growth and self-improvement.
+Even if you don’t achieve goals exactly as planned, it doesn’t mean you’ve failed. Goals naturally evolve as you learn and encounter new opportunities. For example, a goal to run a 5-minute mile might shift to focusing on endurance and completing six miles, or even spending that time on another hobby. What truly matters is making progress and using resolutions as a tool for personal growth and self-improvement.
