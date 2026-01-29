@@ -54,8 +54,10 @@ I hope readers approach these entries not as fixed opinions but as evolving thou
   {% endfor %}
 </ul>
 
-<h2>On the docket:</h2>
+<h2>In Other Spaces:</h2>
 
-Reach out at 
+[Behind the Screens: How Coordinated Inauthentic Behavior Shapes Online Narratives](https://medium.com/@cibmangotree/behind-the-screens-how-coordinated-inauthentic-behavior-shapes-online-narratives-dae5bb2b5a18) written for CIB Mango Tree, on Medium
+
+[The First Year: The Volunteers Who Are Building CIB Mango Tree](https://medium.com/@cibmangotree/a-year-of-community-and-growth-at-cib-mango-tree-3c9a49383ceb) written for CIB Mango Tree, on Medium
 
 <br><br>
