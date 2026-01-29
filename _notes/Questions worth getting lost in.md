@@ -74,3 +74,5 @@ But for now, the work is delightfully messy and exploratory:
 These questions aren’t meant to be answered definitively. They’re meant to guide curiosity and ultimately produce something useful, whether that’s new practices, better tools, or a clearer understanding of how technology and community intersect.
 
 The best research happens when you’re genuinely curious and actively engaged. These questions keep me both.
+
+This article was published in Substack. I love polishing up this blog, but a new writer, Substack has the marketing mechanisms for people to find. 

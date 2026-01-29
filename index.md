@@ -14,8 +14,9 @@ title: Home
   <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">
     digital garden
   </a>, 
-  this site is an exploratory outlet for my thoughts. 
-  I see personal growth as a process of reflection, and my main goal for this platform is to support that growth by thinking through what I read and learn. Some people may read these posts, and I hope they see them not as fixed opinions but as a stream of thoughts in a learning process. To stay true to that, I write freely without being paralyzed by refined editing, noting any updates along the way.
+this site serves as an exploratory outlet for my thoughts. I view personal growth as fundamentally a process of reflection, and my goal for this space is to cultivate that growth by articulating what I read and learn. <br><br>
+I hope you'll approach these entries not as fixed opinions but as a stream of evolving thoughts—a practice of learning in public. To remain authentic to that vision, I write freely without being paralyzed by extensive editing. In cases where my opinions change or my knowledge grows, I'll add updates along the way.
+
 </p>
 
 <h2>Latest Thoughts</h2>
@@ -53,8 +54,8 @@ title: Home
   {% endfor %}
 </ul>
 
-<h2>In Publication</h2>
+<h2>On the docket:</h2>
 
-
+Reach out at 
 
 <br><br>
