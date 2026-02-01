@@ -27,18 +27,18 @@ So here is what that looks like in practice. My work specifically focuses on ope
 <br><br>
 ## Myths and Questions
 
-#### Are you just mad you’re not in academia?
+#### *Are you just mad you’re not in academia?*
 No :) In fact, one day, I would like to return to academia to pursue a higher degree, either a master’s or a PhD. That’s been a goal of mine since sophomore year.  I see independent research not as a rejection of academia, but as a way to keep engaging with it on my own terms in the meantime. Academia isn't the only path to research, and for those who can't or don't want to be in it, that shouldn't be the end.
 <br><br>
 
-#### Are you being paid? 
+#### *Are you being paid?* 
 What makes Andy Matuschak's reflection so interesting is that he crowdsourced funding for his research. Another great example is Nadia Asparouhova, who was [funded by Protocol Labs and the Ford Foundation to write her book on open source](https://nadia.xyz/phd). But as Nadia also said, "At each point between phases, I didn't know where my next source of funding was going to come from." 
 <br><br>
 
 For me, it's simpler than that. I have a full-time job, and my research lives alongside my personal projects, many of which are collaborative, which means timelines shift based on other people and factors outside my control. That's actually why the "learn in public" approach works so well here. A funded researcher has to produce something by a certain date. I just document the process as it unfolds. And as corny as it sounds, I really do believe being paid in knowledge is, in most cases, more valuable than money. But if you are interested in independent research and want funding, check out [New Science](https://newscience.org/).
 <br><br>
 
-#### Isn’t independent research just a Substack?
+#### *Isn’t independent research just a Substack?*
 No. Substack is a medium for public commentary. Independent research is a method for knowledge creation. My work will focus on generating original insights through interviews, small-scale experiments, and triangulation across multiple sources. While it’s public-facing, the goal is to communicate something new.
 
 So here's to the formal start of this journey. At the end of the day, it all comes back to what pulled me in the first place, curiosity, and now I get to explore it more freely than ever.
