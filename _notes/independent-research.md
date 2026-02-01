@@ -24,7 +24,7 @@ A year and a half out of college, I find myself missing exactly that, the work i
 Without institutional structures, I have to identify my own frameworks and accountability measures that universities and research labs would ordinarily provide. Paradoxically, this flexibility means I can challenge the boundaries of what constitutes research. Rather than sharing my work only when it's packaged with a nice bow, I publicly focus on the least rosy parts: what is confusing, what is frustrating, and what's not working. Andy Matuschak calls this "anti-marketing," the idea that sharing the hard parts of your process isn't a weakness, it's what makes the work honest. It is also related to the [Learn in Public](https://www.swyx.io/learn-in-public) philosophy, to “open source your knowledge! At every step of the way: document what you did and the problems you solved.” Sharing those moments as they happen is what keeps the work alive and invites people to engage along the way.
 <br><br>
 So here is what that looks like in practice. My work specifically focuses on open-source communities, civic technology, and the policy frameworks that support them. Because I maintain multiple concurrent projects, my research questions serve a dual function: they provide scaffolding that frames each project while deepening my understanding of the thematic connections across my portfolio. The research itself will be available through writings like this, project documentation, and prototypes.
-
+<br><br>
 ## Myths and Questions
 
 #### Are you just mad you’re not in academia?
@@ -42,7 +42,7 @@ For me, it's simpler than that. I have a full-time job, and my research lives al
 No. Substack is a medium for public commentary. Independent research is a method for knowledge creation. My work will focus on generating original insights through interviews, small-scale experiments, and triangulation across multiple sources. While it’s public-facing, the goal is to communicate something new.
 
 So here's to the formal start of this journey. At the end of the day, it all comes back to what pulled me in the first place, curiosity, and now I get to explore it more freely than ever.
-
+<br><br>
 ### Inspiration for Me, Future Reading for You
 
 - [What is an Independent Researcher?](https://medium.com/@phmeproject/what-is-an-independent-researcher-7696f779d5b0) by Candice Kelly
