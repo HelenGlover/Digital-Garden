@@ -28,7 +28,7 @@ So here is what that looks like in practice. My work specifically focuses on ope
 ## Myths and Questions
 
 #### Are you just mad you’re not in academia?
-No :) In fact, I hope to return to academia to pursue a higher degree, either a master’s or a PhD. That’s been a goal of mine since sophomore year. I see independent research not as a rejection of academia, but as a way to engage with it in a less traditional setting.
+No :) In fact, one day, I would like to return to academia to pursue a higher degree, either a master’s or a PhD. That’s been a goal of mine since sophomore year.  I see independent research not as a rejection of academia, but as a way to keep engaging with it on my own terms in the meantime. Academia isn't the only path to research, and for those who can't or don't want to be in it, that shouldn't be the end.
 <br><br>
 
 #### Are you being paid? 
