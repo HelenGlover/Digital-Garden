@@ -28,15 +28,15 @@ So here is what that looks like in practice. My work specifically focuses on ope
 <br><br>
 ## Myths and Questions
 
-#### *Are you just mad you’re not in academia?*
-No :) In fact, one day, I would like to return to academia to pursue a higher degree, either a master’s or a PhD. That’s been a goal of mine since sophomore year.  I see independent research not as a rejection of academia, but as a way to keep engaging with it on my own terms in the meantime. Academia isn't the only path to research, and for those who can't or don't want to be in it, that shouldn't be the end.
-<br><br>
-
 #### *Are you being paid?* 
 What makes Andy Matuschak's reflection so interesting is that he crowdsourced funding for his research. Another great example is Nadia Asparouhova, who was [funded by Protocol Labs and the Ford Foundation to write her book on open source](https://nadia.xyz/phd). But as Nadia also said, "At each point between phases, I didn't know where my next source of funding was going to come from." 
 <br><br>
 
 For me, it's simpler than that. I like stability and have a great full-time job. Also, my research is closely tied to my personal projects, many of which are collaborative and move on timelines influenced by other people and factors outside my control. That's actually why the "learn in public" approach works so well here. A funded researcher has to produce something by a certain date. I just document the process as it unfolds. And as corny as it sounds, I really do believe being paid in knowledge is, in most cases, more valuable than money. But if you are interested in independent research and want funding, check out [New Science](https://newscience.org/).
+<br><br>
+
+#### *Are you just mad you’re not in academia?*
+No :) In fact, one day, I would like to return to academia to pursue a higher degree, either a master’s or a PhD. That’s been a goal of mine since sophomore year.  I see independent research not as a rejection of academia, but as a way to keep engaging with it on my own terms in the meantime. Academia isn't the only path to research, and for those who can't or don't want to be in it, that shouldn't be the end. As Nadia also said, "The most important thing that I think academia has to offer is giving researchers a stable career path to explore long-term questions...Working independently was useful to me in earlier stages of research."
 <br><br>
 
 #### *Isn’t independent research just a Substack?*

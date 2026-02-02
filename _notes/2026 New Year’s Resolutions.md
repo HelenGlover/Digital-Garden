@@ -24,9 +24,6 @@ Naturally, I've held back some goals as not everything belongs on the internet.
 - <b>Develop a Civic Tech playbook</b> based on lessons learned from running the organization and best practices for sustaining civic tech initiatives. What actually sustains civic tech initiatives when the initial enthusiasm fades? How to keep momentum and motivation alive?
 - <b>Make civic tech less insular</b>. I am working on collaborating with local organizations to host special events that make civic tech exciting. With the U.S.'s 250th anniversary, it's a natural moment to focus on what civic participation really means in showing up and taking responsibility for the communities we live in. 
 
-
-<br>
-
 <img src="assets/civictechdc.jpg" alt="Mango Tree" width="600" style="border-radius: 2px; display: block; margin: 1em 0;" />
 <br>
 
@@ -57,7 +54,6 @@ Naturally, I've held back some goals as not everything belongs on the internet.
 
 - Hosting events that pair researchers presenting problems or findings with industry professionals who can explore practical applications and implementation challenges.
 - Engaging local nonprofits, coalitions, and student groups to make these discussions actionable rather than theoretical. This would include experimenting with formats like fireside chats and smaller-group conversations.
-<br>
 
 <img src="assets/acmdc.jpg" alt="Mango Tree" width="600" style="border-radius: 2px; display: block; margin: 1em 0;" />
 <br>
