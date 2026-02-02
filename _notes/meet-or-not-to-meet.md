@@ -3,7 +3,7 @@ title: Meet or Not to Meet
 labels: 
     - community-practices
 description: How to meet, documenting insights from my independent research on collaboration and community building
-image: assets/researchpartb.png
+image: assets/zoommeetings.jpg
 ---
 
 While exploring how communities organize themselves, I realized that the structure of meetings can significantly shape collaboration. Here are some practices I’ve found helpful, both as an organizer and participant. I document them here as part of my ongoing independent research into organizational dynamics and community building.
