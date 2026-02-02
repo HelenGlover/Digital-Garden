@@ -11,3 +11,4 @@ To create effective new policy, stay curious - especially with those whose ideas
 
 If can't bother to leave a message when you git commit, it demostrates you cannot even be bothered to be good
 
+Advice I love, Advice I was given.

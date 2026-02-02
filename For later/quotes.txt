@@ -4,4 +4,7 @@ labels:
   - theme
 ---
 
-<p>“When the light has been removed and my wife has fallen silent, aware of this habit that’s now mine, I examine my entire day and go back over what I’ve done and said, hiding nothing from myself, passing nothing by.” Seneca</p>
+<p>“When the light has been removed and my wife has fallen silent, aware of this habit that’s now mine, 
+
+
+I examine my entire day and go back over what I’ve done and said, hiding nothing from myself, passing nothing by.” Seneca</p>
