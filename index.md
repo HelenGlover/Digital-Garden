@@ -33,7 +33,7 @@ I hope readers approach these entries not as fixed opinions but as evolving thou
       </div>
       <!-- Description -->
       {% if note.description %}
-        <div style="color: #777; font-size: 0.9em; margin-bottom: 0.25em; max-width: 42em;">
+        <div style="color: #777; font-size: 0.9em; margin-bottom: 0.25em; max-width: 60em;">
           {{ note.description }}
         </div>
       {% endif %}
