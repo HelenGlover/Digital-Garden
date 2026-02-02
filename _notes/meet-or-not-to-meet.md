@@ -5,9 +5,13 @@ labels:
 description: How to meet, documenting insights from my independent research on collaboration and community building
 image: assets/zoommeetings.jpg
 ---
-
-<img src="assets/zoommeetings.jpg" alt="Meet or Not to Meet" style="width:100%; height:auto; max-height:600px; object-fit:cover; margin-bottom:20px;">
-
+<style>
+.post-header-image img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+</style>
 
 While exploring how communities organize themselves, I realized that the structure of meetings can significantly shape collaboration. Here are some practices I’ve found helpful, both as an organizer and participant. I document them here as part of my ongoing independent research into organizational dynamics and community building.
 
