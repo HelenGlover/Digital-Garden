@@ -1,6 +1,7 @@
 ---
 title: Sometimes an End is Not Needed
 description: Community initiatives should not be evaluated by permanence but by the capacity they create. 
+image: assets/dc.jpg
 ---
 
 If there is one thing most people will learn immediately when they meet me, it's that I ask what the end is. 
