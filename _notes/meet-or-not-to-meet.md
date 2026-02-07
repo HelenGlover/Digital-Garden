@@ -2,7 +2,7 @@
 title: Meet or Not to Meet
 labels: 
     - community-practices
-description: How to meet, documenting insights from my independent research on collaboration and community building
+description: How to meet, insights from my independent research on collaboration and community building
 image: assets/zoommeetings.jpg
 ---
 <style>
@@ -13,11 +13,9 @@ image: assets/zoommeetings.jpg
 }
 </style>
 
-While exploring how communities organize themselves, I realized that the structure of meetings can significantly shape collaboration. Here are some practices I’ve found helpful, both as an organizer and participant. I document them here as part of my ongoing independent research into organizational dynamics and community building.
+While exploring how communities organize themselves, I realized that the structure of meetings can significantly shape collaboration. Here are some practices I’ve found helpful, both as an organizer and participant in <b>community meetings (not formal work ones)</b>. I document them here as part of my ongoing independent research into organizational dynamics and ecosystem building.
 
-This blog is a learn in public and partially inspired by [Anson Yu’s Advice Page](https://ansonyu.me/advice).  
-
-
+This blog is a learn in public and partially inspired by [Anson Yu’s Advice Page](https://ansonyu.me/advice). 
 
 ## **If You Organize a Meeting**
 
@@ -30,13 +28,14 @@ This blog is a learn in public and partially inspired by [Anson Yu’s Advice Pa
 
 - **Always have an agenda.** It doesn’t have to be formal; bullet points work. Assume most people won’t read it beforehand, so when you start talking about a new item, give some quick context to spark discussion. Frankly, if you don't have an agenda, don't have a meeting.
 
-- **Rethink default durations.** It is common to schedule meetings for the default 30- or 60-minute duration. Here's the thing: whatever time you set for the meeting, even if it's a 5-minute update, people will find things to talk about for 30 minutes. And frankly, if it's less than 30, maybe it's better to just text or email.
+- **Rethink default durations.** It is common to schedule meetings for the default 30- or 60-minute duration. This is actually a huge pet peeve - whatever time you set for the meeting, even if it's a 5-minute update, people will find things to talk about for 30 minutes. And frankly, if it's less than 30, maybe it's better to just text or email.
 
 - **Prep your presenters.** Prep your presenters. If someone is expected to share an update, especially quieter participants, check in with them beforehand. A simple, “Hey Bob, are you okay with sharing about our new team swag?” lets them know you want them to speak and helps them feel comfortable.
 
 - **Set the tone.** If it fits your team culture, use friendlier language to describe the meeting, “chat,” “sync,” or “meet-up” instead of “meeting.” It can make the invitation feel less formal and more inviting.
 
 - **The type of meeting matters.** I used to use Gather, a virtual office you can decorate, but I don’t anymore since it requires a paid plan. Zoom, Google Meet, and Teams all have different strengths; I tend to prefer Google Meet as a middle ground between Zoom, which people are tired of, and Teams, which feels very work-focused.
+<img src="assets/gather.png" alt="Gather" width="600" style="border-radius: 2px; display: block; margin: 1em 0;" />
 
 - **Food.** If the meeting is in person, consider bringing the food. It's not required, but people do get cranky, especially during long meetings. It can be as simple as chips and juice, and you don’t have to do it all yourself; feel free to ask others to bring something too.
 <br>
