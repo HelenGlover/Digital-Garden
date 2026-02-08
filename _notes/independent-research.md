@@ -27,11 +27,9 @@ I’m reaching out to seek advice on how to structure and focus this kind of unc
 
 </div>
 
-A librarian graciously reached out to chat despite my terrible, bumbling request, and while she said she didn’t have specific advice, as I had also shared with her some research questions I was interested in exploring at the time, she noted it seemed very relevant and applicable. That conversation didn’t give me a roadmap, but it did give me something more important: permission to take the question seriously.
+A librarian graciously reached out to chat despite my terrible, bumbling request, and while she said she didn’t have specific advice, as I had also shared with her some research questions I was interested in exploring at the time, she noted it seemed very relevant and applicable. That conversation didn’t give me a roadmap, but it did give me something more important: validation to take the question seriously.
 
 Around the same time, I read Candice Kelly’s [What is an Independent Researcher](https://medium.com/@phmeproject/what-is-an-independent-researcher-7696f779d5b0) and Andy Matuschak’s [Reflections on 2020 as an independent researcher](https://andymatuschak.org/2020/). It made me wonder: what if meaningful research didn’t require formal institutional affiliation at all?
-
-For a long time, I assumed that doing real research meant academia. But reading Andy Matuschak's [Reflections on 2020 as an independent researcher](https://andymatuschak.org/2020/) made me wonder: what if you didn't need it?
 <br><br>
 
 ## What is independent research? 
