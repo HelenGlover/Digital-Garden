@@ -1,7 +1,7 @@
 ---
 title: Meet or Not to Meet
 labels: 
-    - community-practices
+    - Community Practices
 description: How to meet, insights from my independent research on collaboration and community building
 image: assets/zoommeetings.jpg
 ---

@@ -1,7 +1,6 @@
 ---
 title: 2026 New Year’s Resolutions 
 labels: 
-    - Goals
     - Independent Research
 description: Continued engagement and opportunities in the making for the new year
 image: assets/woman-doing-research.jpg
