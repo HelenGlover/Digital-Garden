@@ -36,6 +36,7 @@ This blog is a learn in public and partially inspired by [Anson Yu’s Advice Pa
 
 - **The type of meeting matters.** I used to use Gather, a virtual office you can decorate, but I don’t anymore since it requires a paid plan. Zoom, Google Meet, and Teams all have different strengths; I tend to prefer Google Meet as a middle ground between Zoom, which people are tired of, and Teams, which feels very work-focused.
 <img src="assets/gather.png" alt="Gather" width="600" style="border-radius: 2px; display: block; margin: 1em 0;" />
+*(This was my little office)*
 
 - **Food.** If the meeting is in person, consider bringing the food. It's not required, but people do get cranky, especially during long meetings. It can be as simple as chips and juice, and you don’t have to do it all yourself; feel free to ask others to bring something too.
 <br>
