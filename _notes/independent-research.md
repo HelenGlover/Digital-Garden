@@ -9,18 +9,16 @@ image: assets/researchpartb.png
 
 There's something undeniably captivating about the idea of making a whole career out of curiosity: chasing questions that keep you up at night, connecting dots across disciplines that don't usually talk to each other, and following threads that lead somewhere no one has explored yet. For a long time, I assumed that doing real research meant academia. I worked in a great research lab in college, and I missed that work.
 <br><br>
-Last August, about a year after graduating, when I was trying to put a name to this desire, I reached out to my alma mater’s library. Here is a snippet:
+Last August, about a year after graduating, when I was trying to put a name to this desire, I reached out to my alma mater’s library:
 
 <div style="border: 1px solid #ddd; padding: 1.2em; border-radius: 6px; background: #f9f9f9; font-style: italic;">
 
-<p><strong>Email excerpt</strong></p>
-
 <p>
-I’m interested in continuing the research I began during my time at Smith to support both my career growth and future graduate school plans. Now that I have graduated and am no longer affiliated with an academic or research institution, pursuing traditional scholarly research is more challenging.
+I’m interested in continuing the research I began during my time at Smith to support both my career growth and future graduate school plans...Now that I have graduated and am no longer affiliated with an academic or research institution, pursuing traditional scholarly research is more challenging...
 </p>
 
 <p>
-I still want to continue doing research, but from a more independent perspective — writing for public-facing publications and exploring questions through my side projects.
+I still want to continue doing research, but from a more independent perspective, writing for public-facing publications and exploring questions through my side projects...
 </p>
 
 <p>
@@ -29,7 +27,7 @@ I’m reaching out to seek advice on how to structure and focus this kind of unc
 
 </div>
 
-A librarian graciously reached out to chat despite my bumbling request, and while she said she didn’t have specific advice, as I had also shared with her some research questions I was interested in exploring at the time, she noted it seemed very relevant and applicable. That conversation didn’t give me a roadmap, but it did give me something more important: permission to take the question seriously.
+A librarian graciously reached out to chat despite my terrible, bumbling request, and while she said she didn’t have specific advice, as I had also shared with her some research questions I was interested in exploring at the time, she noted it seemed very relevant and applicable. That conversation didn’t give me a roadmap, but it did give me something more important: permission to take the question seriously.
 
 Around the same time, I read Candice Kelly’s [What is an Independent Researcher](https://medium.com/@phmeproject/what-is-an-independent-researcher-7696f779d5b0) and Andy Matuschak’s [Reflections on 2020 as an independent researcher](https://andymatuschak.org/2020/). It made me wonder: what if meaningful research didn’t require formal institutional affiliation at all?
 
