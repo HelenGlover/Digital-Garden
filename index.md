@@ -68,6 +68,7 @@ title: Home
   line-height: 1.3;
 }
 </style>
+
 <div class="main-wrapper">
   <!-- Main content -->
   <div class="main-content">
@@ -76,7 +77,7 @@ title: Home
       <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">
         digital garden
       </a>, 
-      this site serves as an exploratory outlet for my thoughts. I view persognal growth as fundamentally a process of reflection, and my goal for this space is to cultivate that growth by articulating what I read and learn. <br><br>
+      this site serves as an exploratory outlet for my thoughts. I view personal growth as fundamentally a process of reflection, and my goal for this space is to cultivate that growth by articulating what I read and learn. <br><br>
       I hope readers approach these entries not as fixed opinions but as evolving thoughts, a practice of learning in public. To stay authentic to that, I write freely versus being perfectly polished. When my opinions change or my knowledge deepens, I'll add updates accordingly.
     </p>
     <h2>Latest Thoughts</h2>
@@ -121,29 +122,18 @@ title: Home
       </a> written for CIB Mango Tree, on Medium
     </p>
   </div>
+  <!-- Sidebar -->
   <div class="sidebar">
     <h3>Tags</h3>
     <ul>
-{% assign tag_counts = {} %}
-      <!-- Initialize tags -->
+      {% assign tag_counts = {} %}
       {% for note in site.notes %}
         {% if note.labels %}
           {% for tag in note.labels %}
-            {% if tag_counts[tag] == nil %}
-              {% assign tag_counts = tag_counts | merge: {{ tag | jsonify }}: 0 %}
-            {% endif %}
+            {% assign tag_counts[tag] = tag_counts[tag] | default: 0 | plus: 1 %}
           {% endfor %}
         {% endif %}
       {% endfor %}
-      <!-- Count tags -->
-      {% for note in site.notes %}
-        {% if note.labels %}
-          {% for tag in note.labels %}
-            {% assign tag_counts[tag] = tag_counts[tag] | plus: 1 %}
-          {% endfor %}
-        {% endif %}
-      {% endfor %}
-      <!-- Display tags -->
       {% for tag in tag_counts %}
         <li>{{ tag[0] }} ({{ tag[1] }})</li>
       {% endfor %}
