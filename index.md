@@ -86,6 +86,7 @@ title: Home
   </a>, 
   this site serves as an exploratory outlet for my thoughts. I view personal growth as fundamentally a process of reflection, and my goal for this space is to cultivate that growth by articulating what I read and learn. <br><br>
   I hope readers approach these entries not as fixed opinions but as evolving thoughts, a practice of learning in public. To stay authentic to that, I write freely versus being perfectly polished. When my opinions change or my knowledge deepens, I'll add updates accordingly.
+  <br> Opinions are my own.
 </div>
 <!-- Main content + sidebar -->
 <div class="main-wrapper">

@@ -7,7 +7,23 @@ display_date: 2025-10-12  # optional override
 image: assets/researchpartb.png
 ---
 
-There's something undeniably captivating about the idea of making a whole career out of curiosity: chasing questions that keep you up at night, connecting dots across disciplines that don't usually talk to each other, and following threads that lead somewhere no one has explored yet. For a long time, I assumed that doing real research meant academia. But reading Andy Matuschak's [Reflections on 2020 as an independent researcher](https://andymatuschak.org/2020/) made me wonder: what if you didn't need it?
+There's something undeniably captivating about the idea of making a whole career out of curiosity: chasing questions that keep you up at night, connecting dots across disciplines that don't usually talk to each other, and following threads that lead somewhere no one has explored yet. For a long time, I assumed that doing real research meant academia. I worked in a great research lab in college, and I missed that work.
+<br><br>
+Last August, about a year after graduating, when I was trying to put a name to this desire, I reached out to my alma mater’s library. Here is a snippet:
+
+> [!note] Email excerpt
+> I’m interested in continuing the research I began during my time at Smith to support both my career growth and future graduate school plans. Now that I have graduated and am no longer affiliated with an academic or research institution, pursuing traditional scholarly research is more challenging.
+>
+> I still want to continue doing research, but from a more independent perspective — writing for public-facing publications and exploring questions through my side projects.
+>
+> I’m reaching out to seek advice on how to structure and focus this kind of unconventional research, and also to understand how this independent work might be viewed or valued in the context of graduate school applications.
+
+<br><br>
+A librarian graciously reached out to chat despite my bumbling request, and while she said she didn’t have specific advice, as I had also shared with her some research questions I was interested in exploring at the time, she noted it seemed very relevant and applicable. That conversation didn’t give me a roadmap, but it did give me something more important: permission to take the question seriously.
+
+Around the same time, I read Candice Kelly’s [What is an Independent Researcher](https://medium.com/@phmeproject/what-is-an-independent-researcher-7696f779d5b0) and Andy Matuschak’s [Reflections on 2020 as an independent researcher](https://andymatuschak.org/2020/). It made me wonder: what if meaningful research didn’t require formal institutional affiliation at all?
+
+For a long time, I assumed that doing real research meant academia. But reading Andy Matuschak's [Reflections on 2020 as an independent researcher](https://andymatuschak.org/2020/) made me wonder: what if you didn't need it?
 <br><br>
 
 ## What is independent research? 
