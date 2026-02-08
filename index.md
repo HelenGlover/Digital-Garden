@@ -121,6 +121,17 @@ title: Home
         </li>
       {% endfor %}
     </ul>
+    <h2>In Other Spaces:</h2>
+    <p>
+      <a href="https://medium.com/@cibmangotree/behind-the-screens-how-coordinated-inauthentic-behavior-shapes-online-narratives-dae5bb2b5a18">
+        Behind the Screens: How Coordinated Inauthentic Behavior Shapes Online Narratives
+      </a> written for CIB Mango Tree, on Medium
+    </p>
+    <p>
+      <a href="https://medium.com/@cibmangotree/a-year-of-community-and-growth-at-cib-mango-tree-3c9a49383ceb">
+        The First Year: The Volunteers Who Are Building CIB Mango Tree
+      </a> written for CIB Mango Tree, on Medium
+    </p>
   </div>
   <!-- Sidebar -->
   <div class="sidebar">
