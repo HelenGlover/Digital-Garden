@@ -127,9 +127,9 @@ title: Home
 
   <div class="sidebar">
   <h3>Tags</h3>
-  <ul>
+  <ul style="margin:0; padding-left:0;">
     {% assign extra_labels = 
-      "Community research notes,Long-form reflections on research process, Zeitgeist moments, Pitches, Formal Policy papers, More formal products" | split: "," %}
+      "Zeitgeist moments, Pitches, Articles, Analysis" | split: "," %}
     {% assign all_labels = "" | split: "," %}
     <!-- Step 1: Collect all labels from posts -->
     {% for note in site.notes %}
@@ -152,10 +152,10 @@ title: Home
     <!-- Step 3: Loop over all labels -->
     {% for tag_name in all_labels %}
       {% assign posts_for_tag = site.notes | where_exp:"n","n.labels contains tag_name" %}
-      <li>
+      <li style="margin-bottom:0.5em;">
         {{ tag_name }} ({{ posts_for_tag | size }})
         <span class="arrow">▼</span>
-        <div class="tooltip">
+        <div class="tooltip" style="display:none; margin-top:0.25em; background:#e4e7ff; padding:0.5em; border-radius:4px; font-size:0.85em;">
           {% if posts_for_tag.size > 0 %}
             <ul style="padding-left:0; margin:0;">
               {% for n in posts_for_tag %}
@@ -170,3 +170,15 @@ title: Home
     {% endfor %}
   </ul>
 </div>
+
+<style>
+.sidebar li:hover .tooltip {
+  display: block;
+}
+
+.sidebar li .arrow {
+  margin-left: 0.25em;
+  font-size: 0.8em;
+  color: #555;
+}
+</style>
