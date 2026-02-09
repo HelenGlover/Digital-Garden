@@ -1,6 +1,6 @@
 ---
 title: Questions Worth Getting Lost In
-description: 2026 research goals as part of my independent research journey
+description: Research questions as part of my independent research journey
 labels: 
     - Independent Research
 image: assets/aemes.png

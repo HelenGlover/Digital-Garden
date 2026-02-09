@@ -2,9 +2,8 @@
 title: What is in a Name? 
 labels: 
     - Independent Research
-description: Giving independent research credibility through structure
+description: Giving independent research credibility through traditional structures
 ---
-
 
 The value of research is often measured by external markers that signals credibility within a field from being invited to give a talk to publishing in a scholarly journal. Academia also has a familiar quantifiable rhythm; you know how long it should take to complete a PhD, how many papers you should produce, and which metrics define progress toward tenure. From this perspective, independent research can seem like a low-stakes detour around years of formal training.
 
