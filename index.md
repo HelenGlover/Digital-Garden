@@ -133,55 +133,39 @@ title: Home
   </div>
 
   <!-- Sidebar -->
-  <div class="sidebar">
-    <h3>Tags</h3>
-    <ul>
-      {% assign tag_counts = {} %}
-      {% assign extra_labels = 
-        "Community research notes,Long-form reflections on research process, Zeitgeist moments, Pitches, Formal Policy papers, More formal products" | split: "," %}
-      <!-- Initialize existing tags -->
-      {% for note in site.notes %}
-        {% if note.labels %}
-          {% for tag in note.labels %}
-            {% if tag_counts[tag] == nil %}
-              {% assign tag_counts = tag_counts | merge: {{ tag | jsonify }}: 0 %}
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-      {% endfor %}
-      <!-- Initialize extra labels -->
-      {% for tag in extra_labels %}
-        {% if tag_counts[tag] == nil %}
-          {% assign tag_counts = tag_counts | merge: {{ tag | strip | jsonify }}: 0 %}
-        {% endif %}
-      {% endfor %}
-      <!-- Count tags -->
-      {% for note in site.notes %}
-        {% if note.labels %}
-          {% for tag in note.labels %}
-            {% assign tag_counts[tag] = tag_counts[tag] | plus: 1 %}
-          {% endfor %}
-        {% endif %}
-      {% endfor %}
-      <!-- Display tags with tooltip -->
-      {% for tag in tag_counts %}
+<div class="sidebar">
+  <h3>Tags</h3>
+  <ul>
+    {% assign extra_labels = 
+      "Community research notes,Long-form reflections on research process, Zeitgeist moments, Pitches, Formal Policy papers, More formal products" | split: "," %}
+    <!-- Loop through existing tags -->
+    {% for tag_item in site.tags %}
+      {% assign tag_name = tag_item[0] %}
+      {% assign posts_for_tag = tag_item[1] %}
+      <li>
+        {{ tag_name }} ({{ posts_for_tag | size }})
+        <span class="arrow">▼</span>
+        <div class="tooltip">
+          <ul style="padding-left: 0; margin: 0;">
+            {% for n in posts_for_tag %}
+              <li><a href="{{ n.url }}">{{ n.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </li>
+    {% endfor %}
+    <!-- Add extra labels with no posts -->
+    {% for label in extra_labels %}
+      {% assign label = label | strip %}
+      {% unless site.tags[label] %}
         <li>
-          {{ tag[0] }} ({{ tag[1] }})
+          {{ label }} (0)
           <span class="arrow">▼</span>
           <div class="tooltip">
-            {% assign notes_for_tag = site.notes | where_exp:"n", "n.labels contains tag[0]" %}
-            {% if notes_for_tag.size > 0 %}
-              <ul style="padding-left: 0; margin: 0;">
-                {% for n in notes_for_tag %}
-                  <li><a href="{{ site.baseurl }}{{ n.url }}">{{ n.title }}</a></li>
-                {% endfor %}
-              </ul>
-            {% else %}
-              <em>No posts yet</em>
-            {% endif %}
+            <em>No posts yet</em>
           </div>
         </li>
-      {% endfor %}
-    </ul>
-  </div>
+      {% endunless %}
+    {% endfor %}
+  </ul>
 </div>
