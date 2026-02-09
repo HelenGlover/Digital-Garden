@@ -3,6 +3,7 @@ title: What is in a Name?
 labels: 
     - Independent Research
 description: Giving independent research credibility through traditional structures
+image: assets/lab.jpg
 ---
 
 The value of research is often measured by external markers that signals credibility within a field from being invited to give a talk to publishing in a scholarly journal. Academia also has a familiar quantifiable rhythm; you know how long it should take to complete a PhD, how many papers you should produce, and which metrics define progress toward tenure. From this perspective, independent research can seem like a low-stakes detour around years of formal training.
@@ -36,7 +37,9 @@ My research methodology is best described as applied ethnography with qualitativ
 
 Ethnography is the same type of research I practiced in college, so I have a solid foundation. While ethnography is sometimes criticized for its subjectivity, this perspective allows for a nuanced, contextual understanding that purely quantitative approaches cannot capture. As researcher Rimjhim Surana highlights in her [article](https://www.linkedin.com/pulse/little-bit-you-me-auto-ethnography-research-method-rimjhim-surana/?trackingId=oTyC5Ea5SRqn4JN3Th6ObA%3D%3D):
 
-> In doing the act of ‘writing the self’ there is meaning to be found because the researcher can focus on looking at the subject through an ethnographic lens while simultaneously paying attention to the vulnerable self and everything that falls in between these two. In my opinion, it adds a layer of nuance and understanding to the subject of study, because the researcher is encouraged to tap into the self, something that is not necessarily the case or even possible in studies that have only external participants. Since the act of researching through auto-ethnography is an embodied process, it allows the researcher to not only pass on knowledge, but also pass on the experience of introspection, the conflicts, and the journey of arriving at that knowledge.
+> In doing the act of ‘writing the self’ there is meaning to be found because the researcher can focus on looking at the subject through an ethnographic lens while simultaneously paying attention to the vulnerable self and everything that falls in between these two. 
+
+> In my opinion, it adds a layer of nuance and understanding to the subject of study, because the researcher is encouraged to tap into the self, something that is not necessarily the case or even possible in studies that have only external participants. Since the act of researching through auto-ethnography is an embodied process, it allows the researcher to not only pass on knowledge, but also pass on the experience of introspection, the conflicts, and the journey of arriving at that knowledge.
 
 <!-- ## Creating Structure in Independent Research
 
