@@ -125,42 +125,40 @@ title: Home
     </p>
   </div>
 
-  <!-- Sidebar -->
   <div class="sidebar">
-    <h3>Tags</h3>
-    <ul>
-      {% assign extra_labels = 
-        "Community research notes,Long-form reflections on research process, Zeitgeist moments, Pitches, Formal Policy papers, More formal products" | split: "," %}
-      <!-- Existing tags -->
-      {% for tag_item in site.tags %}
-        {% assign tag_name = tag_item[0] %}
-        {% assign posts_for_tag = tag_item[1] %}
+  <h3>Tags</h3>
+  <ul>
+    {% assign extra_labels = 
+      "Community research notes,Long-form reflections on research process, Zeitgeist moments, Pitches, Formal Policy papers, More formal products" | split: "," %}
+    {% assign all_labels = site.tags | map: "first" %} <!-- existing labels -->
+    <!-- Loop existing tags -->
+    {% for tag_item in site.tags %}
+      {% assign tag_name = tag_item[0] %}
+      {% assign posts_for_tag = tag_item[1] %}
+      <li>
+        {{ tag_name }} ({{ posts_for_tag | size }})
+        <span class="arrow">▼</span>
+        <div class="tooltip">
+          <ul style="padding-left:0; margin:0;">
+            {% for n in posts_for_tag %}
+              <li><a href="{{ n.url }}">{{ n.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </li>
+    {% endfor %}
+    <!-- Add extra labels if they don’t exist -->
+    {% for label in extra_labels %}
+      {% assign label = label | strip %}
+      {% unless all_labels contains label %}
         <li>
-          {{ tag_name }} ({{ posts_for_tag | size }})
+          {{ label }} (0)
           <span class="arrow">▼</span>
           <div class="tooltip">
-            <ul style="padding-left:0; margin:0;">
-              {% for n in posts_for_tag %}
-                <li><a href="{{ n.url }}">{{ n.title }}</a></li>
-              {% endfor %}
-            </ul>
+            <em>No posts yet</em>
           </div>
         </li>
-      {% endfor %}
-      <!-- Extra labels -->
-      {% for label in extra_labels %}
-        {% assign label = label | strip %}
-        {% unless site.tags[label] %}
-          <li>
-            {{ label }} (0)
-            <span class="arrow">▼</span>
-            <div class="tooltip">
-              <em>No posts yet</em>
-            </div>
-          </li>
-        {% endunless %}
-      {% endfor %}
-    </ul>
-  </div>
-
+      {% endunless %}
+    {% endfor %}
+  </ul>
 </div>
