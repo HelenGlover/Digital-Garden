@@ -13,6 +13,7 @@ title: Home
   display: flex;
   gap: 2em;
   margin-top: 2em;
+  align-items: flex-start; /* ensure sidebar aligns with top of articles */
 }
 
 /* Main content takes 2/3 width */
@@ -28,8 +29,7 @@ title: Home
   border-radius: 6px;
   font-size: 0.9em;
   line-height: 1.5;
-  max-height: calc(100vh - 4em);
-  overflow-y: auto;
+  /* remove max-height so sidebar fits number of labels */
 }
 
 /* Tag list */
@@ -40,18 +40,23 @@ title: Home
 }
 
 .sidebar li {
+  position: relative; /* needed for absolute tooltip */
   margin-bottom: 0.5em;
 }
 
-/* Dropdown below the tag */
+/* Dropdown below the tag, absolute so it doesn't expand sidebar */
 .sidebar li .tooltip {
   display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
   margin-top: 0.25em;
   background: #e4e7ff;
   padding: 0.5em;
   border-radius: 4px;
   font-size: 0.85em;
-  line-height: 1.3;
+  z-index: 10;
+  width: max-content;
   min-width: 100%;
 }
 
@@ -64,6 +69,15 @@ title: Home
   margin-left: 0.25em;
   font-size: 0.8em;
   color: #555;
+}
+
+/* Tooltip links */
+.sidebar li .tooltip a {
+  text-decoration: none;
+  color: #333;
+}
+.sidebar li .tooltip a:hover {
+  text-decoration: underline;
 }
 </style>
 
@@ -125,60 +139,50 @@ title: Home
     </p>
   </div>
 
+  <!-- Sidebar -->
   <div class="sidebar">
-  <h3>Tags</h3>
-  <ul style="margin:0; padding-left:0;">
-    {% assign extra_labels = 
-      "Zeitgeist moments, Pitches, Articles, Analysis" | split: "," %}
-    {% assign all_labels = "" | split: "," %}
-    <!-- Step 1: Collect all labels from posts -->
-    {% for note in site.notes %}
-      {% if note.labels %}
-        {% for label in note.labels %}
-          {% assign label = label | strip %}
-          {% unless all_labels contains label %}
-            {% assign all_labels = all_labels | push: label %}
-          {% endunless %}
-        {% endfor %}
-      {% endif %}
-    {% endfor %}
-    <!-- Step 2: Add extra labels if not already included -->
-    {% for label in extra_labels %}
-      {% assign label = label | strip %}
-      {% unless all_labels contains label %}
-        {% assign all_labels = all_labels | push: label %}
-      {% endunless %}
-    {% endfor %}
-    <!-- Step 3: Loop over all labels -->
-    {% for tag_name in all_labels %}
-      {% assign posts_for_tag = site.notes | where_exp:"n","n.labels contains tag_name" %}
-      <li style="margin-bottom:0.5em;">
-        {{ tag_name }} ({{ posts_for_tag | size }})
-        <span class="arrow">▼</span>
-        <div class="tooltip" style="display:none; margin-top:0.25em; background:#e4e7ff; padding:0.5em; border-radius:4px; font-size:0.85em;">
-          {% if posts_for_tag.size > 0 %}
-            <ul style="padding-left:0; margin:0;">
-              {% for n in posts_for_tag %}
-                <li><a href="{{ n.url }}">{{ n.title }}</a></li>
-              {% endfor %}
-            </ul>
-          {% else %}
-            <em>No posts yet</em>
-          {% endif %}
-        </div>
-      </li>
-    {% endfor %}
-  </ul>
+    <h3>Tags</h3>
+    <ul style="margin:0; padding-left:0;">
+      {% assign extra_labels = "Zeitgeist moments,Pitches,Articles,Analysis" | split: "," %}
+      {% assign all_labels = "" | split: "," %}
+      <!-- Step 1: Collect all labels from posts -->
+      {% for note in site.notes %}
+        {% if note.labels %}
+          {% for label in note.labels %}
+            {% assign label = label | strip %}
+            {% unless all_labels contains label %}
+              {% assign all_labels = all_labels | push: label %}
+            {% endunless %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+      <!-- Step 2: Add extra labels if not already included -->
+      {% for label in extra_labels %}
+        {% assign label = label | strip %}
+        {% unless all_labels contains label %}
+          {% assign all_labels = all_labels | push: label %}
+        {% endunless %}
+      {% endfor %}
+      <!-- Step 3: Loop over all labels -->
+      {% for tag_name in all_labels %}
+        {% assign posts_for_tag = site.notes | where_exp:"n","n.labels contains tag_name" %}
+        <li>
+          {{ tag_name }} ({{ posts_for_tag | size }})
+          <span class="arrow">▼</span>
+          <div class="tooltip">
+            {% if posts_for_tag.size > 0 %}
+              <ul style="padding-left:0; margin:0;">
+                {% for n in posts_for_tag %}
+                  <li><a href="{{ n.url }}">{{ n.title }}</a></li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <em>No posts yet</em>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
 </div>
-
-<style>
-.sidebar li:hover .tooltip {
-  display: block;
-}
-
-.sidebar li .arrow {
-  margin-left: 0.25em;
-  font-size: 0.8em;
-  color: #555;
-}
-</style>
