@@ -8,28 +8,18 @@ title: Home
 [Back to the main site](helenyglover.com)
 
 <style>
-/* Flex layout for intro + content + sidebar */
-.intro {
-  background: #f5f7ff;
-  padding: 2em;
-  border-radius: 4px;
-  margin-bottom: 2em;
-  line-height: 2;
-  font-size: 0.95em;
-}
-
+/* Flex layout */
 .main-wrapper {
   display: flex;
   gap: 2em;
-  align-items: flex-start;
 }
 
-/* Articles take 3/4 width */
-.article-list {
-  flex: 3;
+/* Main content */
+.main-content {
+  flex: 2;
 }
 
-/* Sidebar takes 1/4 width and grows with content */
+/* Sidebar */
 .sidebar {
   flex: 1;
   background: #f5f7ff;
@@ -37,13 +27,15 @@ title: Home
   border-radius: 6px;
   font-size: 0.9em;
   line-height: 1.5;
-  margin-top: 1em; /* makes it visually below the intro */
+  position: sticky;
+  top: 2em;
+  max-height: calc(100vh - 4em);
+  overflow-y: auto;
 }
 
-/* Sidebar label styling */
 .sidebar h3 {
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 .sidebar ul {
@@ -54,44 +46,49 @@ title: Home
 
 .sidebar li {
   margin-bottom: 0.5em;
-  background: #fff;
-  padding: 0.3em 0.5em;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Hover tooltip/dropdown */
+.sidebar li .tooltip {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: #e4e7ff;
+  padding: 0.5em;
   border-radius: 4px;
-}
-
-/* Notes list */
-.note-title {
-  font-size: 1em;
-  font-weight: 200;
-  margin-bottom: 0.15em;
-}
-
-.note-description {
-  color: #777;
-  font-size: 0.9em;
-  margin-bottom: 0.25em;
-}
-
-.note-meta {
-  color: #666;
-  font-size: 0.8em;
+  font-size: 0.85em;
   line-height: 1.3;
+  min-width: 200px;
+  z-index: 10;
+  white-space: normal;
+}
+
+.sidebar li:hover .tooltip {
+  display: block;
+}
+
+/* Visual cue for hover */
+.sidebar li .arrow {
+  margin-left: 0.25em;
+  font-size: 0.8em;
+  color: #555;
 }
 </style>
-<!-- Intro paragraph -->
-<div class="intro">
-  Inspired by the concept of a 
-  <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">
-    digital garden
-  </a>, 
-  this site serves as an exploratory outlet for my thoughts. I view personal growth as fundamentally a process of reflection, and my goal for this space is to cultivate that growth by articulating what I read and learn. <br><br>
-  I hope readers approach these entries not as fixed opinions but as evolving thoughts, a practice of learning in public. To stay authentic to that, I write freely versus being perfectly polished. When my opinions change or my knowledge deepens, I'll add updates accordingly.
-  <br> Opinions are my own.
-</div>
-<!-- Main content + sidebar -->
+
 <div class="main-wrapper">
-  <!-- Articles -->
-  <div class="article-list">
+  <!-- Main content -->
+  <div class="main-content">
+    <p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.0; font-size: 0.95em;">
+      Inspired by the concept of a 
+      <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-garden-let-you-cultivate-your-own-little-bit-of-the-internet/">
+        digital garden
+      </a>, 
+      this site serves as an exploratory outlet for my thoughts. I view personal growth as fundamentally a process of reflection, and my goal for this space is to cultivate that growth by articulating what I read and learn. <br><br>
+      I hope readers approach these entries not as fixed opinions but as evolving thoughts, a practice of learning in public. To stay authentic to that, I write freely versus being perfectly polished. When my opinions change or my knowledge deepens, I'll add updates accordingly.
+    </p>
     <h2>Latest Thoughts</h2>
     <ul style="list-style: none; padding-left: 0;">
       {% assign notes_by_date = site.notes | sort: "git_created_at" | reverse %}
@@ -134,27 +131,56 @@ title: Home
       </a> written for CIB Mango Tree, on Medium
     </p>
   </div>
+
   <!-- Sidebar -->
   <div class="sidebar">
-    <h3>Labels</h3>
+    <h3>Tags</h3>
     <ul>
-      {% assign all_labels = "" | split: "" %}
+      {% assign tag_counts = {} %}
+      {% assign extra_labels = 
+        "Community research notes,Long-form reflections on research process, Zeitgeist moments, Pitches, Formal Policy papers, More formal products" | split: "," %}
+      <!-- Initialize existing tags -->
       {% for note in site.notes %}
         {% if note.labels %}
-          {% for label in note.labels %}
-            {% assign all_labels = all_labels | push: label %}
+          {% for tag in note.labels %}
+            {% if tag_counts[tag] == nil %}
+              {% assign tag_counts = tag_counts | merge: {{ tag | jsonify }}: 0 %}
+            {% endif %}
           {% endfor %}
         {% endif %}
       {% endfor %}
-      {% assign unique_labels = all_labels | uniq %}
-      {% for label in unique_labels %}
-        {% assign count = 0 %}
-        {% for note in site.notes %}
-          {% if note.labels contains label %}
-            {% assign count = count | plus: 1 %}
-          {% endif %}
-        {% endfor %}
-        <li>{{ label }} ({{ count }})</li>
+      <!-- Initialize extra labels -->
+      {% for tag in extra_labels %}
+        {% if tag_counts[tag] == nil %}
+          {% assign tag_counts = tag_counts | merge: {{ tag | strip | jsonify }}: 0 %}
+        {% endif %}
+      {% endfor %}
+      <!-- Count tags -->
+      {% for note in site.notes %}
+        {% if note.labels %}
+          {% for tag in note.labels %}
+            {% assign tag_counts[tag] = tag_counts[tag] | plus: 1 %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+      <!-- Display tags with tooltip -->
+      {% for tag in tag_counts %}
+        <li>
+          {{ tag[0] }} ({{ tag[1] }})
+          <span class="arrow">▼</span>
+          <div class="tooltip">
+            {% assign notes_for_tag = site.notes | where_exp:"n", "n.labels contains tag[0]" %}
+            {% if notes_for_tag.size > 0 %}
+              <ul style="padding-left: 0; margin: 0;">
+                {% for n in notes_for_tag %}
+                  <li><a href="{{ site.baseurl }}{{ n.url }}">{{ n.title }}</a></li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <em>No posts yet</em>
+            {% endif %}
+          </div>
+        </li>
       {% endfor %}
     </ul>
   </div>
