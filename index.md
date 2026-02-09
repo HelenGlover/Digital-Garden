@@ -8,18 +8,19 @@ title: Home
 [Back to the main site](helenyglover.com)
 
 <style>
-/* Flex layout */
+/* Flex layout: main content + sidebar under intro text */
 .main-wrapper {
   display: flex;
   gap: 2em;
+  margin-top: 2em;
 }
 
-/* Main content */
+/* Main content takes 2/3 width */
 .main-content {
   flex: 2;
 }
 
-/* Sidebar */
+/* Sidebar to the right, below intro text */
 .sidebar {
   flex: 1;
   background: #f5f7ff;
@@ -27,17 +28,11 @@ title: Home
   border-radius: 6px;
   font-size: 0.9em;
   line-height: 1.5;
-  position: sticky;
-  top: 2em;
   max-height: calc(100vh - 4em);
   overflow-y: auto;
 }
 
-.sidebar h3 {
-  margin-top: 0;
-  margin-bottom: 1em;
-}
-
+/* Tag list */
 .sidebar ul {
   list-style: none;
   padding-left: 0;
@@ -46,31 +41,25 @@ title: Home
 
 .sidebar li {
   margin-bottom: 0.5em;
-  position: relative;
-  cursor: pointer;
 }
 
-/* Hover tooltip/dropdown */
+/* Dropdown below the tag */
 .sidebar li .tooltip {
   display: none;
-  position: absolute;
-  left: 100%;
-  top: 0;
+  margin-top: 0.25em;
   background: #e4e7ff;
   padding: 0.5em;
   border-radius: 4px;
   font-size: 0.85em;
   line-height: 1.3;
-  min-width: 200px;
-  z-index: 10;
-  white-space: normal;
+  min-width: 100%;
 }
 
 .sidebar li:hover .tooltip {
   display: block;
 }
 
-/* Visual cue for hover */
+/* Arrow visual cue */
 .sidebar li .arrow {
   margin-left: 0.25em;
   font-size: 0.8em;
@@ -78,17 +67,21 @@ title: Home
 }
 </style>
 
+<!-- Intro text -->
+<p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.0; font-size: 0.95em;">
+  Inspired by the concept of a 
+  <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">
+    digital garden
+  </a>, 
+  this site serves as an exploratory outlet for my thoughts. I view personal growth as fundamentally a process of reflection, and my goal for this space is to cultivate that growth by articulating what I read and learn. <br><br>
+  I hope readers approach these entries not as fixed opinions but as evolving thoughts, a practice of learning in public. To stay authentic to that, I write freely versus being perfectly polished. When my opinions change or my knowledge deepens, I'll add updates accordingly.
+</p>
+
+<!-- Flex container: main content + sidebar -->
 <div class="main-wrapper">
+
   <!-- Main content -->
   <div class="main-content">
-    <p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.0; font-size: 0.95em;">
-      Inspired by the concept of a 
-      <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-garden-let-you-cultivate-your-own-little-bit-of-the-internet/">
-        digital garden
-      </a>, 
-      this site serves as an exploratory outlet for my thoughts. I view personal growth as fundamentally a process of reflection, and my goal for this space is to cultivate that growth by articulating what I read and learn. <br><br>
-      I hope readers approach these entries not as fixed opinions but as evolving thoughts, a practice of learning in public. To stay authentic to that, I write freely versus being perfectly polished. When my opinions change or my knowledge deepens, I'll add updates accordingly.
-    </p>
     <h2>Latest Thoughts</h2>
     <ul style="list-style: none; padding-left: 0;">
       {% assign notes_by_date = site.notes | sort: "git_created_at" | reverse %}
@@ -100,12 +93,12 @@ title: Home
             </a>
           </div>
           {% if note.description %}
-            <div class="note-description">
+            <div class="note-description" style="color:#777; font-size:0.9em; margin-bottom:0.25em; max-width:60em;">
               {{ note.description }}
             </div>
           {% endif %}
           {% assign show_date = note.display_date | default: note.git_created_at | default: note.last_modified_at %}
-          <div class="note-meta">
+          <div class="note-meta" style="color:#666; font-size:0.8em; line-height:1.3;">
             <span>{{ show_date | date: "%B %d, %Y" }}</span>
             {% if note.labels and note.labels.size > 0 %}
               <span style="margin-left: 0.5em;">
@@ -133,39 +126,41 @@ title: Home
   </div>
 
   <!-- Sidebar -->
-<div class="sidebar">
-  <h3>Tags</h3>
-  <ul>
-    {% assign extra_labels = 
-      "Community research notes,Long-form reflections on research process, Zeitgeist moments, Pitches, Formal Policy papers, More formal products" | split: "," %}
-    <!-- Loop through existing tags -->
-    {% for tag_item in site.tags %}
-      {% assign tag_name = tag_item[0] %}
-      {% assign posts_for_tag = tag_item[1] %}
-      <li>
-        {{ tag_name }} ({{ posts_for_tag | size }})
-        <span class="arrow">▼</span>
-        <div class="tooltip">
-          <ul style="padding-left: 0; margin: 0;">
-            {% for n in posts_for_tag %}
-              <li><a href="{{ n.url }}">{{ n.title }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-      </li>
-    {% endfor %}
-    <!-- Add extra labels with no posts -->
-    {% for label in extra_labels %}
-      {% assign label = label | strip %}
-      {% unless site.tags[label] %}
+  <div class="sidebar">
+    <h3>Tags</h3>
+    <ul>
+      {% assign extra_labels = 
+        "Community research notes,Long-form reflections on research process, Zeitgeist moments, Pitches, Formal Policy papers, More formal products" | split: "," %}
+      <!-- Existing tags -->
+      {% for tag_item in site.tags %}
+        {% assign tag_name = tag_item[0] %}
+        {% assign posts_for_tag = tag_item[1] %}
         <li>
-          {{ label }} (0)
+          {{ tag_name }} ({{ posts_for_tag | size }})
           <span class="arrow">▼</span>
           <div class="tooltip">
-            <em>No posts yet</em>
+            <ul style="padding-left:0; margin:0;">
+              {% for n in posts_for_tag %}
+                <li><a href="{{ n.url }}">{{ n.title }}</a></li>
+              {% endfor %}
+            </ul>
           </div>
         </li>
-      {% endunless %}
-    {% endfor %}
-  </ul>
+      {% endfor %}
+      <!-- Extra labels -->
+      {% for label in extra_labels %}
+        {% assign label = label | strip %}
+        {% unless site.tags[label] %}
+          <li>
+            {{ label }} (0)
+            <span class="arrow">▼</span>
+            <div class="tooltip">
+              <em>No posts yet</em>
+            </div>
+          </li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </div>
+
 </div>
