@@ -143,7 +143,7 @@ title: Home
   <div class="sidebar">
     <h3>Tags</h3>
     <ul style="margin:0; padding-left:0;">
-      {% assign extra_labels = "Zeitgeist moments,Pitches,Articles,Analysis" | split: "," %}
+      {% assign extra_labels = "Zeitgeist Moments,Pitches,Articles,Analysis" | split: "," %}
       {% assign all_labels = "" | split: "," %}
       <!-- Step 1: Collect all labels from posts -->
       {% for note in site.notes %}
