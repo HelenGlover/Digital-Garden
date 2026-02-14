@@ -14,7 +14,7 @@ But what is research, really? The [National Academies of Sciences](https://www.n
 
 Even so, the definition remains somewhat abstract. If we can all agree that research is ultimately the intentional pursuit of knowledge to support others, then independent research is meaningful because it produces real-world impact. While independent work may not always result in traditional scholarly papers or books, it is rigorous in its own right by producing impact-based, alternative forms of outputs. These outputs might not undergo peer review, but they are evaluated through stakeholder feedback and real-world testing.
 
-In embracing the title of “independent researcher,” it means doing the field justie by holding myself to high standards and clearly articulating the scope of my work:
+In embracing the title of “independent researcher,” it means doing the field justice by holding myself to high standards and clearly articulating the scope of my work:
 
 ## Research Statement 
 
