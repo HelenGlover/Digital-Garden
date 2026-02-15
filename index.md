@@ -128,15 +128,14 @@ title: Home
     </ul>
     <h2>In Other Spaces:</h2>
     <p>
-      <a href="https://medium.com/@cibmangotree/behind-the-screens-how-coordinated-inauthentic-behavior-shapes-online-narratives-dae5bb2b5a18">
-        Behind the Screens: How Coordinated Inauthentic Behavior Shapes Online Narratives
-      </a> written for CIB Mango Tree, on Medium
+    I don't have a substack or Medium because I feel both require a certain amount of attention to updating that I divert instead on building up Tech for Good Voices (coming soon) and <a a href="https://medium.com/@cibmangotree/behind-the-screens-how-coordinated-inauthentic-behavior-shapes-online-narratives-dae5bb2b5a18">CIB Mango Tree's Research Arm. 
+      </a> Maybe one day.
     </p>
-    <p>
+    <!-- <p>
       <a href="https://medium.com/@cibmangotree/a-year-of-community-and-growth-at-cib-mango-tree-3c9a49383ceb">
         The First Year: The Volunteers Who Are Building CIB Mango Tree
       </a> written for CIB Mango Tree, on Medium
-    </p>
+    </p> -->
   </div>
 
   <!-- Sidebar -->
