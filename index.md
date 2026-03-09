@@ -5,7 +5,7 @@ permalink: /
 title: Home
 ---
 
-[Back to the main site](helenyglover.com)
+[Back to the main site](https://helenyglover.com/)
 
 <style>
 /* Flex layout: main content + sidebar under intro text */
@@ -128,7 +128,7 @@ title: Home
     </ul>
     <h2>In Other Spaces:</h2>
     <p>
-    I don't have a substack or Medium because I feel both require a certain amount of attention to updating that I divert instead on building up Tech for Good Voices (coming soon) and <a a href="https://medium.com/@cibmangotree/behind-the-screens-how-coordinated-inauthentic-behavior-shapes-online-narratives-dae5bb2b5a18">CIB Mango Tree's Research Arm. 
+    I don't have a substack or Medium because I feel both require a certain amount of attention to updating that I divert instead on building up Civic Builders (coming soon) and <a a href="https://medium.com/@cibmangotree/behind-the-screens-how-coordinated-inauthentic-behavior-shapes-online-narratives-dae5bb2b5a18">CIB Mango Tree's Research Arm. 
       </a> Maybe one day.
     </p>
     <!-- <p>
