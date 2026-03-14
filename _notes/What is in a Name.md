@@ -3,6 +3,7 @@ title: What is in a Name?
 labels: 
     - Independent Research
 description: Giving independent research credibility through traditional structures
+process: true
 image: assets/lab.jpg
 ---
 

@@ -1,9 +1,10 @@
 ---
-title: Notes from the Field - Becoming an Independent Researcher
+title: Becoming an Independent Researcher
 description: A reflection on reclaiming curiosity through independent, public-facing research beyond academia
 labels: 
     - Independent Research
 display_date: 2025-10-12  # optional override
+process: true
 image: assets/researchpartb.png
 ---
 

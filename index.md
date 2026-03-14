@@ -87,8 +87,11 @@ title: Home
   <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">
     digital garden
   </a>, 
-  this site serves as an exploratory outlet for my thoughts. I view personal growth as fundamentally a process of reflection, and my goal for this space is to cultivate that growth by articulating what I read and learn. <br><br>
-  I hope readers approach these entries not as fixed opinions but as evolving thoughts, a practice of learning in public. To stay authentic to that, I write freely versus being perfectly polished. When my opinions change or my knowledge deepens, I'll add updates accordingly.
+this site serves as an exploratory outlet for articulating my thoughts and learnings. It is also home to my
+  <a href="https://helengarden.netlify.app/independent-research">
+    independent research
+  </a>
+I hope readers approach these entries not as fixed opinions but as evolving thoughts, or as part of a practice of learning in public. To stay authentic to that, I write freely rather than striving for perfect polish. Of course, opinions change, and knowledge deepens, so I will update entries accordingly.
 </p>
 
 <!-- Flex container: main content + sidebar -->
@@ -96,10 +99,34 @@ title: Home
 
   <!-- Main content -->
   <div class="main-content">
+
+  <h2>Process</h2>
+  <p style="color:#666; font-size:0.9em; margin-bottom:1em;">
+    Read these first to understand the ideas and process behind this digital garden.
+  </p>
+
+  <ul style="list-style: none; padding-left: 0;">
+    {% assign process_notes = site.notes | where: "process", true | slice: 0,3 %}
+    {% for note in process_notes %}
+      <li style="margin-bottom: 1.1em;">
+        <div class="note-title">
+          <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">
+            {{ note.title }}
+          </a>
+        </div>
+        {% if note.description %}
+        <div style="color:#777; font-size:0.9em;">
+          {{ note.description }}
+        </div>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
     <h2>Latest Thoughts</h2>
     <ul style="list-style: none; padding-left: 0;">
       {% assign notes_by_date = site.notes | sort: "git_created_at" | reverse %}
-      {% for note in notes_by_date %}
+{% for note in notes_by_date %}
+{% unless note.process %}
         <li style="margin-bottom: 1.1em;">  
           <div class="note-title">
             <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">
@@ -124,7 +151,8 @@ title: Home
             {% endif %}
           </div>
         </li>
-      {% endfor %}
+{% endunless %}
+{% endfor %}
     </ul>
     <h2>In Other Spaces:</h2>
     <p>
