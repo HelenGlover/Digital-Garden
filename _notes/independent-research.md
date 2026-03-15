@@ -5,6 +5,7 @@ labels:
     - Independent Research
 display_date: 2025-10-12  # optional override
 process: true
+order: 1
 image: assets/researchpartb.png
 ---
 

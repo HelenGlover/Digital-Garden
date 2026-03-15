@@ -1,7 +1,10 @@
 ---
-title: The Power of Sprints
+title: Sprints
 labels: 
-  - writing
+    - Independent Research
+description: Giving independent research credibility through traditional structures
+image: assets/lab.jpg
+display_date: 2026-01-21
 ---
 
 When pursuing ambitious, long-term goals, it can be difficult to concentrate on the shorter, sometimes repetitive tasks that are crucial for that vision.

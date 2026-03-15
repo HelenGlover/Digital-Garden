@@ -4,6 +4,7 @@ labels:
     - Independent Research
 description: Giving independent research credibility through traditional structures
 process: true
+order: 2
 image: assets/lab.jpg
 ---
 
@@ -18,20 +19,24 @@ Even so, the definition remains somewhat abstract. If we can all agree that rese
 In embracing the title of “independent researcher,” it means doing the field justice by holding myself to high standards and clearly articulating the scope of my work:
 
 ## Research Statement 
-
+<div style="border: 2px solid #dcebee; padding: 10px; border-radius: 8px; background-color: #f5feff;">
 Overall, my work explores how technology shapes collaboration, knowledge, and community infrastructure but my research statement is:
-
-> I am an interdisciplinary designer, defined by my versatility at the intersection of emerging, deep technology, and strategic design. I explore two key dimensions of technology: the structure, focused on the security and stability of emerging technologies, and the social, centered on how digital growth shapes societal structures. I believe in intersectionality, recognizing that no topic exists in isolation and that the most effective solutions come from blending insights across disciplines.
-
-> Structurally, I explore the infrastructure and processes that underpin emerging technologies. 
-> - What tools and mindsets allow these technologies to move from ideation to implementation and adaptation? 
-> - What are their impacts on automation, productivity, and the expansion of human intelligence? I also focus on how we can scale innovation responsibly, balancing speed with governance standards and cybersecurity resilience.
-> - How do emerging technologies support or challenge community formation and individual expression? How is new tech an alternative to mainstream platforms?
-
-> Socially, I examine the benefits and challenges within the interconnected networks between technology and human relationships. 
-> - How are online communities sustained, with a focus on open-source and digital grassroots activism? This includes understanding the evolving role of platforms in shaping civic discourse and the ongoing debate between freedom of speech and digital rights.
-> - What role do community communication platforms have in the spread of misinformation? How can we balance censorship and moderation effectively?
-
+<br><br>
+I am an interdisciplinary designer, defined by my versatility at the intersection of emerging, deep technology, and strategic design. I explore two key dimensions of technology: the structure, focused on the security and stability of emerging technologies, and the social, centered on how digital growth shapes societal structures. I believe in intersectionality, recognizing that no topic exists in isolation and that the most effective solutions come from blending insights across disciplines.
+<br><br>
+Structurally, I explore the infrastructure and processes that underpin emerging technologies. 
+<ul>
+<li>What tools and mindsets allow these technologies to move from ideation to implementation and adaptation? </li>
+<li>What are their impacts on automation, productivity, and the expansion of human intelligence? I also focus on how we can scale innovation responsibly, balancing speed with governance standards and cybersecurity resilience.</li>
+<li>How do emerging technologies support or challenge community formation and individual expression? How is new tech an alternative to mainstream platforms?</li>
+</ul>
+<br>
+Socially, I examine the benefits and challenges within the interconnected networks between technology and human relationships. 
+<ul>
+<li>How are online communities sustained, with a focus on open-source and digital grassroots activism? This includes understanding the evolving role of platforms in shaping civic discourse and the ongoing debate between freedom of speech and digital rights.</li>
+<li>What role do community communication platforms have in the spread of misinformation? How can we balance censorship and moderation effectively?</li>
+</ul>
+</div>
 ## Research Methodology
 
 My research methodology is best described as applied ethnography with qualitative methods. I study communities and their practices through interviews, observations, and iterative prototyping, documenting insights publicly. It is suited to the fast-moving communities I study. 
@@ -46,5 +51,6 @@ Ethnography is the same type of research I practiced in college, so I have a sol
 
 I value structure, and the ambiguity of independent research can be challenging. To address this, I intentionally create frameworks to guide my work. I learn in public as a way to share my research. Constantly learning. DC has many amazing things to offer, but if someone were to ask what my favorite thing about the city is, it would be the access to free knowledge. Many university events are open to the public, and things I learn from those events and talking to people directly feed directly into my research. -->
 
-## In Practice
-With independent research, the final product often isn’t clear at the start; it emerges through the process of learning. This blog serves as an continuous exploration, but I can also share my first concrete product: designing the Civic Tech DC Playbook. Since 2013, Civic Tech DC has accumulated knowledge about building civic technology, organizing volunteers, and partnering with nonprofits to solve community challenges. It is still a work-in-progress, but it will demonstrate independent research in action in applying ethnographic observation to organizational processes and producing a resource that can be used by the community.
+## Outcomes
+With independent research, while the final product often isn’t clear at the start; it emerges through the process of learning. I delve into the "outcomes" more [here](https://helengarden.netlify.app/questions-worth-getting-lost-in).
+

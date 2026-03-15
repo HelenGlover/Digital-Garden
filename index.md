@@ -8,28 +8,29 @@ title: Home
 [Back to the main site](https://helenyglover.com/)
 
 <style>
-/* Flex layout: main content + sidebar under intro text */
+/* Flex layout: main content + sidebar */
 .main-wrapper {
   display: flex;
+  flex-wrap: nowrap;
   gap: 2em;
-  margin-top: 2em;
-  align-items: flex-start; /* ensure sidebar aligns with top of articles */
+  align-items: flex-start;
 }
 
-/* Main content takes 2/3 width */
+/* Main content: ~2/3 width */
 .main-content {
-  flex: 2;
+  flex: 2 1 0;
+  min-width: 0;
 }
 
-/* Sidebar to the right, below intro text */
+/* Sidebar: ~1/3 width */
 .sidebar {
-  flex: 1;
+  flex: 1 1 250px;
+  max-width: 300px;
   background: #f5f7ff;
   padding: 1em;
   border-radius: 6px;
   font-size: 0.9em;
   line-height: 1.5;
-  /* remove max-height so sidebar fits number of labels */
 }
 
 /* Tag list */
@@ -40,11 +41,11 @@ title: Home
 }
 
 .sidebar li {
-  position: relative; /* needed for absolute tooltip */
+  position: relative;
   margin-bottom: 0.5em;
 }
 
-/* Dropdown below the tag, absolute so it doesn't expand sidebar */
+/* Tooltip dropdown */
 .sidebar li .tooltip {
   display: none;
   position: absolute;
@@ -64,14 +65,12 @@ title: Home
   display: block;
 }
 
-/* Arrow visual cue */
 .sidebar li .arrow {
   margin-left: 0.25em;
   font-size: 0.8em;
   color: #555;
 }
 
-/* Tooltip links */
 .sidebar li .tooltip a {
   text-decoration: none;
   color: #333;
@@ -79,100 +78,107 @@ title: Home
 .sidebar li .tooltip a:hover {
   text-decoration: underline;
 }
+
+/* Intro paragraph */
+.intro-text {
+  padding: 2em;
+  background: #f5f7ff;
+  border-radius: 4px;
+  color: #000;
+  line-height: 2.0;
+  font-size: 0.95em;
+  max-width: 100%;
+}
 </style>
 
-<!-- Intro text -->
-<p style="padding: 2em 2em; background: #f5f7ff; border-radius: 4px; color: #000; width: 90%; line-height: 2.0; font-size: 0.95em;">
+<p class="intro-text">
   Inspired by the concept of a 
   <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">
     digital garden
-  </a>, 
-this site serves as an exploratory outlet for articulating my thoughts and learnings. It is also home to my
+  </a>, this site serves as an exploratory outlet for articulating my thoughts and learnings. It is also home to my
   <a href="https://helengarden.netlify.app/independent-research">
     independent research
-  </a>
-I hope readers approach these entries not as fixed opinions but as evolving thoughts, or as part of a practice of learning in public. To stay authentic to that, I write freely rather than striving for perfect polish. Of course, opinions change, and knowledge deepens, so I will update entries accordingly.
+  </a>.<br><br>
+  I hope readers approach these entries not as fixed opinions but as evolving thoughts, or as part of a practice of learning in public. To stay authentic to that, I write freely rather than striving for perfect polish. Of course, opinions change, and knowledge grows, so I will update entries accordingly.
 </p>
 
-<!-- Flex container: main content + sidebar -->
 <div class="main-wrapper">
 
   <!-- Main content -->
   <div class="main-content">
 
-  <h2>Process</h2>
-  <p style="color:#666; font-size:0.9em; margin-bottom:1em;">
-    Read these first to understand the ideas and process behind this digital garden.
-  </p>
+    <h2>The Process</h2>
+    <p style="color:#666; font-size:0.9em; margin-bottom:1em;">
+      Read first, the framing and processes of my independent research
+    </p>
 
-  <ul style="list-style: none; padding-left: 0;">
-    {% assign process_notes = site.notes | where: "process", true | slice: 0,3 %}
-    {% for note in process_notes %}
-      <li style="margin-bottom: 1.1em;">
-        <div class="note-title">
-          <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">
-            {{ note.title }}
-          </a>
-        </div>
-        {% if note.description %}
-        <div style="color:#777; font-size:0.9em;">
-          {{ note.description }}
-        </div>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-    <h2>Latest Thoughts</h2>
     <ul style="list-style: none; padding-left: 0;">
-      {% assign notes_by_date = site.notes | sort: "git_created_at" | reverse %}
-{% for note in notes_by_date %}
-{% unless note.process %}
-        <li style="margin-bottom: 1.1em;">  
+      {% assign process_notes = site.notes | where: "process", true | sort: "order" | slice: 0,3 %}
+      {% for note in process_notes %}
+        <li style="margin-bottom: 1.1em;">
           <div class="note-title">
-            <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">
-              {{ note.title }}
-            </a>
-          </div>
-          {% if note.description %}
-            <div class="note-description" style="color:#777; font-size:0.9em; margin-bottom:0.25em; max-width:60em;">
-              {{ note.description }}
-            </div>
-          {% endif %}
-          {% assign show_date = note.display_date | default: note.git_created_at | default: note.last_modified_at %}
-          <div class="note-meta" style="color:#666; font-size:0.8em; line-height:1.3;">
-            <span>{{ show_date | date: "%B %d, %Y" }}</span>
-            {% if note.labels and note.labels.size > 0 %}
-              <span style="margin-left: 0.5em;">
-                <strong>{% if note.labels.size > 1 %}Tags{% else %}Tag{% endif %}:</strong>
-                {% for label in note.labels %}
-                  <span style="margin-left: 0.25em;">{{ label }}</span>
-                {% endfor %}
-              </span>
+            {% if note.external_url %}
+              <a class="internal-link" href="{{ note.external_url }}" target="_blank">{{ note.title }}</a>
+            {% else %}
+              <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
             {% endif %}
           </div>
+          {% if note.description %}
+            <div style="color:#777; font-size:0.9em;">{{ note.description }}</div>
+          {% endif %}
         </li>
-{% endunless %}
-{% endfor %}
+      {% endfor %}
     </ul>
+
+    <h2>Ongoing Reflections</h2>
+    <ul style="list-style: none; padding-left: 0;">
+      {% assign notes_by_date = site.notes | sort: "display_date" | reverse %}
+      {% for note in notes_by_date %}
+        {% unless note.process %}
+          <li style="margin-bottom: 1.1em;">
+            <div class="note-title">
+              {% if note.external_url %}
+                <a class="internal-link" href="{{ note.external_url }}" target="_blank">{{ note.title }}</a>
+              {% else %}
+                <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
+              {% endif %}
+            </div>
+            {% if note.description %}
+              <div class="note-description" style="color:#777; font-size:0.9em; margin-bottom:0.25em; max-width:60em;">
+                {{ note.description }}
+              </div>
+            {% endif %}
+            {% assign show_date = note.last_modified_at | default: note.git_created_at | default: note.display_date %}
+            <div class="note-meta" style="color:#666; font-size:0.8em; line-height:1.3;">
+              <span>{{ show_date | date: "%B %d, %Y" }}</span>
+              {% if note.labels and note.labels.size > 0 %}
+                <span style="margin-left: 0.5em;">
+                  <strong>{% if note.labels.size > 1 %}Tags{% else %}Tag{% endif %}:</strong>
+                  {% for label in note.labels %}
+                    <span style="margin-left: 0.25em;">{{ label }}</span>
+                  {% endfor %}
+                </span>
+              {% endif %}
+            </div>
+          </li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+
     <h2>In Other Spaces:</h2>
     <p>
-    I don't have a substack or Medium because I feel both require a certain amount of attention to updating that I divert instead on building up Civic Builders (coming soon) and <a a href="https://medium.com/@cibmangotree/behind-the-screens-how-coordinated-inauthentic-behavior-shapes-online-narratives-dae5bb2b5a18">CIB Mango Tree's Research Arm. 
-      </a> Maybe one day.
+      I don't have an active Substack or Medium because I feel both require a certain amount of attention to updating that I divert instead on building up Civic Builders (coming soon) and 
+        CIB Mango Tree's Research. Maybe one day.
     </p>
-    <!-- <p>
-      <a href="https://medium.com/@cibmangotree/a-year-of-community-and-growth-at-cib-mango-tree-3c9a49383ceb">
-        The First Year: The Volunteers Who Are Building CIB Mango Tree
-      </a> written for CIB Mango Tree, on Medium
-    </p> -->
+
   </div>
 
   <!-- Sidebar -->
   <div class="sidebar">
     <h3>Tags</h3>
     <ul style="margin:0; padding-left:0;">
-      {% assign extra_labels = "Zeitgeist Moments,Pitches,Articles,Analysis" | split: "," %}
+      {% assign extra_labels = "Zeitgeist Moments,Articles" | split: "," %}
       {% assign all_labels = "" | split: "," %}
-      <!-- Step 1: Collect all labels from posts -->
       {% for note in site.notes %}
         {% if note.labels %}
           {% for label in note.labels %}
@@ -183,14 +189,13 @@ I hope readers approach these entries not as fixed opinions but as evolving thou
           {% endfor %}
         {% endif %}
       {% endfor %}
-      <!-- Step 2: Add extra labels if not already included -->
       {% for label in extra_labels %}
         {% assign label = label | strip %}
         {% unless all_labels contains label %}
           {% assign all_labels = all_labels | push: label %}
         {% endunless %}
       {% endfor %}
-      <!-- Step 3: Loop over all labels -->
+
       {% for tag_name in all_labels %}
         {% assign posts_for_tag = site.notes | where_exp:"n","n.labels contains tag_name" %}
         <li>
@@ -200,7 +205,11 @@ I hope readers approach these entries not as fixed opinions but as evolving thou
             {% if posts_for_tag.size > 0 %}
               <ul style="padding-left:0; margin:0;">
                 {% for n in posts_for_tag %}
-                  <li><a href="{{ n.url }}">{{ n.title }}</a></li>
+                  {% if n.external_url %}
+                    <li><a href="{{ n.external_url }}" target="_blank">{{ n.title }}</a></li>
+                  {% else %}
+                    <li><a href="{{ n.url }}">{{ n.title }}</a></li>
+                  {% endif %}
                 {% endfor %}
               </ul>
             {% else %}

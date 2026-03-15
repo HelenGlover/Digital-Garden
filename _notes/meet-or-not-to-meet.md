@@ -4,6 +4,7 @@ labels:
     - Community Practices
 description: How to meet, insights from my independent research on collaboration and community building
 image: assets/zoommeetings.jpg
+display_date: 2026-02-23 
 ---
 <style>
 .post-header-image img {
@@ -13,9 +14,12 @@ image: assets/zoommeetings.jpg
 }
 </style>
 
-While exploring how communities organize themselves, I realized that the structure of meetings can significantly shape collaboration. Here are some practices I’ve found helpful, both as an organizer and participant in <b>community meetings (not formal work ones)</b>. I document them here as part of my ongoing independent research into organizational dynamics and ecosystem building.
+In seeing how communities organize themselves, I learned that the structure (or lack of it) can significantly influenece how people collaborate. Over time, I’ve picked up a few practices that I found work well, both as an organizer and as a participant in community meetings (not formal work ones). I document them as part of my independent research into organizational dynamics.
 
-This blog is a learn in public and partially inspired by [Anson Yu’s Advice Page](https://ansonyu.me/advice). 
+This blog will be included in the [Civic Tech DC playbook](https://helengarden.netlify.app/making-of-civic-tech). It is also a learn in public article and inspired by [Anson Yu’s Advice Page](https://ansonyu.me/advice). 
+
+----
+
 
 ## **If You Organize a Meeting**
 
@@ -59,10 +63,12 @@ End with next steps: Avoid the “talking in circles” trap. As you wrap up, ma
   - “Can we loop back in a couple of weeks? How about Wednesday, the 15th?”
 <br>
 
-<div style="border: 2px solid #ccc; padding: 10px; border-radius: 8px; background-color: #f9f9f9;">
-<b>A Little Story</b>:
-I was in a meeting when someone suggested a fantastic idea. Immediately after, they added, <i>"But I’m new here, so you can disregard what I said.</i>"<br>  
-Your ideas are valuable, and no one can take that away. As an organizer, building community in the meeting makes people feel safe and encouraged to share.
+<div style="border: 2px solid #dcebee; padding: 10px; border-radius: 8px; background-color: #f5feff;">
+I was in a meeting when someone suggested a fantastic idea. Immediately after, they added, "But I’m new here, so you can disregard what I said."
+<br><br>
+Everyone’s ideas are valuable, no matter how junior they might seem. As an organizer, creating a sense of community in the meeting helps people feel safe enough to share.
+<br><br>
+At the same time, I also heard from a project lead that a new team member had been overly assertive and unintentionally undermined her work. It’s a delicate balance of knowing when to speak up while also being mindful of the context and the work already in motion.
 </div>
 
 ### **After**
