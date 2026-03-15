@@ -4,37 +4,33 @@ layout: default
 
 <article>
 
-  <!-- Featured Header Block -->
-  <div style="
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff8e7; /* light cream */
-    padding: 2rem;
-    min-height: 35vh; /* ~6/9 of the viewport */
-    margin-bottom: 2rem;
-    border-radius: 12px;
-  ">
-    <!-- Title on the left -->
-    <div style="flex: 1; padding-right: 2rem;">
-      <h1 style="margin: 0; font-size: 2.5rem;">{{ page.title }}</h1>
-      <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" style="font-size: 0.9rem; color: #555;">
-        {% if page.type != 'pages' %}
-          Last updated on {{ page.last_modified_at | date: "%B %-d, %Y" }}
-        {% endif %}
-      </time>
-    </div>
-
-    <!-- Image on the right -->
-    <div style="flex: 0.4; text-align: right;">
-      {% if page.image %}
-        <img src="{{ page.image }}" alt="{{ page.title }}" style="max-height: 500px; border-radius: 8px;">
-      {% else %}
-        <!-- Optional placeholder if no image -->
-        <div style="width: 500px; height: 450px; background-color: #f0e7d8; border-radius: 8px;"></div>
-      {% endif %}
-    </div>
+<div style="
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff8e7;
+  padding: 2rem;
+  min-height: 35vh;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+">
+  <!-- Title on the left -->
+  <div style="flex: 1; padding-right: 2rem;">
+    <h1 style="margin: 0; font-size: 2.5rem;">{{ page.title }}</h1>
+    <time datetime="{{ page.display_date | date_to_xmlschema }}" style="font-size: 0.9rem; color: #555;">
+      Published on {{ page.display_date | date: "%B %d, %Y" }}
+    </time>
   </div>
+
+  <!-- Image on the right -->
+  <div style="flex: 0.4; text-align: right;">
+    {% if page.image %}
+      <img src="{{ page.image }}" alt="{{ page.title }}" style="max-height: 500px; border-radius: 8px;">
+    {% else %}
+      <div style="width: 500px; height: 450px; background-color: #f0e7d8; border-radius: 8px;"></div>
+    {% endif %}
+  </div>
+</div>
 
   <!-- Main Content -->
   <div id="notes-entry-container">

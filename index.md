@@ -132,8 +132,8 @@ title: Home
 
     <h2>Ongoing Reflections</h2>
     <ul style="list-style: none; padding-left: 0;">
-      {% assign notes_by_date = site.notes | sort: "display_date" | reverse %}
-      {% for note in notes_by_date %}
+      {% assign notes_by_display_date = site.notes | sort: "display_date" | reverse %}
+      {% for note in notes_by_display_date %}
         {% unless note.process %}
           <li style="margin-bottom: 1.1em;">
             <div class="note-title">
@@ -143,14 +143,19 @@ title: Home
                 <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
               {% endif %}
             </div>
+
             {% if note.description %}
               <div class="note-description" style="color:#777; font-size:0.9em; margin-bottom:0.25em; max-width:60em;">
                 {{ note.description }}
               </div>
             {% endif %}
-            {% assign show_date = note.last_modified_at | default: note.git_created_at | default: note.display_date %}
+
+            {%- comment -%}
+            Only show display_date on front page
+            {%- endcomment -%}
             <div class="note-meta" style="color:#666; font-size:0.8em; line-height:1.3;">
-              <span>{{ show_date | date: "%B %d, %Y" }}</span>
+              <span>{{ note.display_date | date: "%B %d, %Y" }}</span>
+
               {% if note.labels and note.labels.size > 0 %}
                 <span style="margin-left: 0.5em;">
                   <strong>{% if note.labels.size > 1 %}Tags{% else %}Tag{% endif %}:</strong>
