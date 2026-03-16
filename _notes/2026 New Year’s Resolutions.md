@@ -2,7 +2,7 @@
 title: 2026 New Year’s Resolutions 
 labels: 
     - Independent Research
-description: Continued engagement and opportunities in the making for the new year
+description: Continued engagement and opportunities they are the making for the new year
 image: assets/woman-doing-research.jpg
 display_date: 2026-01-07
 ---
@@ -35,7 +35,7 @@ This year, I’m writing down some of my goals more publicly (thanks, [Tracey Ch
 
 **Internet Law and Foundry:** As a member of the Editorial and Marketing Committee of the Internet Law and Policy Foundry, an organization of early-career professionals in law, technology, and policy, this year I will move into a Senior Fellow role and will work to:
 
-- <b>Build a more substantive community with increased visibility</b> by strengthening connections across the national network, creating additional opportunities for members to share their work, and hosting engaging events. While the Foundry primarily serves professionals already in the field, a key goal is to get involved more individuals who are interested in the field. Everyone has to start somewhere, and having a network helps.
+- <b>Build a more substantive community with increased visibility</b> by strengthening connections across the national network, creating additional opportunities for members to share their work, and hosting engaging events. While the Foundry primarily serves professionals already in the field, a key goal is to get more individuals involved who are interested in the field. Everyone has to start somewhere, and having a network helps.
 
 ### **Engagements in the Making**  
 
@@ -45,10 +45,10 @@ This year, I’m writing down some of my goals more publicly (thanks, [Tracey Ch
 **Independent Research**
 - This year, I'm reviving the independent research I started last year with a focus on the structural and social dimensions of technology. Writing is my main tool for thinking through complex ideas, as it helps identify patterns across different projects that might otherwise stay siloed. (I love tools, like [Obsidian](https://obsidian.md/), designed specifically to help mind organization).
 
-- I'm thrilled by the number of universities and think tanks in the DMV region, and by the community events and opportunities to engage. I want to explore more ways to engage with these groups in both in creating connections that deepen my personal knowledge but also create opportunities for longer-term collaboration.
+- I'm thrilled by the number of universities and think tanks in the DMV region, and by the community events and opportunities to engage. I want to explore more ways to engage with these groups in both creating connections that deepen my personal knowledge but creating opportunities for longer-term collaboration.
 <br>
 
-**Academia-Industry Collaboration:** Based on my experience working in both academia and industry, I have seen a clear gap between the two. D.C. is uniquely positioned to bridge this divide; the region is full of people who move between both sectors (professors of practice, industry researchers), yet there are surprisingly few opportunities for meaningful exchange. I work with the DC affilate of the Association for Computing Machinery on:
+**Academia-Industry Collaboration:** Based on my experience working in both academia and industry, I have seen a clear gap between the two. D.C. is uniquely positioned to bridge this divide; the region is full of people who move between both sectors (professors of practice, industry researchers), yet there are surprisingly few opportunities for meaningful exchange. I work with the DC affiliate of the Association for Computing Machinery on:
 
 - Hosting events that pair researchers presenting problems or findings with industry professionals who can explore practical applications and implementation challenges.
 - Engaging local nonprofits, coalitions, and student groups to make these discussions actionable rather than theoretical. This would include experimenting with formats like fireside chats and smaller-group conversations.

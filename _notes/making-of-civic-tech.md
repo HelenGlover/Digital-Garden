@@ -17,7 +17,7 @@ Adaptability to change is essential, and prompted by the new partnerships we are
 
 **Two types of people show up**
 
-One of the more consistent observations from my conversations with folks is that people can be categorized into two broad orientations. There are those who want community in preferring the structure of a team and a defined problem to work on alongside others. And there are those who are self-directed and want to independently act on an idea. 
+One of the more consistent observations from my conversations with folks is that people can be categorized into two broad orientations. There are those who want community in that they prefer the structure of a team and a defined problem to work on alongside others. And there are those who are self-directed and want to independently act on an idea. 
 
 This distinction shapes the playbook's framework, and there will be resources for both. Also, people are not one or the other. Many, especially those who are getting their footing within Civic Tech DC, start as contributors and over time find their own direction they want to pursue. As such, these two modes are less fixed identities than different entry points.
 
@@ -29,7 +29,7 @@ The second observation is about what self-starters actually need to succeed. It'
 
 Civic Tech DC has always had an incubator model to help ideas turn into projects, but it has been informal and loosely structured. In an organization that prioritizes structure where it's needed, the incubator stage is the most critical to formalize. By defining a clearer path from pitch to launch, the playbook is intended to make it easier for self-starters to go from "I have an idea" to "I have a plan with milestones."
 
-The playbook is still in development, but it will represent one of the outcomes of my independent research into what sustains voluntaristic open technology communities. Rather than the traditional research outcome of a paper, it is an re-interpretation of research in tangible action or one that can be applied and adapted to the community it studies. Excited to share its release soon.
+The playbook is still in development, but it will represent one of the outcomes of my independent research into what sustains voluntaristic open technology communities. Rather than the traditional research outcome of a paper, it is a re-interpretation of research in tangible action or one that can be applied and adapted to the community it studies. Excited to share its release soon.
 
 <!-- It is still a work-in-progress, but it will demonstrate independent research in action in applying ethnographic observation to organizational processes and producing a resource that can be used by the community. -->
 

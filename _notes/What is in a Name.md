@@ -8,11 +8,11 @@ order: 2
 image: assets/lab.jpg
 ---
 
-The value of research is often measured by external markers that signals credibility within a field from being invited to give a talk to publishing in a scholarly journal. Academia also has a familiar quantifiable rhythm; you know how long it should take to complete a PhD, how many papers you should produce, and which metrics define progress toward tenure. From this perspective, independent research can seem like a low-stakes detour around years of formal training.
+The value of research is often measured by external markers that signal credibility within a field, from being invited to give a talk to publishing in a scholarly journal. Academia also has a familiar quantifiable rhythm; you know how long it should take to complete a PhD, how many papers you should produce, and which metrics define progress toward tenure. From this perspective, independent research can seem like a low-stakes detour around years of formal training.
 
 But what is research, really? The [National Academies of Sciences](https://www.nationalacademies.org/read/11177/chapter/8) defines basic research as:
 
-> Basic research is defined as systematic study directed toward fuller knowledge or understanding of the fundamental aspects of phenomena and of observable facts without specific applications towards processes or products in mind.
+> Basic research is defined as a systematic study directed toward fuller knowledge or understanding of the fundamental aspects of phenomena and of observable facts without specific applications towards processes or products in mind.
 
 Even so, the definition remains somewhat abstract. If we can all agree that research is ultimately the intentional pursuit of knowledge to support others, then independent research is meaningful because it produces real-world impact. While independent work may not always result in traditional scholarly papers or books, it is rigorous in its own right by producing impact-based, alternative forms of outputs. These outputs might not undergo peer review, but they are evaluated through stakeholder feedback and real-world testing.
 
@@ -45,12 +45,12 @@ Ethnography is the same type of research I practiced in college, so I have a sol
 
 > In doing the act of ‘writing the self’ there is meaning to be found because the researcher can focus on looking at the subject through an ethnographic lens while simultaneously paying attention to the vulnerable self and everything that falls in between these two. 
 
-> In my opinion, it adds a layer of nuance and understanding to the subject of study, because the researcher is encouraged to tap into the self, something that is not necessarily the case or even possible in studies that have only external participants. Since the act of researching through auto-ethnography is an embodied process, it allows the researcher to not only pass on knowledge, but also pass on the experience of introspection, the conflicts, and the journey of arriving at that knowledge.
+> In my opinion, it adds a layer of nuance and understanding to the subject of study, because the researcher is encouraged to tap into the self, something that is not necessarily the case or even possible in studies that have only external participants. Since the act of researching through auto-ethnography is an embodied process, it allows the researcher to not only pass on knowledge but also pass on the experience of introspection, the conflicts, and the journey of arriving at that knowledge.
 
 <!-- ## Creating Structure in Independent Research
 
 I value structure, and the ambiguity of independent research can be challenging. To address this, I intentionally create frameworks to guide my work. I learn in public as a way to share my research. Constantly learning. DC has many amazing things to offer, but if someone were to ask what my favorite thing about the city is, it would be the access to free knowledge. Many university events are open to the public, and things I learn from those events and talking to people directly feed directly into my research. -->
 
 ## Outcomes
-With independent research, while the final product often isn’t clear at the start; it emerges through the process of learning. I delve into the "outcomes" more [here](https://helengarden.netlify.app/questions-worth-getting-lost-in).
+With independent research, while the final product often isn’t clear at the start, it emerges through the process of learning. I delve into the "outcomes" more [here](https://helengarden.netlify.app/questions-worth-getting-lost-in).
 

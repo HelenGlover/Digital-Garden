@@ -12,7 +12,7 @@ Let’s be honest; independent research means no one is constantly checking your
 > I explore two key dimensions of technology: the structural, focused on the security and stability of emerging technologies, and the social, centered on how digital growth shapes societal structures. I believe in intersectionality, recognizing that no topic exists in isolation and that the most effective solutions come from blending insights across disciplines.
         
 
-Each question is tied to actual work I doing whether that be communities I'm part of or projects I'm building. And of course, they will evolve as I discover new, more interesting avenues or limitations.
+Each question is tied to actual work I'm doing, whether that be communities I'm part of or projects I'm building. And of course, they will evolve as I discover new, more interesting avenues or limitations.
 
 ---
 
@@ -20,16 +20,16 @@ Each question is tied to actual work I doing whether that be communities I'm par
 
 How can we bridge the gap between academia and industry?
 <ul>
-<li> What models accelerates the research-to-practice translation in combining the careful, deep rigor of academia with the innovative attitude of industry?</li>
+<li> What models accelerate the research-to-practice translation in combining the careful, deep rigor of academia with the innovative attitude of industry?</li>
 <li>How can knowledge production be democratized through civic science?</li>
-<li>Action: Exploring in relation to my consulting work with universities; my organizing work with the Association for Computing Machinery)</li>
+<li>Action: Exploring in relation to my consulting work with universities; my organizing work with the Association for Computing Machinery.</li>
 </ul>
 
  **Is DC’s VC ecosystem growing?**
 <ul>
 <li> What factors are driving changes in the region’s investment landscape?</li>
 <li> How do regional characteristics (policy proximity, talent pipelines) shape its trajectory?</li>
-<li> *Action: Exploring in relation to my consulting work with industry and my professional goal to lean more into VC.</li>
+<li> Action: Exploring in relation to my consulting work with industry and my professional goal to lean more into VC.</li>
 </ul>
 
 **What organizational structures and behaviors enable groups to work effectively?**
@@ -49,8 +49,8 @@ How can we bridge the gap between academia and industry?
  **What does it really mean to build community?**
 
 <ul>
-<li> Beyond the buzzword, what are the ecosystem building practices that create genuine community bonds? What role does tech play in facilitating community formation?</li>
-<li> Action: Exploring in relation to Civic Tech DC</li>
+<li> Beyond the buzzword, what are the ecosystem-building practices that create genuine community bonds? What role does tech play in facilitating community formation?</li>
+<li>Action: Exploring in relation to Civic Tech DC.</li>
 </ul>
 
  **Can meetups gain credibility?**
@@ -63,9 +63,9 @@ How can we bridge the gap between academia and industry?
 
 ### Putting into Practice
 
-Unlike traditional research projects with neat methodologies and predetermined outputs (aka the classic academic paper), independent research invites more wandering, more exploring. I see a lack of a predetermined output not as an weakness, but rather ensuring the outcome is applicable to what the challenge or what the community needs.
+Unlike traditional research projects with neat methodologies and predetermined outputs (aka the classic academic paper), independent research invites more wandering, more exploring. I see a lack of a predetermined output not as a weakness, but rather ensuring the outcome applies to what the challenge or what the community needs.
 
-Many of the questions will eventually have outcomes whether that be structure-changing outcomes, like developing new community practices at Mango Tree CIB by asking *“What sustains voluntaristic open technology communities?”* or product-focused outcomes, like building a community playbook at Civic Tech DC by asking *“What does it really mean to build community?”* However, they are not meant - or frankly cannot be - answered defintiely.
+Many of the questions will eventually have outcomes, whether that be structure-changing outcomes, like developing new community practices at Mango Tree CIB by asking *“What sustains voluntaristic open technology communities?”* or product-focused outcomes, like building a community playbook at Civic Tech DC by asking *“What does it really mean to build community?”* However, they are not meant - or frankly cannot be - answered definitely.
 
 But for now, the work is delightfully exploratory. I conduct ethnographic observations when I attend events and also have conversational interviews (or in fancy research terms, semi-structured informal interviews) with people whose experiences and work intersect with my questions.
 
@@ -76,7 +76,7 @@ Understandably, the idea that community work can be a research output might seem
 <footer>Jason Benn<cite> <a href="https://jasonbenn.com/community/3-writing-about-a-web-of-questions">https://jasonbenn.com/community/3-writing-about-a-web-of-questions</a></cite></footer>
 </blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script>
 
-What makes Benn's project interesting is what he actually built from this wandering to start researching community living and whether you could intentionally design a neighborhood for "friendly ambitious nerds" in a major US city. That's the model I'm trying to follow and after some time learningh, the first output can be found [here](https://helengarden.netlify.app/making-of-civic-tech).
+What makes Benn's project interesting is what he actually built from this wandering to start researching community living and whether you could intentionally design a neighborhood for "friendly ambitious nerds" in a major US city. That's the model I'm trying to follow and after some time learning, the first output can be found [here](https://helengarden.netlify.app/making-of-civic-tech).
 
 <!-- The best research happens when you’re genuinely curious and actively engaged. These questions keep me both.
 

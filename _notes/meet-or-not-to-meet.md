@@ -14,7 +14,7 @@ display_date: 2026-02-23
 }
 </style>
 
-In seeing how communities organize themselves, I learned that the structure (or lack of it) can significantly influenece how people collaborate. Over time, I’ve picked up a few practices that I found work well, both as an organizer and as a participant in community meetings (not formal work ones). I document them as part of my independent research into organizational dynamics.
+In seeing how communities organize themselves, I learned that the structure (or lack of it) can significantly influence how people collaborate. Over time, I’ve picked up a few practices that I found work well, both as an organizer and as a participant in community meetings (not formal work ones). I document them as part of my independent research into organizational dynamics.
 
 This blog will be included in the [Civic Tech DC playbook](https://helengarden.netlify.app/making-of-civic-tech). It is also a learn in public article and inspired by [Anson Yu’s Advice Page](https://ansonyu.me/advice). 
 

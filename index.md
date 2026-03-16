@@ -75,6 +75,7 @@ title: Home
   text-decoration: none;
   color: #333;
 }
+
 .sidebar li .tooltip a:hover {
   text-decoration: underline;
 }
@@ -88,6 +89,40 @@ title: Home
   line-height: 2.0;
   font-size: 0.95em;
   max-width: 100%;
+}
+
+/* === RESPONSIVE FIX FOR MOBILE === */
+/* === RESPONSIVE FIX FOR MOBILE === */
+@media (max-width: 767.98px) {
+  .main-wrapper {
+    flex-direction: column; /* stack sidebar on top of main content */
+  }
+
+  .sidebar {
+    order: -1; /* put tags first */
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1.5em; /* spacing below tags */
+    box-sizing: border-box; /* include padding in width */
+    padding: 1em; 
+    border-radius: 6px;
+    overflow-y: auto; /* scroll if too tall */
+    max-height: 60vh; /* optional: limit height to 60% of viewport */
+  }
+
+  .main-content {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* Make tooltips expand full width under tags */
+  .sidebar li .tooltip {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-top: 0.25em;
+    width: 100%;
+  }
 }
 </style>
 
@@ -172,7 +207,7 @@ title: Home
 
     <h2>In Other Spaces:</h2>
     <p>
-      I don't have an active Substack or Medium because I feel both require a certain amount of attention to updating that I divert instead on building up Civic Builders (coming soon) and 
+      I don't have an active Substack or Medium because I feel both require a certain amount of attention to updating that I divert instead of building up Civic Builders (coming soon) and 
         CIB Mango Tree's Research. Maybe one day.
     </p>
 

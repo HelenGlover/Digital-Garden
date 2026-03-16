@@ -13,22 +13,22 @@ In January, I attended Georgetown's first Venture in the Capitol event. The fina
 <br><br>
 This stuck with me. At a time when the higher education landscape is shifting and we are seeing the rise of young solo entrepreneurs, the question of what a college degree is worth is on everyone's mind. 
 <br><br>
-Influenced by my work working with academia and my research question on bridging the gap between academia and industry, here are a few in-progress thoughts.
+Influenced by my work with academia and my research question on bridging the gap between academia and industry, here are a few in-progress thoughts.
 </div>
 
 - Virtually any technical content taught in a classroom is now available through online courses, YouTube, documentation, and AI tutors. The upskilling economy has made credentials less central to demonstrating competence in many fields. But what college still offers, and what cannot be easily replicated online, is the development of communication and collaboration skills. These are often dismissed as "soft skills," but the ability to present ideas under pressure and build trust with people is fundamental and colleges emphasize this. 
 
-- Also self-directed learning is harder than it looks. MOOCs succeeded at expanding access to education but struggled with completion of courses. Universities solve that through its strucuture of built-in accountability, cohorts who push you, and consequences that keep you moving.
+- Also self-directed learning is harder than it looks. MOOCs succeeded at expanding access to education but struggled with the completion of courses. Universities solve that through their strucuture of built-in accountability, cohorts who push you, and consequences that keep you moving.
 
 **On the student side...**
 
-- **Community colleges:** Although I did not go to one, going for the first two years saves significant cost. The first two years are generally for exploration (general education requirements, introductory courses, figuring out what you actually want to study) and you can do all of that at a community college. If we're measuring success: a friend of mine went to a community college and ended up at J.P. Morgan. 
+- **Community colleges:** Although I did not go to one, going for the first two years saves a significant cost. The first two years are generally for exploration (general education requirements, introductory courses, figuring out what you actually want to study) and you can do all of that at a community college. If we're measuring success, a friend of mine went to a community college and ended up at J.P. Morgan. 
   
 - **In-state public universities:** Out-of-state tuition at private universities saddles students with six-figure debt for degrees that don't justify the premium. In-state public schools offer comparable academic quality at a fraction of the cost. 
 
 - **Pursue a three-year degree:** There's a [growing body of evidence and advocacy](https://college-in-3.org/) for compressing degree timelines to three-years. Massachusetts also recently became the latest state to allow public institutions to offer 90-credit bachelor's degrees, with Massachusetts Governor Maura Healey framing it as a way to [lower costs and keep the state competitive](https://www.mass.gov/news/massachusetts-opens-the-door-to-three-year-degrees-and-other-innovative-approaches-to-higher-education).
   
-  - The main argument is that institutions will cut corners under the guise of innovation. Some of that will unfortunately happen, but that assumes the current 120-credit requirement is essential, when much of it exists for historical or bureaucratic reasons. The better question is what gets cut. If much of the second and third years are elective padding, compressing  them is good design. My advocacy for the three years also comes with a caveat; the framing as purely an affordability play is the wrong instinct. It should not be sold as getting students into the workforce faster but as giving the more intentional control over their time and money.
+  - The main argument is that institutions will cut corners under the guise of innovation. Some of that will unfortunately happen, but that assumes the current 120-credit requirement is essential, when much of it exists for historical or bureaucratic reasons. The better question is what gets cut. If much of the second and third years are elective padding, compressing them is good design. My advocacy for the three years also comes with a caveat; the framing as purely an affordability play is the wrong instinct. It should not be sold as getting students into the workforce faster but as giving them more intentional control over their time and money.
 
   - Personally, I did not finish in three years because I double majored and did multiple internships. But I am confident that it is very doable, and to the broader point on interdisciplinary thinking I make down below, universities should be supporting career development from the first year to get students to start thinking.
 
@@ -53,7 +53,7 @@ Working at a high-growth, margin-focused startup is a real-life MBA where you ge
 <footer>Garrett Williams<cite> <a href="https://www.linkedin.com/feed/update/urn:li:activity:7438569671550775298/">https://www.linkedin.com/feed/update/urn:li:activity:7438569671550775298/</a></cite></footer>
 </blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script>
 
-**On the universities side...**
+**On the university side...**
 
 - **Focus on interdisciplinary thinking:** The future belongs to people who can find unexpected connections across domains that, on the surface, don't seem to belong together. Look at AI: for years, students were told a computer science degree was the path to a high salary and stability and now that [path is very uncertain](https://www.theatlantic.com/economy/archive/2025/06/computer-science-bubble-ai/683242/). Help students start thinking about designing their own paths from the first year, not the fourth, and build that into every first-year curriculum.
 
