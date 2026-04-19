@@ -4,6 +4,7 @@ labels:
     - Experiment
 display_date: 2026-04-19
 image: assets/civictech.png
+description: Creating a toolkit is about making invisible community knowledge usable
 ---
 One of my biggest philosophies is only having structure where structure is needed.
 
