@@ -1,5 +1,5 @@
 ---
-title: Outcomes of Independent Research
+title: Outcomes and Products
 description: You saw my argument for conducting independent research, my research questions. Now how does it work 
 labels: 
     - Independent Research

@@ -1,5 +1,5 @@
 ---
-title: Questions in Progress
+title: Guiding Research Questions 
 description: Research questions that define the independent research 
 labels: 
     - Independent Research

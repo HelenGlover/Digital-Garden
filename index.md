@@ -5,260 +5,376 @@ permalink: /
 title: Home
 ---
 
-[Back to the main site](https://helenyglover.com/)
-
 <style>
-/* Flex layout: main content + sidebar */
-.main-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 2em;
-  align-items: flex-start;
+/* ── Base ── */
+body {
+  font-family: Arial, sans-serif;
+  color: #1a1a1a;
+  background: #fff;
 }
 
-/* Main content: ~2/3 width */
-.main-content {
-  flex: 2 1 0;
-  min-width: 0;
+hr {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  margin: 0 !important;
+  border: none !important;
 }
 
-/* Sidebar: ~1/3 width */
-.sidebar {
-  flex: 1 1 250px;
-  max-width: 300px;
-  background: #f5f7ff;
-  padding: 1em;
-  border-radius: 6px;
-  font-size: 0.9em;
-  line-height: 1.5;
-}
-
-/* Tag list */
-.sidebar ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.sidebar li {
-  position: relative;
-  margin-bottom: 0.5em;
-}
-
-/* Tooltip dropdown */
-.sidebar li .tooltip {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  margin-top: 0.25em;
-  background: #e4e7ff;
-  padding: 0.5em;
-  border-radius: 4px;
-  font-size: 0.85em;
-  z-index: 10;
-  width: max-content;
-  min-width: 100%;
-}
-
-.sidebar li:hover .tooltip {
-  display: block;
-}
-
-.sidebar li .arrow {
-  margin-left: 0.25em;
-  font-size: 0.8em;
-  color: #555;
-}
-
-.sidebar li .tooltip a {
+a {
+  color: #3d52a0;
   text-decoration: none;
-  color: #333;
 }
-
-.sidebar li .tooltip a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-/* Intro paragraph */
-.intro-text {
-  padding: 2em;
-  background: #f5f7ff;
-  border-radius: 4px;
-  color: #000;
-  line-height: 2.0;
-  font-size: 0.95em;
-  max-width: 100%;
+/* ── Override Jekyll theme internal-link hover highlight ── */
+a.internal-link,
+a.post-title {
+  background: none !important;
+  color: #1a1a1a !important;
+  text-decoration: none !important;
+}
+a.internal-link:hover,
+a.post-title:hover {
+  background: none !important;
+  color: #3d52a0 !important;
+  text-decoration: underline !important;
 }
 
-/* === RESPONSIVE FIX FOR MOBILE === */
-/* === RESPONSIVE FIX FOR MOBILE === */
-@media (max-width: 767.98px) {
-  .main-wrapper {
-    flex-direction: column; /* stack sidebar on top of main content */
-  }
+/* ── Nav ── */
+.garden-nav {
+  font-size: 0.82em;
+  color: #888;
+  margin-bottom: 2.5em;
+}
+.garden-nav a {
+  color: #888;
+  background: none !important;
+}
+.garden-nav a:hover {
+  color: #1a1a1a;
+  background: none !important;
+}
 
-  .sidebar {
-    order: -1; /* put tags first */
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 1.5em; /* spacing below tags */
-    box-sizing: border-box; /* include padding in width */
-    padding: 1em; 
-    border-radius: 6px;
-    overflow-y: auto; /* scroll if too tall */
-    max-height: 60vh; /* optional: limit height to 60% of viewport */
-  }
+/* ── Intro block ── */
+.intro-block {
+  background: #f4f5fb;
+  border-radius: 8px;
+  padding: 1.75em 2em 1.5em;
+  margin-bottom: 1.75em;
+  line-height: 1.85;
+  font-size: 0.95em;
+  color: #222;
+}
 
-  .main-content {
-    width: 100%;
-    min-width: 0;
-  }
+.intro-block p {
+  margin: 0 0 1.25em;
+}
 
-  /* Make tooltips expand full width under tags */
-  .sidebar li .tooltip {
-    position: relative;
-    left: auto;
-    top: auto;
-    margin-top: 0.25em;
-    width: 100%;
-  }
+.intro-block p:last-child {
+  margin-bottom: 0;
+}
+
+.process-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25em;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.process-links li a {
+  font-size: 0.9em;
+  color: #3d52a0;
+  background: none !important;
+}
+
+.process-links li a::before {
+  content: "→ ";
+  color: #aaa;
+}
+
+/* ── Tags row ── */
+.tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 2em;
+}
+
+.tags-row-label {
+  font-size: 0.78em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #999;
+  font-weight: 600;
+  margin-right: 0.25em;
+}
+
+.tag-btn {
+  background: #f0f1f8;
+  color: #555;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid #e0e2f0;
+  transition: background 0.15s, color 0.15s;
+  user-select: none;
+}
+
+.tag-btn:hover {
+  background: #e4e6f8;
+  color: #3d52a0;
+}
+
+.tag-btn.active {
+  background: #3d52a0;
+  color: #fff;
+  border-color: #3d52a0;
+}
+
+/* ── Section headers ── */
+.section-header {
+  font-size: 0.72em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: #aaa;
+  margin: 0 0 1.1em;
+}
+
+/* ── Field Notes ── */
+.field-notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5em;
+}
+
+.field-note-item {
+  padding: 0.85em 0;
+  border: none !important;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.field-note-item a {
+  font-size: 0.95em;
+  font-weight: 500;
+  color: #1a1a1a;
+  display: inline;
+  background: none !important;
+  text-decoration: none !important;
+}
+
+.field-note-item a:hover {
+  color: #3d52a0;
+  background: none !important;
+}
+
+.field-note-desc {
+  font-size: 0.85em;
+  color: #666;
+  line-height: 1.5;
+}
+
+.field-note-date {
+  font-size: 0.75em;
+  color: #888;
+}
+
+/* ── Ongoing Reflections ── */
+.reflections-list {
+  list-style: none;
+  padding: 0;
+}
+
+.reflection-item {
+  padding: 1em 0;
+  border: none !important;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.reflection-item a.post-title {
+  font-size: 1em;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.4;
+  display: inline;
+  background: none !important;
+  text-decoration: none !important;
+}
+
+.reflection-item a.post-title:hover {
+  color: #3d52a0;
+  background: none !important;
+  text-decoration: underline !important;
+}
+
+.reflection-desc {
+  font-size: 0.875em;
+  color: #000000;
+  line-height: 1.55;
+}
+
+.reflection-meta {
+  font-size: 0.78em;
+  color: #888;
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+}
+
+.reflection-tag {
+  background: #f4f5fb;
+  color: #3d52a0;
+  padding: 1px 8px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  border: 1px solid #e0e2f0;
+}
+
+/* ── Other spaces ── */
+.other-spaces {
+  font-size: 0.88em;
+  color: #000000;
+  line-height: 1.7;
+  padding-top: 1.5em;
+}
+
+/* ── Hidden state for filtering ── */
+.filterable.hidden {
+  display: none;
 }
 </style>
 
-<p class="intro-text">
-  Inspired by the concept of a 
-  <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">
-    digital garden
-  </a>, this site serves as an exploratory outlet for articulating my thoughts and learnings. It is also home to my
-  <a href="https://helengarden.netlify.app/independent-research">
-    independent research
-  </a>.<br><br>
-  I hope readers approach these entries not as fixed opinions but as evolving thoughts, or as part of a practice of learning in public. To stay authentic to that, I write freely rather than striving for perfect polish. Of course, opinions change, and knowledge grows, so I will update entries accordingly.
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll("hr").forEach(function(hr) {
+    hr.parentNode.removeChild(hr);
+  });
+});
+</script>
+
+<div class="garden-nav">
+  <a href="https://helenyglover.com/">← Back to the main site</a>
+</div>
+
+<!-- ── Intro block ── -->
+<div class="intro-block">
+  <p style="padding-bottom: 0;">I conduct independent research, a self-directed pursuit of knowledge grounded in guided research questions. For context, start here:</p>
+  {% assign process_notes = site.notes | where: "process", true | sort: "order" | slice: 0,4 %}
+  <ul class="process-links">
+    {% for note in process_notes %}
+      <li>
+        {% if note.external_url %}
+          <a href="{{ note.external_url }}" target="_blank">{{ note.title }}</a>
+        {% else %}
+          <a href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+  <p>Inspired by the concept of a <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">digital garden</a>, this site is not a collection of fixed opinions but an evolving body of thought, aka the practice of learning in public. To stay true to that, I prioritize writing freely over polish. Of course, opinions change, and knowledge grows, so I will update entries accordingly.</p>
+</div>
+
+<!-- ── Tag filter buttons ── -->
+{% assign extra_labels = "Articles" | split: "," %}
+{% assign all_labels = "" | split: "," %}
+{% for note in site.notes %}
+  {% if note.process %}{% continue %}{% endif %}
+  {% if note.labels %}
+    {% for label in note.labels %}
+      {% assign label = label | strip %}
+      {% unless all_labels contains label %}
+        {% assign all_labels = all_labels | push: label %}
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+{% for label in extra_labels %}
+  {% assign label = label | strip %}
+  {% unless all_labels contains label %}
+    {% assign all_labels = all_labels | push: label %}
+  {% endunless %}
+{% endfor %}
+
+<div class="tags-row">
+  <span class="tags-row-label">Filter</span>
+  <span class="tag-btn active" onclick="filterByTag('all', this)">All</span>
+  {% for tag_name in all_labels %}
+    {% assign posts_for_tag = site.notes | where_exp:"n","n.labels contains tag_name and n.process != true" %}
+    <span class="tag-btn" onclick="filterByTag('{{ tag_name | slugify }}', this)">{{ tag_name }} ({{ posts_for_tag | size }})</span>
+  {% endfor %}
+</div>
+
+<!-- ── Ongoing Reflections ── -->
+<ul class="reflections-list">
+  {% assign notes_by_display_date = site.notes | sort: "display_date" | reverse %}
+  {% for note in notes_by_display_date %}
+    {% unless note.process %}
+      {% if note.labels contains 'Field Note' %}
+        {% continue %}
+      {% endif %}
+      {% assign tag_slugs = "" %}
+      {% for label in note.labels %}
+        {% assign slug = label | strip | slugify %}
+        {% assign tag_slugs = tag_slugs | append: slug | append: " " %}
+      {% endfor %}
+      <li class="reflection-item filterable" data-tags="{{ tag_slugs | strip }}">
+        <a class="post-title"
+          href="{% if note.external_url %}{{ note.external_url }}{% else %}{{ site.baseurl }}{{ note.url }}{% endif %}"
+          {% if note.external_url %}target="_blank"{% endif %}>
+          {{ note.title }}
+        </a>
+        {% if note.description %}
+          <span class="reflection-desc">{{ note.description }}</span>
+        {% endif %}
+        <div class="reflection-meta">
+          <span>{{ note.display_date | date: "%B %d, %Y" }}</span>
+          {% if note.labels and note.labels.size > 0 %}
+            {% for label in note.labels %}
+              <span class="reflection-tag">{{ label }}</span>
+            {% endfor %}
+          {% endif %}
+        </div>
+      </li>
+    {% endunless %}
+  {% endfor %}
+</ul>
+
+<!-- ── In Other Spaces ── -->
+<p class="other-spaces">
+  I don't have an active Substack or Medium as both require a level of attention I'd rather put toward
+  Civic Builders (coming soon) and CIB Mango Tree's research. Maybe one day.
 </p>
 
-<div class="main-wrapper">
+<script>
+function filterByTag(tag, btn) {
+  document.querySelectorAll('.tag-btn').forEach(function(b) {
+    b.classList.remove('active');
+  });
+  btn.classList.add('active');
 
-  <!-- Main content -->
-  <div class="main-content">
-
-    <h2>The Process</h2>
-    <p style="color:#666; font-size:0.9em; margin-bottom:1em;">
-      Read first, the framing and processes of my independent research
-    </p>
-
-    <ul style="list-style: none; padding-left: 0;">
-      {% assign process_notes = site.notes | where: "process", true | sort: "order" | slice: 0,3 %}
-      {% for note in process_notes %}
-        <li style="margin-bottom: 1.1em;">
-          <div class="note-title">
-            {% if note.external_url %}
-              <a class="internal-link" href="{{ note.external_url }}" target="_blank">{{ note.title }}</a>
-            {% else %}
-              <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
-            {% endif %}
-          </div>
-          {% if note.description %}
-            <div style="color:#777; font-size:0.9em;">{{ note.description }}</div>
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ul>
-
-    <h2>Ongoing Reflections</h2>
-    <ul style="list-style: none; padding-left: 0;">
-      {% assign notes_by_display_date = site.notes | sort: "display_date" | reverse %}
-      {% for note in notes_by_display_date %}
-        {% unless note.process %}
-          <li style="margin-bottom: 1.1em;">
-            <div class="note-title">
-              {% if note.external_url %}
-                <a class="internal-link" href="{{ note.external_url }}" target="_blank">{{ note.title }}</a>
-              {% else %}
-                <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
-              {% endif %}
-            </div>
-
-            {% if note.description %}
-              <div class="note-description" style="color:#777; font-size:0.9em; margin-bottom:0.25em; max-width:60em;">
-                {{ note.description }}
-              </div>
-            {% endif %}
-
-            {%- comment -%}
-            Only show display_date on front page
-            {%- endcomment -%}
-            <div class="note-meta" style="color:#666; font-size:0.8em; line-height:1.3;">
-              <span>{{ note.display_date | date: "%B %d, %Y" }}</span>
-
-              {% if note.labels and note.labels.size > 0 %}
-                <span style="margin-left: 0.5em;">
-                  <strong>{% if note.labels.size > 1 %}Tags{% else %}Tag{% endif %}:</strong>
-                  {% for label in note.labels %}
-                    <span style="margin-left: 0.25em;">{{ label }}</span>
-                  {% endfor %}
-                </span>
-              {% endif %}
-            </div>
-          </li>
-        {% endunless %}
-      {% endfor %}
-    </ul>
-
-    <h2>In Other Spaces:</h2>
-    <p>
-      I don't have an active Substack or Medium because I feel both require a certain amount of attention to updating that I divert instead of building up Civic Builders (coming soon) and 
-        CIB Mango Tree's Research. Maybe one day.
-    </p>
-
-  </div>
-
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <h3>Tags</h3>
-    <ul style="margin:0; padding-left:0;">
-      {% assign extra_labels = "Zeitgeist Moments,Articles" | split: "," %}
-      {% assign all_labels = "" | split: "," %}
-      {% for note in site.notes %}
-        {% if note.labels %}
-          {% for label in note.labels %}
-            {% assign label = label | strip %}
-            {% unless all_labels contains label %}
-              {% assign all_labels = all_labels | push: label %}
-            {% endunless %}
-          {% endfor %}
-        {% endif %}
-      {% endfor %}
-      {% for label in extra_labels %}
-        {% assign label = label | strip %}
-        {% unless all_labels contains label %}
-          {% assign all_labels = all_labels | push: label %}
-        {% endunless %}
-      {% endfor %}
-
-      {% for tag_name in all_labels %}
-        {% assign posts_for_tag = site.notes | where_exp:"n","n.labels contains tag_name" %}
-        <li>
-          {{ tag_name }} ({{ posts_for_tag | size }})
-          <span class="arrow">▼</span>
-          <div class="tooltip">
-            {% if posts_for_tag.size > 0 %}
-              <ul style="padding-left:0; margin:0;">
-                {% for n in posts_for_tag %}
-                  {% if n.external_url %}
-                    <li><a href="{{ n.external_url }}" target="_blank">{{ n.title }}</a></li>
-                  {% else %}
-                    <li><a href="{{ n.url }}">{{ n.title }}</a></li>
-                  {% endif %}
-                {% endfor %}
-              </ul>
-            {% else %}
-              <em>No posts yet</em>
-            {% endif %}
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-
-</div>
+  document.querySelectorAll('.filterable').forEach(function(item) {
+    if (tag === 'all') {
+      item.classList.remove('hidden');
+    } else {
+      var tags = (item.getAttribute('data-tags') || '').split(' ');
+      if (tags.indexOf(tag) !== -1) {
+        item.classList.remove('hidden');
+      } else {
+        item.classList.add('hidden');
+      }
+    }
+  });
+}
+</script>

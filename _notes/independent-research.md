@@ -1,5 +1,5 @@
 ---
-title: (Read Me First) Becoming an Independent Researcher
+title: Becoming an Independent Researcher
 description: A reflection on conducting independent, public-facing research
 labels: 
     - Independent Research

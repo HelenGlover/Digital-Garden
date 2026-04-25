@@ -1,5 +1,5 @@
 ---
-title: What is in a Name? 
+title: What is in a Name - Defining Independent Research 
 labels: 
     - Independent Research
 description: What does independent research mean and giving it credibility
