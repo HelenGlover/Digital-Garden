@@ -1,9 +1,10 @@
 ---
-title: Research Questions and Outcomes
-description: Research questions as part of my independent research journey
+title: Questions in Progress
+description: Research questions that define the independent research 
 labels: 
     - Independent Research
 process: true
+display_date: 2025-11-15  # optional override
 order: 3
 image: assets/aemes.png
 ---
@@ -18,68 +19,43 @@ Each question is tied to actual work I'm doing, whether that be communities I'm 
 
 ### Structural: How do emerging technologies move from ideation to implementation and adaptation?
 
-How can we bridge the gap between academia and industry?
+<h3 style="color: #122e85;">How can we bridge the gap between academia and industry?</h3>
+
 <ul>
 <li> What models accelerate the research-to-practice translation in combining the careful, deep rigor of academia with the innovative attitude of industry?</li>
 <li>How can knowledge production be democratized through civic science?</li>
-<li>Action: Exploring in relation to my consulting work with universities; my organizing work with the Association for Computing Machinery.</li>
 </ul>
+<p><b>Action:</b> Exploring in relation to my consulting work with universities; my organizing work with the Association for Computing Machinery.</p>
 
- **Is DC’s VC ecosystem growing?**
+<h3 style="color: #122e85;">Is DC's entrepreneurship ecosystem expanding, and what is driving that growth?</h3>
 <ul>
-<li> What factors are driving changes in the region’s investment landscape?</li>
-<li> How do regional characteristics (policy proximity, talent pipelines) shape its trajectory?</li>
-<li> Action: Exploring in relation to my consulting work with industry and my professional goal to lean more into VC.</li>
+<li>What macroeconomic, policy, and capital trends are reshaping the region's investment landscape?</li>
+<li>To what extent do DC-specific characteristics (proximity to federal institutions, defense and policy talent pipelines) create structural advantages or constraints for entrepreneurship?</li>
+<li>How do informal networks and community-organized meetups contribute to the region’s workforce development pipelines?</li>
 </ul>
+<p><b>Action:</b> Exploring in relation to my consulting work with industry, my past and current work in entrepreneurship, how meetups can become viable contributors to entrepreneurship through workforce development. </p>
 
-**What organizational structures and behaviors enable groups to work effectively?**
+<h3 style="color: #122e85;">What organizational structures and behaviors enable groups to work effectively toward shared goals?</h3>
 <ul>
-<li> How do formal structures (hierarchy, decision-making processes) and informal dynamics (incentives, communication patterns) interact to support collaborative effectiveness?</li>
-<li> *Action: Exploring in relation to ecosystem-building through groups I help run.</li>
+<li>How do formal mechanisms (decision rights, accountability structures) and informal dynamics (incentive alignment, trust) interact to support or undermine collaborative effectiveness?</li>
+<li>Under what conditions do groups stay aligned and work together even when individual members have different goals or incentives?</li>
 </ul>
+<p><b>Action:</b> Exploring in relation to the three groups / entities I help run along with understanding of the broader DC tech ecosystem.</p>
+
+---
 
 ### Social: How do technology and human relationships shape each other within interconnected networks?
 
-**What sustains voluntaristic open technology communities?**
-  <ul>
-<li> What motivates participation in online projects? How do digital coordination practices inform or differ from traditional community organizing?</li>
-<li> *Action: Exploring in relation to CIB Mango Tree</li>
-</ul>
-
- **What does it really mean to build community?**
-
+<h3 style="color: #122e85;">What sustains voluntary, open-source technology communities over time?</h3>
 <ul>
-<li> Beyond the buzzword, what are the ecosystem-building practices that create genuine community bonds? What role does tech play in facilitating community formation?</li>
-<li>Action: Exploring in relation to Civic Tech DC.</li>
+<li>What motivates people to volunteer and what causes them to disengage?</li>
+<li>How do online coordination practices complement in-person organizing, and what does an effective hybrid look like?</li>
 </ul>
+<p><b>Action:</b> Exploring in relation to CIB Mango Tree where I have been part of the group since the beginning and serves as the Engagement Lead.</p>
 
- **Can meetups gain credibility?**
- 
- <ul>
-<li> Merriam-Webster defines meetups as “an informal meeting or get-together.” What would it take for a region’s economic establishment, businesses, investors, and institutions to recognize meetups as vital contributors to ecosystem-building rather than casual networking?</li>
-<li> Action: Exploring in relation to ecosystem-building through groups I help run.</li>
+<h3 style="color: #122e85;">What does it actually take to build a community, not just an audience?</h3>
+<ul>
+<li>What specific practices move a group of people from shared interest to genuine belonging and mutual investment?</li>
+<li>What role does technology play in supporting or getting in the way of authentic community?</li>
 </ul>
----
-
-### Putting into Practice
-
-Unlike traditional research projects with neat methodologies and predetermined outputs (aka the classic academic paper), independent research invites more wandering, more exploring. I see a lack of a predetermined output not as a weakness, but rather ensuring the outcome applies to what the challenge or what the community needs.
-
-Many of the questions will eventually have outcomes, whether that be structure-changing outcomes, like developing new community practices at Mango Tree CIB by asking *“What sustains voluntaristic open technology communities?”* or product-focused outcomes, like building a community playbook at Civic Tech DC by asking *“What does it really mean to build community?”* However, they are not meant - or frankly cannot be - answered definitely.
-
-But for now, the work is delightfully exploratory. I conduct ethnographic observations when I attend events and also have conversational interviews (or in fancy research terms, semi-structured informal interviews) with people whose experiences and work intersect with my questions.
-
-Understandably, the idea that community work can be a research output might seem strange. Jason Benn, founder of Neighborhood, describes the discomfort of this kind of open-ended process well: 
-  
-<blockquote class="quoteback" darkmode="" data-title="Writing about a Web of Questions" data-author="Jason Benn" cite="https://jasonbenn.com/community/3-writing-about-a-web-of-questions">
-<span>It's now been three months since I started on this quest. My first mission, on the advice of experienced independent researchers like Ben R, Nadia E, and Andy M, was to simply "explore my curiosity", without setting goals, to allow myself to discover what I REALLY want and find interesting. <br><br>This was harder than I thought it would be. My self-worth is unfortunately linked to my productivity (I'm working on it), and so embracing a state in which forward progress is impossible to measure has been uncomfortable at times. But don't get me wrong - it's also been lots of fun....</span>
-<footer>Jason Benn<cite> <a href="https://jasonbenn.com/community/3-writing-about-a-web-of-questions">https://jasonbenn.com/community/3-writing-about-a-web-of-questions</a></cite></footer>
-</blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script>
-
-What makes Benn's project interesting is what he actually built from this wandering to start researching community living and whether you could intentionally design a neighborhood for "friendly ambitious nerds" in a major US city. That's the model I'm trying to follow and after some time learning, the first output can be found [here](https://helengarden.netlify.app/making-of-civic-tech).
-
-<!-- The best research happens when you’re genuinely curious and actively engaged. These questions keep me both.
-
-This article was published in Substack. I love polishing up this blog, but a new writer, Substack has the marketing mechanisms for people to find. 
-
-This blog serves as an continuous exploration, but I can also share my first concrete product: designing the Civic Tech DC Playbook. Since 2013, Civic Tech DC has accumulated knowledge about building civic technology, organizing volunteers, and partnering with nonprofits to solve community challenges. It is still a work-in-progress, but it will demonstrate independent research in action in applying ethnographic observation to organizational processes and producing a resource that can be used by the community. -->
+<p><b>Action:</b> Exploring in relation to Civic Tech DC.</p>

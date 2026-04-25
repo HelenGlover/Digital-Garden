@@ -2,8 +2,9 @@
 title: What is in a Name? 
 labels: 
     - Independent Research
-description: Giving independent research credibility through traditional structures
+description: What does independent research mean and giving it credibility
 process: true
+display_date: 2025-10-12  # optional override
 order: 2
 image: assets/lab.jpg
 ---

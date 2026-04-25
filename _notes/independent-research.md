@@ -1,6 +1,6 @@
 ---
-title: Becoming an Independent Researcher
-description: A reflection on reclaiming curiosity through independent, public-facing research beyond academia
+title: (Read Me First) Becoming an Independent Researcher
+description: A reflection on conducting independent, public-facing research
 labels: 
     - Independent Research
 display_date: 2025-10-12  # optional override
