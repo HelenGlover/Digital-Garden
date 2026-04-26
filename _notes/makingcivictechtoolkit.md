@@ -1,7 +1,7 @@
 ---
 title: Making a playbook for Civic Tech DC
 labels:
-    - Experiment
+    - Reflection on Outputs
 display_date: 2026-04-19
 image: assets/civictech.png
 description: Creating a toolkit is about making invisible community knowledge usable

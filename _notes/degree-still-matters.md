@@ -1,7 +1,7 @@
 ---
 title: The Degree Still Matters But Also Asking Why
 labels: 
-    - Community Practices
+    - Independent Research
 description: In a changing higher education landscape, rethinking credentials, experience, and designing your own path
 display_date: 2026-03-14
 image: assets/smith.jpg

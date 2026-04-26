@@ -1,7 +1,7 @@
 ---
 title: Meet or Not to Meet
 labels: 
-    - Community Practices
+    - Civic Tech Reflections
 description: How to meet, insights from my independent research on collaboration and community building
 image: assets/zoommeetings.jpg
 display_date: 2026-02-23 
