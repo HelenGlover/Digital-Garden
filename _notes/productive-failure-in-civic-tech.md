@@ -2,6 +2,7 @@
 title: The Productiveness of Failure in Civic Tech
 labels: 
   - Civic Tech Reflections
+subtheme: Emerging Theme - The best outcomes are not always a tangible outcome
 description: Why failure is actually beneficial and should be embraced 
 image: assets/failure.jpg
 display_date: 2026-05-03

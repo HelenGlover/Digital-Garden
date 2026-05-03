@@ -43,27 +43,69 @@ layout: default
     <side style="font-size: 0.9em">
       {% if page.labels and page.labels.size > 0 %}
         {% for label in page.labels %}
-          <h3 style="margin-bottom: 1em">Other {{ label }} notes</h3>
 
-          {% assign related_notes = site.notes | where: "labels", label %}
-          {% assign has_related = false %}
+          {% if page.subtheme %}
+            <h3 style="margin-bottom: 0.25em">{{ page.subtheme }}</h3>
+            <p style="font-size: 0.85em; color: #888; margin-bottom: 1em">{{ label }}</p>
 
-          <div style="display: grid; grid-gap: 1em;">
-            {% for note in related_notes %}
-              {% unless note.url == page.url %}
-                {% assign has_related = true %}
-                <div class="backlink-box">
-                  <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}{% if site.use_html_extension %}.html{% endif %}">
-                    {{ note.title }}
-                  </a>
-                </div>
-              {% endunless %}
-            {% endfor %}
-          </div>
+            {% assign thread_notes = site.notes | where: "subtheme", page.subtheme %}
+            {% assign has_thread = false %}
+            <div style="display: grid; grid-gap: 1em; margin-bottom: 2em;">
+              {% for note in thread_notes %}
+                {% unless note.url == page.url %}
+                  {% assign has_thread = true %}
+                  <div class="backlink-box">
+                    <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}{% if site.use_html_extension %}.html{% endif %}">
+                      {{ note.title }}
+                    </a>
+                  </div>
+                {% endunless %}
+              {% endfor %}
+            </div>
+            {% unless has_thread %}
+              <p style="font-size: 0.9em; margin-bottom: 2em;">No other notes in this thread yet.</p>
+            {% endunless %}
 
-          {% unless has_related %}
-            <p style="font-size: 0.9em">There are no other {{ label }} notes.</p>
-          {% endunless %}
+            <h3 style="margin-bottom: 1em">Other {{ label }} notes</h3>
+            {% assign related_notes = site.notes | where: "labels", label %}
+            {% assign has_related = false %}
+            <div style="display: grid; grid-gap: 1em;">
+              {% for note in related_notes %}
+                {% unless note.url == page.url or note.subtheme == page.subtheme %}
+                  {% assign has_related = true %}
+                  <div class="backlink-box">
+                    <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}{% if site.use_html_extension %}.html{% endif %}">
+                      {{ note.title }}
+                    </a>
+                  </div>
+                {% endunless %}
+              {% endfor %}
+            </div>
+            {% unless has_related %}
+              <p style="font-size: 0.9em">No other {{ label }} notes.</p>
+            {% endunless %}
+
+          {% else %}
+            <h3 style="margin-bottom: 1em">Other {{ label }} notes</h3>
+            {% assign related_notes = site.notes | where: "labels", label %}
+            {% assign has_related = false %}
+            <div style="display: grid; grid-gap: 1em;">
+              {% for note in related_notes %}
+                {% unless note.url == page.url %}
+                  {% assign has_related = true %}
+                  <div class="backlink-box">
+                    <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}{% if site.use_html_extension %}.html{% endif %}">
+                      {{ note.title }}
+                    </a>
+                  </div>
+                {% endunless %}
+              {% endfor %}
+            </div>
+            {% unless has_related %}
+              <p style="font-size: 0.9em">There are no other {{ label }} notes.</p>
+            {% endunless %}
+          {% endif %}
+
         {% endfor %}
       {% else %}
         <h3 style="margin-bottom: 1em">Other notes</h3>

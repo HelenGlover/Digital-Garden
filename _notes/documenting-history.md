@@ -1,5 +1,5 @@
 ---
-title: Documenting the History of Civic Tech DC 
+title: (In Progress) Documenting the History of Civic Tech DC 
 description: A history 14 years in the making
 labels: 
   - Civic Tech Reflections
