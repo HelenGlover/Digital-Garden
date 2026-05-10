@@ -26,7 +26,7 @@ Each question is tied to actual work Iâ€™m doing, whether that be communities Iâ
 <li>How can knowledge production be democratized through civic science?</li>
 </ul>
 
-<p><b>Action:</b> Exploring in relation to my consulting work with universities, my organizing work with the Association for Computing Machinery.</p>
+<p><b>Action:</b> Exploring in relation to my consulting work with universities and my organizing work with the Association for Computing Machinery.</p>
 
 <h3 style="color: #122e85;">Is entrepreneurship evolving in the DC region, and what is driving that growth?</h3>
 
@@ -58,7 +58,7 @@ Each question is tied to actual work Iâ€™m doing, whether that be communities Iâ
 <li>How do online coordination practices complement in-person organizing, and what does an effective hybrid look like?</li>
 </ul>
 
-<p><b>Action:</b> Exploring in relation to CIB Mango Tree, where I have been part of the group since the beginning and serve as the Engagement Lead.</p>
+<p><b>Action:</b> Exploring in relation to CIB Mango Tree. I have been part of this group since its start and serve as the Engagement Lead.</p>
 
 <h3 style="color: #122e85;">What does it take to build a community, not just an audience?</h3>
 
@@ -67,7 +67,7 @@ Each question is tied to actual work Iâ€™m doing, whether that be communities Iâ
 <li>How can technology support or weaken the engagement of communities?</li>
 </ul>
 
-<p><b>Action:</b> Exploring in relation to Civic Tech DC.</p>
+<p><b>Action:</b> Exploring in relation to my work running Civic Tech DC and studying volunteer-driven civic infrastructure.</p>
 
 <h3 style="color: #122e85;">Is civic tech creating democratic capacity, or compensating for institutional decline?</h3>
 
@@ -77,4 +77,4 @@ Each question is tied to actual work Iâ€™m doing, whether that be communities Iâ
 <li>What does success look like in civic technology work?</li>
 </ul>
 
-<p><b>Action:</b> Exploring through my work documenting Civic Tech DC, studying volunteer-driven civic infrastructure, and examining the relationship between grassroots innovation and institutional systems.</p>
+<p><b>Action:</b> Exploring in relaton to my work running Civic Tech DC and studying volunteer-driven civic infrastructure.</p>

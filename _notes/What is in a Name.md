@@ -53,5 +53,5 @@ Ethnography is the same type of research I practiced in college, so I have a sol
 I value structure, and the ambiguity of independent research can be challenging. To address this, I intentionally create frameworks to guide my work. I learn in public as a way to share my research. Constantly learning. DC has many amazing things to offer, but if someone were to ask what my favorite thing about the city is, it would be the access to free knowledge. Many university events are open to the public, and things I learn from those events and talking to people directly feed directly into my research. -->
 
 ## Outcomes
-With independent research, while the final product often isn’t clear at the start, it emerges through the process of learning. I delve into the "outcomes" more [here](https://helengarden.netlify.app/questions-worth-getting-lost-in).
+With independent research, while the final product often isn’t clear at the start, it emerges through the process of learning. I delve into the "outcomes" more [here](https://helengarden.netlify.app/questions-worth-getting--in).
 
