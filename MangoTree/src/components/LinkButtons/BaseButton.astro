@@ -1,0 +1,45 @@
+---
+import { baseButtonVariants } from "@lib/variants/button";
+import { resolveClasses } from "@utils/classMerge";
+
+interface Props {
+  href: string;
+  class?: string;
+  target?: "_self" | "_blank" | "_top" | "_parent" | "_unfencedTop";
+  rel?: string;
+  hoverAnimation?: boolean;
+  padding?: "xs" | "sm" | "md" | "lg";
+  variant?:
+    | "primary"
+    | "secondary"
+    | "transparent"
+    | "gold"
+    | "transparent-secondary"
+    | "transparent-gold";
+}
+
+const {
+  href,
+  target,
+  rel,
+  hoverAnimation,
+  variant,
+  padding = "md",
+  class: className,
+} = Astro.props;
+const buttonClasses: string = resolveClasses(
+  baseButtonVariants({ variant }),
+  className,
+  {
+    "px-3 py-1": padding === "xs",
+    "px-4 py-2": padding === "sm",
+    "px-6 py-3": padding === "md",
+    "px-8 py-4": padding === "lg",
+    "hover:-translate-y-0.5 active:-translate-y-px": hoverAnimation,
+  },
+);
+---
+
+<a href={href} target={target} rel={rel} class={buttonClasses}>
+  <slot />
+</a>

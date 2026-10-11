@@ -1,0 +1,60 @@
+---
+import { API_URL } from "@utils/constants/url";
+import type { Media } from "@lib/types/payload-types";
+
+interface Props {
+  videoBlock?: Media;
+  posterBlock?: Media;
+}
+
+const { videoBlock, posterBlock } = Astro.props;
+---
+
+<section class="flex flex-col relative">
+  <div class="flex-container-wrapper w-full bg-cyan-tint">
+    <div class="flex-container-main w-full px-6 xl:w-5xl xl:px-0">
+      <h2 class="font-bold text-3xl md:text-4xl text-center mb-16">
+        See it in Action
+      </h2>
+
+      <div class="mb-16 shadow-lg overflow-hidden rounded-xl">
+        <video
+          class="w-full h-auto"
+          poster={`${API_URL}${posterBlock?.url}`}
+          preload="none"
+          controls
+        >
+          <source src={`${API_URL}${videoBlock?.url}`} type="video/mp4" />
+          Your browser does not support video playback. You may download the video
+          <a
+            download="file"
+            style="text-decoration-thickness: 2px;"
+            href={`${API_URL}${videoBlock?.url}`}
+          >
+            here
+          </a>
+        </video>
+      </div>
+
+      <!-- Description -->
+      <div class="grid md:grid-cols-2 gap-10">
+        <p class="text-muted leading-relaxed text-lg">
+          CIB Mango Tree makes social media bot detection simple for everyone.
+          It begins with easy-to-run tests, the "low-hanging fruit," that help
+          reveal clear signs of unsophisticated coordinated inauthentic behavior
+          (CIB) in social media and online data.
+        </p>
+        <p class="text-muted leading-relaxed text-lg">
+          As you move up the Mango Tree, our tests become more advanced, helping
+          experienced users tackle deeper, more complex cases of manipulation.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Curved bottom edge -->
+  <div
+    class="flex bg-cyan-tint h-24 md:h-32 [clip-path:ellipse(70%_100%_at_50%_0%)]"
+  >
+  </div>
+</section>

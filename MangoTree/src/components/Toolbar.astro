@@ -1,0 +1,59 @@
+---
+import HeaderNavLink from "@components/NavLinks/HeaderNavLink.astro";
+import BaseButton from "@components/LinkButtons/BaseButton.astro";
+import DownloadButton from "@components/LinkButtons/DownloadButton.astro";
+import { SidebarTrigger } from "@components/ui/sidebar";
+import logo from "@assets/logo.png";
+---
+
+<header
+  class="flex flex-col md:flex-row justify-center bg-mango-green-darker w-full sticky top-0 z-50"
+>
+  <div
+    class="w-full px-6 py-4 flex items-center justify-between lg:w-7xl xl:px-0"
+  >
+    <!-- Logo -->
+    <a
+      href="/"
+      class="flex items-center gap-3 group transition-opacity transform-gpu hover:opacity-90"
+    >
+      <img
+        src={logo.src}
+        alt="CIB Mango Tree"
+        class="h-10 w-10 object-contain transition-transform transform-gpu duration-300 ease-default group-hover:-rotate-5 group-hover:scale-110"
+      />
+    </a>
+    <nav class="hidden md:flex" role="navigation" aria-label="Main">
+      <ul class="flex items-center gap-1">
+        <li><HeaderNavLink href="/about">About Us</HeaderNavLink></li>
+        <li><HeaderNavLink href="/resources">Resources</HeaderNavLink></li>
+        <li>
+          <HeaderNavLink href="/get-involved">Get Involved</HeaderNavLink>
+        </li>
+        <li>
+          <BaseButton
+            href="https://civictechdc.github.io/cib-mango-tree/"
+            target="_blank"
+            class="bg-[#ffcc33] text-[#2d3a24] ml-2 shadow-[0_0.125rem_0.5rem_rgba(0,0,0,0.1)] text-sm lg:text-base lg:px-4 lg:py-2 hover:bg-[#ffd966] hover:shadow-[0_0.375rem_1.0rem_rgba(0,0,0,0.15)] after:hidden active:-translate-y-px active:shadow-[0_0.125rem_0.25rem_rgba(0,0,0,0.1)]"
+            padding="xs"
+            hoverAnimation
+          >
+            Documentation
+          </BaseButton>
+        </li>
+        <li class="ml-2">
+          <DownloadButton
+            href="/download"
+            class="bg-mango-green-dark text-white shadow-[0_0.25rem_0.75rem_rgba(90,138,74,0.3)] text-sm lg:text-base px-3 py-1 lg:px-4 lg:py-2 hover:-translate-y-0.5 hover:shadow-[0_0.5rem_1.5rem_rgba(90,138,74,0.5)] hover:bg-[#4a7a3a] active:-translate-y-px active:shadow-[0_0.125rem_0.5rem_rgba(90,138,74,0.3)]"
+          >
+            Download Now
+          </DownloadButton>
+        </li>
+      </ul>
+    </nav>
+    <SidebarTrigger
+      client:media="(max-width: 768px)"
+      className="p-0 rounded-none md:hidden hover:bg-white/10 transition-colors"
+    />
+  </div>
+</header>

@@ -1,0 +1,231 @@
+---
+import payload from "@lib/payload";
+import Layout from "@layouts/Layout.astro";
+import AstroIcon from "@components/AstroIcon.astro";
+import ContributionCard from "@components/ContributionCard.astro";
+import BaseButton from "@components/LinkButtons/BaseButton.astro";
+import GitHubActivity from "@components/GitHubActivity.astro";
+import Newsletter from "@components/Newsletter.astro";
+import mangoMan from "@assets/CIB Mango Tree_mango_man.gif";
+import { Slack } from "@lucide/astro";
+import type { PaginatedDocs } from "payload";
+import type {
+  Page,
+  ContributionStepList,
+  LinkButtons,
+} from "@lib/types/payload-types";
+import type { IconKey } from "@lib/types/icon";
+
+const pageData: PaginatedDocs<Page> = await payload.find({
+  collection: "pages",
+  where: {
+    slug: {
+      equals: "get-involved",
+    },
+  },
+});
+
+let contributionStepList: ContributionStepList | null = null;
+let joinButtons: LinkButtons | null = null;
+
+if (pageData.docs.length > 0) {
+  for (const layoutBlock of pageData.docs[0].layout) {
+    if (layoutBlock.blockType === "contributionStepList")
+      contributionStepList = layoutBlock;
+    if (layoutBlock.blockType === "linkButtons") joinButtons = layoutBlock;
+  }
+}
+
+const contributionTypesTop = [
+  {
+    title: "Development",
+    icon: "Code",
+    description:
+      "Help build new detection tools, improve existing algorithms, or enhance our CLI interface. We work with Python, data analysis, and NLP/ML.",
+    color: "green" as const,
+  },
+  {
+    title: "Design",
+    icon: "Palette",
+    description:
+      "Create intuitive interfaces, visualizations, and educational materials. UI/UX design, data visualization, and graphic design skills welcome.",
+    color: "yellow" as const,
+  },
+  {
+    title: "Research & Writing",
+    icon: "FileText",
+    description:
+      "Document our tools, write case studies, and contribute to our knowledge base. Technical writing, research analysis, and content creation.",
+    color: "cyan" as const,
+  },
+];
+
+const contributionTypesBottom = [
+  {
+    title: "Testing & Feedback",
+    icon: "FlaskConical",
+    description:
+      "Try our tools, report bugs, and help us improve the user experience. User testing, bug reporting, and feature suggestions.",
+    color: "lavender" as const,
+  },
+  {
+    title: "Engagement & Marketing",
+    icon: "Megaphone",
+    description:
+      "Help spread the word about CIB Mango Tree. Social media, community outreach, partnerships, and event coordination.",
+    color: "peach" as const,
+  },
+];
+---
+
+<Layout>
+  <!-- Hero Section -->
+  <section class="flex-container-wrapper bg-background">
+    <div class="flex-container-main w-full px-6 xl:w-5xl xl:px-0">
+      <!-- Heading with Mango Man icon -->
+      <div class="flex items-center gap-4 mb-10">
+        <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl leading-tight">
+          Get Involved
+        </h1>
+        <img
+          src={mangoMan.src}
+          alt="Dancing mango character"
+          class="w-16 md:w-20 lg:w-24 h-auto"
+        />
+      </div>
+
+      <!-- Two-column paragraphs -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+        <p class="text-lg text-muted leading-relaxed">
+          As a fully volunteer team, we welcome everyone to drive whichever part
+          of the project sparks their interest—or to collaborate with a team
+          already growing a piece of the Mango Tree.
+        </p>
+
+        <p class="text-lg text-muted leading-relaxed">
+          Whether you're a developer, designer, researcher, or simply passionate
+          about digital democracy, your contributions help combat online
+          disinformation and build a healthier information ecosystem.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ways to Contribute -->
+  <section class="flex-container-wrapper bg-[#F8F6F2]">
+    <div class="flex-container-main w-full px-6 xl:w-5xl xl:px-0">
+      <h2 class="font-bold text-3xl mb-12">Ways to Contribute</h2>
+
+      <!-- Top row: 3 cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        {
+          contributionTypesTop.map((type, index) => (
+            <div
+              style={`animation-delay: ${index * 0.1}s;`}
+              class="animate-fade-in-up opacity-0"
+            >
+              <ContributionCard
+                title={type.title}
+                icon={type.icon as IconKey}
+                description={type.description}
+                color={type.color}
+              />
+            </div>
+          ))
+        }
+      </div>
+
+      <!-- Bottom row: 2 cards centered -->
+      <div class="flex flex-col justify-center gap-8 md:flex-row">
+        {
+          contributionTypesBottom.map((type, index) => (
+            <div
+              style={`animation-delay: ${(index + 3) * 0.1}s;`}
+              class="animate-fade-in-up opacity-0 w-full md:w-[calc(33.333%-1rem)]"
+            >
+              <ContributionCard
+                title={type.title}
+                icon={type.icon as IconKey}
+                description={type.description}
+                color={type.color}
+              />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+  <!-- GitHub Activity Widget -->
+  <section class="flex-container-wrapper bg-background">
+    <div class="flex-container-main w-full px-6 xl:w-5xl xl:px-0">
+      <h2 class="font-bold text-3xl mb-12">Open Source Development</h2>
+      <GitHubActivity />
+    </div>
+  </section>
+  <!-- Join Civic Tech DC -->
+  <section class="flex-container-wrapper bg-mango-green-dark text-white">
+    <div class="flex-container-main w-full px-6 xl:w-5xl xl:px-0">
+      <h2 class="font-bold text-3xl mb-8">Join Civic Tech DC</h2>
+      <p class="text-lg text-white/90 mb-6 leading-relaxed max-w-3xl">
+        CIB Mango Tree is a project within the Civic Tech DC community. Civic
+        Tech DC is a 501(c)(3) non-profit that organizes biweekly "project
+        night" meetups where technologists meet to plan and carry out
+        software-based projects that solve civic problems.
+      </p>
+      <p class="text-lg text-white/90 mb-10 leading-relaxed max-w-3xl">
+        Just as the CIB Mango Tree project is open to any contributor of all
+        backgrounds and skill sets, anyone can attend the Civic Tech DC project
+        nights and contribute to various projects in capacities ranging from
+        project management, UI design to software development.
+      </p>
+
+      <div class="flex flex-wrap gap-5">
+        {
+          joinButtons?.items != null
+            ? joinButtons.items.map(
+                (item): HTMLElement => (
+                  <BaseButton
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    variant={item.type}
+                    hoverAnimation={
+                      item["hover effect"] != null
+                        ? item["hover effect"]
+                        : false
+                    }
+                  >
+                    {item.Icon != null && (
+                      <AstroIcon name={item.Icon as IconKey} class="w-5 h-5" />
+                    )}
+                    {item.name.toLowerCase().includes("slack") && (
+                      <Slack class="w-5 h-5" />
+                    )}
+                    {item.name}
+                  </BaseButton>
+                ),
+              )
+            : null
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="flex justify-center py-16 bg-background">
+    <div class="flex-container-main w-full text-center xl:w-5xl">
+      <h3 class="font-bold text-2xl mb-6">Questions?</h3>
+      <p class="text-muted mb-8">
+        Reach out to us on Slack or email us directly
+      </p>
+      <a
+        href="mailto:cibmangotree@proton.me"
+        class="no-underline text-mango-green-darker hover:text-mango-green-dark transition-colors"
+      >
+        cibmangotree@proton.me
+      </a>
+    </div>
+  </section>
+
+  <!-- <Newsletter /> -->
+</Layout>

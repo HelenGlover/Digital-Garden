@@ -1,0 +1,88 @@
+---
+import { Calendar, Video, MapPin } from "@lucide/astro";
+import CTAButton from "@components/LinkButtons/CTAButton.astro";
+import AstroIcon from "@components/AstroIcon.astro";
+import type {
+  LinkButtons,
+  MeetingScheduleItem,
+} from "@lib/types/payload-types";
+import type { IconKey } from "@lib/types/icon";
+
+interface Props {
+  buttons?: LinkButtons["items"];
+  meetingSchedule?: Array<MeetingScheduleItem>;
+}
+
+const { meetingSchedule, buttons } = Astro.props;
+---
+
+<section class="flex-container-wrapper bg-mango-green-dark">
+  <div class="flex-container-main w-full text-center px-6 xl:w-5xl xl:px-0">
+    <h2 class="font-bold text-3xl md:text-4xl text-white mb-6">
+      Ready to Make an Impact?
+    </h2>
+    <p class="text-white/80 text-lg mb-8 w-full">
+      Join our community of researchers, developers, and citizens working to
+      protect digital democracy.
+    </p>
+
+    <!-- Compact Meeting Schedule -->
+    <div class="flex flex-col items-center justify-center mb-12 w-full">
+      <h3
+        class="text-white/90 text-sm font-semibold uppercase tracking-wider mb-4 flex items-center justify-center gap-2"
+      >
+        <Calendar class="w-4 h-4" />
+        Meeting Schedule
+      </h3>
+      <div class="flex gap-3 flex-col md:flex-row justify-center">
+        {
+          meetingSchedule != null &&
+            meetingSchedule.reverse().map(
+              (meeting: MeetingScheduleItem): HTMLDivElement => (
+                <div class="flex items-center gap-3 transition-all transform-gpu duration-300 ease-linear bg-white/10 backdrop-blur-sm px-4 py-3 border border-white/20 hover:bg-white/15 hover:-translate-y-0.5">
+                  {meeting.type === "virtual" ? (
+                    <Video class="w-4 h-4 text-cyan-300 shrink-0" />
+                  ) : (
+                    <MapPin class="w-4 h-4 text-mango-yellow shrink-0" />
+                  )}
+                  <div class="flex flex-col text-left">
+                    <span class="text-white text-sm font-medium">
+                      {meeting.name}
+                    </span>
+                    <span class="text-white/60 text-xs">
+                      {meeting.day} @ {meeting.time}
+                    </span>
+                  </div>
+                  {meeting.link && (
+                    <a
+                      href={meeting.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-mango-yellow hover:text-white text-xs font-medium ml-2"
+                    >
+                      RSVP →
+                    </a>
+                  )}
+                </div>
+              ),
+            )
+        }
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap w-full"
+    >
+      {
+        buttons?.map((item): HTMLElement => {
+          return (
+            <CTAButton href={item.link} variant={item.type}>
+              {item.Icon != null && <AstroIcon name={item.Icon as IconKey} />}
+              {item.name}
+            </CTAButton>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>

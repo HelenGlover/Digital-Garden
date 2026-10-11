@@ -1,0 +1,162 @@
+---
+import {
+  convertLexicalToHTML,
+  type HTMLConvertersFunction,
+} from "@payloadcms/richtext-lexical/html";
+import { escapeHTML } from "astro/runtime/server/escape.js";
+import { cn } from "@utils/classMerge";
+import type { SerializedEditorState } from "@payloadcms/richtext-lexical/lexical";
+
+interface BlockClasses {
+  paragraph?: string;
+  quote?: string;
+  h1?: string;
+  h2?: string;
+  h3?: string;
+  h4?: string;
+  h5?: string;
+  h6?: string;
+  ul?: string;
+  ol?: string;
+  listitem?: string;
+  link?: string;
+  image?: string;
+  horizontalrule?: string;
+}
+
+interface Props {
+  data: SerializedEditorState;
+  class?: string;
+  classes?: BlockClasses;
+}
+
+const { data, class: className, classes } = Astro.props;
+
+const defaultClasses = {
+  paragraph: "text-muted leading-relaxed mb-4 text-lg last:mb-0",
+  quote:
+    "text-muted italic bg-mango-yellow-light border-l-4 border-mango-yellow p-8 my-10 leading-relaxed text-lg",
+  h1: "font-bold text-3xl md:text-4xl mt-8 mb-4 first:mt-0",
+  h2: "font-bold text-2xl md:text-3xl mt-8 mb-4 first:mt-0",
+  h3: "font-bold text-xl md:text-2xl mt-6 mb-3 first:mt-0",
+  h4: "font-semibold text-lg mt-6 mb-2 first:mt-0",
+  h5: "font-semibold text-base mt-4 mb-2 first:mt-0",
+  h6: "font-semibold text-sm uppercase tracking-wider text-muted mt-4 mb-2 first:mt-0",
+  ul: "pl-6 mb-4 space-y-1 text-foreground marker:text-mango-green-dark list-disc",
+  ol: "pl-6 mb-4 space-y-1 text-foreground marker:text-mango-green-dark list-decimal",
+  listitem: "leading-relaxed",
+  link: "text-mango-green-dark underline underline-offset-3 transition-colors transform-gpu duration-200 ease-linear hover:text-mango-green-darkest",
+  image: "my-6 max-w-full h-auto",
+  horizontalrule: "my-8 border-0 border-t border-border",
+} as const;
+
+type HeadingTag = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+
+const converters: HTMLConvertersFunction = ({ defaultConverters }) => ({
+  ...defaultConverters,
+  paragraph: ({ node, nodesToHTML }) => {
+    const children: string = nodesToHTML({ nodes: node.children }).join("");
+
+    if (children.length === 0) return "";
+
+    const paragraphClasses: string = cn(
+      defaultClasses.paragraph,
+      node.format === "center" && "text-center",
+      node.format === "left" && "text-left",
+      node.format === "right" && "text-right",
+      classes?.paragraph,
+    );
+
+    return `<p class="${paragraphClasses}">${children}</p>`;
+  },
+  heading: ({ node, nodesToHTML }) => {
+    const children: string = nodesToHTML({ nodes: node.children }).join("");
+    const tag: HeadingTag =
+      defaultClasses[node.tag as HeadingTag] != null
+        ? (node.tag as HeadingTag)
+        : "h1";
+    const headingClasses: string = cn(
+      defaultClasses[tag],
+      node.format === "center" && "text-center",
+      node.format === "left" && "text-left",
+      node.format === "right" && "text-right",
+      classes?.[tag],
+    );
+
+    return `<${tag} class="${headingClasses}">${children}</${tag}>`;
+  },
+  list: ({ node, nodesToHTML }) => {
+    const children: string = nodesToHTML({ nodes: node.children }).join("");
+    const tag: "ol" | "ul" = node.tag === "ol" ? "ol" : "ul";
+    const listClasses: string = cn(defaultClasses[tag], classes?.[tag]);
+
+    return `<${tag} class="${listClasses}">${children}</${tag}>`;
+  },
+  listitem: ({ node, nodesToHTML }) => {
+    const children: string = nodesToHTML({ nodes: node.children }).join("");
+    const itemClasses: string = cn(defaultClasses.listitem, classes?.listitem);
+
+    return `<li class="${itemClasses}">${children}</li>`;
+  },
+  quote: ({ node, nodesToHTML }) => {
+    const children: string = nodesToHTML({ nodes: node.children }).join("");
+    const quoteClasses: string = cn(defaultClasses.quote, classes?.quote);
+
+    return `<blockquote class="${quoteClasses}">${children}</blockquote>`;
+  },
+  link: ({ node, nodesToHTML }) => {
+    const children: string = nodesToHTML({ nodes: node.children }).join("");
+    const href: string = encodeURI(node.fields.url ?? "#");
+    const targetAttr: string = node.fields.newTab
+      ? ' target="_blank" rel="noopener noreferrer"'
+      : "";
+    const anchorClasses: string = cn(defaultClasses.link, classes?.link);
+
+    return `<a href="${href}"${targetAttr} class="${anchorClasses}">${children}</a>`;
+  },
+  autolink: ({ node, nodesToHTML }) => {
+    const children: string = nodesToHTML({ nodes: node.children }).join("");
+    const href: string = encodeURI(node.fields.url ?? "#");
+    const targetAttr: string = node.fields.newTab
+      ? ' target="_blank" rel="noopener noreferrer"'
+      : "";
+    const anchorClasses: string = cn(defaultClasses.link, classes?.link);
+
+    return `<a href="${href}"${targetAttr} class="${anchorClasses}">${children}</a>`;
+  },
+  upload: ({ node }) => {
+    const uploadNode: any = node;
+
+    if (typeof uploadNode.value !== "object" || uploadNode.value == null)
+      return "";
+
+    const uploadDoc: any = uploadNode.value;
+    const alt: string = escapeHTML(
+      uploadNode.fields?.alt ?? uploadDoc?.alt ?? "",
+    );
+    const url: string = encodeURI(uploadDoc.url ?? "");
+
+    if (
+      typeof uploadDoc.mimeType !== "string" ||
+      !uploadDoc.mimeType.startsWith("image")
+    ) {
+      const anchorClasses: string = cn(defaultClasses.link, classes?.link);
+
+      return `<a href="${url}" rel="noopener noreferrer" class="${anchorClasses}">${escapeHTML(uploadDoc.filename ?? "")}</a>`;
+    }
+
+    const imageClasses: string = cn(defaultClasses.image, classes?.image);
+
+    return `<img src="${url}" alt="${alt}" width="${escapeHTML(String(uploadDoc.width ?? ""))}" height="${escapeHTML(String(uploadDoc.height ?? ""))}" loading="lazy" class="${imageClasses}" />`;
+  },
+  horizontalrule: `<hr class="${cn(defaultClasses.horizontalrule, classes?.horizontalrule)}" />`,
+});
+
+const parsedHTML: string = convertLexicalToHTML({
+  data,
+  converters,
+  className: cn("w-full", className),
+});
+---
+
+<Fragment set:html={parsedHTML} />

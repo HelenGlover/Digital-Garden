@@ -1,0 +1,36 @@
+---
+import Toolbar from "@components/Toolbar.astro";
+import Footer from "@components/Footer.astro";
+import { SidebarProvider } from "@components/ui/sidebar";
+import MobileNavigation from "@components/MobileNavigation";
+import "../pages/styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="CIB Mango Tree - An open-source library to detect and analyze coordinated inauthentic behavior online"
+    />
+
+    <title>CIB Mango Tree</title>
+  </head>
+
+  <body
+    class="flex flex-col w-full min-h-svh bg-background font-body text-primary scroll-smooth leading-[1.6]"
+  >
+    <SidebarProvider client:load>
+      <Toolbar />
+      <main class="flex flex-col flex-1">
+        <slot />
+      </main>
+      <Footer />
+      <MobileNavigation client:only />
+    </SidebarProvider>
+  </body>
+</html>

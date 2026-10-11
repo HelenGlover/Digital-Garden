@@ -1,0 +1,210 @@
+---
+import payload from "@lib/payload";
+import { BookOpen } from "@lucide/astro";
+import Layout from "@layouts/Layout.astro";
+import PlatformDownload from "@components/PlatformDownload.astro";
+import CodeBlock from "@components/CodeBlock";
+import BaseButton from "@components/LinkButtons/BaseButton.astro";
+import type { PaginatedDocs } from "payload";
+import type {
+  Page,
+  PlatformDownloadList,
+  LinkButtons,
+} from "@lib/types/payload-types";
+import type {
+  Platform,
+  PlatformDownloadListItem,
+} from "@components/PlatformDownload.astro";
+
+const downloadPageData: PaginatedDocs<Page> = await payload.find({
+  collection: "pages",
+  where: {
+    slug: {
+      equals: "download",
+    },
+  },
+});
+let platformDownloadList: PlatformDownloadList | null = null;
+let helpButtons: LinkButtons | null = null;
+const platformIcons: Record<string, string> = {
+  Windows:
+    '<svg viewBox="0 0 24 24" fill="currentColor" class="w-16 h-16 text-[#0078D4]"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>',
+  "macOS (Intel)":
+    '<svg viewBox="0 0 24 24" fill="currentColor" class="w-16 h-16 text-[#555555]"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>',
+  "macOS (Apple Silicon)":
+    '<svg viewBox="0 0 24 24" fill="currentColor" class="w-16 h-16 text-[#555555]"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>',
+};
+
+if (downloadPageData.docs.length > 0) {
+  for (const layoutBlock of downloadPageData.docs[0].layout) {
+    if (layoutBlock.blockType === "platformDownloadList")
+      platformDownloadList = layoutBlock;
+    if (layoutBlock.blockType === "linkButtons") helpButtons = layoutBlock;
+  }
+}
+
+const dataPreparationSteps = [
+  {
+    step: 1,
+    title: "Gather Your Data",
+    description:
+      "Export social media data from platforms like Twitter/X, Facebook, or use datasets from academic sources.",
+  },
+  {
+    step: 2,
+    title: "Format as CSV",
+    description:
+      "Ensure your data is in CSV format with columns for: user_id, username, post_content, timestamp, and engagement_metrics.",
+  },
+  {
+    step: 3,
+    title: "Clean & Validate",
+    description:
+      "Remove duplicates, handle missing values, and ensure text encoding is UTF-8 for consistent analysis.",
+  },
+  {
+    step: 4,
+    title: "Run Analysis",
+    description:
+      "Use the CLI to run detection tests on your prepared dataset. Start with the copypasta test for quick results.",
+  },
+];
+---
+
+<Layout>
+  <!-- Hero Section -->
+  <section class="flex-container-wrapper">
+    <div class="flex-container-main w-full px-6 xl:w-5xl xl:px-0">
+      <h1
+        class="font-bold text-4xl md:text-5xl lg:text-6xl mb-10 leading-tight"
+      >
+        Download CIB Mango Tree
+      </h1>
+
+      <p class="text-xl text-muted mb-16 leading-relaxed max-w-3xl">
+        Get CIB Mango Tree running on your machine in minutes. Our tools run
+        locally, ensuring your data stays private and secure.
+      </p>
+    </div>
+  </section>
+  <!-- Platform Downloads -->
+  <section class="flex justify-center py-16 bg-[#F8F6F2]">
+    <div class="flex-container-main w-full px-6 xl:w-5xl xl:px-0">
+      <h2 class="font-bold text-3xl mb-12 text-center">Choose Your Platform</h2>
+      {
+        platformDownloadList?.items != null && (
+          <PlatformDownload
+            platforms={platformDownloadList.items.map(
+              (item: PlatformDownloadListItem): Platform => ({
+                ...item,
+                icon: platformIcons[item.name],
+              }),
+            )}
+          />
+        )
+      }
+      <p class="text-center text-muted text-sm mt-10">
+        All downloads include the full CIB Mango Tree CLI with all detection
+        modules.
+      </p>
+    </div>
+  </section>
+  <!-- Data Preparation -->
+  <section class="flex-container-wrapper bg-mango-yellow-light">
+    <div class="flex-container-main w-full px-6 xl:w-5xl xl:px-0">
+      <h2 class="font-bold text-3xl mb-6">Preparing Your Data</h2>
+      <p class="text-muted mb-12 max-w-3xl">
+        Before running analysis, you'll need to prepare your social media
+        dataset. Follow these steps:
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {
+          dataPreparationSteps.map((item, index) => (
+            <div
+              class="bg-white p-8 relative group opacity-0 transition-all transform-gpu duration-300 ease-linear animate-fade-in-step hover:-translate-y-1 hover:shadow-[0_0.5rem_1.25rem_rgba(90,138,74,0.15)]"
+              style={`animation-delay: ${index * 0.1}s;`}
+            >
+              <div class="absolute -top-3 -left-3 w-12 h-12 bg-mango-green-dark text-white font-bold flex items-center justify-center text-lg transition-all transform-gpu duration-300 ease-default group-hover:bg-[#4a7a3a] group-hover:scale-110 group-hover:-rotate-5">
+                {item.step}
+              </div>
+              <h3 class="font-semibold mb-4 mt-3">{item.title}</h3>
+              <p class="text-muted text-sm leading-relaxed">
+                {item.description}
+              </p>
+            </div>
+          ))
+        }
+      </div>
+      <!-- CSV Format Example -->
+      <div class="mt-12 bg-white w-full p-8 border border-border">
+        <h3 class="font-semibold mb-5">Expected CSV Format</h3>
+        <div class="overflow-x-auto">
+          <CodeBlock
+            client:visible
+            code='user_id,username,post_content,timestamp,retweets,likes<br/>12345,@example_user,"Sample post content here",2025-01-15T10:30:00Z,5,12'
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Technical Documentation -->
+  <section class="flex justify-center py-16 bg-mango-green-dark text-white">
+    <div
+      class="flex flex-col items-center justify-center gap-8 w-full px-6 lg:flex-row lg:justify-between xl:w-5xl xl:px-0"
+    >
+      <div class="flex flex-col items-center lg:items-start">
+        <h2 class="font-bold text-2xl mb-3">Technical Documentation</h2>
+        <p class="text-white/80">
+          Detailed API reference, advanced configuration, and integration
+          guides.
+        </p>
+      </div>
+      <BaseButton
+        href="https://civictechdc.github.io/cib-mango-tree"
+        target="_blank"
+        rel="noopener noreferrer"
+        variant="secondary"
+        hoverAnimation
+      >
+        <BookOpen class="w-5 h-5" />
+        View Documentation
+      </BaseButton>
+    </div>
+  </section>
+  <!-- Help Section -->
+  <section class="flex justify-center py-16 bg-background">
+    <div class="flex-container-main text-center w-full px-6 xl:w-5xl xl:px-0">
+      <h3 class="font-bold text-2xl mb-6">Need Help?</h3>
+      <p class="text-muted mb-8">
+        Check our documentation or reach out to the community
+      </p>
+      <div class="flex flex-wrap justify-center gap-5">
+        {
+          helpButtons?.items != null
+            ? helpButtons.items.map(
+                (item): HTMLElement => (
+                  <BaseButton
+                    href={item.link}
+                    variant={item.type}
+                    target={
+                      !item.link.startsWith("https://cibmangotree.org/") &&
+                      !item.link.startsWith("http://localhost")
+                        ? "_blank"
+                        : "_self"
+                    }
+                    hoverAnimation={
+                      item["hover effect"] != null
+                        ? item["hover effect"]
+                        : false
+                    }
+                  >
+                    {item.name}
+                  </BaseButton>
+                ),
+              )
+            : null
+        }
+      </div>
+    </div>
+  </section>
+</Layout>

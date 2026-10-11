@@ -1,0 +1,92 @@
+---
+import {
+  Code,
+  Palette,
+  FileText,
+  FlaskConical,
+  Megaphone,
+  Bug,
+  Lightbulb,
+  BookOpen,
+  ArrowRight,
+} from "@lucide/astro";
+import AstroIcon from "@components/AstroIcon.astro";
+import { cn } from "@utils/classMerge";
+import type { IconKey } from "@lib/types/icon";
+
+type IconMapKeys =
+  | "code"
+  | "palette"
+  | "file-text"
+  | "flask"
+  | "megaphone"
+  | "bug"
+  | "lightbulb"
+  | "book";
+
+interface Props {
+  title: string;
+  icon?: IconKey;
+  description?: string | null;
+  ctaName?: string;
+  ctaLink?: string;
+  color?: "yellow" | "cyan" | "green" | "cream" | "peach" | "lavender";
+}
+
+const {
+  title,
+  icon,
+  description,
+  ctaName,
+  ctaLink,
+  color = "cream",
+} = Astro.props;
+
+const cardClasses: string = cn(
+  "border-2 p-6 md:p-8 h-full flex flex-col group transition-all transform-gpu duration-300 ease-default hover:-translate-y-1.5 hover:border-[#5a8a4a] hover:shadow-[0_0.75rem_2.0rem_rgba(90,138,74,0.15)]",
+  {
+    "bg-mango-yellow border-mango-yellow": color === "yellow",
+    "bg-[#E5F7F8] border-[#E5F7F8]": color === "cyan",
+    "bg-mango-green-light border-mango-green-light": color === "green",
+    "bg-[#F8F6F2] border-border": color === "cream",
+    "bg-[#FFE5D9] border-[#FFE5D9]": color === "peach",
+    "bg-[#EDE7F6] border-[#EDE7F6]": color === "lavender",
+  },
+);
+---
+
+<div class={cardClasses}>
+  <div
+    class="mb-5 w-14 h-14 bg-white/50 rounded-xl flex items-center justify-center transition-all transform-gpu duration-300 ease-default group-hover:scale-110 group-hover:bg-[rgba(90,138,74,0.15)]"
+  >
+    {
+      icon != null && (
+        <AstroIcon
+          name={icon as IconKey}
+          class="w-8 h-8 text-mango-green-dark"
+        />
+      )
+    }
+  </div>
+  <h3 class="font-bold text-xl md:text-2xl mb-4">
+    {title}
+  </h3>
+  {
+    description != null && (
+      <p class="text-muted leading-relaxed flex-1 mb-5">{description}</p>
+    )
+  }
+  {
+    ctaLink != null ? (
+      <a
+        href={ctaLink}
+        target={ctaLink.startsWith("http") ? "_blank" : undefined}
+        rel={ctaLink.startsWith("http") ? "noopener noreferrer" : undefined}
+        class="inline-flex items-center gap-2 text-mango-green-dark font-semibold mt-auto transition-all transform-gpu duration-200 ease-linear group-hover:gap-3"
+      >
+        {ctaName}
+        <ArrowRight class="w-4 h-4 transition-transform transform-gpu duration-200 ease-linear group-hover:translate-x-1" />
+      </a>
+    ) : null
+  }
+</div>

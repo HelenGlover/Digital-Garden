@@ -1,0 +1,15 @@
+---
+import { icons } from "@lucide/astro";
+import type { IconProps } from "@lucide/astro";
+import type { IconKey, IconType } from "@lib/types/icon";
+
+interface Props extends IconProps {
+  name: IconKey;
+  class?: string;
+}
+
+const { name, class: className, ...props } = Astro.props;
+const Icon: IconType[IconKey] | undefined = (icons as IconType)[name];
+---
+
+{Icon != null && <Icon class={className} {...props} />}

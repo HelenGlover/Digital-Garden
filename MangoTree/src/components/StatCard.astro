@@ -1,0 +1,35 @@
+---
+import { resolveClasses } from "@utils/classMerge";
+
+interface Props {
+  href: string;
+  class?: string;
+}
+
+const { class: className, href } = Astro.props;
+const componentClasses: string = resolveClasses(
+  "flex flex-col justify-center p-6 cursor-pointer transition transform-gpu duration-300 ease-default group hover:scale-105 hover:-translate-x-1 hover:shadow-[0_0.75rem_1.75rem_rgba(45,58,36,0.15)] hover:after:left-0 hover:after:w-0 hover:after:-mb-0.5 hover:after:h-0.5 hover:after:transition-[width] hover:after:bg-white/10",
+  className,
+);
+---
+
+<a
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+  class={componentClasses}
+>
+  <span
+    class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 transition-transform transform-gpu duration-300 ease-default group-hover:scale-110"
+  >
+    <slot name="percentage" />
+  </span>
+  <sup
+    class="text-xl sm:text-2xl font-bold text-mango-green-dark transition-transform transform-gpu duration-300 ease-default"
+  >
+    <slot name="index" />
+  </sup>
+  <div class="text-xs md:text-sm text-primary/80">
+    <slot />
+  </div>
+</a>

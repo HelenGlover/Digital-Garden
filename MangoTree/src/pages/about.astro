@@ -1,0 +1,271 @@
+---
+import payload from "@lib/payload";
+import Layout from "@layouts/Layout.astro";
+import ValuesBlock from "@components/ValuesBlock.astro";
+import NewsQuote from "@components/NewsQuote.astro";
+import AstroBlockRenderer from "@components/AstroBlockRenderer.astro";
+import AstroIcon from "@components/AstroIcon.astro";
+import SprintCalendar from "@components/SprintCalendar.astro";
+import BaseButton from "@components/LinkButtons/BaseButton.astro";
+import teamMeeting from "@assets/team-meeting.jpg";
+import { cn } from "@utils/classMerge";
+import type { PaginatedDocs } from "payload";
+import type {
+  SerializedEditorState,
+  SerializedElementNode,
+  SerializedTextNode,
+} from "@payloadcms/richtext-lexical/lexical";
+import type {
+  Page,
+  ContentBlock,
+  MeetingScheduleItem,
+  LinkButtons,
+  MediaNewsList,
+  Media,
+} from "@lib/types/payload-types";
+import type { IconKey } from "@lib/types/icon";
+
+type Value = {
+  title: string;
+  description: string;
+  color: string;
+  iconPath: string;
+};
+
+const [page, meetingSchedule]: [
+  PromiseSettledResult<PaginatedDocs<Page>>,
+  PromiseSettledResult<PaginatedDocs<MeetingScheduleItem>>,
+] = await Promise.allSettled([
+  payload.find({
+    collection: "pages",
+    where: {
+      slug: {
+        equals: "about",
+      },
+    },
+  }),
+  payload.find({
+    collection: "meetingScheduleItems",
+  }),
+]);
+
+if (page.status === "rejected" || meetingSchedule.status === "rejected")
+  throw Error("http request to the CMS for page data failed...");
+
+let whoWeAreContent: ContentBlock | null = null;
+let scheduleButtons: LinkButtons | null = null;
+let inTheNewsList: MediaNewsList | null = null;
+
+if (page.value.docs.length > 0) {
+  for (const layoutBlock of page.value.docs[0].layout) {
+    if (layoutBlock.blockName === "Who we are")
+      whoWeAreContent = layoutBlock as ContentBlock;
+    if (layoutBlock.blockName === "Schedule Buttons")
+      scheduleButtons = layoutBlock as LinkButtons;
+    if (layoutBlock.blockName === "In the News")
+      inTheNewsList = layoutBlock as MediaNewsList;
+  }
+}
+
+const values: Array<Value> = [
+  {
+    title: "Transparency",
+    description:
+      "Making online manipulation visible and understandable for informed analysis.",
+    color: "bg-mango-yellow",
+    iconPath:
+      "M15 12a3 3 0 11-6 0 3 3 0 016 0z M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z",
+  },
+  {
+    title: "Civic Integrity",
+    description:
+      "Strengthening democratic discourse by detecting and mitigating coordinated inauthentic behavior.",
+    color: "bg-[#E5F7F8]",
+    iconPath:
+      "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+  },
+  {
+    title: "Reliability",
+    description:
+      "Ensuring tools and analyses are accurate and trustworthy for all users.",
+    color: "bg-mango-green-light",
+    iconPath:
+      "M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z",
+  },
+];
+---
+
+<Layout>
+  <!-- Hero Section -->
+  <section class="flex-container-wrapper bg-background pb-0">
+    <div class="flex-container-main w-full px-6 lg:px-0 md:w-4xl">
+      <h1
+        class="font-bold text-4xl md:text-5xl lg:text-6xl mb-10 leading-tight"
+      >
+        About Us
+      </h1>
+
+      <p class="text-xl text-muted mb-16 leading-relaxed">
+        CIB Mango Tree is a collaborative project born from the belief that a
+        healthy democracy requires a healthy information ecosystem.
+      </p>
+
+      <div class="flex justify-center items-center w-full">
+        <img
+          src={teamMeeting.src}
+          alt="Team collaboration"
+          class="w-full object-cover aspect-auto"
+        />
+      </div>
+    </div>
+  </section>
+  {
+    whoWeAreContent?.columns?.map((item): HTMLElement | null =>
+      item.richText != null ? (
+        <section
+          class={cn(
+            "flex justify-center py-16",
+            (
+              (item.richText as SerializedEditorState).root
+                .children[0] as SerializedElementNode<SerializedTextNode>
+            ).children[0].text === "Who We Are"
+              ? "bg-[#F8F6F2]"
+              : "bg-background",
+          )}
+        >
+          <div class="flex-container-main w-full px-6 lg:px-0 lg:w-4xl">
+            <AstroBlockRenderer data={item.richText as SerializedEditorState} />
+          </div>
+        </section>
+      ) : null,
+    )
+  }
+  <!-- Values Section -->
+  <section class="flex flex-col items-center py-20 bg-background">
+    <div
+      class="flex w-full justify-start items-center px-6 mb-12 lg:w-4xl lg:px-0"
+    >
+      <h2 class="font-bold text-3xl">Our Values</h2>
+    </div>
+    {
+      values.map((value: Value) => (
+        <ValuesBlock class={value.color} iconPath={value.iconPath}>
+          <Fragment slot="title">{value.title}</Fragment>
+          <Fragment slot="description">{value.description}</Fragment>
+        </ValuesBlock>
+      ))
+    }
+  </section>
+
+  <!-- Civic Tech DC Section -->
+  <section class="flex-container-wrapper bg-background">
+    <div class="flex flex-col w-full px-6 lg:w-4xl lg:px-0">
+      <h2 class="font-bold text-3xl mb-8">About Civic Tech DC</h2>
+      <p class="text-muted mb-10 leading-relaxed text-lg">
+        CIB Mango Tree is a project within the Civic Tech DC community. Civic
+        Tech DC is a 501(c)(3) non-profit that organizes biweekly "project
+        night" meetups where technologists meet to plan and carry out
+        software-based projects that solve civic problems, from climate change
+        impacts to election access. Just as the CIB Mango Tree project is open
+        to any contributor of all backgrounds and skill sets, anyone can attend
+        the Civic Tech DC project nights and contribute to various projects in
+        capacities ranging from project management, UI design to software
+        development.
+      </p>
+      {
+        meetingSchedule.value.docs.length > 0 && (
+          <SprintCalendar data={meetingSchedule.value.docs.reverse()} />
+        )
+      }
+      <div class="flex flex-wrap gap-5 mt-10">
+        {
+          scheduleButtons != null && scheduleButtons.items?.length! > 0
+            ? scheduleButtons.items?.map((item) => (
+                <BaseButton
+                  href={item.link}
+                  variant={item.type}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.name.toLowerCase().includes("slack") && (
+                    <svg
+                      class="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z" />
+                    </svg>
+                  )}
+                  {item.Icon != null && (
+                    <AstroIcon name={item.Icon as IconKey} />
+                  )}
+                  {item.name}
+                </BaseButton>
+              ))
+            : null
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- In Media Section -->
+  <section class="flex-container-wrapper bg-[#F8F6F2]">
+    <div
+      class="flex flex-col justify-center items-start w-full px-6 lg:w-4xl lg:px-0"
+    >
+      <h2 class="font-bold text-3xl mb-12">In the Media</h2>
+      <div class="space-y-8">
+        {
+          inTheNewsList?.items != null && inTheNewsList.items?.length > 0
+            ? inTheNewsList.items?.map((item) => (
+                <NewsQuote
+                  title={item.title}
+                  publication={item.publication}
+                  date={item.date}
+                  link={item.link}
+                  excerpt={item.description}
+                  imageUrl={
+                    item.image != null
+                      ? `https://api.cibmangotree.org${(item.image as Media).url as string}`
+                      : null
+                  }
+                />
+              ))
+            : null
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Community CTA -->
+  <section class="flex-container-wrapper bg-mango-yellow-light">
+    <div class="flex-container-main w-full px-6 lg:w-4xl lg:px-0">
+      <h2 class="font-bold text-3xl mb-8">Join Our Community</h2>
+      <p class="text-muted mb-10 text-lg">
+        Whether you're a seasoned researcher or a curious citizen, there's a
+        place for you in our community. We welcome contributors of all skill
+        levels.
+      </p>
+      <BaseButton
+        href="/get-involved"
+        class="gap-2 bg-mango-green-dark text-white text-lg hover:bg-[#4A7A3A]"
+        padding="lg"
+        hoverAnimation
+      >
+        Get Involved
+        <svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </BaseButton>
+    </div>
+  </section>
+</Layout>

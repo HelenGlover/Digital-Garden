@@ -1,0 +1,50 @@
+---
+import payload from "@lib/payload";
+import Layout from "@layouts/Layout.astro";
+import AstroBlockRenderer from "@components/AstroBlockRenderer.astro";
+import type { PaginatedDocs } from "payload";
+import type { Page } from "@lib/types/payload-types";
+import type { SerializedEditorState } from "@payloadcms/richtext-lexical/lexical";
+
+const data: PaginatedDocs<Page> = await payload.find({
+  collection: "pages",
+  where: {
+    slug: {
+      equals: "privacy-policy",
+    },
+  },
+});
+
+const page: Page = data.docs[0];
+---
+
+<Layout>
+  <section class="flex-container-wrapper">
+    <div
+      class="flex flex-col items-start justify-center w-full px-6 gap-y-4 xl:w-6xl xl:px-0"
+    >
+      {
+        page.hero != null ? (
+          <AstroBlockRenderer
+            data={page.hero.richText as SerializedEditorState}
+          />
+        ) : null
+      }
+      {
+        page.layout?.map((block) =>
+          block.blockType === "content"
+            ? block.columns?.map((column) =>
+                column.richText != null ? (
+                  <div class="flex flex-col items-start justify-center w-full px-6 gap-y-4 xl:w-6xl xl:px-0">
+                    <AstroBlockRenderer
+                      data={column.richText as SerializedEditorState}
+                    />
+                  </div>
+                ) : null,
+              )
+            : null,
+        )
+      }
+    </div>
+  </section>
+</Layout>

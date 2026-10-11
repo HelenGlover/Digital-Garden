@@ -1,0 +1,63 @@
+---
+import DownloadButton from '@components/LinkButtons/DownloadButton.astro';
+import type {PlatformDownloadList} from "@lib/types/payload-types";
+
+export type PlatformDownloadListItem = NonNullable<PlatformDownloadList["items"]>[number];
+
+export interface Platform extends PlatformDownloadListItem {
+    icon: string;
+}
+
+interface Props {
+    platforms: Array<Platform>;
+}
+
+const { platforms } = Astro.props;
+---
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {platforms?.map((platform, index) => (
+        <div 
+          class="bg-white border-2 border-border p-6 md:p-8 flex flex-col items-center text-center opacity-0 animate-fade-in-scale transition-all transform-gpu duration-300 ease-default group/card hover:border-[#5A8A4A] hover:shadow-[0_1.0rem_2.50rem_rgba(90,138,74,0.2)] hover:-translate-y-2"
+            style={`animation-delay: ${index * 150}ms;`}
+        >
+            <!-- OS Icon -->
+          <div class="text-6xl md:text-7xl mb-4 transition-transform transform-gpu duration-300 ease-default group-hover/card:scale-115 group-hover/card:-rotate-5" set:html={platform.icon} />
+            
+            <!-- Platform Name -->
+            <h3 class="font-bold text-xl md:text-2xl mb-2">
+                {platform.name}
+            </h3>
+            
+            <!-- Description -->
+            <p class="text-muted text-sm mb-4">
+                {platform.description}
+            </p>
+            
+            <!-- Requirements -->
+            {platform.requirements && (
+                <p class="text-light text-xs mb-4">
+                    {platform.requirements}
+                </p>
+            )}
+            
+            <!-- Download Button -->
+            <DownloadButton 
+              href={platform.downloadLink} 
+              class="bg-mango-yellow w-full hover:bg-[#FFD966] hover:-translate-y-0.5 hover:shadow-[0_0.25rem_0.75rem_rgba(255,224,102,0.4)] px-6 py-3"
+            >
+              Download
+            </DownloadButton>
+           
+            <!-- File Name -->
+            <span class="text-xs text-light mt-2">
+                {platform.fileName}
+            </span>
+
+            <!-- File Size -->
+            <span class="text-xs text-light mt-2">
+                {platform.fileSize}
+            </span>
+        </div>
+    ))}
+</div>

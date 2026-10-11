@@ -1,0 +1,69 @@
+---
+import Welcome from "@components/Welcome.astro";
+import Layout from "@layouts/Layout.astro";
+import SeeInAction from "@components/SeeInAction.astro";
+import SaferInternetTools from "@components/SaferInternetTools.astro";
+import OurToolsHelpEveryone from "@components/OurToolsHelpEveryone/OurToolsHelpEveryone.astro";
+import WhatGroundsUs from "@components/WhatGroundsUs.astro";
+import CallToAction from "@components/CallToAction.astro";
+import Newsletter from "@components/Newsletter.astro";
+import payload from "@lib/payload";
+import type { PaginatedDocs } from "payload";
+import type {
+  Page,
+  MeetingScheduleItem,
+  Selector,
+  MediaBlock,
+  LinkButtons,
+  Media,
+} from "@lib/types/payload-types";
+
+const [page, meetingSchedule]: [
+  PromiseSettledResult<Page>,
+  PromiseSettledResult<PaginatedDocs<MeetingScheduleItem>>,
+] = await Promise.allSettled([
+  payload.findByID({
+    id: 2,
+    collection: "pages",
+  }),
+  payload.find({
+    collection: "meetingScheduleItems",
+  }),
+]);
+
+if (page.status === "rejected" || meetingSchedule.status === "rejected")
+  throw Error("http request to the CMS for page data failed...");
+
+let toolSelectorData: Selector | null = null;
+let demoVideo: MediaBlock | null = null;
+let demoVideoPoster: MediaBlock | null = null;
+let teamMeetingData: MediaBlock | null = null;
+let callToActionButtonData: LinkButtons | null = null;
+
+for (const block of page.value.layout) {
+  if (block.blockName === "demo video") demoVideo = block as MediaBlock;
+  if (block.blockName === "demo video poster")
+    demoVideoPoster = block as MediaBlock;
+  if (block.blockName === "tools") toolSelectorData = block as Selector;
+  if (block.blockName === "team picture") teamMeetingData = block as MediaBlock;
+  if (block.blockName === "call to action buttons")
+    callToActionButtonData = block as LinkButtons;
+}
+---
+
+<Layout>
+  <h1 class="sr-only">CIB Mango Tree Homepage</h1>
+  <Welcome />
+  <SeeInAction
+    videoBlock={demoVideo?.media as Media}
+    posterBlock={demoVideoPoster?.media as Media}
+  />
+  <SaferInternetTools toolSelectorData={toolSelectorData?.tabs} />
+  <OurToolsHelpEveryone />
+  <WhatGroundsUs mediaBlock={teamMeetingData?.media as Media} />
+  <CallToAction
+    meetingSchedule={meetingSchedule.value.docs}
+    buttons={callToActionButtonData?.items}
+  />
+  <!-- <Newsletter /> -->
+</Layout>

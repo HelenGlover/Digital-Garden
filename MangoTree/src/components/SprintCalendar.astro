@@ -1,0 +1,75 @@
+---
+import { cn } from "@utils/classMerge";
+import type { MeetingScheduleItem } from "@lib/types/payload-types";
+
+interface Props {
+  data: Array<MeetingScheduleItem>;
+}
+
+const { data } = Astro.props;
+---
+
+<div class="bg-[#F8F6F2] p-6 md:p-8 border border-border">
+  <h4 class="font-bold text-xl mb-6 flex items-center gap-2">
+    <svg
+      class="w-5 h-5 text-mango-green-dark"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+      ></path>
+    </svg>
+    Meeting Schedule
+  </h4>
+
+  <div class="space-y-4">
+    {
+      data.map((meeting, index) => {
+        const badgeClasses: string = cn("px-3 py-1 text-xs font-medium", {
+          "bg-[#E5F7F8] text-cyan-700": meeting.type === "virtual",
+          "bg-mango-yellow": meeting.type === "in-person",
+        });
+
+        return (
+          <div
+            class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 p-4 bg-white border-l-4 border-mango-green-light opacity-0 animate-fade-in transition-all transform-gpu duration-300 ease-linear hover:translate-x-1 hover:shadow-[0_0.125rem_0.50rem_rgba(90,138,74,0.1)] hover:border-l-[#5a8a4a]"
+            style={`animation-delay: ${index * 0.1}s;`}
+          >
+            <div class="flex-1">
+              <div class="font-semibold">{meeting.name}</div>
+              <div class="text-sm text-muted">
+                {meeting.day} @ {meeting.time}
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class={badgeClasses}>
+                {meeting.type === "virtual" ? "💻 Virtual" : "📍 In-Person"}
+              </span>
+              {meeting.link && (
+                <a
+                  href={meeting.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-mango-green-dark hover:underline text-sm font-medium"
+                >
+                  RSVP →
+                </a>
+              )}
+            </div>
+          </div>
+        );
+      })
+    }
+  </div>
+
+  <div class="mt-6 pt-6 border-t border-border-color">
+    <p class="text-sm text-muted">
+      <strong>Sprint Cycle:</strong> 2-month sprints starting at Project Nights
+    </p>
+  </div>
+</div>

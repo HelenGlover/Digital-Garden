@@ -1,0 +1,85 @@
+---
+import { Github, Instagram, Linkedin, Slack, Heart } from "@lucide/astro";
+import BaseButton from "@components/LinkButtons/BaseButton.astro";
+import IconButton from "@components/LinkButtons/IconButton.astro";
+import logo from "@assets/logo.png";
+---
+
+<footer class="flex justify-center bg-mango-green-darkest text-white py-12">
+  <div class="flex flex-col justify-center w-full px-6 lg:w-7xl gap-8">
+    <!-- Logo Section -->
+    <div class="flex justify-center lg:justify-start">
+      <a
+        href="/"
+        class="inline-block transition-transform transform-gpu duration-300 ease-default group hover:scale-105"
+      >
+        <img
+          src={logo.src}
+          alt="CIB Mango Tree Logo"
+          class="h-20 w-auto group-hover:drop-shadow-[0_0.25rem_0.75rem_rgba(255,224,153,0.4)]"
+        />
+      </a>
+    </div>
+
+    <!-- Bottom Section with Copyright and Social Icons -->
+    <div
+      class="flex flex-col lg:flex-row justify-between items-center gap-6 pt-8 border-t border-white/20"
+    >
+      <!-- Left: Copyright and Project Info -->
+      <div
+        class="flex flex-col md:flex-row gap-4 md:gap-6 text-sm text-center md:text-left"
+      >
+        <span class="flex items-center gap-2 justify-center md:justify-start">
+          Copyright © CIB Mango Tree 2025
+        </span>
+        <span>A Civic Tech DC Project</span>
+        <a href="/privacy">Privacy Policy</a>
+      </div>
+
+      <!-- Right: Social Media Icons and Donate -->
+      <div class="flex gap-4 items-center">
+        <BaseButton
+          href="https://www.civictechdc.org/donate"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-mango-yellow text-primary text-sm duration-300 ease-default hover:-translate-y-0.5 hover:shadow-[0_0.25rem_1.0rem_rgba(255,224,153,0.4)] hover:bg-[#ffd966]"
+          padding="sm"
+          hoverAnimation
+        >
+          <Heart class="w-4 h-4" />
+          Donate
+        </BaseButton>
+        <div class="flex gap-2 items-center">
+          <IconButton
+            href="https://codefordc.slack.com"
+            label="Slack"
+            class="hover:text-[#e01e5a] hover:shadow-[0_0.25rem_1.0rem_rgba(224,30,90,0.3)]"
+          >
+            <Slack class="w-6 h-6" />
+          </IconButton>
+          <IconButton
+            href="https://www.instagram.com/cibmangotree"
+            label="Instagram"
+            class="hover:text-[#e4405f] hover:shadow-[0_0.25rem_1.0rem_rgba(228,64,95,0.3)]"
+          >
+            <Instagram class="w-6 h-6" />
+          </IconButton>
+          <IconButton
+            href="https://www.linkedin.com/company/cib-mango-tree"
+            label="LinkedIn"
+            class="hover:text-[#0a66c2] hover:shadow-[0_0.25rem_1.0rem_rgba(10,102,194,0.3)]"
+          >
+            <Linkedin class="w-6 h-6" />
+          </IconButton>
+          <IconButton
+            href="https://github.com/civictechdc/cib-mango-tree"
+            label="GitHub"
+            class="hover:text-[#ffe099] hover:shadow-[0_0.25rem_1.0rem_rgba(255,224,153,0.3)]"
+          >
+            <Github class="w-6 h-6" />
+          </IconButton>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,53 @@
+---
+import { FlaskConical, Code2, Newspaper, Users } from "@lucide/astro";
+import StakeholderIcon from "@components/OurToolsHelpEveryone/StakeholderIcon.astro";
+---
+
+<section class="flex-container-wrapper bg-background">
+  <div class="flex-container-main w-full px-6 xl:w-6xl xl:px-0">
+    <div class="flex flex-col text-center mb-16">
+      <h2 class="font-bold text-3xl md:text-4xl text-mango-green mb-8">
+        Our tools can help everyone
+      </h2>
+      <p class="text-muted text-lg max-w-2xl mx-auto leading-relaxed">
+        Whether you're a researcher, journalist, technologist, or concerned
+        citizen, CIB Mango Tree offers open, accessible tools designed for you
+        to quickly spot disruption and safeguard honest conversation online.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Researchers -->
+      <StakeholderIcon
+        title="Researchers"
+        description="in fields like social computing, political science, and cybersecurity."
+      >
+        <FlaskConical slot="icon" class="w-10 h-10" />
+      </StakeholderIcon>
+
+      <!-- Engineers & Data Scientists -->
+      <StakeholderIcon
+        title="Engineers & Data Scientists"
+        description="working with NLP, network analysis, or bot detection."
+      >
+        <Code2 slot="icon" class="w-10 h-10" />
+      </StakeholderIcon>
+
+      <!-- Policy Experts & Journalists -->
+      <StakeholderIcon
+        title="Policy Experts & Journalists"
+        description="interested in platform transparency and digital integrity."
+      >
+        <Newspaper slot="icon" class="w-10 h-10" />
+      </StakeholderIcon>
+
+      <!-- Civic Hackers & Citizens -->
+      <StakeholderIcon
+        title="Civic Hackers & Citizens"
+        description="who want to make an impact."
+      >
+        <Users slot="icon" class="w-10 h-10" />
+      </StakeholderIcon>
+    </div>
+  </div>
+</section>

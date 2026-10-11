@@ -1,0 +1,110 @@
+---
+import { ArrowRight, ExternalLink } from '@lucide/astro';
+import BaseButton from '@components/LinkButtons/BaseButton.astro';
+import defaultPlaceholder from '@assets/blog/mango_placeholder_5.png';
+
+interface BlogPost {
+    title: string;
+    publication: string;
+    date: string;
+    link: string;
+    author?: string;
+    imageUrl?: string;
+}
+
+interface Props {
+    posts: BlogPost[];
+    mediumUrl?: string;
+}
+
+const { posts, mediumUrl = 'https://medium.com/@cibmangotree' } = Astro.props;
+const featuredPost = posts[0];
+const otherPosts = posts.slice(1, 4); // Get 3 posts for the right side
+
+// Default fallback image
+const defaultImage = defaultPlaceholder.src;
+---
+
+<Fragment>
+  <!-- Two-column layout: Featured post on left, smaller cards on right -->
+  <div class="flex flex-col lg:flex-row gap-6 mb-8">
+    <!-- Featured Post - Left side with image stacked on top -->
+    {featuredPost && (
+        <a href={featuredPost.link} target="_blank" rel="noopener noreferrer" class="block lg:w-3/5 group">
+            <article class="bg-mango-green-dark text-white relative overflow-hidden h-full transition-all duration-300 ease-default group-hover:-translate-y-1 group-hover:shadow-[0_0.75rem_2.0rem_rgba(90,138,74,0.3)]">
+                <!-- Stacked Image on top -->
+                <div class="h-44 md:h-48 relative overflow-hidden">
+                    <img 
+                        src={featuredPost.imageUrl || defaultImage}
+                        alt={featuredPost.title}
+                        class="w-full h-full object-cover transition-all duration-500 ease-linear group-hover:scale-105"
+                    />
+                    <div class="absolute inset-0 bg-linear-to-t from-mango-green-dark/70 to-transparent"></div>
+                    <span class="absolute top-3 left-3 inline-block bg-mango-yellow text-xs font-bold px-2 py-1">
+                        FEATURED
+                    </span>
+                </div>
+                
+                <!-- Content below image -->
+                <div class="p-5 md:p-6 relative">
+                    <h3 class="font-bold text-lg md:text-xl mb-2 leading-tight">
+                        {featuredPost.title}
+                    </h3>
+                    {featuredPost.author && (
+                        <p class="text-white/80 mb-2 text-sm">By {featuredPost.author}</p>
+                    )}
+                    <div class="flex items-center gap-3 text-sm text-white/70 mb-3">
+                        <span>{featuredPost.publication}</span>
+                        <span>•</span>
+                        <span>{featuredPost.date}</span>
+                    </div>
+                    <div class="inline-flex items-center gap-2 text-mango-yellow font-medium text-sm">
+                        Read article
+                        <ArrowRight class="w-4 h-4 transition-transform duration-300 ease-linear group-hover:translate-x-1.5" />
+                    </div>
+                </div>
+            </article>
+        </a>
+    )}
+
+    <!-- Other Posts - Right side, stacked vertically with just titles and dates -->
+    <div class="lg:w-2/5 flex flex-col gap-3">
+        {otherPosts.map((post, index) => (
+            <a 
+                href={post.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="block flex-1 opacity-0 animate-fade-in group"
+                style={`animation-delay: ${index * 0.1}s;`}
+            >
+                <article class="bg-background border border-border py-3 px-4 h-full flex flex-col justify-center transition-all duration-300 ease-linear group-hover:border-[#5A8A4A] group-hover:-translate-y-0.5 group-hover:shadow-[0_0.25rem_0.75rem_rgba(90,138,74,0.1)]">
+                    <h4 class="font-bold text-sm mb-1 leading-snug line-clamp-2">
+                        {post.title}
+                    </h4>
+                    <div class="flex items-center gap-2 text-xs text-muted">
+                        <span class="font-medium text-mango-green-dark">{post.publication}</span>
+                        <span>•</span>
+                        <span>{post.date}</span>
+                    </div>
+                </article>
+            </a>
+        ))}
+    </div>
+  </div>
+  <!-- More Articles Button -->
+  <div class="text-center">
+      <BaseButton 
+          href={mediumUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-white border-2 border-mango-green-dark text-mango-green-dark group hover:bg-[#5A8A4A] hover:text-white"
+          hoverAnimation
+      >
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+          </svg>
+          More articles on Medium
+          <ExternalLink class="w-4 h-4 transition-transform duration-300 ease-linear group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+      </BaseButton>
+  </div>
+</Fragment>

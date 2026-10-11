@@ -1,0 +1,535 @@
+---
+import {
+  ExternalLink,
+  FileText,
+  Database,
+  BookOpen,
+  Newspaper,
+  HelpCircle,
+  Sparkles,
+} from "@lucide/astro";
+import Layout from "@layouts/Layout.astro";
+import AstroBlockRenderer from "@components/AstroBlockRenderer.astro";
+import Newsletter from "@components/Newsletter.astro";
+import BlogFeatured from "@components/BlogFeatured.astro";
+import GlossaryAccordion from "@components/GlossaryAccordion";
+import DocCard from "@components/DocCard.astro";
+import AnchorNavMenu from "@components/AnchorNav";
+import payload from "@lib/payload";
+import { cn } from "@utils/classMerge";
+import blogImg1 from "@assets/blog/Mango_Placeholder_1.png";
+import blogImg2 from "@assets/blog/Mango_Placeholder_2.png";
+import blogImg3 from "@assets/blog/Mango_Placeholder_3.png";
+import blogImg4 from "@assets/blog/Mango_Placeholder_4.png";
+import type { PaginatedDocs } from "payload";
+import type {
+  Page,
+  ResearchSource,
+  Post,
+  ContentBlock,
+  BadgeList,
+  ToolsList,
+  DatasetList,
+  Accordion,
+} from "@lib/types/payload-types";
+
+const [pageData, researchSourceData, postsData]: [
+  PromiseSettledResult<PaginatedDocs<Page>>,
+  PromiseSettledResult<PaginatedDocs<ResearchSource>>,
+  PromiseSettledResult<PaginatedDocs<Post>>,
+] = await Promise.allSettled([
+  payload.find({
+    collection: "pages",
+    where: {
+      slug: {
+        equals: "resources",
+      },
+    },
+  }),
+  payload.find({
+    collection: "researchSources",
+  }),
+  payload.find({
+    collection: "posts",
+    where: {
+      // Filters posts assigned to the "mango-bytes" category slug.
+      // (Change "categories.slug" to "category.slug" if your schema uses a singular name)
+      "categories.slug": {
+        equals: "mango-bytes",
+      },
+    },
+    sort: "-publishedDate",
+    limit: 4,
+  }),
+]);
+
+if (pageData.status === "rejected" || researchSourceData.status === "rejected")
+  throw Error("http request to the CMS for page data failed...");
+
+const mangoBytes = postsData.status === "fulfilled" ? postsData.value.docs : [];
+
+let understandingCIBContent: ContentBlock | null = null;
+let understandingCIBBadgeList: BadgeList | null = null;
+let toolsList: ToolsList | null = null;
+let datasetList: DatasetList | null = null;
+let glossaryAccordion: Accordion | null = null;
+
+if (pageData.value.docs.length > 0) {
+  for (const layoutBlock of pageData.value.docs[0].layout) {
+    if (layoutBlock.blockType === "content")
+      understandingCIBContent = layoutBlock;
+    if (layoutBlock.blockType === "badgeList")
+      understandingCIBBadgeList = layoutBlock;
+    if (layoutBlock.blockType === "toolsList") toolsList = layoutBlock;
+    if (layoutBlock.blockType === "datasetList") datasetList = layoutBlock;
+    if (layoutBlock.blockType === "accordion") glossaryAccordion = layoutBlock;
+  }
+}
+
+const researchPapers = [
+  {
+    title: "The Spread of True and False News Online",
+    authors: "Vosoughi, Roy, and Aral",
+    year: "2018",
+    publication: "Science",
+    link: "https://www.science.org/doi/10.1126/science.aap9559",
+  },
+  {
+    title: "Bots and Automation over Twitter during the U.S. Election",
+    authors: "Bessi and Ferrara",
+    year: "2016",
+    publication: "First Monday",
+    link: "https://firstmonday.org/ojs/index.php/fm/article/view/7090",
+  },
+  {
+    title: "Detecting Bots on Social Media",
+    authors: "Ferrara et al.",
+    year: "2016",
+    publication: "Communications of the ACM",
+    link: "https://dl.acm.org/doi/10.1145/2818717",
+  },
+  {
+    title: "Inside Feed: Coordinated Inauthentic Behavior",
+    authors: "Meta",
+    year: "2018",
+    publication: "Meta Newsroom",
+    link: "https://about.fb.com/news/2018/12/inside-feed-coordinated-inauthentic-behavior/",
+  },
+  {
+    title: "How CIB Continues on Social Platforms",
+    authors: "Stanford Internet Observatory",
+    year: "2022",
+    publication: "SIO Report",
+    link: "https://cyber.fsi.stanford.edu/io",
+  },
+  {
+    title: "Disinformation and Fake News",
+    authors: "DFRLab",
+    year: "2023",
+    publication: "Atlantic Council",
+    link: "https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/",
+  },
+];
+
+const tools = [
+  {
+    name: "Botometer",
+    description: "API for checking Twitter account bot scores.",
+    link: "https://botometer.osome.iu.edu/",
+    color: "bg-[#FFE099]",
+  },
+  {
+    name: "Atlantic Council DFRLab",
+    description: "Digital forensics research and disinformation tracking.",
+    link: "https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/",
+    color: "bg-mango-green-light",
+  },
+  {
+    name: "Global Disinformation Index",
+    description: "Disinformation risk ratings for news sites.",
+    link: "https://www.disinformationindex.org/",
+    color: "bg-[#FFF5E6]",
+  },
+  {
+    name: "OSINT Framework",
+    description: "Open source intelligence tools collection.",
+    link: "https://osintframework.com/",
+    color: "bg-[#E5F7F8]",
+  },
+];
+
+const datasets = [
+  {
+    name: "Stanford Internet Observatory Datasets",
+    description: "Research datasets on information operations.",
+    link: "https://cyber.fsi.stanford.edu/io",
+    access: "Free",
+    color: "bg-[#E5F7F8]",
+  },
+  {
+    name: "Twitter Transparency Center",
+    description: "State-backed information operations data.",
+    link: "https://transparency.twitter.com/",
+    access: "Free",
+    color: "bg-[#FFE099]",
+  },
+  {
+    name: "Pushshift Reddit Dataset",
+    description: "Historical Reddit data for research.",
+    link: "https://pushshift.io/",
+    access: "API Required",
+    color: "bg-white border border-border",
+  },
+  {
+    name: "CrowdTangle (Meta)",
+    description: "Facebook and Instagram public data.",
+    link: "https://www.crowdtangle.com/",
+    access: "Application Required",
+    color: "bg-white border border-border",
+  },
+];
+
+const blogPosts = [
+  {
+    title:
+      "Behind the Screens: How Coordinated Inauthentic Behavior Shapes Online Narratives",
+    publication: "Medium",
+    date: "2025",
+    link: "https://medium.com/@cibmangotree/behind-the-screens-how-coordinated-inauthentic-behavior-shapes-online-narratives-dae5bb2b5a18",
+    author: "Helen Glover",
+    imageUrl: blogImg1.src,
+  },
+  {
+    title: "A Year of Community and Growth at CIB Mango Tree",
+    publication: "Medium",
+    date: "December 17, 2025",
+    link: "https://medium.com/@cibmangotree/a-year-of-community-and-growth-at-cib-mango-tree-3c9a49383ceb",
+    imageUrl: blogImg2.src,
+  },
+  {
+    title: "Inauthentic Trends: Tracking Coordinated Campaigns",
+    publication: "Medium",
+    date: "June 11, 2025",
+    link: "https://medium.com/@cibmangotree/inauthentic-trends-tracking-coordinated-campaigns-on-social-media-through-hashtag-usage-2d8015966ebd",
+    imageUrl: blogImg3.src,
+  },
+  {
+    title: "Meet the team using social media analysis for social change",
+    publication: "Medium",
+    date: "May 15, 2025",
+    link: "https://medium.com/@cibmangotree/meet-the-team-using-social-media-analysis-as-a-tool-for-social-change-018009c889a8",
+    imageUrl: blogImg4.src,
+  },
+];
+
+const glossaryTerms = [
+  {
+    term: "APIs (Application Programming Interfaces)",
+    definition:
+      "Tools that allow different software programs to communicate with each other, often used to access data from social media platforms.",
+  },
+  {
+    term: "Bot",
+    definition:
+      "An automated account that performs tasks on social media, often used to artificially amplify content or spread disinformation at scale.",
+  },
+  {
+    term: "Coordinated Inauthentic Behavior (CIB)",
+    definition:
+      "Organized, malicious efforts to manipulate public opinion online through fake accounts or disinformation.",
+  },
+  {
+    term: "Civic Tech",
+    definition:
+      "The use of technology to improve the relationship between citizens and their government.",
+  },
+  {
+    term: "Scraping",
+    definition:
+      'The automated process of extracting data from websites using custom-built programs or tools called "scrapers."',
+  },
+  {
+    term: "Command Line Interface (CLI)",
+    definition:
+      "A text-based interface that allows you to interact with software by typing commands.",
+  },
+];
+
+const navItems = [
+  { id: "understanding", label: "Understanding CIB", icon: "HelpCircle" },
+  { id: "blog", label: "From Our Blog", icon: "Newspaper" },
+  { id: "mango-bytes", label: "CIB Mango Bites", icon: "Sparkles" },
+  { id: "research", label: "Research Papers", icon: "FileText" },
+  { id: "tools", label: "Additional Tools", icon: "BookOpen" },
+  { id: "datasets", label: "Datasets", icon: "Database" },
+  { id: "glossary", label: "Glossary", icon: "BookOpen" },
+];
+---
+
+<Layout>
+  <!-- Centered wrapper for nav + content -->
+  <div class="flex justify-center">
+    <div class="flex justify-center w-full px-6 lg:w-7xl lg:px-0">
+      <!-- Sticky Left Navigation -->
+      <AnchorNavMenu
+        client:media="(min-width: 1280px)"
+        title="ON THIS PAGE"
+        items={navItems}
+      />
+      <!-- Main Content -->
+      <section class="flex-container-wrapper flex-1 bg-background">
+        <div class="flex-conatiner-main w-full lg:w-4xl">
+          <h1
+            class="font-bold text-4xl md:text-5xl lg:text-6xl mb-10 leading-tight"
+          >
+            Resources
+          </h1>
+
+          <p class="text-xl text-muted mb-16 leading-relaxed">
+            Curated resources to help you understand coordinated inauthentic
+            behavior, bot detection, and information integrity.
+          </p>
+
+          <!-- Understanding CIB -->
+          <div id="understanding" class="mb-20 scroll-mt-24">
+            <h2 class="font-bold text-3xl mb-8 flex items-center gap-3">
+              <HelpCircle class="w-8 h-8 text-mango-green-dark" />
+              Understanding CIB
+            </h2>
+
+            <div class="bg-mango-yellow-light p-8 md:p-10">
+              {
+                understandingCIBContent?.columns != null
+                  ? understandingCIBContent.columns.map(
+                      (item): HTMLElement | null =>
+                        item.richText != null ? (
+                          <AstroBlockRenderer data={item.richText} />
+                        ) : null,
+                    )
+                  : null
+              }
+              {
+                understandingCIBBadgeList?.items != null ? (
+                  <div class="flex flex-wrap gap-4 mt-8">
+                    {understandingCIBBadgeList.items.map(
+                      (item): HTMLElement => (
+                        <span class="transition-all transform-gpu duration-200 ease-linear bg-white px-4 py-2 text-sm hover:scale-105 hover:shadow-[0_0.125rem_0.50rem_rgba(90,138,74,0.2)]">
+                          {item.content}
+                        </span>
+                      ),
+                    )}
+                  </div>
+                ) : null
+              }
+            </div>
+          </div>
+
+          <!-- CIB Mango Bytes Section -->
+          <div id="mango-bytes" class="mb-20 scroll-mt-24">
+            <h2 class="font-bold text-3xl mb-4 flex items-center gap-3">
+              <Sparkles class="w-8 h-8 text-mango-green-dark" />
+              CIB Mango Bytes
+            </h2>
+            <p class="text-muted mb-8">
+              Short snapshots of CIB examples, campaigns, and tactics in the wild.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {
+                mangoBytes.length > 0 ? (
+                  mangoBytes.map((post) => (
+                    <a
+                      href={`/posts/${post.slug}`}
+                      class="group bg-mango-yellow-light/30 p-6 border border-border transition-all transform-gpu duration-300 ease-linear hover:-translate-y-1 hover:shadow-md block"
+                    >
+                      <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-semibold text-mango-green-dark uppercase tracking-wider">Byte</span>
+                        <span class="text-xs text-muted">
+                          {new Date(post.publishedDate || post.createdAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                        </span>
+                      </div>
+                      <h3 class="font-bold text-lg mb-2 group-hover:text-mango-green-dark transition-colors">
+                        {post.title}
+                      </h3>
+                      <p class="text-sm text-muted mb-4">
+                        {post.snippet || "Read the latest rapid analysis."}
+                      </p>
+                      <span class="text-xs font-semibold text-mango-green-dark inline-flex items-center gap-1">
+                        Read byte &rarr;
+                      </span>
+                    </a>
+                  ))
+                ) : (
+                  <p class="text-sm text-muted italic col-span-2">
+                    New Mango Bytes coming soon.
+                  </p>
+                )
+              }
+            </div>
+          </div>
+
+          <!-- Blog Section -->
+          <div id="blog" class="mb-20 scroll-mt-24">
+            <h2 class="font-bold text-3xl mb-8 flex items-center gap-3">
+              <Newspaper class="w-8 h-8 text-mango-green-dark" />
+              From Our Blog
+            </h2>
+            <BlogFeatured posts={blogPosts} />
+          </div>
+
+          <!-- Research Papers -->
+          <div id="research" class="mb-20 scroll-mt-24">
+            <h2 class="font-bold text-3xl mb-8 flex items-center gap-3">
+              <FileText class="w-8 h-8 text-mango-green-dark" />
+              Research Papers
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {
+                researchSourceData.value.docs.map((paper) => (
+                  <a
+                    href={paper.link}
+                    target="_blank"
+                    rel="noopener"
+                    class="group bg-background-alt p-5 border-l-4 border-mango-green-dark transition-all transform-gpu duration-300 ease-linear hover:border-mango-yellow hover:translate-x-1 hover:shadow-[0_0.25rem_0.75rem_rgba(0,0,0,0.05)]"
+                  >
+                    <h3 class="font-semibold mb-2 text-sm leading-tight group-hover:text-mango-green-dark transition-colors transform-gpu">
+                      {paper.title}
+                    </h3>
+                    <p class="text-xs text-muted">
+                      {paper.authors} ({paper.year}) · {paper.publication}
+                    </p>
+                    <span class="inline-flex items-center gap-1 text-xs text-mango-green-dark mt-3 opacity-0 group-hover:opacity-100 transition-opacity transform-gpu">
+                      Read paper <ExternalLink class="w-3 h-3" />
+                    </span>
+                  </a>
+                ))
+              }
+            </div>
+          </div>
+
+          <!-- Additional Tools Section -->
+          <div id="tools" class="mb-20 scroll-mt-24">
+            <h2 class="font-bold text-3xl mb-8 flex items-center gap-3">
+              <BookOpen class="w-8 h-8 text-mango-green-dark" />
+              Additional Tools
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {
+                toolsList?.items != null
+                  ? toolsList.items.map((tool) => {
+                      const toolCardClasses: string = cn(
+                        "block p-6 transition-all transform-gpu duration-300 ease-default hover:-translate-y-1 hover:shadow-[0_0.5rem_1.5rem_rgba(0,0,0,0.1)]",
+                        "bg-(--tool-list-background-color)",
+                      );
+
+                      return (
+                        <a
+                          href={tool.link}
+                          target="_blank"
+                          rel="noopener"
+                          class={toolCardClasses}
+                          style={
+                            tool.color != null
+                              ? `--tool-list-background-color: ${tool.color}`
+                              : null
+                          }
+                        >
+                          <h3 class="font-bold text-lg mb-3">{tool.name}</h3>
+                          <p class="text-muted text-sm mb-4">
+                            {tool.description}
+                          </p>
+                          <span class="text-mango-green-dark font-semibold text-sm inline-flex items-center gap-1">
+                            Visit site <ExternalLink class="w-3 h-3" />
+                          </span>
+                        </a>
+                      );
+                    })
+                  : null
+              }
+            </div>
+          </div>
+
+          <!-- Datasets Section -->
+          <div id="datasets" class="mb-20 scroll-mt-24">
+            <h2 class="font-bold text-3xl mb-8 flex items-center gap-3">
+              <Database class="w-8 h-8 text-mango-green-dark" />
+              Datasets
+            </h2>
+
+            <p class="text-muted mb-8">
+              Access social media datasets for research. Some require API access
+              or applications.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {
+                datasetList?.items != null
+                  ? datasetList.items.map((dataset): HTMLElement => {
+                      const cardClasses: string = cn(
+                        "block p-6 transition-all transform-gpu duration-300 ease-default hover:-translate-y-1 hover:shadow-[0_0.5rem_1.5rem_rgba(0,0,0,0.1)]",
+                        "bg-(--dataset-list-background-color)",
+                        dataset.color === "#FFFFFF"
+                          ? "border border-border"
+                          : null,
+                      );
+                      const datasetClasses: string = cn("text-xs px-2 py-1", {
+                        "bg-mango-green-light text-mango-green-dark":
+                          dataset.access === "free",
+                        "bg-mango-yellow-light text-muted":
+                          dataset.access !== "free",
+                      });
+
+                      return (
+                        <a
+                          href={dataset.link}
+                          target="_blank"
+                          rel="noopener"
+                          class={cardClasses}
+                          style={
+                            dataset.color != null
+                              ? `--dataset-list-background-color: ${dataset.color}`
+                              : null
+                          }
+                        >
+                          <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-lg">{dataset.name}</h3>
+                            <span class={datasetClasses}>{dataset.access}</span>
+                          </div>
+                          <p class="text-muted text-sm mb-4">
+                            {dataset.description}
+                          </p>
+                          <span class="text-mango-green-dark font-semibold text-sm inline-flex items-center gap-1">
+                            Access dataset
+                            <ExternalLink class="w-3 h-3" />
+                          </span>
+                        </a>
+                      );
+                    })
+                  : null
+              }
+            </div>
+          </div>
+
+          <!-- Glossary Section -->
+          <div id="glossary" class="mb-20 scroll-mt-24">
+            <h2 class="font-bold text-3xl mb-8 flex items-center gap-3">
+              <BookOpen class="w-8 h-8 text-mango-green-dark" />
+              Glossary of Terms
+            </h2>
+            {
+              glossaryAccordion?.items != null ? (
+                <GlossaryAccordion
+                  client:visible
+                  definitions={glossaryAccordion?.items}
+                />
+              ) : null
+            }
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- <Newsletter /> -->
+</Layout>

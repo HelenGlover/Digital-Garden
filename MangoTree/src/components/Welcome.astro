@@ -1,0 +1,88 @@
+---
+import StatCard from "@components/StatCard.astro";
+import DownloadButton from "@components/LinkButtons/DownloadButton.astro";
+---
+
+<section class="flex-container-wrapper justify-center">
+  <div
+    class="flex-container-main w-full px-6 gap-6 lg:flex-row xl:w-7xl xl:px-0"
+  >
+    <!-- Left side: Text content -->
+    <div
+      class="flex-1 flex flex-col justify-between text-center opacity-0 transition-all transform-gpu animate-fade-in order-2 lg:text-left lg:order-1"
+    >
+      <h1
+        class="font-bold text-4xl md:text-5xl lg:text-6xl mb-8 leading-tight tracking-tight"
+      >
+        <span class="block opacity-0 animate-slide-in">
+          Harvest Knowledge.
+        </span>
+        <span class="block opacity-0 animate-slide-in animate-delay-100">
+          Share the Fruit.
+        </span>
+        <span class="block opacity-0 animate-slide-in animate-delay-200">
+          Defend Democracy.
+        </span>
+      </h1>
+      <p
+        class="text-lg md:text-xl text-muted mb-10 max-w-xl leading-relaxed opacity-0 transition-all transform-gpu animate-fade-in-up animate-delay-300"
+      >
+        An open-source library to detect and analyze coordinated inauthentic
+        behavior online
+      </p>
+      <div
+        class="opacity-0 transition-all transform-gpu animate-fade-in-up animate-delay-400"
+      >
+        <DownloadButton
+          href="/download"
+          class="bg-mango-green-dark text-white text-lg px-8 py-4 shadow-[0_0.25rem_0.75rem_rgba(90,138,74,0.3)] hover:-translate-y-0.5 hover:shadow-[0_0.5rem_1.5rem_rgba(90,138,74,0.5)] hover:bg-[#4a7a3a] active:-translate-y-px active:shadow-[0_0.125rem_0.5rem_rgba(90,138,74,0.3)]"
+        >
+          Download Now
+        </DownloadButton>
+      </div>
+    </div>
+    <!-- Right side: Bento Grid with Stats and Mango Animation -->
+    <div
+      class="opacity-0 transition-all transform-gpu animate-fade-in animte-delay-500 order-1 w-96 sm:w-md md:w-lg lg:w-xl lg:order-2"
+    >
+      <div class="grid grid-cols-2 px-6 gap-3 sm:px-0 sm:gap-5">
+        <!-- Stat Card 1: Bad bots -->
+        <StatCard
+          href="https://www.imperva.com/resources/resource-library/reports/2025-bad-bot-report"
+          class="bg-mango-yellow animate-delay-100"
+        >
+          <Fragment slot="percentage">40%</Fragment>
+          <Fragment slot="index">[1]</Fragment>
+          Bad bots in internet traffic
+        </StatCard>
+        <!-- Stat Card 2: Worried about disinformation -->
+        <StatCard
+          href="https://www.ipsos.com/en/elections-social-media-battle-against-disinformation-and-trust-issues"
+          class="bg-cyan-tint animate-delay-200"
+        >
+          <Fragment slot="percentage">87%</Fragment>
+          <Fragment slot="index">[2]</Fragment>
+          Worried about disinfo
+        </StatCard>
+        <!-- Stat Card 3: Twitter bot users -->
+        <StatCard
+          href="https://polisci.wustl.edu/news/are-bots-winning-war-control-social-media"
+          class="bg-mango-yellow-light animate-delay-300"
+        >
+          <Fragment slot="percentage">25-68%</Fragment>
+          <Fragment slot="index">[3]</Fragment>
+          Twitter users are bots
+        </StatCard>
+        <!-- Stat Card 4: Bot accounts spreading misinfo -->
+        <StatCard
+          href="https://www.pewresearch.org/internet/2018/04/09/bots-in-the-twittersphere"
+          class="bg-mango-green-light animate-delay-400"
+        >
+          <Fragment slot="percentage">33%</Fragment>
+          <Fragment slot="index">[4]</Fragment>
+          Bot accounts spread misinfo
+        </StatCard>
+      </div>
+    </div>
+  </div>
+</section>

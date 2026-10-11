@@ -1,0 +1,50 @@
+---
+import ToolsSelector from "@components/ToolsSelector";
+import mango_tree from "@assets/mangotreesway.gif";
+import type { Selector } from "@lib/types/payload-types";
+
+interface Props {
+  toolSelectorData?: Selector["tabs"] | null;
+}
+
+const { toolSelectorData } = Astro.props;
+---
+
+<section class="flex-container-wrapper bg-background">
+  <div
+    class="flex-container-main w-full px-6 gap-y-12 sm:px-0 xl:w-6xl xl:px-0"
+  >
+    <!-- Top Section: Text + Mango Tree -->
+    <div class="flex flex-col items-center gap-12 xl:flex-row">
+      <!-- Left: Text Content -->
+      <div class="flex flex-col flex-1 text-center px-6 sm:px-0 md:text-left">
+        <h2 class="font-bold text-2xl md:text-3xl text-mango-green mb-6">
+          Tools for a safer internet
+        </h2>
+        <p class="text-muted leading-relaxed w-full md:w-xl text-lg">
+          CIB Mango Tree is a growing library of tools designed to detect signs
+          of coordinated inauthentic behavior. It runs locally on your computer
+          through an interactive command-line interface. Instead of scraping
+          data, our programs analyze datasets of social media activity that you
+          provide to identify abnormal online activity.
+        </p>
+      </div>
+
+      <!-- Right: Mango Tree Animation -->
+      <div class="flex-1 flex justify-center items-center">
+        <img
+          src={mango_tree.src}
+          alt="Mango tree illustration"
+          class="max-w-95 md:max-w-105 h-auto"
+        />
+      </div>
+    </div>
+
+    <!-- Methodologies Selector -->
+    {
+      toolSelectorData != null && toolSelectorData.length > 0 && (
+        <ToolsSelector tools={toolSelectorData} client:load />
+      )
+    }
+  </div>
+</section>

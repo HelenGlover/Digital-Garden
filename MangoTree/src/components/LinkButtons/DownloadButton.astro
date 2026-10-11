@@ -1,0 +1,22 @@
+---
+import { Download } from "@lucide/astro";
+import { resolveClasses } from "@utils/classMerge";
+
+interface Props {
+  href: string;
+  class?: string;
+}
+
+const { href, class: className } = Astro.props;
+const buttonClasses: string = resolveClasses(
+  "inline-flex items-center justify-center gap-2 relative overflow-hidden transition-all transform-gpu ease-default duration-300 group font-semibold glass-shine-30",
+  className,
+);
+---
+
+<a href={href} class={buttonClasses}>
+  <Download
+    class="w-5 h-5 transition-transform transform-gpu group-hover:animate-bounce"
+  />
+  <slot />
+</a>
