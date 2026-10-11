@@ -1,8 +1,8 @@
 ---
-title: Expanding Programming Through Pitch Nights
+title: Designing a Pitch Event
 labels: 
   - Civic Tech Reflections
-description: Demostrating the work of civic tech out in the open
+description: Pitches on what does it actually look like when technology strengthens civic engagement?
 image: assets/pitchnight000.jpg
 display_date: 2026-06-19
 
@@ -87,7 +87,7 @@ display_date: 2026-06-19
 
 Civic Tech DC's community has always been split between two groups: contributors who plug into existing projects at regular Project Nights, and builders who show up with ideas and pitches, but who the Project Nights are not designed for. Those builders need a higher-visibility format where they can get direct feedback from the audience and find out who else in the community might want to help. Pitch nights are useful for this, so we created one to support builders and entrepreneurs. It is also a important addition to the variety of events Civic Tech DC runs, reflecting a broader conviction that civic tech can be startups, small businesses, govtech companies, and independent builders. Hopefully this event (and series) works to expands this definition.
 
-<b>Update:</b> We launched the event! On June 17, 2026, Civic Tech DC and Learning Journey AI co-hosted the first Civic Builders: Pitch & Demo Night. Six builders pitched, 159 people RSVP'd, and the night closed with open breakout conversations. More on how it went can be found on the [Matter of Public](https://matterofpublic.netlify.app/civicbuildersnight).
+<b>Update:</b> We launched the event! On June 17, 2026, Civic Tech DC and Learning Journey AI co-hosted the first Civic Builders: Pitch & Demo Night. Six builders pitched, 159 people RSVP'd, and the night closed with open breakout conversations. **More on how it went can be found on the [Matter of Public](https://publicfutures.netlify.app/civicbuildersnight).**
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
   <img src="assets/pitchnight01.png" style="flex: 1 1 250px; max-width: 30%; height: auto;">
@@ -95,6 +95,7 @@ Civic Tech DC's community has always been split between two groups: contributors
   <img src="assets/pitchnight3.jpg" style="flex: 1 1 250px; max-width: 30%; height: auto;">
 </div>
 
+<!--
 #### Format
  
 Six pitches per event. Each presenter gets 7 minutes to pitch or demo, followed by 3 minutes of Q&A from the room. After all pitches, founders break off into informal breakout spaces and attendees move freely between them for open conversation and feedback.
@@ -120,9 +121,9 @@ Pitches should be problem-first. Presenters are encouraged to lead with the publ
 ####  Long-Term Goals
 - Deepen governance representation in the room over time to strengthen the gap between the builder and policy communities
 - Explore partnerships with other entrepreneurial meetups
-- Explore partnerships with local government innovation offices, civic accelerators, and policy organizations to co-host or co-promote future events
+- Explore partnerships with local government innovation offices, civic accelerators, and policy organizations to co-host or co-promote future events 
 
-  <!-- <div class="process-log-container">
+<div class="process-log-container">
 
     <div class="process-log-title">Process Log</div>
 

@@ -9,11 +9,11 @@ order: 4
 image: assets/researchpartb.png
 ---
 
-Unlike traditional research projects with neat methodologies and the expected outcome of a classic academic paper, independent research invites more wandering and exploring before anything final takes shape. I see the lack of a predetermined outcome not as a weakness, but as what makes the work responsive. As such, the format and findings can match what the challenge or community actually needs.
+I don't always know where a question will lead when I start exploring it. Sometimes I write an essay or collect notes. Sometimes an idea becomes part of a project, informs a decision, or leads me to investigate something more deeply. Other times, I simply end up with a different understanding of the subject.
+
+I see these as different ways of learning and making sense of a question, rather than a pipeline where every exploration has to produce a finished result.
 
 Many of the questions will eventually have outcomes. Some will be structural, like developing new community practices at Mango Tree CIB through the question *"What sustains voluntary open-source technology communities?"* Others will be product-focused, like building a community playbook at Civic Tech DC by asking *"What does it actually take to build a community, not just an audience?"* The outcome is intended to naturally emerge through the process of learning in public.
-
-As I describe in [What is in a Name](https://helengarden.netlify.app/what-is-in-a-name), my primary method is applied ethnography through hosting, attending events and conducting conversational interviews (or in more formal terms, semi-structured interviews) with people whose work and experiences intersect with my questions.
 
 Understandably, the idea that community work can be a research output might seem strange. Jason Benn, founder of Neighborhood, describes the discomfort of this kind of open-ended process well: 
   
@@ -24,9 +24,9 @@ Understandably, the idea that community work can be a research output might seem
 
 What makes Benn's project interesting is what he actually built from this wandering to start researching community living and whether you could intentionally design a neighborhood for "friendly ambitious nerds" in a major US city. That's the model I'm trying to follow and after some time learning, the first output can be found [here](https://helengarden.netlify.app/making-of-civic-tech).
 
-While the work is exploratory for now, a more formal output is not off the table. As Nadia Asparouhova found in her own independent research journey, what starts as blog posts and public notes eventually became a 143-page report and a [book](https://press.stripe.com/working-in-public). The output found its shape through the work itself.
+While the work is exploratory for now, a more formal output is not off the table. As Nadia Asparouhova found in her own independent research journey, what starts as blog posts and public notes eventually became a 143-page report and a [book](https://press.stripe.com/working-in-public). I doubt I would create a book but it goes to show out the outcome became clearer as more time went on.
 
-The first output can also be found [here](https://helengarden.netlify.app/feedback).
+The first output from this research is the [Feedback Log](https://helengarden.netlify.app/feedback).
 
 <!-- The best research happens when you’re genuinely curious and actively engaged. These questions keep me both.
 

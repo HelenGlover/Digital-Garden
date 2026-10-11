@@ -1,5 +1,5 @@
 ---
-title: Becoming an Independent Researcher
+title: Doing Independent Research
 description: A reflection on conducting independent, public-facing research
 labels: 
     - Independent Research
@@ -36,6 +36,8 @@ Around the same time, I read Candice Kelly’s [What is an Independent Researche
 
 ## What is independent research? 
 The term has multiple interpretations, but it can be understood from its two parts. Independent means no formal affiliation with traditional scholarly infrastructures like academia, research institutions, or think tanks. Research is the pursuit of knowledge in a specific field.
+
+The term can mean different things to different people. I'm less interested in establishing a strict definition than in figuring out what this kind of work looks like in practice.
 <br>
 
 But independent research is not a new concept. Benjamin Franklin conducted his electricity experiments entirely outside any institution, and Marie Curie did much of her early radioactivity research in a converted shed. Long before these pioneers, researchers shared findings through letters, public lectures, and pamphlets. Formal peer review didn't become standard practice until the 1970s and think tanks only emerged in the early 20th century to provide evidence-based research following failures in policymaking ahead of the First World War. The point is research has never been exclusively to academia. As the National Coalition of Independent Scholars puts it, scholarship is what's [possible beyond the university, and academia does not hold the rights to original thought or innovation](https://ncis.org/wp-content/uploads/2024/12/NCIS-Guide-for-Independent-Scholars.pdf). Independent researchers are also not those without a substantive education background; in fact many have PhDs but for one reason or another, prefer to do research on their own.
@@ -48,7 +50,8 @@ A year and a half out of college, I find myself missing exactly that, the work i
 Without institutional structures, I have to identify my own frameworks and accountability measures that universities and research labs would ordinarily provide. Paradoxically, this flexibility means I can challenge the boundaries of what constitutes research. Rather than sharing my work only when it's packaged with a nice bow, I publicly focus on the least rosy parts: what is confusing, what is frustrating, and what's not working. Andy Matuschak calls this "anti-marketing," the idea that sharing the hard parts of your process isn't a weakness, it's what makes the work honest. It is also related to the [Learn in Public](https://www.swyx.io/learn-in-public) philosophy, to “open source your knowledge! At every step of the way: document what you did and the problems you solved.” Sharing those moments as they happen is what keeps the work alive and invites people to engage along the way.
 <br><br>
 
-So here is what that looks like in practice. My work specifically focuses on open-source communities, civic technology, and the policy frameworks that support them. Because I maintain multiple concurrent projects, my [research questions](https://helengarden.netlify.app/guidingresearchquestions) serve a dual function: they provide scaffolding that frames each project while deepening my understanding of the thematic connections across my portfolio. The research itself will be available through writings like this, project documentation, and prototypes.
+So here is what that looks like in practice. My work specifically focuses on open-source communities, civic technology, and the policy frameworks that support them. Because I have multiple works in progress projects, these [questions](https://helengarden.netlify.app/guidingresearchquestions) provide scaffolding that frames each project while deepening my understanding of the thematic connections across my portfolio. 
+
 <br><br>
 ## Myths and Questions
 
@@ -59,14 +62,18 @@ What makes Andy Matuschak's reflection so interesting is that he crowdsourced fu
 For me, it's simpler than that. I like stability and have a great full-time job. Also, my research is closely tied to my personal projects, many of which are collaborative and move on timelines influenced by other people and factors outside my control. That's actually why the "learn in public" approach works so well here. A funded researcher has to produce something by a certain date. I just document the process as it unfolds. And as corny as it sounds, I really do believe being paid in knowledge is, in most cases, more valuable than money. But if you are interested in independent research and want funding, check out [New Science](https://newscience.org/).
 <br><br>
 
-#### *Are you just mad you’re not in academia?*
-No :) In fact, one day, I would like to return to academia to pursue a higher degree, either a master’s or a PhD. That’s been a goal of mine since sophomore year.  I see independent research not as a rejection of academia, but as a way to keep engaging with it on my own terms in the meantime. Academia isn't the only path to research, and for those who can't or don't want to be in it, that shouldn't be the end. As Nadia also said, "The most important thing that I think academia has to offer is giving researchers a stable career path to explore long-term questions...Working independently was useful to me in earlier stages of research."
-<br><br>
+#### *Is independent research just a substitute for academia?*
+
+No :) I actually hope to return to academia one day to pursue a master’s or PhD. That’s been a goal of mine since sophomore year. For me, independent research isn't about rejecting academia. It's about finding ways to keep exploring questions I care about while I'm outside of it.
+
+I don't think academia should be the only path to doing research, or that being outside it means you have to stop. As Nadia put it, *“The most important thing that I think academia has to offer is giving researchers a stable career path to explore long-term questions... Working independently was useful to me in earlier stages of research.”*
 
 #### *Isn’t independent research just a Substack?*
-Substack is a medium for public commentary. Independent research is a method for knowledge creation. My work will focus on generating original insights through interviews, small-scale experiments, and triangulation across multiple sources. While it’s public-facing, the goal is to communicate something new.
+Edit: Welp, I ended up making a Substac. But its only for notifying interested people in when I write something. All my writing can be found on this site. 
 
-So here's to the formal start of this journey. At the end of the day, it all comes back to what pulled me in the first place, curiosity, and now I get to explore it more freely than ever.
+Not necessarily, though the two can overlap. A newsletter is one way to share ideas, and independent research is one way to explore them. For me, the point isn't simply to publish commentary. My work will focus on generating original insights through interviews, small-scale experiments, and triangulation across multiple sources. While it’s public-facing, the goal is to communicate something new.
+
+So here's to the start of this journey. At the end of the day, it all comes back to what pulled me in the first place, curiosity, and now I get to explore it more freely than ever.
 <br><br>
 ### Inspiration for Me, Future Reading for You
 

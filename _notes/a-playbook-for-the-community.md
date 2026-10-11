@@ -1,7 +1,7 @@
 ---
-title: The Making of a Civic Tech Community
+title: A Playbook for the Community
 labels: 
-    - Civic Tech Reflections
+    - Outputs
 description: Building a playbook for a community that has always learned by doing
 display_date: 2026-03-03
 image: assets/civictechplaybook.jpg

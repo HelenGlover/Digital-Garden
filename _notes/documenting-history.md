@@ -1,8 +1,8 @@
 ---
-title: (In Progress) Documenting the History of Civic Tech DC 
+title: Documenting the History of Civic Tech DC 
 description: A history 14 years in the making
 labels: 
-  - Civic Tech Reflections
+  - Outputs
 image: assets/history.jpg
 display_date: 2026-05-03
 ---
@@ -15,5 +15,5 @@ Of course, it is understandable that rigorous documentation was not prioritized 
 
 However, without this documented history, hard-won lessons about what works and what doesn't go unshared. Mistakes get repeated not out of carelessness, but out of a lack of knowledge that those mistakes were made before. It is also so important for the community to better understand the organization they are part of and see how it has evolved.
 
-Inspired by the U.S. Digital Service Origins, here is [Civic Tech DC's history](https://civictechdc.netlify.app/whatiscivictech/). It will be updated with new learnings and interviews with folks. 
+Inspired by the U.S. Digital Service Origins, here is [Civic Tech DC's history](https://playbook.civictechdc.org/history/). It will be updated with new learnings and interviews with folks. 
 

@@ -1,5 +1,5 @@
 ---
-title: Convos in Civic Tech 1 - Civic Tech For Imagination  
+title: Conversations in Civic Tech - Expanding Imagination (#1)
 labels: 
   - Civic Tech Reflections
 description: Demostrating the work of civic tech out in the open

@@ -9,40 +9,40 @@ order: 2
 image: assets/lab.jpg
 ---
 
-The value of research is often measured by external markers that signal credibility within a field, from being invited to give a talk to publishing in a scholarly journal. Academia also has a familiar quantifiable rhythm; you know how long it should take to complete a PhD, how many papers you should produce, and which metrics define progress toward tenure. From this perspective, independent research can seem like a low-stakes detour around years of formal training.
+The value of research is often signaled through familiar markers: academic publications, institutional affiliations, conference presentations, and advanced degrees. Outside those settings, it can be harder to know what to call the work you're doing or how seriously to take it.
 
-But what is research, really? The [National Academies of Sciences](https://www.nationalacademies.org/read/11177/chapter/8) defines basic research as:
+I've been thinking about what it means to call myself an independent researcher. I don't have a university research position, and I don't follow a formal research program. But I continue to pursue questions, read across disciplines, and look for connections between ideas and the work I'm involved in.
 
-> Basic research is defined as a systematic study directed toward fuller knowledge or understanding of the fundamental aspects of phenomena and of observable facts without specific applications towards processes or products in mind.
+I'm not trying to argue that all independent exploration is equivalent to academic research. Formal research has important standards, practices, and forms of accountability. Rather, I'm interested in how I can carry some of that spirit of inquiry into my work outside a traditional academic setting.
 
-Even so, the definition remains somewhat abstract. If we can all agree that research is ultimately the intentional pursuit of knowledge to support others, then independent research is meaningful because it produces real-world impact. While independent work may not always result in traditional scholarly papers or books, it is rigorous in its own right by producing impact-based, alternative forms of outputs. These outputs might not undergo peer review, but they are evaluated through stakeholder feedback and real-world testing.
+## What I am Interested In 
 
-In embracing the title of “independent researcher,” it means doing the field justice by holding myself to high standards and clearly articulating the scope of my work:
-
-## Research Statement 
 <div style="border: 2px solid #dcebee; padding: 10px; border-radius: 8px; background-color: #f5feff;">
-Overall, my work explores how technology shapes collaboration, knowledge, and community infrastructure but my research statement is:
-<br><br>
-I am an interdisciplinary designer, defined by my versatility at the intersection of emerging, deep technology, and strategic design. I explore two key dimensions of technology: the structure, focused on the security and stability of emerging technologies, and the social, centered on how digital growth shapes societal structures. I believe in intersectionality, recognizing that no topic exists in isolation and that the most effective solutions come from blending insights across disciplines.
-<br><br>
-Structurally, I explore the infrastructure and processes that underpin emerging technologies. 
+
+<p>I'm interested in how emerging technologies move from research into practice. I tend to explore this through two overlapping dimensions: the <strong>structural</strong>, focused on the infrastructure, security, and stability of emerging technologies, and the <strong>social</strong>, centered on how technology shapes our relationships, communities, and broader society. I believe that no topic exists in isolation, and that looking across disciplines can help us better understand the connections between them.</p>
+
+<p><strong>Structurally,</strong> I'm interested in the infrastructure and processes that underpin emerging technologies.</p>
+
 <ul>
-<li>What tools and mindsets allow these technologies to move from ideation to implementation and adaptation? </li>
-<li>What are their impacts on automation, productivity, and the expansion of human intelligence? I also focus on how we can scale innovation responsibly, balancing speed with governance standards and cybersecurity resilience.</li>
-<li>How do emerging technologies support or challenge community formation and individual expression? How is new tech an alternative to mainstream platforms?</li>
+  <li>What tools, approaches, and mindsets help technologies move from ideation to implementation and adaptation?</li>
+  <li>How might emerging technologies affect automation, productivity, and human capabilities? How can we support innovation while considering governance, security, and resilience?</li>
+  <li>How do emerging technologies support or challenge community formation and individual expression? What alternatives do they offer to mainstream platforms?</li>
 </ul>
-<br>
-Socially, I examine the benefits and challenges within the interconnected networks between technology and human relationships. 
+
+<p><strong>Socially,</strong> I'm interested in the relationships between technology, people, and the communities they form.</p>
+
 <ul>
-<li>How are online communities sustained, with a focus on open-source and digital grassroots activism? This includes understanding the evolving role of platforms in shaping civic discourse and the ongoing debate between freedom of speech and digital rights.</li>
-<li>What role do community communication platforms have in the spread of misinformation? How can we balance censorship and moderation effectively?</li>
+  <li>What helps sustain online communities, particularly open-source communities and digital grassroots movements? How do platforms shape civic participation and conversations around free expression and digital rights?</li>
+  <li>How do community communication platforms influence the spread of misinformation? What are the challenges of balancing moderation, free expression, and the safety of online communities?</li>
 </ul>
+
 </div>
-## Research Methodology
 
-My research methodology is best described as applied ethnography with qualitative methods. I study communities and their practices through interviews, observations, and iterative prototyping, documenting insights publicly. It is suited to the fast-moving communities I study. 
+## How I Explore These Questions
 
-Ethnography is the same type of research I practiced in college, so I have a solid foundation. While ethnography is sometimes criticized for its subjectivity, this perspective allows for a nuanced, contextual understanding that purely quantitative approaches cannot capture. As researcher Rimjhim Surana highlights in her [article](https://www.linkedin.com/pulse/little-bit-you-me-auto-ethnography-research-method-rimjhim-surana/?trackingId=oTyC5Ea5SRqn4JN3Th6ObA%3D%3D):
+My research is best described as ethnography with qualitative methods which I studied and practice in college. Depending on the topic, this might involve reading existing research, observing communities I'm part of, or exploring ideas through projects.
+
+While ethnography is sometimes criticized for its subjectivity, this perspective allows for a deper understanding that purely quantitative approaches cannot capture. As researcher Rimjhim Surana highlights in her [article](https://www.linkedin.com/pulse/little-bit-you-me-auto-ethnography-research-method-rimjhim-surana/?trackingId=oTyC5Ea5SRqn4JN3Th6ObA%3D%3D):
 
 > In doing the act of ‘writing the self’ there is meaning to be found because the researcher can focus on looking at the subject through an ethnographic lens while simultaneously paying attention to the vulnerable self and everything that falls in between these two. 
 

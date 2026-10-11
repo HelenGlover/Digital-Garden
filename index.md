@@ -231,6 +231,68 @@ a.post-title:hover {
   padding-top: 1.5em;
 }
 
+
+/* ── Substack subscription ── */
+.subscribe-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  background: #faf7f2;
+  border: 1px solid #eee7dc;
+  border-radius: 8px;
+  padding: 1.25em 1.5em;
+  margin: 0 0 2em;
+}
+
+.subscribe-text {
+  flex: 1;
+  min-width: 200px;
+}
+
+.subscribe-text h2 {
+  font-size: 1.05em;
+  font-weight: 600;
+  margin: 0 0 0.4em;
+}
+
+.subscribe-text p {
+  color: #555;
+  font-size: 0.88em;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.subscribe-button {
+  display: inline-block;
+  background: #ff6719;
+  color: #fff !important;
+  padding: 0.7em 1.15em;
+  border-radius: 5px;
+  font-size: 0.88em;
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none !important;
+}
+
+.subscribe-button:hover {
+  background: #e9560c;
+  text-decoration: none !important;
+}
+
+@media (max-width: 600px) {
+  .subscribe-block {
+    padding: 1.15em;
+  }
+
+  .subscribe-button {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
+
 /* ── Hidden state ── */
 .filterable.hidden {
   display: none;
@@ -251,21 +313,42 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <!-- ── Intro block ── -->
 <div class="intro-block">
-  <p style="padding-bottom: 0;">I conduct independent research, a self-directed pursuit of knowledge grounded in guided research questions. For context, start here:</p>
+  <p style="padding-bottom: 0;">I'm interested in how technology shapes the way we work, learn, and organize ourselves. Inspired by the idea of a <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">digital garden</a>, this site is where I explore those questions, with a focus on civic technology and the systems that help new ideas move into practice.</p>
+
+  <p>I think of this as independent research: a self-directed practice of connecting ideas and documenting what I learn. Some writings are more developed than others (chicken sratch), and not everything leads to a clear answer. But that's part of what makes this process so fun!</p>
+
+  <p>If you're new here, start with:</p>
   {% assign process_notes = site.notes | where: "process", true | sort: "order" | slice: 0,4 %}
   <ul class="process-links">
     {% for note in process_notes %}
       <li>
         {% if note.external_url %}
-          <a href="{{ note.external_url }}" target="_blank">{{ note.title }}</a>
+          <a href="{{ note.external_url }}" target="_blank" rel="noopener noreferrer">{{ note.title }}</a>
         {% else %}
           <a href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
         {% endif %}
       </li>
     {% endfor %}
   </ul>
-  <p>Inspired by the concept of a <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">digital garden</a>, this site is not a collection of fixed opinions but an evolving body of thought, aka the practice of learning in public. To stay true to that, I prioritize writing freely over polish. Of course, opinions change, and knowledge grows, so I will update entries accordingly.</p>
 </div>
+
+
+<!-- ── Substack subscription ── -->
+<section class="subscribe-block" aria-label="Subscribe to my writing">
+  <div class="subscribe-text">
+    <h2>You can find all my writing below, but if you'd like to be notify when I write something new:</h2>
+  </div>
+
+  <a
+    class="subscribe-button"
+    href="https://substack.com/@helenyglover"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Subscribe on Substack 
+  </a>
+</section>
+
 
 <!-- ── Tag filter buttons ── -->
 {% assign all_labels = "" | split: "," %}
@@ -361,10 +444,6 @@ document.addEventListener("DOMContentLoaded", function() {
 </ul>
 
 <!-- ── In Other Spaces ── -->
-<p class="other-spaces">
-  I don't have an active Substack or Medium as both require a level of attention I'd rather put toward
-  Civic Builders (coming soon) and CIB Mango Tree's research. Maybe one day.
-</p>
 
 <script>
 var activeTag = 'all';
