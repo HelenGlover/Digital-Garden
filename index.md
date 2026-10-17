@@ -374,7 +374,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <!-- ── Substack subscription ── -->
 <section class="subscribe-block" aria-label="Subscribe to my writing">
   <div class="subscribe-text">
-    <h2>Get new writing in your inbox.</h2>
+    <h2>You can find all my writing below, but if you'd like to be notify when I write something new:</h2>
   </div>
 
   <a
