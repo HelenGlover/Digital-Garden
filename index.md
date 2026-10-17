@@ -120,7 +120,7 @@ a.post-title:hover {
   user-select: none;
 }
 .tag-btn:hover {
-  background: #e4e6f8;
+  background: #e5eaf6;
   color: #3d52a0;
 }
 .tag-btn.active {
@@ -160,13 +160,13 @@ a.post-title:hover {
   font-style: italic;
 }
 .sub-btn:hover {
-  background: #e4e6f8;
+  background: #e5eaf6;
   color: #3d52a0;
 }
 .sub-btn.active {
-  background: #eeedfe;
-  color: #3c3489;
-  border-color: #afa9ec;
+  background: #eef1f9;
+  color: #3d52a0;
+  border-color: #bbc5e4;
   font-style: normal;
   font-weight: 500;
 }
@@ -218,7 +218,7 @@ a.post-title:hover {
   border: 1px solid #e0e2f0;
 }
 .reflection-subtheme {
-  color: #7f77dd;
+  color: #3d52a0;
   font-size: 0.9em;
   font-style: italic;
 }
@@ -266,7 +266,7 @@ a.post-title:hover {
 
 .subscribe-button {
   display: inline-block;
-  background: #ff6719;
+  background: #3d52a0;
   color: #fff !important;
   padding: 0.7em 1.15em;
   border-radius: 5px;
@@ -277,7 +277,7 @@ a.post-title:hover {
 }
 
 .subscribe-button:hover {
-  background: #e9560c;
+  background: #2d3f80;
   text-decoration: none !important;
 }
 
@@ -296,6 +296,44 @@ a.post-title:hover {
 /* ── Hidden state ── */
 .filterable.hidden {
   display: none;
+}
+/* Comfortable homepage proportions across screen sizes. */
+body {
+  box-sizing: border-box;
+  max-width: 1040px;
+  padding: clamp(16px, 3vh, 28px) clamp(16px, 4vw, 48px);
+  font-size: 16px;
+  line-height: 1.65;
+  overflow-wrap: break-word;
+}
+nav { margin: 0 0 20px; }
+.garden-nav { margin-bottom: 20px; }
+.intro-block {
+  padding: clamp(18px, 3vw, 28px);
+  margin-bottom: 20px;
+  line-height: 1.7;
+  font-size: 1em;
+}
+.intro-block p { margin-bottom: 16px; }
+.process-links { padding-top: 0; margin-bottom: 0; gap: 6px; }
+.process-links li a { font-size: 1em; }
+.subscribe-block { padding: 16px 20px; margin-bottom: 24px; gap: 12px; }
+.subscribe-text { min-width: 0; flex-basis: 260px; }
+.subscribe-text h2 { font-size: 1em; line-height: 1.5; }
+.tags-row { gap: 8px; margin-bottom: 16px; }
+.tag-btn, .sub-btn { padding: 7px 12px; line-height: 1.5; }
+.subtheme-row { padding-left: 0; margin-bottom: 20px; }
+.reflections-list { margin: 0; }
+.reflection-item { padding: 16px 0; gap: 6px; }
+.reflection-item a.post-title { font-size: 1.05em; }
+.reflection-desc { font-size: 0.94em; }
+.reflection-meta { flex-wrap: wrap; gap: 6px 12px; font-size: 0.82em; }
+@media (max-width: 600px) {
+  .intro-block { padding: 18px; }
+  .subscribe-block { padding: 16px; }
+  .subscribe-text { flex-basis: 100%; }
+  .subscribe-button { white-space: normal; }
+  .garden-nav { margin-bottom: 16px; }
 }
 </style>
 
@@ -336,7 +374,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <!-- ── Substack subscription ── -->
 <section class="subscribe-block" aria-label="Subscribe to my writing">
   <div class="subscribe-text">
-    <h2>You can find all my writing below, but if you'd like to be notify when I write something new:</h2>
+    <h2>Get new writing in your inbox.</h2>
   </div>
 
   <a

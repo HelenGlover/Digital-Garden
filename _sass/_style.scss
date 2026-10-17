@@ -7,19 +7,15 @@ $border-radius: 4px;
 $font-family:'Merriweather'; 
 
 body {
-  box-sizing: content-box;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
   margin: 0 auto;
   line-height: 1.7;
-  padding: 4vh 6vw;
-  overflow-x: hidden;
+  padding: 24px clamp(16px, 4vw, 48px);
+  overflow-wrap: break-word;
   color: $color-text;
-  font-size: 1rem;
-  max-width: 63em;
-
-  @media (min-width: 820px) {
-    font-size: 1.2rem;
-  }
+  font-size: 17px;
+  max-width: 1160px;
 }
 
 time {
@@ -79,11 +75,11 @@ a {
   padding: 0 0.1em;
   text-decoration: none;
   border-bottom: 1px solid $color-border;
-  color: $color-primary;
+  color: #3d52a0;
   background: #fffaf1; // Set the background to yellow highlight
 
   &:hover {
-    color: black !important;
+    color: #2d3f80;
     background: #fffaf1; // Maintain the yellow highlight on hover
   }
 
@@ -108,7 +104,7 @@ a {
 }
 
 nav {
-  margin: 1em 0 3em;
+  margin: 0 0 24px;
 }
 
 #notes-entry-container {
@@ -146,4 +142,95 @@ code {
 .invalid-link-brackets {
   color: #ccc;
   cursor: help;
+}
+
+// Keep the title and image together in a compact yellow header.
+.note-header {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 3vw, 32px);
+  background: #fff8e7;
+  padding: clamp(16px, 2vw, 24px);
+  margin-bottom: 24px;
+  border-radius: 10px;
+  overflow-wrap: break-word;
+
+  .note-header-text { flex: 1 1 55%; min-width: 0; }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    line-height: 1.2;
+  }
+
+  time {
+    margin: 10px 0 0;
+    font-size: 0.85rem;
+    color: #555;
+  }
+}
+
+.note-featured-image {
+  flex: 1 1 45%;
+  min-width: 0;
+  margin: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .note-header { flex-direction: column; align-items: stretch; }
+  .note-featured-image img { max-height: 180px; width: auto; }
+}
+
+#notes-entry-container {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "content" "side";
+
+  > content { grid-area: content; min-width: 0; max-width: 72ch; }
+  > side { grid-area: side; min-width: 0; }
+  > content img { height: auto; max-height: none; }
+
+  @media (min-width: 900px) {
+    grid-template-areas: "content side";
+    grid-template-columns: minmax(0, 72ch) minmax(200px, 1fr);
+  }
+}
+.backlink-box .related-note-date {
+  display: block;
+  margin: 6px 0 0;
+  font-size: 0.8em;
+  line-height: 1.4;
+  color: #666;
+}
+// Quiet related-note cards keep the article as the main focus.
+#notes-entry-container > side {
+  h3 { font-size: 1rem; line-height: 1.4; margin-top: 0; }
+  .backlink-box {
+    background: #fafaf8;
+    border: 1px solid #ecece6;
+    padding: 12px 14px;
+    border-radius: 6px;
+    line-height: 1.5;
+  }
+  .backlink-box a {
+    background: transparent;
+    border-bottom: 0;
+    padding: 0;
+    color: #3d52a0;
+  }
+  .backlink-box a:hover { text-decoration: underline; }
+}
+
+nav a.internal-link { background: transparent; border-bottom: 0; padding: 0; }
+
+@media (max-width: 600px) {
+  body { padding-top: 16px; }
+  nav { margin-bottom: 20px; }
 }
