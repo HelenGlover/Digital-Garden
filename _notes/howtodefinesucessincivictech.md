@@ -8,7 +8,7 @@ image: assets/failure.jpg
 display_date: 2026-06-23
 ---
 
-A few days ago, I came across a LinkedIn post by Tait Chamberlain (written seven months ago, so I'm a bit late to the conversation). In it, he describes the "collapse" of civic tech in its evolution from the optimism of the early 2010s, when many believed open data could fix government, to the realization that data alone doesn't create reform, and finally to a more mature understanding that lasting impact often comes from working inside government.
+A few days ago, I came across a LinkedIn post by Tait Chamberlain (written seven months ago, so I'm a bit late to the conversation). In it, he traces the “collapse” of civic tech, from the early optimism that open data could fix government to the realization that lasting reform requires working within institutions.
 
 <blockquote class="quoteback" darkmode="" data-title="Chamberlain" data-author="Tait" cite="https://www.linkedin.com/posts/tait-chamberlain-4365b02a_edit-i-would-encourage-anyone-to-check-out-activity-7394579944909164544-9dYX?utm_source=share&utm_medium=member_desktop&rcm=ACoAADHG624B2mi97TJaAZqdL6Pfby1HU62y56s">
 <span>
@@ -18,28 +18,59 @@ A few days ago, I came across a LinkedIn post by Tait Chamberlain (written seven
 <footer>Tait<cite> <a href="https://www.linkedin.com/posts/tait-chamberlain-4365b02a_edit-i-would-encourage-anyone-to-check-out-activity-7394579944909164544-9dYX?utm_source=share&utm_medium=member_desktop&rcm=ACoAADHG624B2mi97TJaAZqdL6Pfby1HU62y56s">https://www.linkedin.com/posts/tait-chamberlain-4365b02a_edit-i-would-encourage-anyone-to-check-out-activity-7394579944909164544-9dYX?utm_source=share&utm_medium=member_desktop&rcm=ACoAADHG624B2mi97TJaAZqdL6Pfby1HU62y56s</a></cite></footer>
 </blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script>
 
-This sparked a LinkedIn discussion, and in response, civic tech veteran Joshua Tauberer wrote a piece acknowledging the challenges in civic tech but arguing that it did not collapse but evolved. Civic tech worked more than people give it credit for in leading to real institutional reforms that were gradually absorbed into government systems.
+This sparked a LinkedIn discussion, and in response, civic tech veteran [Joshua Tauberer wrote a piece](https://www.linkedin.com/pulse/what-actually-happened-civic-tech-joshua-tauberer-ibnbe/) acknowledging the challenges in civic tech but arguing that it didn't collapse; it evolved. He points to the ways civic tech helped change how government works, even when those contributions weren't always visible or credited to the movement itself.
 
 <blockquote class="quoteback" darkmode="" data-title="Tauberer" data-author=" Joshua" cite="https://www.linkedin.com/pulse/what-actually-happened-civic-tech-joshua-tauberer-ibnbe/">
 <span>
-....I don't want to minimize the problems in civic tech <br><br>
-This stuff actually worked. We changed how government works, permanently, at multiple levels. There are countless more examples.&nbsp;</span>
+I don't want to minimize the problems in civic tech...[but] the movement was wildly successful anyway...
+<br><br>
+There are plenty of other durable successes from the open data / civic tech movement. Marina Nitze, Erie Meyer and others paved the way for the government tech innovation vision to take root within the federal government, and the vision did take root. Congress is still holding yearly "hackathons" (a branding gimmick that stuck) and other open data events thanks to Stephen Dwyer and Daniel Schuman's persistence, and Stephen seems to have managed to pass on the hackathon to the next generation of organizers (a difficult feat).
+<br><br>This stuff actually worked. We changed how government works, permanently, at multiple levels. There are countless more examples.&nbsp;</span>
 <footer> Joshua<cite> <a href="https://www.linkedin.com/pulse/what-actually-happened-civic-tech-joshua-tauberer-ibnbe/">https://www.linkedin.com/pulse/what-actually-happened-civic-tech-joshua-tauberer-ibnbe/</a></cite></footer>
 </blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script>
 
-As someone personally invested in civic tech and running Civic Tech DC, what does this mean for the organization? 
+As someone running Civic Tech DC, this debate made me think about how we define success for our own organization. While both perspectives raise important points about civic tech's relationship with government, I also wonder whether we're defining its success too narrowly.
 
-In tracing the organization's history, I see a shift in its center of gravity. Earlier phases were more directly embedded in government-adjacent work, with frequent collaboration with DC agencies and open data initiatives. Over time - especially after the pandemic hiatus and organizational transition - the model evolved toward its current form: distributed, project-based work with nonprofit and community partners. It feels like Civic Tech DC's "impact model" shifted from institutional proximity to ecosystem-building.
+## How Civic Tech DC Has Evolved
 
-Some might argue that civic tech's real challenge is a misunderstanding of the problem. That the actual constraint is government capacity, not data availability. From this view, civic tech focuses too much on external structures like open data, transparency, and tools, and not enough on workflows, staffing, and administrative burden. Things like hackathons were often symbolic, and prototypes rarely survived the realities of procurement.
+In tracing Civic Tech DC's history, I see a shift in how the organization approaches its work. In its earlier years, Civic Tech DC (then Code for DC) had strong ties to government, frequently collaborating with DC agencies on open data initiatives. Over time, especially after the pandemic hiatus, the model evolved toward its current form of distributed, project-based work with community partners.
 
-I would somewhat agree with this critique. In some ways, civic tech became a performative layer of innovation sitting on top of a structurally unchanged system. Real change is often found in the unglamorous work of fixing forms, improving workflows, and maintaining infrastructure. It's far more appealing to build an app than to sit with a broken administrative process, and I know a lot of Civic Tech DC participants value having a tangible product at the end of a project. 
+While community-building has always been central to Civic Tech DC, it feels like our focus has shifted to bringing together people with different skills and interests to explore public problems. Government partnerships remain part of our work, but they're now one of several ways we engage with civic challenges.
 
-Yet Civic Tech DC does create value just not in the way civic tech has traditionally been measured. It's a place to build civic and technical skills, and I believe the real value lies in inspiring people to eventually work within the institutions of systemic change. It also functions as an awareness space in helping people understand how systems are supposed to work versus how they actually operate. This echoes what the U.S. Digital Corps promotes: civic tech as a pathway into public service, where the real outcome is a generation of people who've learned to work across the divide between government and technology. As such, I think Civic Tech DC is an entry point into public service identity and civic community infrastructure, a space where relationships often matter more than tools.
+That shift raises an important question: If we're not measuring success primarily through government partnerships or the adoption of our tools, what should we be measuring instead?
 
-In this framing, Civic Tech DC is less a production pipeline for tools. I see it as a translation layer as part of a larger stack:
-- **Outside (startups, civic groups, open source):** Prototype and explore problems, generate ideas, and surface pressure points in systems.
-- **Middle (civic tech, nonprofits, Civic Tech DC):** Build community, translate across sectors, develop skills, and create pathways between civic interest and institutional work.
-- **Inside (government and institutions):** Own infrastructure, set rules, and implement systems at scale.
+## Is Civic Tech Solving the Wrong Problem?
 
-I feel that civic tech is often judged from the wrong layer. It's evaluated as though it should produce government change directly, when in reality its role is earlier and more indirect in inspiring those who enter the system, and which pathways into institutions feel possible.
+Some might argue that civic tech's real challenge is a misunderstanding of the problem. In the context of government modernization, the actual constraint is often government capacity, not simply data availability. From this view, civic tech focuses too much on external solutions like open data and not enough on workflows and administrative burden. Hackathons were often symbolic, and prototypes rarely survived the realities of implementation.
+
+I would somewhat agree with this critique. In some ways, civic tech became a performative layer of innovation sitting on top of a structurally unchanged system. Real change is often found in the unglamorous work of fixing forms and maintaining infrastructure.
+
+But I also think this critique assumes that civic tech's primary purpose is to reform government. Civic tech is much broader than that. It can involve making public information more accessible, helping nonprofits serve their communities, or creating tools that address problems residents face in their everyday lives.
+
+And even outside government, we run into similar challenges. It's far more appealing to build an app than to spend time on the "unsexy" things. I know a lot of Civic Tech DC participants value having a tangible product at the end of a project. There's nothing wrong with that. Building something is exciting, and having a concrete outcome can be an important part of learning. But a working prototype and a lasting solution are two different things.
+
+This is where the conversation about civic tech's success becomes more complicated. If the goal is to solve a public problem, then usefulness and sustainability matter. But if the goal is also to help people participate in their communities, perhaps we're overlooking another kind of impact.
+
+## The Value Beyond the Tools
+
+I believe Civic Tech DC creates value, just not always in the ways civic tech has traditionally been measured.
+
+It's a place to build civic and technical skills, but also a space for people to get involved in issues they care about. Someone might join a project night because they want to learn to code or contribute to an open-source project. But along the way, they might learn about the challenges a local nonprofit faces in delivering services to its community.
+
+That experience could shape how they think about public problems and where they choose to contribute next. Some might go on to work in government, while others might bring those skills to nonprofits or become more engaged in their own communities.
+
+And there's also something valuable about having a space where people from different backgrounds can come together around a shared public problem. A developer might understand how to build a tool, while someone working in policy or community organizing might understand the problem it's meant to address. Neither perspective is sufficient on its own, and bringing them together creates opportunities to learn from one another. In that sense, I see Civic Tech DC less of a production pipeline for tools and more of a form of civic community infrastructure.
+
+The challenge is that these outcomes are much harder to measure than the number of projects launched. We can count how many people attend project nights or how many tools are built, but it's harder to track how those experiences shape someone's understanding of civic issues, the relationships they form, or the work they pursue years later.
+
+## Civic Tech as Community Infrastructure
+
+Civic tech organizations have an interesting position. They can bring together people who might not otherwise work with one another, from technologists to researchers. They can also provide a place to experiment with ideas that may not fit neatly within an existing organization.
+
+Of course, I don't think that means every project should be considered successful simply because people learned something. If we're building technology intended to serve communities, we should care whether it's actually useful, whether it responds to a real need, and whether someone can sustain it.
+
+But I also don't think we should dismiss the value created along the way. A project that doesn't survive might still introduce someone to civic tech, help a nonprofit better understand its technical needs, or bring together people who go on to collaborate elsewhere.
+
+Perhaps that's what makes defining success in civic tech so difficult. We're trying to measure several different things at once: the tools we build, the problems we help address, the people we bring together, and the opportunities that emerge from those connections.
+
+I feel that civic tech is often judged by its most tangible outcomes, especially whether a tool creates measurable change. Those outcomes matter, but they don't capture the full picture. Rather, we need a broader definition of success that accounts for both the work and the community capacity.

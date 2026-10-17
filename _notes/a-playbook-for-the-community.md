@@ -3,33 +3,28 @@ title: A Playbook for the Community
 labels: 
     - Outputs
 description: Building a playbook for a community that has always learned by doing
-display_date: 2026-03-03
-image: assets/civictechplaybook.jpg
+display_date: 2026-10-12
+image: assets/civictechplaybook.png
 ---
 
-Most communities don't realize how much they know until they try to write it down.
+The playbook! It's finally alive!!
 
-Civic Tech DC has been organizing technologists, designers, policy thinkers, and curious newcomers in the DMV area since 2012, first as Code for DC, a local brigade affiliated with Code for America, and since 2023 under its current name after the national brigade program dissolved. Over that decade, the organization has quietly accumulated institutional knowledge of both the successes and challenges of what sustains volunteer-driven technology.
+It took a while to launch, but spurred by the [DMV Super Meetup](https://luma.com/j5l99xl6) on October 16, I finally pulled together all the scattered writing I'd been working on and fleshed out the layout to show off at the meetup.
 
-That knowledge has mostly lived in people's heads, passed informally from organizer to newcomer. In a volunteer community, that loose structure works because people want to learn from others face-to-face, not read documentation. But it has its limits, and lately I've been running into them directly from both the basic, logistical work to the more significant, like the history behind a partner relationship. And as the community grows, people are starting to ask us for that information too.
+Back in March, I wrote a [reflection](building-a-playbook.md) on what I wanted the playbook to include. Specifically, I highlighted two things:
 
-Adaptability to change is essential, and prompted by the new partnerships we are building and the impact of the community, I am building an openly maintained, community-editable playbook to give that knowledge a structure that grows with us.
+- **Different ways of getting involved.** Some people come to Civic Tech DC looking to contribute to an existing project (contributors), while others have their own ideas they want to pursue (initiators). I wanted the playbook to offer resources for both.
+  
+- **More structure for our incubator model.** We've always welcomed people with new ideas, but haven't had a clear process for helping them turn those ideas into projects. I wanted to make it easier to go from an initial idea to a plan with milestones, community partners, and a team.
 
-**Two types of people show up**
+The playbook now includes both, along with quite a bit more! It's organized into three main sections: **Learn, Join, and Build.**
 
-One of the more consistent observations from my conversations with folks is that people can be categorized into two broad orientations. There are those who want community in that they prefer the structure of a team and a defined problem to work on alongside others. And there are those who are self-directed and want to independently act on an idea. 
+The Learn section introduces civic tech and includes a reconstructed history of Civic Tech DC going back to 2012. The Join section helps newcomers find their place in the community, with different contribution pathways and guidance on making their first contribution.
 
-This distinction shapes the playbook's framework, and there will be resources for both. Also, people are not one or the other. Many, especially those who are getting their footing within Civic Tech DC, start as contributors and over time find their own direction they want to pursue. As such, these two modes are less fixed identities than different entry points.
+The Build section is probably where I've spent the most time thinking through how we operate. There are now two separate tracks for people with ideas that are either ready to join Civic Tech DC as a official project (onboarding track) and ideas that still need more exploration (incubator track). The incubator resources walk through understanding the problem, finding the right people, and figuring out whether tech is even the right solution. I've also included Project Resources on tips and tricks for leading project nights and working with community partners.
 
-**Good ideas need more than enthusiasm**
+One thing I wanted to be intentional about was not creating more structure just for the sake of it. Civic Tech DC is volunteer-driven, and part of what makes it work is that people have the flexibility to explore their interests. But having some shared guidance can make it easier for newcomers to get involved and for organizers to avoid answering the same questions over and over.
 
-The second observation is about what self-starters actually need to succeed. It's easy to think of an idea and, with the rise of AI, design and deploy an app in minutes. Yet most people unintentionally miss the essential design thinking aspect of figuring out who the user actually is, what problem they actually have, and whether the solution will hold up in practice. Without validation and a committed partner who will genuinely use what gets built, the gap between idea and action is very hard to close.
+The playbook is still a work in progress, and I will continue to update it with feedback. But more than anything, I hope it becomes something the community contributes to and builds on as a open-source resource.
 
----
-
-Civic Tech DC has always had an incubator model to help ideas turn into projects, but it has been informal and loosely structured. In an organization that prioritizes structure where it's needed, the incubator stage is the most critical to formalize. By defining a clearer path from pitch to launch, the playbook is intended to make it easier for self-starters to go from "I have an idea" to "I have a plan with milestones."
-
-The playbook is still in development, but it will represent one of the outcomes of my independent research into what sustains voluntaristic open technology communities. Rather than the traditional research outcome of a paper, it is a re-interpretation of research in tangible action or one that can be applied and adapted to the community it studies. Excited to share its release soon.
-
-<!-- It is still a work-in-progress, but it will demonstrate independent research in action in applying ethnographic observation to organizational processes and producing a resource that can be used by the community. -->
-
+[**Check it out! here**](https://playbook.civictechdc.org/) and the [**code can be found here**](https://github.com/civictechdc/Project-Playbook/tree/main).
