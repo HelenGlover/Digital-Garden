@@ -22,7 +22,7 @@ This year, I’m writing down some of my goals more publicly (thanks, [Tracey Ch
 - <b>Develop a Civic Tech playbook</b> based on lessons learned from running the organization and best practices for sustaining civic tech initiatives. What actually sustains civic tech initiatives when the initial enthusiasm fades? How to keep momentum and motivation alive?
 - <b>Make civic tech less insular</b> by collaborating with local organizations to host special events that make civic tech exciting. With the U.S.'s 250th anniversary, it's a natural moment to focus on what civic participation really means in showing up and taking responsibility for the communities we live in. 
 
-<img src="assets/civictechdc.jpg" alt="Mango Tree" width="600" style="border-radius: 2px; display: block; margin: 1em 0;" />
+<img src="{{ '/assets/civictechdc.jpg' | relative_url }}" alt="Mango Tree" width="600" style="border-radius: 2px; display: block; margin: 1em 0;" />
 <br>
 
 **CIB Mango Tree:** Last September, we just celebrated our one year of CIB Mango Tree, an open-source initiative building tools to detect coordinated inauthentic behavior. As Engagement Lead, I want to: 
@@ -30,7 +30,7 @@ This year, I’m writing down some of my goals more publicly (thanks, [Tracey Ch
 - <b>Continue supporting growth</b> in the team’s project management, outreach, and community development, which includes expanding partnerships with universities.
 - <b>Strengthen our credibility through more rigorous, public-facing writing</b>. We're building tools that matter for information integrity, and that work needs to be shared beyond our immediate network. 
 <br>
-<img src="assets/mangotree.jpg" alt="Mango Tree" width="600" style="border-radius: 2px; display: block; margin: 1em 0;" />
+<img src="{{ '/assets/mangotree.jpg' | relative_url }}" alt="Mango Tree" width="600" style="border-radius: 2px; display: block; margin: 1em 0;" />
 <br>
 
 **Internet Law and Foundry:** As a member of the Editorial and Marketing Committee of the Internet Law and Policy Foundry, an organization of early-career professionals in law, technology, and policy, this year I will move into a Senior Fellow role and will work to:
@@ -53,7 +53,7 @@ This year, I’m writing down some of my goals more publicly (thanks, [Tracey Ch
 - Hosting events that pair researchers presenting problems or findings with industry professionals who can explore practical applications and implementation challenges.
 - Engaging local nonprofits, coalitions, and student groups to make these discussions actionable rather than theoretical. This would include experimenting with formats like fireside chats and smaller-group conversations.
 
-<img src="assets/acmdc.jpg" alt="Mango Tree" width="600" style="border-radius: 2px; display: block; margin: 1em 0;" />
+<img src="{{ '/assets/acmdc.jpg' | relative_url }}" alt="Mango Tree" width="600" style="border-radius: 2px; display: block; margin: 1em 0;" />
 
 ---
 

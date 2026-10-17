@@ -63,20 +63,21 @@
   }
 
   function showTooltip(event) {
-    var elem = event.target;
+    var elem = event.currentTarget;
     var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
     var top = window.pageYOffset || document.documentElement.scrollTop
 
-    if (event.target.host === window.location.host) {
-      if (!linkHistories[event.target.href]) {
-        iframe.src = event.target.href
+    if (elem.origin === window.location.origin && elem.pathname.startsWith({{ '/' | relative_url | jsonify }}) && !elem.hash) {
+      if (!linkHistories[elem.href]) {
+        iframe.src = elem.href
         iframe.onload = function() {
-          tooltipContentHtml = ''
+          if (!iframe.contentWindow.document.querySelector('h1') || !iframe.contentWindow.document.querySelector('content')) return;
+          var tooltipContentHtml = ''
           tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
           tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
 
           tooltipContent.innerHTML = tooltipContentHtml
-          linkHistories[event.target.href] = tooltipContentHtml
+          linkHistories[elem.href] = tooltipContentHtml
 
           tooltipWrapper.style.display = 'block';
           setTimeout(function() {
@@ -84,7 +85,7 @@
           }, 1)
         } 
       } else {
-        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipContent.innerHTML = linkHistories[elem.href]
         tooltipWrapper.style.display = 'block';
         setTimeout(function() {
           tooltipWrapper.style.opacity = 1;

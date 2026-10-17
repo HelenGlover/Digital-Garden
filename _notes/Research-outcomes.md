@@ -22,11 +22,11 @@ Understandably, the idea that community work can be a research output might seem
 <footer>Jason Benn<cite> <a href="https://jasonbenn.com/community/3-writing-about-a-web-of-questions">https://jasonbenn.com/community/3-writing-about-a-web-of-questions</a></cite></footer>
 </blockquote><script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script>
 
-What makes Benn's project interesting is what he actually built from this wandering to start researching community living and whether you could intentionally design a neighborhood for "friendly ambitious nerds" in a major US city. That's the model I'm trying to follow and after some time learning, the first output can be found [here](https://helengarden.netlify.app/making-of-civic-tech).
+What makes Benn's project interesting is what he actually built from this wandering to start researching community living and whether you could intentionally design a neighborhood for "friendly ambitious nerds" in a major US city. That's the model I'm trying to follow and after some time learning, the first output can be found [here]({{ '/making-of-civic-tech' | relative_url }}).
 
 While the work is exploratory for now, a more formal output is not off the table. As Nadia Asparouhova found in her own independent research journey, what starts as blog posts and public notes eventually became a 143-page report and a [book](https://press.stripe.com/working-in-public). I doubt I would create a book but it goes to show out the outcome became clearer as more time went on.
 
-The first output from this research is the [Feedback Log](https://helengarden.netlify.app/feedback).
+The first output from this research is the [Feedback Log]({{ '/feedback' | relative_url }}).
 
 <!-- The best research happens when you’re genuinely curious and actively engaged. These questions keep me both.
 

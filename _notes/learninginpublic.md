@@ -4,6 +4,6 @@ labels:
     - Outputs
 display_date: 2026-04-19
 image: assets/civictech.png
-external_url: /feedback.html
+external_url: /feedback
 description: A working log of feedback given to Civic Tech DC, what changed, and what comes next
 ---

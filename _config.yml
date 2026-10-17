@@ -1,7 +1,7 @@
 
 title:               Helen Y. Glover
 include:             ['_pages']
-exclude:             ['_includes/notes_graph.json']
+exclude:             ['_includes/notes_graph.json', 'scripts', 'Gemfile', 'Gemfile.lock', 'README.md', 'netlify.toml']
 url:                 'https://helenyglover.com'
 baseurl:             '/writing'
 
@@ -46,3 +46,7 @@ defaults:
       path: "_notes/**/*.md"
     values:
       layout: "note"
+
+# Fallback metadata for pages without descriptions or featured images.
+description: Helen Y. Glover's writing on civic technology, independent research, and community organizing.
+image: /assets/civictech.png

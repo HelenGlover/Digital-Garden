@@ -2,7 +2,34 @@
 
 # Digital Garden
 
-Code for my digital garden which is part of my [personal website](https://helenglover.netlify.app/)
+Code for my digital garden which is part of my [personal website](https://helenyglover.com/)
 
 With thanks to Maxime Vaillancourt for the source code: [Your own digital garden with Jekyll](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll)
 
+
+
+## Build and link audit
+
+Run with the locked dependencies:
+
+```sh
+bundle install
+JEKYLL_ENV=production bundle exec jekyll build
+bundle exec ruby scripts/check_site.rb
+node scripts/check_javascript.cjs
+```
+
+The checker validates generated internal links, fragments, image filename case,
+Open Graph images, unique titles, descriptions, canonical URLs, graph targets,
+and sitemap coverage for HTML pages. The existing HTML-rendered `quotes.txt`
+is inspected but excluded from coverage because jekyll-sitemap excludes text files.
+Unpublished Markdown without front matter remains unpublished.
+
+Keep `url: https://helenyglover.com` and `baseurl: /writing` for both Netlify
+and mirror builds. Netlify remains the origin behind the personal site's reverse
+proxy. The generated `/writing/robots.txt` advertises the canonical sitemap, but
+crawlers use the domain-root `/robots.txt`: that file belongs to the parent site
+and should also advertise `https://helenyglover.com/writing/sitemap.xml` and allow
+`/writing/`. This repository cannot configure the parent proxy or root robots file.
+External sites and live feedback-sheet data require separate network checks;
+a passing local check does not guarantee indexing.

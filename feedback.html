@@ -1,9 +1,14 @@
+---
+layout: null
+title: Learning in Public Log
+permalink: /feedback
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Learning in Public Log</title>
+{% include seo.html %}
 
 <style>
   :root {
@@ -253,15 +258,41 @@ const SHEET_URL =
 
 let DATA = [];
 
+// Normalize garden URLs from the external sheet against actual Jekyll routes.
+const GARDEN_BASE = {{ '/' | relative_url | jsonify }};
+const GARDEN_ROUTES = new Set([
+  {% for note in site.notes %}{{ note.url | jsonify }},{% endfor %}
+  '/feedback', '/'
+]);
+function gardenURL(value) {
+  if (!value) return '';
+  const raw = value.trim();
+  let url;
+  try { url = new URL(raw, 'https://helenyglover.com' + GARDEN_BASE); }
+  catch (_) { return raw; }
+  const oldGarden = url.hostname === 'helengarden.netlify.app';
+  if (!oldGarden && url.hostname !== 'helenyglover.com') return raw;
+  if (!oldGarden && url.pathname === '/' && /^https?:/i.test(raw)) return raw;
+  let path = url.pathname;
+  if (path.startsWith(GARDEN_BASE)) path = '/' + path.slice(GARDEN_BASE.length);
+  if (path === '/questions-worth-getting--in') path = '/research-outcomes';
+  if (path === '/feedback.html') path = '/feedback';
+  const clean = path.replace(/\.md$/, '');
+  if (GARDEN_ROUTES.has(clean) || clean.startsWith('/assets/')) {
+    return GARDEN_BASE + clean.replace(/^\//, '') + url.search + url.hash;
+  }
+  return raw;
+}
+
 function normalize(row) {
   return {
     context: row.context || "",
     feedback: row.feedback || "",
     thoughts: row.thoughts || "",
     next: row.next || "",
-    link_url: row.link_url || "",
+    link_url: gardenURL(row.link_url),
     link_label: row.link_label || "",
-    image_url: row.image_url || ""
+    image_url: gardenURL(row.image_url)
   };
 }
 

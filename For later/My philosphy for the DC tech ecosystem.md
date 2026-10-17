@@ -27,4 +27,4 @@ This is where real innovation happens. This is where I show up.
 
 ## Working Together
 
-I bring this philosophy to the organizations and communities I work with—whether that's through direct participation, advising, or consulting on community strategy. If you're building something new in the DC tech space and want to talk through your approach, [reach out](contact-link).
+I bring this philosophy to the organizations and communities I work with—whether that's through direct participation, advising, or consulting on community strategy. If you're building something new in the DC tech space and want to talk through your approach, reach out.
