@@ -253,7 +253,7 @@ a.post-title:hover {
 
 .subscribe-text h2 {
   font-size: 1.05em;
-  font-weight: 600;
+  font-weight: 400;
   margin: 0 0 0.4em;
 }
 
@@ -334,6 +334,16 @@ nav { margin: 0 0 20px; }
   .subscribe-text { flex-basis: 100%; }
   .subscribe-button { white-space: normal; }
   .garden-nav { margin-bottom: 16px; }
+}
+@media (min-width: 900px) {
+  body { max-width: 960px; padding: 20px 32px; }
+  nav, .garden-nav { margin-bottom: 16px; }
+  .intro-block { padding: 18px 22px; line-height: 1.6; margin-bottom: 16px; }
+  .intro-block p { margin-bottom: 12px; }
+  .process-links { gap: 4px; }
+  .subscribe-block { padding: 12px 16px; margin-bottom: 18px; }
+  .subscribe-text h2 { font-size: 0.95em; }
+  .reflection-item { padding: 12px 0; }
 }
 </style>
 

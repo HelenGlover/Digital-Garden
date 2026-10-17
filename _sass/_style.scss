@@ -234,3 +234,20 @@ nav a.internal-link { background: transparent; border-bottom: 0; padding: 0; }
   body { padding-top: 16px; }
   nav { margin-bottom: 20px; }
 }
+
+// A smaller desktop scale while retaining the mobile layout.
+@media (min-width: 900px) {
+  body {
+    max-width: 1040px;
+    padding: 20px 32px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  nav { margin-bottom: 18px; }
+  .note-header { padding: 16px 20px; gap: 24px; margin-bottom: 20px; }
+  .note-header h1 { font-size: 1.75rem; }
+  .note-featured-image img { max-height: 180px; }
+  #notes-entry-container { gap: 24px; }
+  #notes-entry-container > side h3 { font-size: 0.95rem; }
+  #notes-entry-container > side .backlink-box { padding: 10px 12px; }
+}
