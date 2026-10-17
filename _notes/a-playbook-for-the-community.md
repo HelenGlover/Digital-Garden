@@ -11,7 +11,7 @@ The playbook! It's finally alive!!
 
 It took a while to launch, but spurred by the [DMV Super Meetup](https://luma.com/j5l99xl6) on October 16, I finally pulled together all the scattered writing I'd been working on and fleshed out the layout to show off at the meetup.
 
-Back in March, I wrote a [reflection](building-a-playbook.md) on what I wanted the playbook to include. Specifically, I highlighted two things:
+Back in March, I wrote a [reflection](/writing/building-a-playbook) on what I wanted the playbook to include. Specifically, I highlighted two things:
 
 - **Different ways of getting involved.** Some people come to Civic Tech DC looking to contribute to an existing project (contributors), while others have their own ideas they want to pursue (initiators). I wanted the playbook to offer resources for both.
   
