@@ -21,9 +21,13 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     ffi (1.17.4)
+    ffi (1.17.4-x64-mingw-ucrt)
     ffi (1.17.4-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
     google-protobuf (4.35.1)
+      bigdecimal
+      rake (~> 13.3)
+    google-protobuf (4.35.1-x64-mingw-ucrt)
       bigdecimal
       rake (~> 13.3)
     google-protobuf (4.35.1-x86_64-linux-gnu)
@@ -73,6 +77,8 @@ GEM
     nokogiri (1.19.3)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
+    nokogiri (1.19.3-x64-mingw-ucrt)
+      racc (~> 1.4)
     nokogiri (1.19.3-x86_64-linux-gnu)
       racc (~> 1.4)
     pathutil (0.16.2)
@@ -89,6 +95,8 @@ GEM
     sass-embedded (1.101.0)
       google-protobuf (~> 4.31)
       rake (>= 13)
+    sass-embedded (1.101.0-x64-mingw-ucrt)
+      google-protobuf (~> 4.31)
     sass-embedded (1.101.0-x86_64-linux-gnu)
       google-protobuf (~> 4.31)
     terminal-table (3.0.2)
@@ -98,6 +106,7 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw-ucrt
   x86_64-linux
 
 DEPENDENCIES
@@ -108,4 +117,4 @@ DEPENDENCIES
   webrick (~> 1.8)
 
 BUNDLED WITH
-   2.2.3
+  4.0.10

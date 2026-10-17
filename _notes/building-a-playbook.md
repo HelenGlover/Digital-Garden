@@ -29,4 +29,4 @@ Civic Tech DC has always had an “incubator model” to help ideas turn into pr
 
 The playbook is still in development, but it will represent one of the outcomes of my independent research into what sustains volunteer-driven open technology communities. I also hope the playbook becomes more than a collection of resources. By documenting what we've learned, we can make that knowledge more accessible to current and future members.
 
-Excited to share its release soon. <b>Update:</b> See [A Playbook for the Community](a-playbook-for-the-community.md).
+Excited to share its release soon. <b>Update:</b> See [A Playbook for the Community]({% link _notes/a-playbook-for-the-community.md %}).

@@ -9,7 +9,7 @@ I "moonlight," or the act of having a second 'job' in which I pursue personal pr
 
 <h3>Research:</h3>
 
-My <a href="https://helenglover.netlify.app/research">research</a> centers around technology design activism, exploring how people foster communities of belonging through online platforms. I use digital and auth-ethnography. 
+My <a href="{% link _notes/independent-research.md %}">research</a> centers around technology design activism, exploring how people foster communities of belonging through online platforms. I use digital and auth-ethnography.
 
 <!-- <b>Primary Goal:</b> Have an almost finished research paper by the end of the year.
 

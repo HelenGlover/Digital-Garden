@@ -90,9 +90,9 @@ Civic Tech DC's community has always been split between two groups: contributors
 <b>Update:</b> We launched the event! On June 17, 2026, Civic Tech DC and Learning Journey AI co-hosted the first Civic Builders: Pitch & Demo Night. Six builders pitched, 159 people RSVP'd, and the night closed with open breakout conversations. **More on how it went can be found on the [Matter of Public](https://publicfutures.netlify.app/civicbuildersnight).**
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-  <img src="assets/pitchnight01.png" style="flex: 1 1 250px; max-width: 30%; height: auto;">
-  <img src="assets/pitchnight2.jpg" style="flex: 1 1 250px; max-width: 30%; height: auto;">
-  <img src="assets/pitchnight3.jpg" style="flex: 1 1 250px; max-width: 30%; height: auto;">
+  <img src="{{ '/assets/pitchnight01.png' | relative_url }}" style="flex: 1 1 250px; max-width: 30%; height: auto;">
+  <img src="{{ '/assets/pitchnight2.jpg' | relative_url }}" style="flex: 1 1 250px; max-width: 30%; height: auto;">
+  <img src="{{ '/assets/pitchnight3.jpg' | relative_url }}" style="flex: 1 1 250px; max-width: 30%; height: auto;">
 </div>
 
 <!--

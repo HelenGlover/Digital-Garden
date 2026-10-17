@@ -13,7 +13,7 @@ layout: default
   </div>
   {% if page.image %}
     <figure class="note-featured-image">
-      <img src="{{ page.image }}" alt="{{ page.title }}">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
     </figure>
   {% endif %}
 </header>
@@ -41,7 +41,7 @@ layout: default
                 {% unless note.url == page.url %}
                   {% assign has_thread = true %}
                   <div class="backlink-box">
-                    <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}{% if site.use_html_extension %}.html{% endif %}">
+                    <a class="internal-link" href="{{ note.url | relative_url }}">
                       {{ note.title }}
                     </a>
                     {% if note.display_date %}
@@ -63,7 +63,7 @@ layout: default
                 {% unless note.url == page.url or note.subtheme == page.subtheme %}
                   {% assign has_related = true %}
                   <div class="backlink-box">
-                    <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}{% if site.use_html_extension %}.html{% endif %}">
+                    <a class="internal-link" href="{{ note.url | relative_url }}">
                       {{ note.title }}
                     </a>
                     {% if note.display_date %}
@@ -86,7 +86,7 @@ layout: default
                 {% unless note.url == page.url %}
                   {% assign has_related = true %}
                   <div class="backlink-box">
-                    <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}{% if site.use_html_extension %}.html{% endif %}">
+                    <a class="internal-link" href="{{ note.url | relative_url }}">
                       {{ note.title }}
                     </a>
                     {% if note.display_date %}

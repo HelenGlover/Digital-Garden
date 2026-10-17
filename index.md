@@ -371,9 +371,9 @@ document.addEventListener("DOMContentLoaded", function() {
     {% for note in process_notes %}
       <li>
         {% if note.external_url %}
-          <a href="{{ note.external_url }}" target="_blank" rel="noopener noreferrer">{{ note.title }}</a>
+          <a href="{{ note.external_url | relative_url }}" target="_blank" rel="noopener noreferrer">{{ note.title }}</a>
         {% else %}
-          <a href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
+          <a href="{{ note.url | relative_url }}">{{ note.title }}</a>
         {% endif %}
       </li>
     {% endfor %}
@@ -470,7 +470,7 @@ document.addEventListener("DOMContentLoaded", function() {
         data-tags="{{ tag_slugs | strip }}"
         data-subtheme="{% if note.subtheme %}{{ note.subtheme | strip | slugify }}{% endif %}">
         <a class="post-title"
-          href="{% if note.external_url %}{{ note.external_url }}{% else %}{{ site.baseurl }}{{ note.url }}{% endif %}"
+          href="{% if note.external_url %}{{ note.external_url | relative_url }}{% else %}{{ note.url | relative_url }}{% endif %}"
           {% if note.external_url %}target="_blank"{% endif %}>
           {{ note.title }}
         </a>

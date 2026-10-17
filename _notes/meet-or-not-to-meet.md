@@ -16,7 +16,7 @@ display_date: 2026-02-23
 
 In seeing how communities organize themselves, I learned that the structure (or lack of it) can significantly influence how people collaborate. Over time, I’ve picked up a few practices that I found work well, both as an organizer and as a participant in community meetings (not formal work ones). I document them as part of my independent research into organizational dynamics.
 
-This blog will be included in the [Civic Tech DC playbook](https://helengarden.netlify.app/a-playbook-for-the-community). It is also a learn in public article and inspired by [Anson Yu’s Advice Page](https://ansonyu.me/advice). 
+This blog will be included in the [Civic Tech DC playbook]({{ '/a-playbook-for-the-community' | relative_url }}). It is also a learn in public article and inspired by [Anson Yu’s Advice Page](https://ansonyu.me/advice).
 
 ----
 
@@ -39,7 +39,7 @@ This blog will be included in the [Civic Tech DC playbook](https://helengarden.n
 - **Set the tone.** If it fits your team culture, use friendlier language to describe the meeting, “chat,” “sync,” or “meet-up” instead of “meeting.” It can make the invitation feel less formal and more inviting.
 
 - **The type of meeting matters.** I used to use Gather, a virtual office you can decorate, but I don’t anymore since it requires a paid plan. Zoom, Google Meet, and Teams all have different strengths; I tend to prefer Google Meet as a middle ground between Zoom, which people are tired of, and Teams, which feels very work-focused.
-<img src="assets/gather.png" alt="Gather" width="600" style="border-radius: 2px; display: block; margin: 1em 0;" />
+<img src="{{ '/assets/gather.png' | relative_url }}" alt="Gather" width="600" style="border-radius: 2px; display: block; margin: 1em 0;" />
 *(This was my little office)*
 
 - **Food.** If the meeting is in person, consider bringing the food. It's not required, but people do get cranky, especially during long meetings. It can be as simple as chips and juice, and you don’t have to do it all yourself; feel free to ask others to bring something too.

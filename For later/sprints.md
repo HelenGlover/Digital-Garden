@@ -27,7 +27,7 @@ Throughout the week, from Monday to the following Sunday, I refrain from adding 
 
 *I use Notion for my sprint board. Each day is divided into three categories: "Not Started," "In Progress," and "Completed." All tasks begin in "Not Started," and by the end of the day, they should be in "Completed."*
 
-<img src="assets/sprint1.png" alt="Image of Sprint" style="max-width: 100%; height: auto; border: 5px solid #f5f7ff;">
+<img src="{{ '/assets/sprint1.png' | relative_url }}" alt="Image of Sprint" style="max-width: 100%; height: auto; border: 5px solid #f5f7ff;">
 
 At the end of a sprint, Scrum teams conduct a <span style="background-color: #f5f7ff;"><b>sprint review</b> which assess their progress</span> and a <span style="background-color: #f5f7ff;"><b>retrospective</b> that focuses on improving team dynamics by addressing challenges encountered and how they were resolved.</span>  I have adapted these processes for my own self-designed retrospective, where I reflect on my weekly accomplishments and areas for improvement.
 
@@ -35,7 +35,7 @@ For me, it's important to feel comfortable with my definition of "done," even if
 
 *Here’s an example of what my retrospective looks like, allowing ample space for reflection.*
 
-<img src="assets/retrospective.png" alt="Image of Repo" style="max-width: 100%; height: auto; border: 5px solid #f5f7ff;">
+<img src="{{ '/assets/retrospective.png' | relative_url }}" alt="Image of Repo" style="max-width: 100%; height: auto; border: 5px solid #f5f7ff;">
 
 Tasks that are not completed are reassessed and reprioritized against everything else in the <span style="background-color: #f5f7ff;"><b>product backlog</b>, a list of all the tasks I need to accomplish to reach my goals. </span>
 
