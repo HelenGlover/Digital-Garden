@@ -398,13 +398,17 @@ document.addEventListener("DOMContentLoaded", function() {
       {% assign note = site.notes | where: "slug", selected_slug | first %}
       {% if note %}
         <li class="reflection-item">
-          <a class="post-title" href="{{ note.external_url | escape }}" target="_blank" rel="noopener noreferrer">{{ note.title | remove: "Building from the Ground Up - " | remove: "Commit to Community: " | remove: "Behind the Screens - " | escape }}</a>
+          <a class="post-title" href="{% if note.slug == "howcibshapesonlinenarratives" %}https://docs.google.com/document/d/13Byk7NgxJrJ4iSbWJajLroqNERv0XWKmNCcdYRj_fd4/edit?tab=t.0{% else %}{{ note.external_url | escape }}{% endif %}" target="_blank" rel="noopener noreferrer">{{ note.title | remove: "Building from the Ground Up - " | remove: "Commit to Community: " | remove: "Behind the Screens - " | escape }}</a>
           {% if note.description %}
-            <span class="reflection-desc">{{ note.description | escape }}</span>
+            <span class="reflection-desc">{% if note.slug == "howcibshapesonlinenarratives" %}A research series examining how coordinated inauthentic behavior (CIB) works in practice.{% else %}{{ note.description | escape }}{% endif %}</span>
           {% endif %}
         </li>
       {% endif %}
     {% endfor %}
+      <li class="reflection-item">
+      <a class="post-title" href="https://cibmangotree.org/resources/#mango-bytes" target="_blank" rel="noopener noreferrer">Mango Bytes</a>
+      <span class="reflection-desc">A series of snapshots exploring examples of coordinated inauthentic behavior in the news and the tactics behind them.</span>
+    </li>
   </ul>
 </section>
 </div>
