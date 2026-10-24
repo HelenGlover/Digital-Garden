@@ -1,12 +1,13 @@
 ---
 title: Guiding Research Questions 
 description: Research questions that define the independent research 
-labels: 
-    - Independent Research
-process: true
+
+process: false
 display_date: 2025-11-15
 order: 3
 image: assets/AEMES.png
+labels:
+  - Independent Research
 ---
 
 Independent research means no one is constantly checking your work or setting a schedule with expected paper outcomes. The challenge is that you have to create your own structure. That’s why I’ve set myself a few research questions that reflect how I think about technology to help me stay focused.

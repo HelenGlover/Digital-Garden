@@ -1,7 +1,7 @@
 ---
 title: A Log of Learning in Public
 labels:
-    - Outputs
+    - Published Projects
 display_date: 2026-04-19
 image: assets/civictech.png
 external_url: /feedback

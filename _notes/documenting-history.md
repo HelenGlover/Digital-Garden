@@ -2,7 +2,7 @@
 title: Documenting the History of Civic Tech DC 
 description: A history 14 years (wow!) in the making
 labels: 
-  - Outputs
+  - Published Projects
 image: assets/history.jpg
 display_date: 2026-05-03
 ---

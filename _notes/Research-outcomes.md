@@ -1,12 +1,13 @@
 ---
 title: Outcomes and Products
 description: You saw my argument for conducting independent research, my research questions. Now how does it work 
-labels: 
-    - Independent Research
+
 display_date: 2025-10-22  # optional override
-process: true
+process: false
 order: 4
 image: assets/researchpartb.png
+labels:
+  - Independent Research
 ---
 
 I don't always know where a question will lead when I start exploring it. Sometimes I write an essay or collect notes. Sometimes an idea becomes part of a project, informs a decision, or leads me to investigate something more deeply. Other times, I simply end up with a different understanding of the subject.

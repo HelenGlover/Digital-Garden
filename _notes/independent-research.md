@@ -1,12 +1,13 @@
 ---
 title: Doing Independent Research
 description: A reflection on conducting independent, public-facing research
-labels: 
-    - Independent Research
+
 display_date: 2025-10-12  # optional override
-process: true
+process: false
 order: 1
 image: assets/researchpartb.png
+labels:
+  - Independent Research
 ---
 
 There's something undeniably captivating about the idea of making a whole career out of curiosity: chasing questions that keep you up at night, connecting dots across disciplines that don't usually talk to each other, and following threads that lead somewhere no one has explored yet. For a long time, I assumed that doing real research meant academia. I worked in a great research lab in college, and I missed that work.

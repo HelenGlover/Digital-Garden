@@ -1,7 +1,7 @@
 ---
 title: A Playbook for the Community
 labels: 
-    - Outputs
+    - Published Projects
 description: Building a playbook for a community that has always learned by doing
 display_date: 2026-10-12
 image: assets/civictechplaybook.png

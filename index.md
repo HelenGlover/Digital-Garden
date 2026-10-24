@@ -6,7 +6,7 @@ title: Home
 ---
 
 <style>
-/* ── Base ── */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Base Ã¢â€â‚¬Ã¢â€â‚¬ */
 body {
   font-family: Arial, sans-serif;
   color: #1a1a1a;
@@ -42,7 +42,7 @@ a.post-title:hover {
   text-decoration: underline !important;
 }
 
-/* ── Nav ── */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Nav Ã¢â€â‚¬Ã¢â€â‚¬ */
 .garden-nav {
   font-size: 0.82em;
   color: #888;
@@ -57,7 +57,7 @@ a.post-title:hover {
   background: none !important;
 }
 
-/* ── Intro block ── */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Intro block Ã¢â€â‚¬Ã¢â€â‚¬ */
 .intro-block {
   background: #f4f5fb;
   border-radius: 8px;
@@ -87,11 +87,11 @@ a.post-title:hover {
   background: none !important;
 }
 .process-links li a::before {
-  content: "→ ";
+  content: "Ã¢â€ â€™ ";
   color: #aaa;
 }
 
-/* ── Tags row ── */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Tags row Ã¢â€â‚¬Ã¢â€â‚¬ */
 .tags-row {
   display: flex;
   flex-wrap: wrap;
@@ -129,7 +129,7 @@ a.post-title:hover {
   border-color: #3d52a0;
 }
 
-/* ── Subtheme filter row ── */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Subtheme filter row Ã¢â€â‚¬Ã¢â€â‚¬ */
 .subtheme-row {
   display: none;
   flex-wrap: wrap;
@@ -171,7 +171,7 @@ a.post-title:hover {
   font-weight: 500;
 }
 
-/* ── Reflections list ── */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Reflections list Ã¢â€â‚¬Ã¢â€â‚¬ */
 .reflections-list {
   list-style: none;
   padding: 0;
@@ -223,7 +223,7 @@ a.post-title:hover {
   font-style: italic;
 }
 
-/* ── Other spaces ── */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Other spaces Ã¢â€â‚¬Ã¢â€â‚¬ */
 .other-spaces {
   font-size: 0.88em;
   color: #000000;
@@ -232,7 +232,7 @@ a.post-title:hover {
 }
 
 
-/* ── Substack subscription ── */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Substack subscription Ã¢â€â‚¬Ã¢â€â‚¬ */
 .subscribe-block {
   display: flex;
   flex-wrap: wrap;
@@ -293,7 +293,7 @@ a.post-title:hover {
   }
 }
 
-/* ── Hidden state ── */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Hidden state Ã¢â€â‚¬Ã¢â€â‚¬ */
 .filterable.hidden {
   display: none;
 }
@@ -346,6 +346,29 @@ nav { margin: 0 0 20px; }
   .reflection-item { padding: 12px 0; }
 }
 </style>
+<style>
+.intro-block .selected-writing {
+  margin: 1.25em 0 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+.intro-block .selected-writing h2,
+.intro-block .selected-writing .post-title,
+.intro-block .selected-writing .reflection-desc {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+.intro-block .selected-writing h2 {
+  margin: 0 0 0.75em;
+}
+.intro-block .selected-writing .reflection-item {
+  padding: 0.6em 0;
+  gap: 0.25em;
+}
+</style>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -356,32 +379,38 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 <div class="garden-nav">
-  <a href="https://helenyglover.com/">← Back to the main site</a>
+  <a href="https://helenyglover.com/">Ã¢â€ Â Back to the main site</a>
 </div>
 
-<!-- ── Intro block ── -->
+<!-- Ã¢â€â‚¬Ã¢â€â‚¬ Intro block Ã¢â€â‚¬Ã¢â€â‚¬ -->
 <div class="intro-block">
   <p style="padding-bottom: 0;">I'm interested in how technology shapes the way we work, learn, and organize ourselves. Inspired by the idea of a <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">digital garden</a>, this site is where I explore those questions, with a focus on civic technology and the systems that help new ideas move into practice.</p>
 
-  <p>I think of this as independent research: a self-directed practice of connecting ideas and documenting what I learn. Some writings are more developed than others (chicken sratch), and not everything leads to a clear answer. But that's part of what makes this process so fun!</p>
+  
+  
+  
 
-  <p>If you're new here, start with:</p>
-  {% assign process_notes = site.notes | where: "process", true | sort: "order" | slice: 0,4 %}
-  <ul class="process-links">
-    {% for note in process_notes %}
-      <li>
-        {% if note.external_url %}
-          <a href="{{ note.external_url | relative_url }}" target="_blank" rel="noopener noreferrer">{{ note.title }}</a>
-        {% else %}
-          <a href="{{ note.url | relative_url }}">{{ note.title }}</a>
-        {% endif %}
-      </li>
+<section class="selected-writing" aria-labelledby="selected-writing-title">
+  <h2 id="selected-writing-title">Selected Writing</h2>
+  <ul class="reflections-list">
+    {% assign selected_slugs = "building-from-the-ground-up,commit-to-community,howcibshapesonlinenarratives" | split: "," %}
+    {% for selected_slug in selected_slugs %}
+      {% assign note = site.notes | where: "slug", selected_slug | first %}
+      {% if note %}
+        <li class="reflection-item">
+          <a class="post-title" href="{{ note.external_url | escape }}" target="_blank" rel="noopener noreferrer">{{ note.title | remove: "Building from the Ground Up - " | remove: "Commit to Community: " | remove: "Behind the Screens - " | escape }}</a>
+          {% if note.description %}
+            <span class="reflection-desc">{{ note.description | escape }}</span>
+          {% endif %}
+        </li>
+      {% endif %}
     {% endfor %}
   </ul>
+</section>
 </div>
 
 
-<!-- ── Substack subscription ── -->
+<!-- Ã¢â€â‚¬Ã¢â€â‚¬ Substack subscription Ã¢â€â‚¬Ã¢â€â‚¬ -->
 <section class="subscribe-block" aria-label="Subscribe to my writing">
   <div class="subscribe-text">
     <h2>You can find all my writing below, but if you'd like to be notify when I write something new:</h2>
@@ -398,7 +427,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </section>
 
 
-<!-- ── Tag filter buttons ── -->
+<!-- Ã¢â€â‚¬Ã¢â€â‚¬ Tag filter buttons Ã¢â€â‚¬Ã¢â€â‚¬ -->
 {% assign all_labels = "" | split: "," %}
 {% for note in site.notes %}
   {% if note.process %}{% continue %}{% endif %}
@@ -411,7 +440,7 @@ document.addEventListener("DOMContentLoaded", function() {
     {% endfor %}
   {% endif %}
 {% endfor %}
-{% assign extra_labels = "Articles" | split: "," %}
+{% assign extra_labels = "Published Articles" | split: "," %}
 {% for label in extra_labels %}
   {% assign label = label | strip %}
   {% unless all_labels contains label %}
@@ -432,7 +461,7 @@ document.addEventListener("DOMContentLoaded", function() {
   {% endfor %}
 </div>
 
-<!-- ── Subtheme filter row (shown only when a category with subthemes is active) ── -->
+<!-- Ã¢â€â‚¬Ã¢â€â‚¬ Subtheme filter row (shown only when a category with subthemes is active) Ã¢â€â‚¬Ã¢â€â‚¬ -->
 <div class="subtheme-row" id="subtheme-row">
   <span class="subtheme-row-label">within this:</span>
   <span class="sub-btn active" onclick="filterBySub('all', this)">All</span>
@@ -455,7 +484,7 @@ document.addEventListener("DOMContentLoaded", function() {
   {% endfor %}
 </div>
 
-<!-- ── Reflections list ── -->
+<!-- Ã¢â€â‚¬Ã¢â€â‚¬ Reflections list Ã¢â€â‚¬Ã¢â€â‚¬ -->
 <ul class="reflections-list">
   {% assign notes_by_display_date = site.notes | sort: "display_date" | reverse %}
   {% for note in notes_by_display_date %}
@@ -483,7 +512,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <span class="reflection-tag">{{ label }}</span>
           {% endfor %}
           {% if note.subtheme %}
-            <span class="reflection-subtheme">· {{ note.subtheme }}</span>
+            <span class="reflection-subtheme">Ã‚Â· {{ note.subtheme }}</span>
           {% endif %}
         </div>
       </li>
@@ -491,7 +520,7 @@ document.addEventListener("DOMContentLoaded", function() {
   {% endfor %}
 </ul>
 
-<!-- ── In Other Spaces ── -->
+<!-- Ã¢â€â‚¬Ã¢â€â‚¬ In Other Spaces Ã¢â€â‚¬Ã¢â€â‚¬ -->
 
 <script>
 var activeTag = 'all';
@@ -559,3 +588,43 @@ function applyFilters() {
   });
 }
 </script>
+<style>
+.selected-writing ul.reflections-list {
+  list-style: disc;
+  padding-left: 1.4em;
+  margin-top: 1em;
+}
+.selected-writing li.reflection-item {
+  display: list-item;
+  padding: 0.5em 0;
+}
+.selected-writing .reflection-desc {
+  display: block;
+  margin-top: 0.3em;
+}
+</style>
+<style>
+.intro-block .selected-writing a.post-title {
+  color: #3d52a0 !important;
+}
+.intro-block .selected-writing .reflection-desc {
+  font-size: 0.9em;
+  font-style: italic;
+  line-height: 1.55;
+  display: block;
+  margin-top: 0.3em;
+}
+</style>
+<style>
+.intro-block .selected-writing li.reflection-item {
+  padding: 0.3em 0;
+}
+.intro-block .selected-writing .reflection-desc {
+  margin-top: 0.15em;
+}
+</style>
+<style>
+.garden-nav {
+  font-size: 0.95em;
+}
+</style>
