@@ -379,7 +379,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 <div class="garden-nav">
-  <a href="https://helenyglover.com/">Ã¢â€ Â Back to the main site</a>
+  <a href="https://helenyglover.com/">&larr; Back to the main site</a>
 </div>
 
 <!-- Ã¢â€â‚¬Ã¢â€â‚¬ Intro block Ã¢â€â‚¬Ã¢â€â‚¬ -->
@@ -626,5 +626,10 @@ function applyFilters() {
 <style>
 .garden-nav {
   font-size: 0.95em;
+}
+</style>
+<style>
+.intro-block .selected-writing a.post-title {
+  font-weight: 400;
 }
 </style>
