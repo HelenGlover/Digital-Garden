@@ -69,6 +69,8 @@ Participants split into groups and spent about 5–7 minutes at each challenge, 
 
 Once every group had rotated through all four challenges, we came back together to read out the questions.
 
+> I honestly cannot say enough about how giddy I was after this workshop. SO thoughtful! Helen Y. Glover designed an experience that instantly connected how you can plug in to civics issues that affect us all in a way that truly brings into focus the humans affected.
+
 ## Workshop Presentation
 
 <p><a href="{{ '/assets/design-thinking-workshop-presentation.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Open or download the workshop presentation (PDF)</a>.</p>
