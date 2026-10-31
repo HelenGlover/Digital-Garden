@@ -8,7 +8,13 @@ labels:
 description: A resource for designing a hands-on workshop on human-centered design
 ---
 
-As part of the **Upskilling Labs Civics and Election Build Cycle**, I facilitated a workshop introducing participants to human-centered design and how it can be applied to civic challenges. I’m sharing a few lessons and resources from the experience below.
+<blockquote class="quoteback" data-title="Design thinking workshop feedback" data-author="Sandra" cite="https://www.linkedin.com/posts/helen-glover_it-was-so-fun-to-lead-a-hands-on-design-thinking-share-7488410719462424576-vIq8/">
+  <span>I honestly cannot say enough about how giddy I was after this workshop. SO thoughtful! Helen Y. Glover designed an experience that instantly connected how you can plug in to civics issues that affect us all in a way that truly brings into focus the humans affected.</span>
+  <footer>Sandra<cite> <a href="https://www.linkedin.com/posts/helen-glover_it-was-so-fun-to-lead-a-hands-on-design-thinking-share-7488410719462424576-vIq8/" target="_blank" rel="noopener noreferrer">View on LinkedIn →</a></cite></footer>
+</blockquote>
+<script src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js" defer></script>
+
+As part of the **Upskilling Labs Civics and Election Build Cycle**, I facilitated a workshop introducing participants to human-centered design and how it can be applied to civic challenges. I’m sharing a few lessons and resources from the experience.
 
 <hr style="width: 4rem; margin: 1.5rem 0;">
 
@@ -68,12 +74,6 @@ Once every group had rotated through all four challenges, we came back together 
 - **Good facilitation isn't about having all the answers.** Sometimes the most useful thing you can do is create the environment for others to ask questions and learn from one another.
 
 One thing I'd like to explore in future workshops is how to move from generating questions to testing them with the people directly affected. After all, a good idea is only a starting point.
-
-<blockquote class="quoteback" data-title="Design thinking workshop feedback" data-author="Sandra" cite="https://www.linkedin.com/posts/helen-glover_it-was-so-fun-to-lead-a-hands-on-design-thinking-share-7488410719462424576-vIq8/">
-  <span>I honestly cannot say enough about how giddy I was after this workshop. SO thoughtful! Helen Y. Glover designed an experience that instantly connected how you can plug in to civics issues that affect us all in a way that truly brings into focus the humans affected.</span>
-  <footer>Sandra<cite> <a href="https://www.linkedin.com/posts/helen-glover_it-was-so-fun-to-lead-a-hands-on-design-thinking-share-7488410719462424576-vIq8/" target="_blank" rel="noopener noreferrer">View on LinkedIn →</a></cite></footer>
-</blockquote>
-<script src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js" defer></script>
 
 ## Workshop Presentation
 
