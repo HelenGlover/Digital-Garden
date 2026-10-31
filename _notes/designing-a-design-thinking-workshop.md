@@ -4,7 +4,7 @@ display_date: 2026-07-13
 image: assets/design-thinking-workshop-header.jpg
 image_crop: landscape
 labels:
-  - Civic Tech Reflections
+  - Published Projects
 description: A resource for designing a hands-on workshop on human-centered design
 ---
 
