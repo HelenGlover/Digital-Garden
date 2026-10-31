@@ -48,9 +48,7 @@ I kept the slides light on text, using everyday language and examples rather tha
 
 I wanted the presentation to serve as a starting point, not a comprehensive lecture on design thinking.
 
-**Lesson:** You don’t need to explain everything. Focus on a few concepts participants can understand, remember, and apply.
-
-Here are a few of the slides I used—very minimalist!
+Here are a few of the slides I used. As you can see, they are very minimalist!
 
 <div class="workshop-slide-pair">
   <img src="{{ '/assets/design-thinking-slide-16.png' | relative_url }}" alt="A slide showing people at a transit station with the word OBSERVE." loading="lazy">
