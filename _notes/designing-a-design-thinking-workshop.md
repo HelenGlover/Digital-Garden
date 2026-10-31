@@ -60,14 +60,6 @@ The activity was intentionally simple. It didn't require technical skills or pri
 
 *[Image: How Might We prompts, sticky notes, or participants working in groups]*
 
-## A Final Takeaway
-
-Design thinking is a much broader field than we could cover in one session, but I hope the workshop gave participants a starting point to explore it further.
-
-For me, facilitating the workshop was also a reminder that introducing people to a new field doesn't have to mean teaching them everything about it. Sometimes, the most useful thing you can do is give people a framework, a chance to experiment, and the confidence to keep learning.
-
-And if there's one idea I hope participants took away, it's this: **good civic technology starts with understanding people, not building tools.**
-
 ## Workshop Presentation
 
 <p><a href="{{ '/assets/design-thinking-workshop-presentation.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Open or download the workshop presentation (PDF)</a>.</p>
