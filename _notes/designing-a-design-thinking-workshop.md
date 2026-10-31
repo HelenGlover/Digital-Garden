@@ -3,10 +3,10 @@ title: "Designing Civic Solutions: A Design Thinking Workshop"
 display_date: 2026-07-13
 labels:
   - Civic Tech Reflections
-description: Lessons and resources from designing an accessible, hands-on workshop on human-centered design for civic challenges
+description: A resource for designing a hands-on workshop on human-centered design
 ---
 
-As part of the **Upskilling Labs Civics and Election Build Cycle**, I designed and facilitated a workshop introducing participants to human-centered design and how it can be applied to civic challenges. I'm sharing a few lessons and resources from the experience below.
+As part of the **Upskilling Labs Civics and Election Build Cycle**, I facilitated a workshop introducing participants to human-centered design and how it can be applied to civic challenges. I’m sharing a few lessons and resources from the experience below.
 
 ## Making Design Thinking Accessible
 
@@ -42,7 +42,16 @@ I wanted the presentation to serve as a starting point, not a comprehensive lect
 
 **Lesson:** You don't need to explain everything. Focus on a few concepts participants can understand, remember, and apply.
 
-*[Image: Examples of minimal slides from the presentation]*
+<div class="workshop-slide-pair">
+  <figure>
+    <img src="{{ '/assets/design-thinking-slide-15.png' | relative_url }}" alt="Slide 15: a photo of a train and passengers at a Metro station, with no text." loading="lazy">
+    <figcaption>Slide 15</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/assets/design-thinking-slide-16.png' | relative_url }}" alt="Slide 16: people at a transit station, with the single word OBSERVE." loading="lazy">
+    <figcaption>Slide 16</figcaption>
+  </figure>
+</div>
 
 ### 4. Get people moving and making things
 
@@ -53,10 +62,6 @@ To put the concepts into practice, we did a **"How Might We" exercise** using fo
 Participants split into groups and spent about 5–7 minutes at each challenge, developing "How Might We" questions and writing them on sticky notes. The catch? **They couldn't repeat a question that had already been shared.** This encouraged participants to consider different stakeholders and explore the many ways a single challenge could be approached.
 
 Once every group had rotated through all four challenges, we came back together to read out the questions.
-
-The activity was intentionally simple. It didn't require technical skills or prior design experience, just curiosity and a willingness to think creatively.
-
-**Lesson:** Give participants something to do, not just something to listen to. Simple constraints and collaborative activities can encourage people to think beyond their first idea.
 
 *[Image: How Might We prompts, sticky notes, or participants working in groups]*
 
