@@ -432,7 +432,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 <!-- Ã¢â€â‚¬Ã¢â€â‚¬ Tag filter buttons Ã¢â€â‚¬Ã¢â€â‚¬ -->
-{% assign all_labels = "" | split: "," %}
+{% assign all_labels = "Published Articles,Published Projects" | split: "," %}
 {% for note in site.notes %}
   {% if note.process %}{% continue %}{% endif %}
   {% if note.labels %}
@@ -443,13 +443,6 @@ document.addEventListener("DOMContentLoaded", function() {
       {% endunless %}
     {% endfor %}
   {% endif %}
-{% endfor %}
-{% assign extra_labels = "Published Articles" | split: "," %}
-{% for label in extra_labels %}
-  {% assign label = label | strip %}
-  {% unless all_labels contains label %}
-    {% assign all_labels = all_labels | push: label %}
-  {% endunless %}
 {% endfor %}
 
 <div class="tags-row">

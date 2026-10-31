@@ -2,7 +2,7 @@
 title: Learnings from Organizing a Tech Policy Symposium
 display_date: 2026-06-05
 labels:
-  - Thoughts and Reflections
+  - Other Reflections
 description: Lessons from organizing the Internet Law & Policy Foundry's inaugural Tech Policy Digital Symposium
 image: assets/ilpf.jpg
 ---
