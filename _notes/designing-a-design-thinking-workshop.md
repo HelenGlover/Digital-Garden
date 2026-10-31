@@ -69,7 +69,11 @@ Once every group had rotated through all four challenges, we came back together 
 
 One thing I'd like to explore in future workshops is how to move from generating questions to testing them with the people directly affected. After all, a good idea is only a starting point.
 
-> I honestly cannot say enough about how giddy I was after this workshop. SO thoughtful! Helen Y. Glover designed an experience that instantly connected how you can plug in to civics issues that affect us all in a way that truly brings into focus the humans affected.
+<blockquote class="quoteback" data-title="Design thinking workshop feedback" data-author="Sandra" cite="https://www.linkedin.com/posts/helen-glover_it-was-so-fun-to-lead-a-hands-on-design-thinking-share-7488410719462424576-vIq8/">
+  <span>I honestly cannot say enough about how giddy I was after this workshop. SO thoughtful! Helen Y. Glover designed an experience that instantly connected how you can plug in to civics issues that affect us all in a way that truly brings into focus the humans affected.</span>
+  <footer>Sandra<cite> <a href="https://www.linkedin.com/posts/helen-glover_it-was-so-fun-to-lead-a-hands-on-design-thinking-share-7488410719462424576-vIq8/" target="_blank" rel="noopener noreferrer">View on LinkedIn →</a></cite></footer>
+</blockquote>
+<script src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js" defer></script>
 
 ## Workshop Presentation
 

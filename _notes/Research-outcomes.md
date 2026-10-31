@@ -1,6 +1,6 @@
 ---
-title: Outcomes and Products
-description: You saw my argument for conducting independent research, my research questions. Now how does it work 
+title: "What Does a Research Output Look Like?"
+description: "In conducting independent research, what format does it take?"
 
 display_date: 2025-10-22  # optional override
 process: false
