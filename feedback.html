@@ -276,6 +276,7 @@ function gardenURL(value) {
   let path = url.pathname;
   if (path.startsWith(GARDEN_BASE)) path = '/' + path.slice(GARDEN_BASE.length);
   if (path === '/questions-worth-getting--in') path = '/research-outcomes';
+  if (path === '/making-of-civic-tech') path = '/building-a-playbook';
   if (path === '/feedback.html') path = '/feedback';
   const clean = path.replace(/\.md$/, '');
   if (GARDEN_ROUTES.has(clean) || clean.startsWith('/assets/')) {

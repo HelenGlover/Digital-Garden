@@ -23,7 +23,7 @@ const cases = [
  ['assets/lab.jpg','/writing/assets/lab.jpg'],
  ['/assets/lab.jpg','/writing/assets/lab.jpg'],
  ['https://helenyglover.com/writing/assets/lab.jpg','/writing/assets/lab.jpg'],
- ['https://helengarden.netlify.app/making-of-civic-tech','/writing/making-of-civic-tech'],
+ ['https://helengarden.netlify.app/making-of-civic-tech','/writing/building-a-playbook'],
  ['https://helengarden.netlify.app/questions-worth-getting--in','/writing/research-outcomes'],
  ['/feedback.html','/writing/feedback'],
  ['a-playbook-for-the-community.md','/writing/a-playbook-for-the-community'],

@@ -1,7 +1,7 @@
 
 title:               Helen Y. Glover
 include:             ['_pages']
-exclude:             ['_includes/notes_graph.json', 'scripts', 'Gemfile', 'Gemfile.lock', 'README.md', 'netlify.toml']
+exclude:             ['For later', '_thoughts', '_includes/notes_graph.json', 'scripts', 'Gemfile', 'Gemfile.lock', 'README.md', 'netlify.toml']
 url:                 'https://helenyglover.com'
 baseurl:             '/writing'
 
@@ -32,7 +32,7 @@ sass:
 
 collections:
   thoughts:
-    output: true
+    output: false
   notes:
     output: true
     permalink: /:slug

@@ -41,6 +41,9 @@ jobs:
       - name: Check internal links and SEO
         run: bundle exec ruby scripts/check_site.rb
 
+      - name: Check drafts stay unpublished
+        run: bundle exec ruby scripts/check_publication_policy.rb
+
       - name: Check generated JavaScript
         run: node scripts/check_javascript.cjs
 
