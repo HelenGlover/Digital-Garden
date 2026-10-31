@@ -1,6 +1,7 @@
 ---
 title: "Designing Civic Solutions: A Design Thinking Workshop"
 display_date: 2026-07-13
+image: assets/design-thinking-workshop-header.jpg
 labels:
   - Civic Tech Reflections
 description: A resource for designing a hands-on workshop on human-centered design
@@ -53,6 +54,11 @@ I wanted the presentation to serve as a starting point, not a comprehensive lect
   </figure>
 </div>
 
+<figure class="workshop-slide-example">
+  <img src="{{ '/assets/design-thinking-engage.png' | relative_url }}" alt="A presentation slide showing two people talking on a bus, with the single word ENGAGE." loading="lazy">
+  <figcaption>Another minimal slide from the presentation: “Engage.”</figcaption>
+</figure>
+
 ### 4. Get people moving and making things
 
 The presentation was only one part of the session. A workshop should be more than a presentation!
@@ -62,8 +68,6 @@ To put the concepts into practice, we did a **"How Might We" exercise** using fo
 Participants split into groups and spent about 5–7 minutes at each challenge, developing "How Might We" questions and writing them on sticky notes. The catch? **They couldn't repeat a question that had already been shared.** This encouraged participants to consider different stakeholders and explore the many ways a single challenge could be approached.
 
 Once every group had rotated through all four challenges, we came back together to read out the questions.
-
-*[Image: How Might We prompts, sticky notes, or participants working in groups]*
 
 ## Workshop Presentation
 
