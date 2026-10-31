@@ -384,7 +384,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <!-- Ã¢â€â‚¬Ã¢â€â‚¬ Intro block Ã¢â€â‚¬Ã¢â€â‚¬ -->
 <div class="intro-block">
-  <p style="padding-bottom: 0;">I'm interested in how technology shapes the way we work, learn, and organize ourselves. Inspired by the idea of a <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">digital garden</a>, this site is where I explore those questions, with a focus on civic technology and the systems that help new ideas move into practice.</p>
+  <p style="padding-bottom: 0;">I'm interested in how technology shapes the way we work, learn, and organize ourselves. Inspired by the ideas of a <a href="https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/">digital garden</a> and <a href="https://devonzuegel.com/page/about-me">learning in public</a>, this site brings together my ongoing projects and writing.</p>
 
   
   
