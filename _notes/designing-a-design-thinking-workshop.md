@@ -2,6 +2,7 @@
 title: "Designing Civic Solutions: A Design Thinking Workshop"
 display_date: 2026-07-13
 image: assets/design-thinking-workshop-header.jpg
+image_crop: landscape
 labels:
   - Civic Tech Reflections
 description: A resource for designing a hands-on workshop on human-centered design

@@ -237,7 +237,7 @@ nav a.internal-link { background: transparent; border-bottom: 0; padding: 0; }
 
 .workshop-slide-pair {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 12px;
   margin: 1.5em 0;
 
@@ -266,4 +266,14 @@ nav a.internal-link { background: transparent; border-bottom: 0; padding: 0; }
   #notes-entry-container { gap: 24px; }
   #notes-entry-container > side h3 { font-size: 0.95rem; }
   #notes-entry-container > side .backlink-box { padding: 10px 12px; }
+}
+
+// Optional landscape crop for portrait photos used as article headers.
+.note-featured-image--landscape img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: 50% 40%;
 }

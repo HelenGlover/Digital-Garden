@@ -12,7 +12,7 @@ layout: default
     </time>
   </div>
   {% if page.image %}
-    <figure class="note-featured-image">
+    <figure class="note-featured-image{% if page.image_crop == 'landscape' %} note-featured-image--landscape{% endif %}">
       <img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
     </figure>
   {% endif %}
