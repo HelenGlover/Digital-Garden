@@ -12,29 +12,27 @@ As part of the **Upskilling Labs Civics and Election Build Cycle**, I designed a
 
 There's a lot to cover in the field of design thinking, far more than could fit into a single workshop! My goal was to focus on the fundamentals and spark enough curiosity for participants to explore the field further.
 
-I structured the workshop around the **Five Stages of Design Thinking**: Empathize, Define, Ideate, Prototype, and Test. While real-world problem-solving is rarely this linear, the framework offers a useful starting point for understanding how ideas develop into solutions.
+I structured the workshop around the **Five Stages of Design Thinking**: Empathize, Define, Ideate, Prototype, and Test. Of course, real-world problem-solving is rarely this linear, but the framework offers a useful starting point for understanding how ideas develop into solutions!
 
 ### 1. Start with the people in the room
 
-The first few minutes can make or break a workshop. Rather than jumping straight into the presentation, I encouraged participants to introduce themselves, share why they were there, and ask questions.
+The first few minutes can make or break a workshop. Rather than jumping straight into the presentation (cough, lecture, cough), I encouraged participants to go around the room and introduce themselves.
 
-This helped create a more welcoming environment and gave participants a chance to think about what brought them to the workshop in the first place.
+This helped create a more collaborative experience where participants felt their perspectives were heard. Talking with people instead of at them helped them feel confident asking questions.
 
-**Lesson:** Get people involved early. Even a simple introduction can help turn a room of attendees into a group of participants.
+Introductions can run long, so give people a clear time limit: “30 seconds per person” or “In one or two sentences, tell us about yourself.”
 
-### 2. Explain why the framework matters
+### 2. Show why should people care
 
-Before diving into the five stages, I wanted to establish why design thinking matters in civic technology.
+Before diving into the five stages, why should people care? I started by asking:
 
-**How do we make sure we're solving the right problems before we start building solutions?**
+**How do we make sure we’re solving the right problems before we start building solutions?**
 
-In civic tech, it's easy to jump straight into developing a tool or application. After all, technology is in the name! But before thinking about solutions, we should ask more open-ended questions: Who are we building for? What do they actually need? And are we addressing the right problem?
+In civic tech, it’s easy to jump straight into developing a tool or application. After all, technology is in the name! But before thinking about solutions, we should ask more open-ended questions: Who are we building for? What do they actually need? And are we addressing the right problem?
 
-That's where human-centered design comes in. It encourages us to understand people's needs before deciding what to build.
+That’s where I was able to bring in why we should care about design thinking. It encourages us to understand people’s needs before deciding what to build.
 
-**Lesson:** Give people a reason to care about a framework before explaining how it works.
-
-*[Image: Slide introducing the central question or five stages]*
+![A workshop slide contrasts building an app, using AI, or creating a chatbot with asking whom we are designing for, what challenges they face, and what we need to learn before acting.]({{ '/assets/design-thinking-people-before-tools.png' | relative_url }})
 
 ### 3. Keep the presentation simple
 
