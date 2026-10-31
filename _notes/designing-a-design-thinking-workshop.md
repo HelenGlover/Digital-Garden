@@ -36,9 +36,7 @@ That’s where I was able to bring in why we should care about design thinking. 
 
 ### 3. Keep the presentation simple
 
-With that context established, I walked participants through the five stages of design thinking.
-
-I kept the slides light on text, using everyday language and examples rather than technical jargon. Some slides contained just a few words! The goal was to make the concepts easy to follow and leave room for discussion.
+I kept the slides light on text, using everyday language and examples rather than technical jargon. Some slides contained just a word. You want the audience focused on what you're saying rather than trying to read a textbook-style presentation.
 
 I wanted the presentation to serve as a starting point, not a comprehensive lecture on design thinking.
 
@@ -50,11 +48,11 @@ I wanted the presentation to serve as a starting point, not a comprehensive lect
 
 The presentation was only one part of the session. A workshop should be more than a presentation!
 
-To put the concepts into practice, I placed four **"How Might We" questions** inspired by real local civic challenges around the room.
+To put the concepts into practice, we did a **"How Might We" exercise** using four real local civic challenges posted around the room.
 
-Participants broke into groups, moved between the questions, and used sticky notes to develop ideas and explore possible solutions. There was one catch: they couldn't simply repeat an idea that had already been shared. They had to build on what others had contributed or approach the challenge from a different angle.
+Participants split into groups and spent about 5–7 minutes at each challenge, developing "How Might We" questions and writing them on sticky notes. The catch? **They couldn't repeat a question that had already been shared.** This encouraged participants to consider different stakeholders and explore the many ways a single challenge could be approached.
 
-We then came back together to read out ideas and discuss the different approaches.
+Once every group had rotated through all four challenges, we came back together to read out the questions.
 
 The activity was intentionally simple. It didn't require technical skills or prior design experience, just curiosity and a willingness to think creatively.
 
