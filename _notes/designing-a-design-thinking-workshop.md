@@ -1,29 +1,84 @@
 ---
-title: Designing a Design Thinking Workshop
+title: "Designing Civic Solutions: A Design Thinking Workshop"
 display_date: 2026-07-13
 labels:
   - Civic Tech Reflections
-description: Designing an accessible, hands-on workshop on human-centered design for civic challenges
+description: Lessons and resources from designing an accessible, hands-on workshop on human-centered design for civic challenges
 ---
 
-As part of the **Upskilling Labs Civics and Election Build Cycle**, I designed and facilitated a workshop introducing participants to human-centered design and how it can be applied to civic challenges.
+As part of the **Upskilling Labs Civics and Election Build Cycle**, I designed and facilitated a workshop introducing participants to human-centered design and how it can be applied to civic challenges. I'm sharing a few lessons and resources from the experience below.
 
-Civic technology often starts with an idea for a tool or application. But before building something, how do we know we're solving the right problem? That's where design thinking comes in: understanding people's needs before jumping to solutions.
+## Making Design Thinking Accessible
 
-### Making Design Thinking Accessible
-
-There's a lot to cover in the field of design thinking, so I wanted to focus on the fundamentals and make them approachable for people without a design background.
+There's a lot to cover in the field of design thinking, far more than could fit into a single workshop! My goal was to focus on the fundamentals and spark enough curiosity for participants to explore the field further.
 
 I structured the workshop around the **Five Stages of Design Thinking**: Empathize, Define, Ideate, Prototype, and Test. While real-world problem-solving is rarely this linear, the framework offers a useful starting point for understanding how ideas develop into solutions.
 
-I also kept the presentation light on text, using simple language and examples rather than technical jargon.
+### 1. Start with the people in the room
 
-### Learning by Doing
+The first few minutes can make or break a workshop. Rather than jumping straight into the presentation, I encouraged participants to introduce themselves, share why they were there, and ask questions.
 
-A workshop should be more than a presentation! I wanted participants to put these concepts into practice rather than just hear about them.
+This helped create a more welcoming environment and gave participants a chance to think about what brought them to the workshop in the first place.
 
-Using **"How Might We" questions** inspired by real local civic challenges, I invited participants to brainstorm and design potential solutions. The goal wasn't to develop a finished product, but to practice approaching a problem from the perspective of the people affected by it.
+**Lesson:** Get people involved early. Even a simple introduction can help turn a room of attendees into a group of participants.
 
-I also encouraged participants to introduce themselves and move around the room early in the session. Getting people talking from the beginning helped create a more collaborative environment and made it easier to share ideas during the activities.
+### 2. Explain why the framework matters
 
-Ultimately, I wanted participants to leave with a simple takeaway: **good civic technology starts with understanding people, not building tools.**
+Before diving into the five stages, I wanted to establish why design thinking matters in civic technology.
+
+**How do we make sure we're solving the right problems before we start building solutions?**
+
+In civic tech, it's easy to jump straight into developing a tool or application. After all, technology is in the name! But before thinking about solutions, we should ask more open-ended questions: Who are we building for? What do they actually need? And are we addressing the right problem?
+
+That's where human-centered design comes in. It encourages us to understand people's needs before deciding what to build.
+
+**Lesson:** Give people a reason to care about a framework before explaining how it works.
+
+*[Image: Slide introducing the central question or five stages]*
+
+### 3. Keep the presentation simple
+
+With that context established, I walked participants through the five stages of design thinking.
+
+I kept the slides light on text, using everyday language and examples rather than technical jargon. Some slides contained just a few words! The goal was to make the concepts easy to follow and leave room for discussion.
+
+I wanted the presentation to serve as a starting point, not a comprehensive lecture on design thinking.
+
+**Lesson:** You don't need to explain everything. Focus on a few concepts participants can understand, remember, and apply.
+
+*[Image: Examples of minimal slides from the presentation]*
+
+### 4. Get people moving and making things
+
+The presentation was only one part of the session. A workshop should be more than a presentation!
+
+To put the concepts into practice, I placed four **"How Might We" questions** inspired by real local civic challenges around the room.
+
+Participants broke into groups, moved between the questions, and used sticky notes to develop ideas and explore possible solutions. There was one catch: they couldn't simply repeat an idea that had already been shared. They had to build on what others had contributed or approach the challenge from a different angle.
+
+We then came back together to read out ideas and discuss the different approaches.
+
+The activity was intentionally simple. It didn't require technical skills or prior design experience, just curiosity and a willingness to think creatively.
+
+**Lesson:** Give participants something to do, not just something to listen to. Simple constraints and collaborative activities can encourage people to think beyond their first idea.
+
+*[Image: How Might We prompts, sticky notes, or participants working in groups]*
+
+## A Final Takeaway
+
+Design thinking is a much broader field than we could cover in one session, but I hope the workshop gave participants a starting point to explore it further.
+
+For me, facilitating the workshop was also a reminder that introducing people to a new field doesn't have to mean teaching them everything about it. Sometimes, the most useful thing you can do is give people a framework, a chance to experiment, and the confidence to keep learning.
+
+And if there's one idea I hope participants took away, it's this: **good civic technology starts with understanding people, not building tools.**
+
+## Workshop Presentation
+
+<p><a href="{{ '/assets/design-thinking-workshop-presentation.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Open or download the workshop presentation (PDF)</a>.</p>
+
+<iframe
+  src="{{ '/assets/design-thinking-workshop-presentation.pdf' | relative_url }}"
+  title="Helen Glover’s Design Thinking Workshop Presentation"
+  loading="lazy"
+  style="width: 100%; height: clamp(360px, 70vh, 700px); border: 1px solid #ddd; border-radius: 4px;"
+></iframe>
