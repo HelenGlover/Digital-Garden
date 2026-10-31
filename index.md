@@ -409,6 +409,10 @@ document.addEventListener("DOMContentLoaded", function() {
       <a class="post-title" href="https://cibmangotree.org/resources/#mango-bytes" target="_blank" rel="noopener noreferrer">Mango Bytes: A Data-Driven Commentary Series</a>
       <span class="reflection-desc">A series of snapshots exploring examples of coordinated inauthentic behavior in the news and the tactics behind them.</span>
     </li>
+    <li class="reflection-item">
+      <a class="post-title" href="https://www.civictechdc.org/blog/?category=civic-innovation-notes" target="_blank" rel="noopener noreferrer">Civic Innovation Notes</a>
+      <span class="reflection-desc">Lessons from community organizing and experimentation.</span>
+    </li>
   </ul>
 </section>
 </div>
